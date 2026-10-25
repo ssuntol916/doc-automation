@@ -1371,7 +1371,8 @@ class TemplateDocument:
             final_report = validate_package(temporary, source_path=self.template_path)
             if not final_report["valid"]:
                 raise ComposeError("Saved package failed validation: " + "; ".join(final_report["errors"]))
-            with open(temporary, "rb") as handle:
+            # Windows FlushFileBuffers requires a writable file handle.
+            with open(temporary, "rb+") as handle:
                 os.fsync(handle.fileno())
             os.replace(temporary, destination)
         finally:

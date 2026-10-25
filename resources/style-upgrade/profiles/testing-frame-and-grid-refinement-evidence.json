@@ -1,0 +1,144 @@
+{
+  "schema_version": "testing-frame-grid-refinement-evidence-1",
+  "recorded_at": "2026-10-24T17:21:44.125307+00:00",
+  "category": "implementation_choice_from_current_native_defect_observations",
+  "observations": [
+    {
+      "role": "SF-CD1",
+      "page": 3,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-CD1/page-3.png",
+        "sha256": "e92bd3f0a4f2d77722d55fa0c6933cb4458be343386078cc476305698d7ea20d"
+      }
+    },
+    {
+      "role": "SF-CD1",
+      "page": 4,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-CD1/page-4.png",
+        "sha256": "50f1c266aaf68add636338aa5886cc774226540afafd3608fbafd2ca4c5f93d3"
+      }
+    },
+    {
+      "role": "SF-TI1",
+      "page": 3,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI1/page-3.png",
+        "sha256": "9e377daeda463f0375c4b27e72ee3fcb2cb0bd407cb823059b4bce9d99735e04"
+      }
+    },
+    {
+      "role": "SF-TI1",
+      "page": 4,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI1/page-4.png",
+        "sha256": "175bd13c947adb580760ff6cffcdbd9a27c332f5058f63385e3e44ea9ffd67ea"
+      }
+    },
+    {
+      "role": "SF-TI2",
+      "page": 3,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI2/page-3.png",
+        "sha256": "8b0275265be66fe85a436ac480da403fbfb376a512a926ec6a3d17392dd317f5"
+      }
+    },
+    {
+      "role": "SF-TI2",
+      "page": 4,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI2/page-4.png",
+        "sha256": "5ede8a3b39aab43e1f7e7c17e46c88b04a72cbba5185673fe6dacd1f8aaf23bb"
+      }
+    },
+    {
+      "role": "SF-TI3",
+      "page": 3,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI3/page-03.png",
+        "sha256": "8b0275265be66fe85a436ac480da403fbfb376a512a926ec6a3d17392dd317f5"
+      }
+    },
+    {
+      "role": "SF-TI3",
+      "page": 4,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI3/page-04.png",
+        "sha256": "5b2518cfaef9169735140b6f2bb68fe02b206ff3a4f80796d2064d1a3a2884e9"
+      }
+    },
+    {
+      "role": "SF-TI3",
+      "page": 5,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI3/page-05.png",
+        "sha256": "74c287b04ff991e723b8b8b6475287cce459a53a41737069192d7df3d1ea4ed4"
+      }
+    },
+    {
+      "role": "SF-TI3",
+      "page": 6,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI3/page-06.png",
+        "sha256": "0e7f23f71e02190ada80f23ceffce40803f82a07911376b9059c0b180e44dc2b"
+      }
+    },
+    {
+      "role": "SF-TI4",
+      "page": 3,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI4/page-3.png",
+        "sha256": "2076388c907d013e00487875dc35e369aeae4422ec6bb18f89bee0f72dc51d4f"
+      }
+    },
+    {
+      "role": "SF-TI4",
+      "page": 4,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-TI4/page-4.png",
+        "sha256": "f07f202c1e020fdbc256e23d0b89b96cb1aad7e8b6398d48aa0c1b37918a1ce3"
+      }
+    },
+    {
+      "role": "SF-OS1",
+      "page": 3,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-OS1/page-3.png",
+        "sha256": "8b0275265be66fe85a436ac480da403fbfb376a512a926ec6a3d17392dd317f5"
+      }
+    },
+    {
+      "role": "SF-OS1",
+      "page": 4,
+      "r01_png": {
+        "path": "outputs/quality-loop/r01/native/rendered/SF-OS1/page-4.png",
+        "sha256": "3157fe05948fd75d4d5cbae8c5c746d501e1f9d73add04ab601502d9661878ae"
+      }
+    }
+  ],
+  "source_relationships_unchanged": true,
+  "no_source_typography_rule_inferred_from_defects": true,
+  "changes": {
+    "SF-CD1": "Wider data columns; bounded result key in grid with full original result text in page-width case-owned U detail. Defect register has page-width typed D detail and row-granular pagination for bounded rows.",
+    "SF-TI1/SF-TI4": "Wider logical data column, unbolded own case prose, coherent repeated card geometry. Bounded defect register rows plus complete page-width typed D detail.",
+    "SF-TI2/SF-TI3/SF-OS1": "Move only the generated body notice into its original frame before first heading; preserve original PAGE numbering/forced body break, use inline CELL frame flow and explicit heading/body bold separation; standalone short labels keep with next value.",
+    "SF-TI3": "Each supplied screen/manual picture follows its exact declared description owner. Attachment bytes/captions/roles/provenance remain intact.",
+    "SF-OS1": "pilot/training categories displayed as source-code-mapped business labels; no input state changes."
+  },
+  "font_size_reduction": false,
+  "semantic_preservation": "Original input values/types/IDs/states/sources/people/evidence retained in table or keyed full-width details; actual rendered mapping and native page behavior remain pending. No source/raw metadata is promoted into execution truth.",
+  "validation_status": "candidate; no new native/visual/95% pass",
+  "original_template_sha_unchanged": {
+    "SF-CD1": "a8dcbee7067d625523e072129fbde87ceba6211bbbf81e7006673244c5227416",
+    "SF-TI1": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218",
+    "SF-TI2": "43a5b06c81b7803f0dd1f7648d9249a5ab9da7154d315f1ed63604fadeeff63c",
+    "SF-TI3": "45a58751fb3a5f7b6bf3f0035f3a3e39d74fa62ccca6a9af57305287361431c4",
+    "SF-TI4": "1edcfa29aab5fed372286e05d1aef47b447b336864e20c605471830be5c07bd5",
+    "SF-OS1": "938b08355d5914e1bf401f0a76a860dbe1915548b03b7487e7c0f22e330b3778"
+  },
+  "word_wrap_policy": {
+    "data_and_expected_cells": "Latin KEEP_WORD, no token insertion/removal",
+    "defect_date_cells": "Latin KEEP_WORD; source HCR 10pt date glyph width5500HWP plus566padding requires at least6066HWP; chosen6300HWP",
+    "native_limit": "Local glyph-width checks are necessary preparation, not native line-layout or95% proof. Longer-than-cell tokens and continued cards remain in actual new-page review."
+  }
+}

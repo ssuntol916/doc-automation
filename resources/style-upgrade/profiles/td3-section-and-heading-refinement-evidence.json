@@ -1,0 +1,96 @@
+{
+  "schema_version": "td3-section-and-heading-owner-refinement-evidence-1",
+  "td3_source": {
+    "sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9",
+    "source_id": "template-sf-td3"
+  },
+  "source_spine_sections": [
+    "Contents/section0.xml"
+  ],
+  "declared_body_section_selector": {
+    "source_heading": {
+      "source_sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[54]",
+      "text_before_generation_verbatim": "3. 화면(보고서) 설계"
+    },
+    "first_table_carrier": {
+      "source_sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[55]",
+      "text_before_generation_verbatim": ""
+    },
+    "generated_intro": {
+      "allowed_prefix": "과제: ",
+      "maximum_paragraphs": 1,
+      "require_renderer_body_role": true,
+      "plain_text_only": true
+    }
+  },
+  "previous_output": {
+    "candidate": {
+      "sha256": "9453e91db9dbfc1909bb4d73da97b10655c92216a4dcbe98353b48b957db4fca"
+    },
+    "strict_roundtrip": {
+      "sha256": "82939fc75c000a5fc91b3abc661263d50a54cedbff3d09584f37c2ca73d77eaa",
+      "passed": true
+    },
+    "pdf": {
+      "sha256": "7336317d814eb73cf6c5fdc6a86680fa62b28f3018af39a3f38b9f9b53075779"
+    },
+    "page_count": 14,
+    "physical_page4": {
+      "rect_pt": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ],
+      "text_verbatim": "- 2 -\n3. 화면(보고서) 설계\n과제: 검증용 배치 생산·품질관리 MES\n"
+    },
+    "physical_page5": {
+      "rect_pt": [
+        0.0,
+        0.0,
+        842.0,
+        595.0
+      ]
+    },
+    "observation": "Previous generated section0 retains the3rd chapter title and one project intro; section1 starts at the first card. Native page4 is portrait with chapter title/intro while the first landscape card begins onpage5. Strict preservation passes but does not establish appropriate section placement."
+  },
+  "implementation_choices": [
+    {
+      "category": "implementation_choice",
+      "choice": "Start TD3 landscape section at the exact original3rd-chapter owner, carry only up to one new renderer-registered plain project intro before the exact first card owner, and keep source1st/2nd chapters in portrait.",
+      "limits": "No broad text search, scope-control removal, card-wide keep or font shrinking. Current new native output remains required."
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Use explicit renderer heading identities and genuine numbered section headings; context keys [Tn]/[Cn]/[Fn] alone never imply a title or keepWithNext chain.",
+      "limits": "True T/C/F titles must be renderer-registered; body value bold/keep flags remain as authored."
+    }
+  ],
+  "pm4_nonfunctional_width_choice": {
+    "font_path": "/Applications/Hancom Office HWP.app/Contents/Resources/Hnc/Shared/TTF/Install/HANBatang.ttf",
+    "font_sha256": "c5d544769d832477d48b7318222b9c3c2eced25455f7ba9acb23060dcecac104",
+    "font_name": "HCR Batang Regular",
+    "size_pt": 10,
+    "horizontal_padding_hwp": 566,
+    "exact_text": "연결 시험: DEMO-TEST-004",
+    "advance_hwp": 13049.000024795532,
+    "required_width_hwp_ceiling": 13616,
+    "column_widths_hwp": [
+      2500,
+      9000,
+      14000,
+      20000,
+      17000,
+      9000,
+      3500
+    ],
+    "whole_width_hwp": 75000,
+    "rationale": "17000HWP deliverable/test-link column fits the complete prefix and supplied ID at unchanged10pt. Normal functional and registry-selected trace widths are retained independently."
+  },
+  "actual_quality_score_percent": null,
+  "native_status": "pending_new_v7_bytes"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "unbounded-frame-floating-cell-evidence-1",
+  "recorded_at": "2026-10-24T18:28:30.762721+00:00",
+  "category": "implementation_choice_bounded_to_exact_source_frames",
+  "roles": [
+    "SF-AD1",
+    "SF-TD1",
+    "SF-TD2",
+    "SF-TI2",
+    "SF-TI3",
+    "SF-OS1",
+    "SF-OS2"
+  ],
+  "source_callers_exact": [
+    "_render_ad1",
+    "_render_td1",
+    "_render_td2",
+    "_render_ti2",
+    "_render_ti3",
+    "_render_os1",
+    "_render_os2"
+  ],
+  "confirmed_native_failure_roles": [
+    "SF-AD1",
+    "SF-TD1",
+    "SF-TD2",
+    "SF-TI3",
+    "SF-OS1",
+    "SF-OS2"
+  ],
+  "preventive_support_choice_roles": [
+    "SF-TI2"
+  ],
+  "confirmed_failure_scope": "Actual R04 native one-page evidence showed latter source-owned body or pictures below physical page boundary, with appendix starting next physical page. HWPX/title/image preservation and strict12 did not prove visible body.",
+  "preventive_scope": "TI2 current short baseline content was readable. It remains an unbounded one-cell source narrative frame, so apply the same floating CELL support policy without a length threshold. This is not a claim of a failed TI2 baseline or a new native pass.",
+  "prior_independent_scope": "outputs/quality-loop/r04/evaluation/native-visibility-diagnostics/scope-before-text-and-original-page-review.json",
+  "direct_td2_ti3_observations": "outputs/quality-loop/r04/integrated/evaluation/td2-toc-diagnosis/package-and-pdf-observations.json",
+  "change": "Only the seven existing exact one-row/one-column helper callers request floating CELL. Source notice relocation, body text, field values/types/owners, fonts, sizes, page margins and image bytes/display geometry remain unchanged. No arbitrary input-length threshold.",
+  "contract_guard": "Helper refuses non1x1 table source shapes. Other table/card writers and pilot4 profile/layout remain unchanged.",
+  "shared_helper_scope": "No source frame caller added; redundant per-role floating overrides removed.",
+  "no_gate_waiver": "Actual new native rendering/full-page review, last body markers, all pictures, TOC fixed point and strict preservation remain required; old failed r04 outputs are preserved.",
+  "actual_quality_score_percent": null,
+  "native_status": "pending_new_current_bytes"
+}

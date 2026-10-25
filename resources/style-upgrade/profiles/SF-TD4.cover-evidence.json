@@ -1,0 +1,431 @@
+{
+  "schema_version": "cover-role-source-evidence-1",
+  "role": "SF-TD4",
+  "scope": "Exact source-used cover role font/height/bold definitions. Does not copy exemplar company/date/program facts and does not establish native output quality.",
+  "template_source": {
+    "sha256": "9276e4e82d26a6a7bd94e764b8e26f891323aa1549deb03c85aa11a9482b51e4",
+    "source_id": "template-sf-td4"
+  },
+  "reference_source": {
+    "sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+    "source_id": "reference-sf-td4"
+  },
+  "roles": [
+    {
+      "semantic_role": "customer",
+      "reference_relationship": "same_role",
+      "reference_paragraph": {
+        "source_sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[15]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[23]"
+      },
+      "actual_used_character_definition": {
+        "local_charPr_id": "22",
+        "characters": 10,
+        "attributes": {
+          "id": "22",
+          "height": "2400",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "1",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 24.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[23]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[15]/hp:run[1]",
+          "paragraph_xpath": "/hs:sec/hp:p[15]"
+        }
+      },
+      "chosen_target": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2400,
+        "bold": true
+      },
+      "choice_category": "observed_convention_adopted_as_explicit_source_specific_choice_not_mandatory_template_rule",
+      "native_status": "pending_new_v3_bytes"
+    },
+    {
+      "semantic_role": "program",
+      "reference_relationship": "same_role",
+      "reference_paragraph": {
+        "source_sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[15]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[26]"
+      },
+      "actual_used_character_definition": {
+        "local_charPr_id": "25",
+        "characters": 29,
+        "attributes": {
+          "id": "25",
+          "height": "2000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 20.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[26]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[15]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[15]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]"
+        }
+      },
+      "chosen_target": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2000,
+        "bold": false
+      },
+      "choice_category": "observed_convention_adopted_as_explicit_source_specific_choice_not_mandatory_template_rule",
+      "native_status": "pending_new_v3_bytes"
+    },
+    {
+      "semantic_role": "title",
+      "reference_relationship": "same_role",
+      "reference_paragraph": {
+        "source_sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[15]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[13]"
+      },
+      "actual_used_character_definition": {
+        "local_charPr_id": "12",
+        "characters": 7,
+        "attributes": {
+          "id": "12",
+          "height": "2600",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 26.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[13]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[15]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]/hp:run[1]",
+          "paragraph_xpath": "/hs:sec/hp:p[15]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]"
+        }
+      },
+      "chosen_target": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2600,
+        "bold": true
+      },
+      "choice_category": "observed_convention_adopted_as_explicit_source_specific_choice_not_mandatory_template_rule",
+      "native_status": "pending_new_v3_bytes"
+    },
+    {
+      "semantic_role": "date",
+      "reference_relationship": "same_role",
+      "reference_paragraph": {
+        "source_sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[22]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[6]"
+      },
+      "actual_used_character_definition": {
+        "local_charPr_id": "5",
+        "characters": 12,
+        "attributes": {
+          "id": "5",
+          "height": "2000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 20.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[6]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[22]/hp:run[1]",
+          "paragraph_xpath": "/hs:sec/hp:p[22]"
+        }
+      },
+      "chosen_target": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2000,
+        "bold": true
+      },
+      "choice_category": "observed_convention_adopted_as_explicit_source_specific_choice_not_mandatory_template_rule",
+      "native_status": "pending_new_v3_bytes"
+    },
+    {
+      "semantic_role": "supplier",
+      "reference_relationship": "same_role",
+      "reference_paragraph": {
+        "source_sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[27]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[22]"
+      },
+      "actual_used_character_definition": {
+        "local_charPr_id": "21",
+        "characters": 6,
+        "attributes": {
+          "id": "21",
+          "height": "2800",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 28.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[22]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[27]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[27]"
+        }
+      },
+      "chosen_target": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2800,
+        "bold": false
+      },
+      "choice_category": "observed_convention_adopted_as_explicit_source_specific_choice_not_mandatory_template_rule",
+      "native_status": "pending_new_v3_bytes"
+    }
+  ],
+  "actual_score_percent": null
+}

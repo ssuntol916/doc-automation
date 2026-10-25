@@ -1,0 +1,96 @@
+{
+  "schema": "testing-case-and-generated-appendix-source-bound-flow-1",
+  "scope": "Fingerprint-specific implementation choice. Does not infer execution, installation, approval or native page quality.",
+  "roles": {
+    "SF-TI1": {
+      "source": {
+        "sha256": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218",
+        "source_id": "template-sf-ti1"
+      },
+      "case_table": {
+        "source_sha256": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218",
+        "xml": "Contents/section1.xml",
+        "paragraph_xpath": "/hs:sec/hp:p[2]",
+        "paragraph_own_text": "",
+        "table_xpath": "/hs:sec/hp:p[2]/hp:run/hp:tbl",
+        "table_c14n_sha256": "71240940119884ced0a2e3569a6ce201ef3772206d4ec5bd008643cc63431b0b",
+        "column_count": 7
+      },
+      "case_flow": {
+        "per_case": true,
+        "inline": false,
+        "page_break": "CELL",
+        "repeat_header_rows": 4
+      },
+      "caption_policy": "Only exact registered picture-before-caption pair; keep bounded caption lines together and terminate its forward chain. Historical notice-before-picture remains separate.",
+      "guide_restart": {
+        "source_sha256": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218",
+        "xml": "Contents/section1.xml",
+        "xpath": "/hs:sec/hp:p[18]",
+        "own_text": "- 결함관리 내역은 결함번호, 통합테스트 ID, 결함 내역, 발생일자, 조치 내역, 완료일자를 기술함",
+        "c14n_sha256": "257fa9b5c4faa5c857823c8231756d7d7384aaa24503461775369e69ce052184"
+      },
+      "tradeoffs": [
+        "One original-table card per supplied case may add pages and repeated finite project reference context.",
+        "Two long native probes do not establish all possible header/string lengths."
+      ]
+    },
+    "SF-TI4": {
+      "source": {
+        "sha256": "1edcfa29aab5fed372286e05d1aef47b447b336864e20c605471830be5c07bd5",
+        "source_id": "template-sf-ti4"
+      },
+      "case_table": {
+        "source_sha256": "1edcfa29aab5fed372286e05d1aef47b447b336864e20c605471830be5c07bd5",
+        "xml": "Contents/section1.xml",
+        "paragraph_xpath": "/hs:sec/hp:p[2]",
+        "paragraph_own_text": "",
+        "table_xpath": "/hs:sec/hp:p[2]/hp:run/hp:tbl",
+        "table_c14n_sha256": "cbd3f388e4b3389333044f0997f2205fe05ce367683273216377450cbcde56dd",
+        "column_count": 7
+      },
+      "case_flow": {
+        "per_case": true,
+        "inline": false,
+        "page_break": "CELL",
+        "repeat_header_rows": 3
+      },
+      "caption_policy": "Only exact registered picture-before-caption pair; keep bounded caption lines together and terminate its forward chain. Historical notice-before-picture remains separate.",
+      "guide_restart": null,
+      "tradeoffs": [
+        "One original-table card per supplied case may add pages and repeated finite project reference context.",
+        "Two long native probes do not establish all possible header/string lengths."
+      ]
+    },
+    "SF-PM2": {
+      "source": {
+        "sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+        "source_id": "template-sf-pm2"
+      },
+      "appendix_source": {
+        "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[7]/hp:tc/hp:subList/hp:p[2]",
+        "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[7]/hp:tc/hp:subList/hp:p[2]/hp:run",
+        "text_before_generation_verbatim": "",
+        "cell_address": {
+          "colAddr": "0",
+          "rowAddr": "6"
+        },
+        "source_flags": {
+          "bold": false,
+          "italic": false
+        },
+        "source_height_hwp": 1200
+      },
+      "policy": {
+        "source_role": "meeting_special_notes_value",
+        "left_hwp": 0,
+        "intent_hwp": 0
+      },
+      "scope": "Generated appendices only; source-owned attendee value retains its original hanging paragraph style. No global indent reset or character/line override."
+    }
+  },
+  "native_quality": "pending",
+  "score_percent": null
+}

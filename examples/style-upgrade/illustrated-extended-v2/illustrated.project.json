@@ -1,0 +1,2746 @@
+{
+  "schema_version": "1.0",
+  "dataset_kind": "synthetic",
+  "project": {
+    "id": "DEMO-PROJECT-001",
+    "name": "검증용 배치 생산·품질관리 MES",
+    "status": "synthetic",
+    "source_refs": [
+      {
+        "source_id": "SOURCE-DEMO-FACTS",
+        "locator": "/project_input"
+      }
+    ],
+    "requested_deliverables": [
+      "SF-AD1",
+      "SF-AD2",
+      "SF-AD3",
+      "SF-TD1",
+      "SF-TD2",
+      "SF-TD3",
+      "SF-TD4",
+      "SF-TD5",
+      "SF-CD1",
+      "SF-TI1",
+      "SF-TI2",
+      "SF-TI3",
+      "SF-TI4",
+      "SF-OS1",
+      "SF-OS2",
+      "SF-PM1",
+      "SF-PM2",
+      "SF-PM3",
+      "SF-PM4"
+    ],
+    "requested_forms": [],
+    "program_name": "검증용 스마트공장 문서 자동화 예제",
+    "program_year": 2026,
+    "template_version": "v2.0",
+    "customer": {
+      "name": "검증용 도입기업 A",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/project_input/customer_label"
+        }
+      ]
+    },
+    "supplier": {
+      "name": "검증용 공급기업 B",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/project_input/supplier_label"
+        }
+      ]
+    },
+    "start_date": "2026-11-02",
+    "end_date": "2026-11-13",
+    "implementation_scope": [
+      "배치 생산실적 입력 검증",
+      "생산실적에 연결된 검사 판정 이력",
+      "역할별 화면과 API 접근 통제"
+    ],
+    "business_profile": "가상 소량 배치 조립품을 생산하고 배치별 생산수량과 검사수량의 연결을 검토하는 합성 시나리오이다. 실제 제품·사업장·생산실적은 제공되지 않았다.",
+    "notes": "계획기간도 합성 가정이다. 실제 착수·완료·승인·서명은 없으며 19종 출력시험을 위한 최소 구조를 포함한다.",
+    "business_processes": [
+      {
+        "id": "DEMO-PROCESS-001",
+        "name": "배치 생산·검사 연결 프로세스",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/process"
+          }
+        ],
+        "description": "가상 소량 배치 조립품을 생산하고 배치별 생산수량과 검사수량의 연결을 검토하는 합성 시나리오이다. 실제 제품·사업장·생산실적은 제공되지 않았다.",
+        "current_steps": [
+          "합성 작업지시 선택",
+          "생산수량과 검사수량을 별도 입력하는 초기 가정"
+        ],
+        "target_steps": [
+          "작업지시·배치 조합 검증",
+          "생산수량 합계 계산",
+          "생산실적에 검사이력 연결",
+          "역할별 저장 권한 확인"
+        ],
+        "issues": [
+          "초기 가정의 중복 배치 등록 위험",
+          "생산과 검사 합계의 비교 기준 미정"
+        ],
+        "expected_effects": [
+          "중복·수량 불일치 검증 항목을 명확히 계획",
+          "검사 이력의 생산실적 연결 조건을 명시"
+        ],
+        "requirement_ids": [
+          "DEMO-AD2-001",
+          "DEMO-AD2-002",
+          "DEMO-AD2-003"
+        ],
+        "data_collection_mode": "manual",
+        "automation_level": "partial",
+        "real_time_control": null,
+        "as_is_attachment_ids": [
+          "EDITORIAL-DIAGRAM-DESIGN-01"
+        ],
+        "to_be_attachment_ids": [
+          "EDITORIAL-DIAGRAM-DESIGN-02"
+        ]
+      }
+    ],
+    "systems": [
+      {
+        "id": "DEMO-SYSTEM-001",
+        "name": "DEMO MES",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/system"
+          }
+        ],
+        "lifecycle": "planned",
+        "description": "검증용 웹 화면 2개, API 2개, 관계형 테이블 2개. 실제 서버·네트워크 주소·인증 연동은 미확인.",
+        "as_is_description": "작업지시 조회와 단순 생산수량 입력만 있는 합성 초기 상태를 가정한다.",
+        "to_be_description": "생산수량 검증·검사이력 연결·역할별 API 검증을 계획한다.",
+        "configuration": "검증용 웹 화면 2개, API 2개, 관계형 테이블 2개. 실제 서버·네트워크 주소·인증 연동은 미확인.",
+        "network_method": null,
+        "as_is_diagram_ids": [
+          "EDITORIAL-DIAGRAM-DESIGN-03"
+        ],
+        "to_be_diagram_ids": [
+          "EDITORIAL-DIAGRAM-DESIGN-04"
+        ]
+      }
+    ],
+    "schedule_items": [
+      {
+        "id": "DEMO-SCHEDULE-001",
+        "name": "요구사항·기능·화면 설계 검토 계획",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/schedule/0"
+          }
+        ],
+        "phase": "분석·설계",
+        "planned_start": "2026-11-02",
+        "planned_end": "2026-11-06",
+        "actual_start": null,
+        "actual_end": null,
+        "owner": {
+          "name": null,
+          "review_status": "synthetic"
+        },
+        "planned_progress": null,
+        "actual_progress": null
+      },
+      {
+        "id": "DEMO-SCHEDULE-002",
+        "name": "개발·시험·배포 문서 검토 계획",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/schedule/1"
+          }
+        ],
+        "phase": "개발·시험",
+        "planned_start": "2026-11-09",
+        "planned_end": "2026-11-13",
+        "actual_start": null,
+        "actual_end": null,
+        "owner": {
+          "name": null,
+          "review_status": "synthetic"
+        },
+        "planned_progress": null,
+        "actual_progress": null
+      }
+    ],
+    "budget_items": [
+      {
+        "id": "DEMO-BUDGET-001",
+        "name": "검증용 소프트웨어 설계 예산 가정",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/budget"
+          }
+        ],
+        "category": "소프트웨어 개발비",
+        "planned_amount": 1000000,
+        "approved_amount": null,
+        "spent_amount": null,
+        "currency": "KRW",
+        "unit": "원",
+        "contribution_kind": null,
+        "payer_role": null,
+        "basis": "문서 금액 형식 검증용으로만 둔 합성 계획액. 보조금·자부담 확정액이 아니며 집행하지 않았다."
+      }
+    ],
+    "staff_members": [
+      {
+        "id": "DEMO-STAFF-001",
+        "name": null,
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/staff_roles/0"
+          }
+        ],
+        "organization_role": "customer",
+        "role": "생산·품질 요구사항 확인 예정 담당",
+        "person": {
+          "name": null,
+          "review_status": "synthetic"
+        },
+        "work_description": "생산·품질 요구사항 확인 예정 담당"
+      },
+      {
+        "id": "DEMO-STAFF-002",
+        "name": null,
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/staff_roles/1"
+          }
+        ],
+        "organization_role": "supplier",
+        "role": "설계·시험 계획 작성 예정 담당",
+        "person": {
+          "name": null,
+          "review_status": "synthetic"
+        },
+        "work_description": "설계·시험 계획 작성 예정 담당"
+      }
+    ],
+    "manual_sections": [
+      {
+        "id": "DEMO-MANUAL-001",
+        "name": "생산실적 입력 검증 안내 초안",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/manual_topics/0"
+          }
+        ],
+        "audience": "user",
+        "topic": "screen",
+        "content": "합성 작업일자·작업지시·배치를 선택하고 양품·불량수량을 입력하도록 계획한다. 총수량은 자동계산 대상이며 중복·음수·자릿수 오류를 표시하도록 설계한다. 실제 화면은 구현·운영하지 않았으므로 화면 캡처와 실행 결과는 확인 필요.",
+        "screen_ids": [
+          "DEMO-TD3-001"
+        ],
+        "attachment_ids": [],
+        "version": "검증용 초안"
+      },
+      {
+        "id": "DEMO-MANUAL-002",
+        "name": "역할 권한 관리 안내 초안",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/manual_topics/1"
+          }
+        ],
+        "audience": "administrator",
+        "topic": "permissions",
+        "content": "생산·품질·관리자 역할 분리와 API 접근 검증을 계획한다. 계정 발급·회수 승인자, 인증 연동, 로그 보관기간은 미확인. 실제 관리자 수행 내역은 없다.",
+        "screen_ids": [],
+        "attachment_ids": [],
+        "version": "검증용 초안"
+      }
+    ],
+    "support_activities": [
+      {
+        "id": "DEMO-SUPPORT-001",
+        "name": "합성 시범운영 점검 계획",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/support_plan/0"
+          }
+        ],
+        "category": "pilot",
+        "plan": "2026-11-09~13에 중복·검사합계·권한 차단 시험 계획을 검토할 예정이다. 실제 시범운영·접속 로그·교육 수행은 미수행.",
+        "period_start": "2026-11-09",
+        "period_end": "2026-11-13",
+        "contact": {
+          "name": null,
+          "review_status": "synthetic"
+        },
+        "actual_result": null,
+        "evidence_ids": []
+      },
+      {
+        "id": "DEMO-SUPPORT-002",
+        "name": "사용자 교육자료 검토 계획",
+        "status": "synthetic",
+        "source_refs": [
+          {
+            "source_id": "SOURCE-DEMO-FACTS",
+            "locator": "/project_context/support_plan/1"
+          }
+        ],
+        "category": "training",
+        "plan": "생산실적·검사판정 입력 절차와 오류 안내를 교육 목차로 검토할 예정이다. 교육 개최·참석·서명은 미수행.",
+        "period_start": "2026-11-09",
+        "period_end": "2026-11-13",
+        "contact": {
+          "name": null,
+          "review_status": "synthetic"
+        },
+        "actual_result": null,
+        "evidence_ids": []
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "SOURCE-DEMO-FACTS",
+      "title": "검증용 독립 합성 원시 사실",
+      "kind": "synthetic",
+      "path": "../../sources/demo-facts.json",
+      "sha256": "b7acb60e45cfec422616814dcacc6d619204bf73a03f9c7b47127cc30f3d5d1e",
+      "verification_status": "synthetic",
+      "notes": "문서 생성·연결·계산 검증을 위한 합성 원시 입력. 실제 기업·사업·수행 결과·승인 자료가 아니며 제출용으로 사용할 수 없다."
+    },
+    {
+      "id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "title": "입력 필드·버튼에서 작성한 합성 설계 시안",
+      "kind": "synthetic",
+      "path": "design-fixture-facts.json",
+      "sha256": "a3a685216d68bdf86af2761f1ba3fa06cf0d225463136940c1688cfc4330fd29",
+      "verification_status": "provided"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "DEMO-AD2-001",
+      "name": "배치별 생산실적 입력 검증 및 저장",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/requirement_notes/0"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "business_area": "생산관리",
+      "kind": "functional",
+      "change_type": "modified",
+      "description": "작업지시와 배치를 선택하여 양품·불량 수량을 입력하고 합계 및 중복 조건을 검증한 후 저장하는 검증용 기능이다.",
+      "details": [
+        "작업일자, 작업지시번호, 배치번호, 품목코드, 양품수량, 불량수량을 필수 입력으로 둔다.",
+        "총수량은 양품수량과 불량수량의 합으로 계산하며 사용자가 임의로 덮어쓰지 못하도록 설계한다.",
+        "수량은 0 이상, 소수 셋째 자리까지 허용하는 가정이다. 작업일자·작업지시번호·배치번호 조합이 중복되면 저장을 차단한다.",
+        "조회 조건은 작업일자 범위·작업지시번호·배치번호이며 저장 성공 여부와 입력 오류를 구분하여 안내하도록 계획한다."
+      ],
+      "constraints": [
+        "작업지시와 품목코드는 사전에 등록된 합성 기준정보를 참조한다.",
+        "소수 수량 허용 범위는 변경검토 C01이 확정되기 전에는 실제 업무 기준으로 해석하지 않는다."
+      ],
+      "owner": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "original_classification": "functional",
+      "fulfillment_status": "not_started",
+      "deliverable_ids": [],
+      "review_ids": [
+        "DEMO-REVIEW-001"
+      ],
+      "notes": "독립 합성 요구사항이며 실제 사업 협의·구현·수행은 미수행이다."
+    },
+    {
+      "id": "DEMO-AD2-002",
+      "name": "배치별 검사수량 판정 및 이력 조회",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/requirement_notes/1"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "business_area": "품질관리",
+      "kind": "functional",
+      "change_type": "new",
+      "description": "생산실적에 연결된 검사수량·합격수량·불합격수량을 검증하고 검사 판정 이력을 조회하도록 계획한 기능이다.",
+      "details": [
+        "생산실적 식별자, 검사일자, 검사수량, 합격수량, 불합격수량을 입력받는다.",
+        "검사수량은 합격수량과 불합격수량의 합과 같아야 하고 수량은 모두 0 이상 정수여야 한다.",
+        "불합격수량이 0이면 합격, 1 이상이면 검토필요로 계산하는 합성 판정 규칙을 사용한다.",
+        "검사이력은 배치번호·검사일자·판정으로 조회하며 검사수량과 판정의 수정 이력을 기록하도록 계획한다."
+      ],
+      "constraints": [
+        "대상 생산실적 식별자가 존재해야 하며 존재하지 않는 식별자는 저장을 차단한다.",
+        "합성 판정 규칙은 실제 품질기준이나 검사 승인으로 사용할 수 없다."
+      ],
+      "owner": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "original_classification": "functional",
+      "fulfillment_status": "not_started",
+      "deliverable_ids": [],
+      "review_ids": [
+        "DEMO-REVIEW-001"
+      ],
+      "notes": "독립 합성 요구사항이며 실제 사업 협의·구현·수행은 미수행이다."
+    },
+    {
+      "id": "DEMO-AD2-003",
+      "name": "역할별 생산·품질 데이터 접근 제한",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/requirement_notes/2"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "business_area": "접근권한",
+      "kind": "nonfunctional",
+      "change_type": "new",
+      "description": "생산담당·품질담당·관리자 역할에 따라 화면과 저장 API의 접근을 제한하는 검증용 보안 요구사항이다.",
+      "details": [
+        "생산담당은 생산실적 화면·저장 API를 사용하고 품질 판정 수정은 수행할 수 없도록 설계한다.",
+        "품질담당은 검사 판정 화면·저장 API를 사용하고 생산실적은 참조 조회만 가능하도록 설계한다.",
+        "관리자 역할 부여·회수와 데이터 수정은 사용자 식별자·시각·변경 필드를 포함한 감사 이력으로 남기도록 계획한다."
+      ],
+      "constraints": [
+        "실제 사용자 계정·인증연동·접근권한 승인자는 미확인이다.",
+        "권한 검증은 화면 표시와 API 호출에 모두 적용해야 한다."
+      ],
+      "owner": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "original_classification": "nonfunctional",
+      "fulfillment_status": "not_started",
+      "deliverable_ids": [],
+      "review_ids": [
+        "DEMO-REVIEW-001"
+      ],
+      "notes": "독립 합성 요구사항이며 실제 사업 협의·구현·수행은 미수행이다."
+    }
+  ],
+  "features": [
+    {
+      "id": "DEMO-AD3-001",
+      "name": "품목기준정보 조회",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/0"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "major_category": "DEMO MES",
+      "middle_category": "생산관리",
+      "minor_category": "품목기준정보 조회",
+      "change_type": "existing",
+      "description": "입력 품목코드 검증에 필요한 기준정보",
+      "before": "합성 품목코드와 품목명을 조회하는 기본 기능",
+      "after": "동일 기능을 재사용하는 가정",
+      "requirement_ids": [
+        "DEMO-AD2-001"
+      ],
+      "meeting_ids": [],
+      "evidence_ids": [],
+      "notes": "기존·추가·수정 구분은 실제 설치 상태가 아닌 합성 시나리오의 가정이다."
+    },
+    {
+      "id": "DEMO-AD3-002",
+      "name": "작업지시 조회",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/1"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "major_category": "DEMO MES",
+      "middle_category": "생산관리",
+      "minor_category": "작업지시 조회",
+      "change_type": "existing",
+      "description": "실적 입력의 작업지시 선택",
+      "before": "합성 작업지시번호·품목을 조회하는 기본 기능",
+      "after": "동일 기능을 재사용하는 가정",
+      "requirement_ids": [
+        "DEMO-AD2-001"
+      ],
+      "meeting_ids": [],
+      "evidence_ids": [],
+      "notes": "기존·추가·수정 구분은 실제 설치 상태가 아닌 합성 시나리오의 가정이다."
+    },
+    {
+      "id": "DEMO-AD3-003",
+      "name": "생산실적 수량 검증",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/2"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "major_category": "DEMO MES",
+      "middle_category": "생산관리",
+      "minor_category": "생산실적 수량 검증",
+      "change_type": "modified",
+      "description": "수량 정합성 확보를 위한 검증 가정",
+      "before": "양품·불량 수량을 개별 입력하는 예시 기능",
+      "after": "합계 계산·음수 차단·소수 셋째 자리 검증을 추가하는 계획",
+      "requirement_ids": [
+        "DEMO-AD2-001"
+      ],
+      "meeting_ids": [],
+      "evidence_ids": [],
+      "notes": "기존·추가·수정 구분은 실제 설치 상태가 아닌 합성 시나리오의 가정이다."
+    },
+    {
+      "id": "DEMO-AD3-004",
+      "name": "배치 중복 저장 차단",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/3"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "major_category": "DEMO MES",
+      "middle_category": "생산관리",
+      "minor_category": "배치 중복 저장 차단",
+      "change_type": "new",
+      "description": "동일 합성 배치의 중복 등록 방지",
+      "before": "해당 기능 없음으로 가정",
+      "after": "작업일자·작업지시·배치 조합 중복을 검출하는 계획",
+      "requirement_ids": [
+        "DEMO-AD2-001"
+      ],
+      "meeting_ids": [],
+      "evidence_ids": [],
+      "notes": "기존·추가·수정 구분은 실제 설치 상태가 아닌 합성 시나리오의 가정이다."
+    },
+    {
+      "id": "DEMO-AD3-005",
+      "name": "검사 판정과 이력 조회",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/4"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "major_category": "DEMO MES",
+      "middle_category": "품질관리",
+      "minor_category": "검사 판정과 이력 조회",
+      "change_type": "new",
+      "description": "합성 검사 데이터와 생산실적의 연결",
+      "before": "해당 기능 없음으로 가정",
+      "after": "검사수량 정합 검증·판정 계산·이력 조회를 추가하는 계획",
+      "requirement_ids": [
+        "DEMO-AD2-002"
+      ],
+      "meeting_ids": [],
+      "evidence_ids": [],
+      "notes": "기존·추가·수정 구분은 실제 설치 상태가 아닌 합성 시나리오의 가정이다."
+    },
+    {
+      "id": "DEMO-AD3-006",
+      "name": "역할별 저장 API 접근 제한",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/5"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "major_category": "DEMO MES",
+      "middle_category": "접근권한",
+      "minor_category": "역할별 저장 API 접근 제한",
+      "change_type": "modified",
+      "description": "화면 권한과 API 권한의 일치 검증",
+      "before": "모든 합성 역할에 동일 저장 API 접근을 허용하는 초기 가정",
+      "after": "생산/품질 역할별 API 접근을 제한하는 계획",
+      "requirement_ids": [
+        "DEMO-AD2-003"
+      ],
+      "meeting_ids": [],
+      "evidence_ids": [],
+      "notes": "기존·추가·수정 구분은 실제 설치 상태가 아닌 합성 시나리오의 가정이다."
+    }
+  ],
+  "screens": [
+    {
+      "id": "DEMO-TD3-001",
+      "name": "배치 생산실적 등록",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/0"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "screen_kind": "screen",
+      "path": "생산관리 > 배치 생산실적",
+      "menu_levels": [
+        "생산관리",
+        "배치 생산실적"
+      ],
+      "description": "입력: 작업일자, 작업지시번호, 배치번호, 품목코드, 양품수량, 불량수량; 출력: 총수량, 오류메시지, 저장상태",
+      "change_type": "modified",
+      "steps": [
+        "조회 조건을 입력하고 합성 대상 자료를 선택할 계획이다.",
+        "필수값과 수량을 입력한 뒤 계산 결과·오류를 검토할 계획이다.",
+        "저장 요청 시 서버 검증 결과를 표시하도록 설계한다. 실제 실행은 미수행이다."
+      ],
+      "checks": [
+        "화면과 저장 API에서 동일 역할 권한을 검사하도록 계획한다.",
+        "필수값·수량 범위·합계·대상 식별자 조건은 연결 요구사항을 따른다."
+      ],
+      "fields": [
+        {
+          "name": "작업일자",
+          "data_type": "date",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "작업지시번호",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "배치번호",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "품목코드",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/3"
+            }
+          ]
+        },
+        {
+          "name": "양품수량",
+          "data_type": "decimal(12,3)",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상, 소수 셋째 자리까지의 합성 설계안",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/4"
+            }
+          ]
+        },
+        {
+          "name": "불량수량",
+          "data_type": "decimal(12,3)",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상, 소수 셋째 자리까지의 합성 설계안",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/5"
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "name": "조회",
+          "action": "조회 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "신규",
+          "action": "신규 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "저장",
+          "action": "저장 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "취소",
+          "action": "취소 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/3"
+            }
+          ]
+        }
+      ],
+      "permissions": [
+        {
+          "role": "생산담당",
+          "permission": "allowed",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/role"
+            }
+          ]
+        }
+      ],
+      "requirement_ids": [
+        "DEMO-AD2-001",
+        "DEMO-AD2-003"
+      ],
+      "feature_ids": [
+        "DEMO-AD3-001",
+        "DEMO-AD3-002",
+        "DEMO-AD3-003",
+        "DEMO-AD3-004",
+        "DEMO-AD3-006"
+      ],
+      "program_ids": [
+        "DEMO-TD4-001"
+      ],
+      "before_attachment_ids": [],
+      "after_attachment_ids": [
+        "EDITORIAL-SCREEN-DESIGN-01"
+      ],
+      "notes": "화면 설계 초안이며 실제 화면·캡처·수행 증거는 없다. 허용 권한도 합성 계획이다."
+    },
+    {
+      "id": "DEMO-TD3-002",
+      "name": "배치 검사 판정",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/1"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "screen_kind": "screen",
+      "path": "품질관리 > 배치 검사 판정",
+      "menu_levels": [
+        "품질관리",
+        "배치 검사 판정"
+      ],
+      "description": "입력: 생산실적 식별자, 검사일자, 검사수량, 합격수량, 불합격수량; 출력: 판정, 검사이력, 오류메시지",
+      "change_type": "new",
+      "steps": [
+        "조회 조건을 입력하고 합성 대상 자료를 선택할 계획이다.",
+        "필수값과 수량을 입력한 뒤 계산 결과·오류를 검토할 계획이다.",
+        "저장 요청 시 서버 검증 결과를 표시하도록 설계한다. 실제 실행은 미수행이다."
+      ],
+      "checks": [
+        "화면과 저장 API에서 동일 역할 권한을 검사하도록 계획한다.",
+        "필수값·수량 범위·합계·대상 식별자 조건은 연결 요구사항을 따른다."
+      ],
+      "fields": [
+        {
+          "name": "생산실적 식별자",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "검사일자",
+          "data_type": "date",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "검사수량",
+          "data_type": "integer",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상 정수",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "합격수량",
+          "data_type": "integer",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상 정수",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/3"
+            }
+          ]
+        },
+        {
+          "name": "불합격수량",
+          "data_type": "integer",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상 정수",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/4"
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "name": "조회",
+          "action": "조회 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "신규",
+          "action": "신규 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "판정계산",
+          "action": "판정계산 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "저장",
+          "action": "저장 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/3"
+            }
+          ]
+        }
+      ],
+      "permissions": [
+        {
+          "role": "품질담당",
+          "permission": "allowed",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/role"
+            }
+          ]
+        }
+      ],
+      "requirement_ids": [
+        "DEMO-AD2-002",
+        "DEMO-AD2-003"
+      ],
+      "feature_ids": [
+        "DEMO-AD3-005",
+        "DEMO-AD3-006"
+      ],
+      "program_ids": [
+        "DEMO-TD4-002"
+      ],
+      "before_attachment_ids": [],
+      "after_attachment_ids": [
+        "EDITORIAL-SCREEN-DESIGN-02"
+      ],
+      "notes": "화면 설계 초안이며 실제 화면·캡처·수행 증거는 없다. 허용 권한도 합성 계획이다."
+    }
+  ],
+  "programs": [
+    {
+      "id": "DEMO-TD4-001",
+      "name": "배치 생산실적 API",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/program_plan/0"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "description": "POST /demo/production-results",
+      "change_type": "modified",
+      "functions": [
+        "역할 확인",
+        "필수값·수량 정합 검증",
+        "배치 중복 조회",
+        "총수량 계산",
+        "트랜잭션 저장 또는 오류 반환"
+      ],
+      "interfaces": [
+        "POST /demo/production-results"
+      ],
+      "requirement_ids": [
+        "DEMO-AD2-001",
+        "DEMO-AD2-003"
+      ],
+      "screen_ids": [
+        "DEMO-TD3-001"
+      ],
+      "table_ids": [
+        "DEMO_PRODUCTION_RESULT"
+      ],
+      "output_fields": [
+        "총수량",
+        "오류메시지",
+        "저장상태"
+      ],
+      "module_flow_attachment_ids": [
+        "EDITORIAL-DIAGRAM-DESIGN-05"
+      ],
+      "notes": "API 설계 계획이며 구현·실행은 미수행이다."
+    },
+    {
+      "id": "DEMO-TD4-002",
+      "name": "배치 검사 판정 API",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/program_plan/1"
+        }
+      ],
+      "system_name": "DEMO MES",
+      "description": "POST /demo/quality-inspections",
+      "change_type": "new",
+      "functions": [
+        "역할 확인",
+        "생산실적 존재 확인",
+        "검사수량 합계 검증",
+        "합성 판정 계산",
+        "검사 이력 저장 또는 오류 반환"
+      ],
+      "interfaces": [
+        "POST /demo/quality-inspections"
+      ],
+      "requirement_ids": [
+        "DEMO-AD2-002",
+        "DEMO-AD2-003"
+      ],
+      "screen_ids": [
+        "DEMO-TD3-002"
+      ],
+      "table_ids": [
+        "DEMO_PRODUCTION_RESULT",
+        "DEMO_QUALITY_INSPECTION"
+      ],
+      "output_fields": [
+        "판정",
+        "검사이력",
+        "오류메시지"
+      ],
+      "module_flow_attachment_ids": [
+        "EDITORIAL-DIAGRAM-DESIGN-06"
+      ],
+      "notes": "API 설계 계획이며 구현·실행은 미수행이다."
+    }
+  ],
+  "database_tables": [
+    {
+      "id": "DEMO_PRODUCTION_RESULT",
+      "name": "검증용 배치 생산실적",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/database_plan/0"
+        }
+      ],
+      "description": "검증용 배치 생산실적의 합성 논리설계. 실제 DB 내보내기·설치 증거는 없다.",
+      "columns": [
+        {
+          "id": "result_id",
+          "name": "실적 식별자",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/0"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 36,
+          "nullable": false,
+          "key": "primary",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/0/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "work_date",
+          "name": "작업일자",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/1"
+            }
+          ],
+          "type": "DATE",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/1/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "work_order_no",
+          "name": "작업지시번호",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/2"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 30,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/2/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "batch_no",
+          "name": "배치번호",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/3"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 30,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/3/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "item_code",
+          "name": "품목코드",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/4"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 30,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/4/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "good_qty",
+          "name": "양품수량",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/5"
+            }
+          ],
+          "type": "DECIMAL",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": "0",
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/5/7"
+              }
+            ]
+          },
+          "precision": 12,
+          "scale": 3,
+          "notes": "원시 길이 표현: 12,3"
+        },
+        {
+          "id": "defect_qty",
+          "name": "불량수량",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/6"
+            }
+          ],
+          "type": "DECIMAL",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": "0",
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/6/7"
+              }
+            ]
+          },
+          "precision": 12,
+          "scale": 3,
+          "notes": "원시 길이 표현: 12,3"
+        },
+        {
+          "id": "total_qty",
+          "name": "총수량",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/7"
+            }
+          ],
+          "type": "DECIMAL",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/7/7"
+              }
+            ]
+          },
+          "precision": 12,
+          "scale": 3,
+          "notes": "원시 길이 표현: 12,3"
+        },
+        {
+          "id": "created_by",
+          "name": "생성 사용자 식별자",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/8"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 50,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/8/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "created_at",
+          "name": "생성시각",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/0/columns/9"
+            }
+          ],
+          "type": "TIMESTAMP",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/0/columns/9/7"
+              }
+            ]
+          }
+        }
+      ],
+      "change_type": "new",
+      "notes": "복합 UNIQUE 설계안: work_date, work_order_no, batch_no"
+    },
+    {
+      "id": "DEMO_QUALITY_INSPECTION",
+      "name": "검증용 배치 검사이력",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/database_plan/1"
+        }
+      ],
+      "description": "검증용 배치 검사이력의 합성 논리설계. 실제 DB 내보내기·설치 증거는 없다.",
+      "columns": [
+        {
+          "id": "inspection_id",
+          "name": "검사 식별자",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/0"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 36,
+          "nullable": false,
+          "key": "primary",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/0/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "result_id",
+          "name": "생산실적 식별자",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/1"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 36,
+          "nullable": false,
+          "key": "foreign",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/1/7"
+              }
+            ]
+          },
+          "foreign_table_id": "DEMO_PRODUCTION_RESULT",
+          "foreign_column_ids": [
+            "result_id"
+          ]
+        },
+        {
+          "id": "inspection_date",
+          "name": "검사일자",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/2"
+            }
+          ],
+          "type": "DATE",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/2/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "inspected_qty",
+          "name": "검사수량",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/3"
+            }
+          ],
+          "type": "INTEGER",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/3/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pass_qty",
+          "name": "합격수량",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/4"
+            }
+          ],
+          "type": "INTEGER",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": "0",
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/4/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "fail_qty",
+          "name": "불합격수량",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/5"
+            }
+          ],
+          "type": "INTEGER",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": "0",
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/5/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "judgement",
+          "name": "합성 판정",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/6"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 20,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/6/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "inspector_id",
+          "name": "검사 사용자 식별자",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/7"
+            }
+          ],
+          "type": "VARCHAR",
+          "length": 50,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/7/7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "inspected_at",
+          "name": "검사기록시각",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/database_plan/1/columns/8"
+            }
+          ],
+          "type": "TIMESTAMP",
+          "length": null,
+          "nullable": false,
+          "key": "none",
+          "default_value": null,
+          "encryption": {
+            "applied": null,
+            "algorithm": null,
+            "notes": "정책 미확인",
+            "source_refs": [
+              {
+                "source_id": "SOURCE-DEMO-FACTS",
+                "locator": "/database_plan/1/columns/8/7"
+              }
+            ]
+          }
+        }
+      ],
+      "change_type": "new",
+      "notes": "외래 키 설계안은 원시 foreign_rule에 보존한다."
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "DEMO-TEST-001",
+      "name": "배치 중복 저장 차단 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/0"
+        }
+      ],
+      "stage": "unit",
+      "scenario": "동일 작업일자·작업지시·배치 조합을 두 번 저장 요청한다.",
+      "data": "합성 작업일자 2026-11-02, 작업지시 DEMO-WO-001, 배치 DEMO-BATCH-001, 양품9, 불량1",
+      "expected": "두 번째 요청을 중복 오류로 차단하고 생산실적 행은 1개만 유지한다.",
+      "actual": null,
+      "result": "not_run",
+      "execution_date": null,
+      "executor": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "evidence_ids": [],
+      "requirement_ids": [
+        "DEMO-AD2-001"
+      ],
+      "program_ids": [
+        "DEMO-TD4-001"
+      ],
+      "environment": null,
+      "notes": "계획 시험이며 실제 실행·통과·검수·서명은 미수행이다."
+    },
+    {
+      "id": "DEMO-TEST-002",
+      "name": "검사수량 합계 불일치 차단 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/1"
+        }
+      ],
+      "stage": "unit",
+      "scenario": "검사수량과 합격·불합격 합계가 다른 입력을 저장 요청한다.",
+      "data": "합성 검사수량10, 합격8, 불합격1",
+      "expected": "합계 불일치 오류를 반환하고 검사이력을 저장하지 않는다.",
+      "actual": null,
+      "result": "not_run",
+      "execution_date": null,
+      "executor": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "evidence_ids": [],
+      "requirement_ids": [
+        "DEMO-AD2-002"
+      ],
+      "program_ids": [
+        "DEMO-TD4-002"
+      ],
+      "environment": null,
+      "notes": "계획 시험이며 실제 실행·통과·검수·서명은 미수행이다."
+    },
+    {
+      "id": "DEMO-TEST-003",
+      "name": "생산실적과 검사이력 연결 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/2"
+        }
+      ],
+      "stage": "integration",
+      "scenario": "합성 생산실적 식별자를 이용하여 검사이력을 등록하고 조회 연결을 확인하도록 계획한다.",
+      "data": "합성 생산실적 총수량10, 검사수량10, 합격9, 불합격1",
+      "expected": "검사이력이 대상 생산실적에 연결되며 합성 판정은 검토필요로 표시된다.",
+      "actual": null,
+      "result": "not_run",
+      "execution_date": null,
+      "executor": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "evidence_ids": [],
+      "requirement_ids": [
+        "DEMO-AD2-001",
+        "DEMO-AD2-002"
+      ],
+      "program_ids": [
+        "DEMO-TD4-001",
+        "DEMO-TD4-002"
+      ],
+      "environment": null,
+      "notes": "계획 시험이며 실제 실행·통과·검수·서명은 미수행이다."
+    },
+    {
+      "id": "DEMO-TEST-004",
+      "name": "생산 역할의 품질 수정 차단 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/3"
+        }
+      ],
+      "stage": "acceptance",
+      "scenario": "생산담당 합성 역할로 품질 판정 저장 API를 호출하도록 계획한다.",
+      "data": "합성 역할 production, 품질 판정 수정 요청",
+      "expected": "권한 오류로 차단되고 기존 검사값이 변경되지 않는다.",
+      "actual": null,
+      "result": "not_run",
+      "execution_date": null,
+      "executor": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "evidence_ids": [],
+      "requirement_ids": [
+        "DEMO-AD2-003"
+      ],
+      "program_ids": [
+        "DEMO-TD4-001",
+        "DEMO-TD4-002"
+      ],
+      "environment": null,
+      "notes": "계획 시험이며 실제 실행·통과·검수·서명은 미수행이다."
+    },
+    {
+      "id": "DEMO-TEST-005",
+      "name": "생산·검사 입력 업무 흐름 검토 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/4"
+        }
+      ],
+      "stage": "acceptance",
+      "scenario": "검토자가 합성 생산수량 입력부터 연결 검사이력 조회까지 절차를 확인하도록 계획한다.",
+      "data": "합성 배치 DEMO-BATCH-002, 양품9·불량1, 검사10·합격9·불합격1",
+      "expected": "생산 총수량10과 연결된 검사이력 및 검토필요 판정을 확인하도록 계획한다. 실제 인수·승인은 수행하지 않았다.",
+      "actual": null,
+      "result": "not_run",
+      "execution_date": null,
+      "executor": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "evidence_ids": [],
+      "requirement_ids": [
+        "DEMO-AD2-001",
+        "DEMO-AD2-002"
+      ],
+      "program_ids": [
+        "DEMO-TD4-001",
+        "DEMO-TD4-002"
+      ],
+      "environment": null,
+      "notes": "계획 시험이며 실제 실행·통과·검수·서명은 미수행이다."
+    }
+  ],
+  "defects": [
+    {
+      "id": "DEMO-DEFECT-001",
+      "name": "중복 저장 결함 분류 검증용 가정",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/unconfirmed_defect_fixture"
+        }
+      ],
+      "test_case_id": "DEMO-TEST-001",
+      "description": "실제 발생 결함이 아니다. UT01을 수행한 뒤 중복 행이 생기는 경우에만 결함으로 확정하는 예시 후보이다.",
+      "cause": null,
+      "detected_date": null,
+      "resolution": null,
+      "resolved_date": null,
+      "resolution_status": "unverified",
+      "owner": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "evidence_ids": [],
+      "verification_evidence_ids": [],
+      "notes": "결함 발생·조치 완료로 해석하지 않는다."
+    }
+  ],
+  "deployment_items": [
+    {
+      "id": "DEMO-TI2-001",
+      "name": "검증 환경 배포 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/deployment_plan"
+        }
+      ],
+      "category": "software",
+      "system_name": "DEMO MES",
+      "planned_specification": "합성 검증용 DEMO MES 웹/API 1식. 실제 설치 환경·주소·라이선스 미확인.",
+      "actual_specification": null,
+      "planned_quantity": 1,
+      "installed_quantity": null,
+      "unit": "식",
+      "scheduled_date": "2026-11-09",
+      "installation_date": null,
+      "installation_status": "planned",
+      "verification_method": "배포 전 버전·접근권한·DB 연결·백업 설정을 검토할 계획. 실제 설치확인은 미수행.",
+      "verification_result": null,
+      "evidence_ids": [],
+      "related_program_ids": [
+        "DEMO-TD4-001",
+        "DEMO-TD4-002"
+      ],
+      "related_table_ids": [
+        "DEMO_PRODUCTION_RESULT",
+        "DEMO_QUALITY_INSPECTION"
+      ],
+      "notes": "설치·초기 적재 계획이며 실제 납품·설치·적재·확인은 미수행이다."
+    },
+    {
+      "id": "DEMO-TI2-002",
+      "name": "합성 기준정보 초기 적재 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/initial_data_plan"
+        }
+      ],
+      "category": "initial_data",
+      "system_name": "DEMO MES",
+      "planned_specification": "검증용 품목·작업지시 합성 레코드의 초기 적재를 계획한다. 실제 DB·적재파일은 제공되지 않았다.",
+      "actual_specification": null,
+      "planned_quantity": 1,
+      "installed_quantity": null,
+      "unit": "회",
+      "scheduled_date": "2026-11-09",
+      "installation_date": null,
+      "installation_status": "planned",
+      "verification_method": "적재 전후 건수·필수값·중복 키 비교를 계획한다. 실제 적재·검증은 미수행.",
+      "verification_result": null,
+      "evidence_ids": [],
+      "related_program_ids": [
+        "DEMO-TD4-001",
+        "DEMO-TD4-002"
+      ],
+      "related_table_ids": [
+        "DEMO_PRODUCTION_RESULT",
+        "DEMO_QUALITY_INSPECTION"
+      ],
+      "migration_counts": [
+        {
+          "data_type": "합성 품목기준정보",
+          "planned_count": 2,
+          "actual_count": null,
+          "validation_result": null,
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/initial_data_plan/migration_counts/0"
+            }
+          ]
+        },
+        {
+          "data_type": "합성 작업지시",
+          "planned_count": 2,
+          "actual_count": null,
+          "validation_result": null,
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/initial_data_plan/migration_counts/1"
+            }
+          ]
+        }
+      ],
+      "notes": "설치·초기 적재 계획이며 실제 납품·설치·적재·확인은 미수행이다."
+    }
+  ],
+  "operation_periods": [
+    {
+      "id": "DEMO-OS2-001",
+      "name": "합성 사용자 이용집계 계산 예제",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/operation_calculation_fixture"
+        }
+      ],
+      "period_kind": "other",
+      "period_start": "2026-11-02",
+      "period_end": "2026-11-03",
+      "system_name": "DEMO MES",
+      "raw_records": [
+        {
+          "date": "2026-11-02",
+          "login_count": 2,
+          "usage_minutes": 30,
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/operation_calculation_fixture/rows/0"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "login_count": 1,
+          "usage_minutes": 20,
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/operation_calculation_fixture/rows/1"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "login_count": 3,
+          "usage_minutes": 45,
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/operation_calculation_fixture/rows/2"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "login_count": 2,
+          "usage_minutes": 55,
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/operation_calculation_fixture/rows/3"
+            }
+          ]
+        }
+      ],
+      "reported_totals": {
+        "login_count": 8,
+        "usage_minutes": 150
+      },
+      "aggregation_method": "sum",
+      "support_records": [],
+      "evidence_ids": [],
+      "deployment_item_ids": [
+        "DEMO-TI2-001"
+      ],
+      "notes": "아래 행은 실제 접속 로그가 아닌 독립 합성 계산 입력이다. 합성 고유사용자는2명, 접속1회당 평균18.75분이다. user_count의 단순 합으로 고유사용자를 계산하지 않는다. 실제 운영은 미수행이다."
+    }
+  ],
+  "progress_reports": [
+    {
+      "id": "DEMO-PM1-001",
+      "name": "검증용 1주차 진행계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/progress_plan"
+        }
+      ],
+      "report_kind": "weekly",
+      "period_start": "2026-11-02",
+      "period_end": "2026-11-06",
+      "report_date": null,
+      "current_plan_percent": 20,
+      "current_actual_percent": 0,
+      "cumulative_plan_percent": 20,
+      "cumulative_actual_percent": 0,
+      "calculation_basis": "합성 계획 진도20%, 미수행 실제 진도0%. 월간 실적으로 재분류하지 않는다.",
+      "work_items": [
+        {
+          "category": "development",
+          "phase": "분석·설계",
+          "person_name": null,
+          "plan": "입력 요구사항·수량 규칙 검토 예정\n화면·프로그램·DB 연결 검토 예정",
+          "actual": null,
+          "next_plan": "미수행 단위·통합·사용자 시험 계획 검토 예정",
+          "planned_progress": 20,
+          "actual_progress": 0,
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/progress_plan"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "number": "DEMO-RISK-001",
+          "kind": "risk",
+          "description": "실제 사업 입력과 승인 기준이 제공되지 않은 검증용 데이터",
+          "handling_status": "확인 필요",
+          "action": "실제 사업 사실·승인·수행 자료 수집 전에는 제출 상태로 전환하지 않는다.",
+          "status": "synthetic",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/progress_plan/risk"
+            }
+          ]
+        }
+      ],
+      "author": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "review_ids": [
+        "DEMO-REVIEW-001"
+      ]
+    }
+  ],
+  "meetings": [
+    {
+      "id": "DEMO-PM2-001",
+      "name": "합성 요구사항 검토회의 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/meeting_plan"
+        }
+      ],
+      "date": null,
+      "weekday": null,
+      "location": null,
+      "organizer": null,
+      "agenda": [
+        "배치 수량과 중복 기준 검토",
+        "검사 판정 규칙과 역할별 권한 검토"
+      ],
+      "discussions": [],
+      "decisions": [],
+      "attendees": [],
+      "evidence_ids": [],
+      "review_ids": [
+        "DEMO-REVIEW-001"
+      ],
+      "special_notes": "개최 계획일 2026-11-02. 실제 개최·참석·합의·서명은 미수행. 원시 가상 참여 역할은 참석 사실이 아니므로 attendees에 기재하지 않는다."
+    }
+  ],
+  "changes": [
+    {
+      "id": "DEMO-PM3-001",
+      "name": "합성 생산실적 소수 수량 허용 검토",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/change_proposal"
+        }
+      ],
+      "categories": [
+        "requirement"
+      ],
+      "request_number": null,
+      "request_date": null,
+      "requester": {
+        "name": null,
+        "review_status": "synthetic"
+      },
+      "reason": "중량 단위 품목을 표현하는 합성 시나리오의 입력 검증을 비교하기 위한 가정",
+      "before": "수량은 0 이상 정수로 입력한다는 초기 가정",
+      "after": "양품·불량 수량은 0 이상 소수 셋째 자리까지 허용하는 검토안",
+      "impact": "생산 화면 수량 입력 검증 재검토\n생산 API 및 DECIMAL 컬럼 정합 재검토\n음수·자릿수·합계 검증 시험 계획 보완",
+      "response_number": null,
+      "response_date": null,
+      "response_content": null,
+      "approval_status": "unrequested",
+      "approval_evidence_ids": [],
+      "meeting_ids": [],
+      "affected_refs": [
+        {
+          "kind": "requirements",
+          "id": "DEMO-AD2-001"
+        }
+      ],
+      "review_ids": [
+        "DEMO-REVIEW-001"
+      ],
+      "notes": "검토안이며 변경 요청·승인·적용은 미수행이다."
+    }
+  ],
+  "kpis": [
+    {
+      "id": "DEMO-KPI-001",
+      "name": "합성 생산실적 검증 통과율",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/kpi_calculation_fixture"
+        }
+      ],
+      "unit": "%",
+      "direction": "increase",
+      "formula_kind": "percent",
+      "formula": "numerator / denominator * 100",
+      "numerator": 18,
+      "denominator": 20,
+      "baseline": 80,
+      "target": 95,
+      "actual": 90,
+      "actual_precision": 2,
+      "measurement_period_start": null,
+      "measurement_period_end": null,
+      "baseline_source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/kpi_calculation_fixture/baseline_percent"
+        }
+      ],
+      "target_source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/kpi_calculation_fixture/target_percent"
+        }
+      ],
+      "actual_source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/kpi_calculation_fixture/expected_calculated_actual_percent"
+        }
+      ],
+      "measurements": [],
+      "evidence_ids": [],
+      "notes": "actual은 계산 검증용 합성값이며 실제 업무 성과·테스트 수행 성공이 아니다. 목표달성률66.66666666666667%, 개선율12.5%도 계산 검증용 예상값이며 실제 성공 판정이 아니다."
+    }
+  ],
+  "trace_links": [
+    {
+      "id": "DEMO-TRACE-001",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/0"
+        }
+      ],
+      "source_kind": "features",
+      "source_id": "DEMO-AD3-001",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-002",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/1"
+        }
+      ],
+      "source_kind": "features",
+      "source_id": "DEMO-AD3-002",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-003",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/2"
+        }
+      ],
+      "source_kind": "features",
+      "source_id": "DEMO-AD3-003",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-004",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/3"
+        }
+      ],
+      "source_kind": "features",
+      "source_id": "DEMO-AD3-004",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-005",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/4"
+        }
+      ],
+      "source_kind": "features",
+      "source_id": "DEMO-AD3-005",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-002",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-006",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/feature_inventory/5"
+        }
+      ],
+      "source_kind": "features",
+      "source_id": "DEMO-AD3-006",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-003",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-007",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/0"
+        }
+      ],
+      "source_kind": "screens",
+      "source_id": "DEMO-TD3-001",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-008",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/0"
+        }
+      ],
+      "source_kind": "screens",
+      "source_id": "DEMO-TD3-001",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-003",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-009",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/1"
+        }
+      ],
+      "source_kind": "screens",
+      "source_id": "DEMO-TD3-002",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-002",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-010",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/1"
+        }
+      ],
+      "source_kind": "screens",
+      "source_id": "DEMO-TD3-002",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-003",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-011",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/program_plan/0"
+        }
+      ],
+      "source_kind": "programs",
+      "source_id": "DEMO-TD4-001",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-012",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/program_plan/0"
+        }
+      ],
+      "source_kind": "programs",
+      "source_id": "DEMO-TD4-001",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-003",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-013",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/program_plan/1"
+        }
+      ],
+      "source_kind": "programs",
+      "source_id": "DEMO-TD4-002",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-002",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-014",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/program_plan/1"
+        }
+      ],
+      "source_kind": "programs",
+      "source_id": "DEMO-TD4-002",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-003",
+      "relation": "implements",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-015",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/0"
+        }
+      ],
+      "source_kind": "test_cases",
+      "source_id": "DEMO-TEST-001",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "tests",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-016",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/1"
+        }
+      ],
+      "source_kind": "test_cases",
+      "source_id": "DEMO-TEST-002",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-002",
+      "relation": "tests",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-017",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/2"
+        }
+      ],
+      "source_kind": "test_cases",
+      "source_id": "DEMO-TEST-003",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "tests",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-018",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/2"
+        }
+      ],
+      "source_kind": "test_cases",
+      "source_id": "DEMO-TEST-003",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-002",
+      "relation": "tests",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-019",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/3"
+        }
+      ],
+      "source_kind": "test_cases",
+      "source_id": "DEMO-TEST-004",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-003",
+      "relation": "tests",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-020",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/4"
+        }
+      ],
+      "source_kind": "test_cases",
+      "source_id": "DEMO-TEST-005",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-001",
+      "relation": "tests",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    },
+    {
+      "id": "DEMO-TRACE-021",
+      "name": "합성 계획 연결",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/test_plan/4"
+        }
+      ],
+      "source_kind": "test_cases",
+      "source_id": "DEMO-TEST-005",
+      "target_kind": "requirements",
+      "target_id": "DEMO-AD2-002",
+      "relation": "tests",
+      "rationale": "독립 합성 원시 입력의 요구사항 연결을 설계·시험 계획으로 선언한다. 실제 구현·시험·요구사항 충족을 확정하지 않는다.",
+      "content_review_status": "not_reviewed"
+    }
+  ],
+  "attachments": [
+    {
+      "id": "DEMO-ATTACHMENT-001",
+      "name": "독립 합성 원시 사실 JSON",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/source_use_policy"
+        }
+      ],
+      "path": "../../sources/demo-facts.json",
+      "sha256": "b7acb60e45cfec422616814dcacc6d619204bf73a03f9c7b47127cc30f3d5d1e",
+      "source_id": "SOURCE-DEMO-FACTS",
+      "purpose": "출처 및 계산 검증 입력. 실제 화면·시험·승인·운영 증빙이 아니다.",
+      "verification_status": "synthetic",
+      "media_type": "application/json",
+      "caption": "검증용 합성 입력(제출용 아님)",
+      "original_filename": "demo-facts.json"
+    },
+    {
+      "id": "EDITORIAL-SCREEN-DESIGN-01",
+      "name": "배치 생산실적 등록 합성 설계 시안",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/screens/0"
+        }
+      ],
+      "path": "screen-01.png",
+      "sha256": "b80002e9b9a97c0c41026e4c51884d605f545a58bcc181748eeb5cd0216bff15",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "입력 필드·버튼 배치와 문서의 그림 가독성 검증. 실제 화면·수행·승인 증거 아님.",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 실행화면 아님 — 배치 생산실적 등록",
+      "notes": "동일 입력의 fields/buttons에서 결정적으로 구성한 시안. 기본값·실행 결과는 기입하지 않음."
+    },
+    {
+      "id": "EDITORIAL-SCREEN-DESIGN-02",
+      "name": "배치 검사 판정 합성 설계 시안",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/screens/1"
+        }
+      ],
+      "path": "screen-02.png",
+      "sha256": "0ff154139aa4d1da2ae41f72446cd6611470a787acb0f7531551a4a5b5910599",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "입력 필드·버튼 배치와 문서의 그림 가독성 검증. 실제 화면·수행·승인 증거 아님.",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 실행화면 아님 — 배치 검사 판정",
+      "notes": "동일 입력의 fields/buttons에서 결정적으로 구성한 시안. 기본값·실행 결과는 기입하지 않음."
+    },
+    {
+      "id": "EDITORIAL-DIAGRAM-DESIGN-01",
+      "name": "현행 업무 가정",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/diagrams/0"
+        }
+      ],
+      "path": "diagram-01.png",
+      "sha256": "74417839e7db7125418ea0eeaa65bd4226d9f22836bce8b3793f6327fe65133a",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "제공된 합성 업무/명세 항목의 도식과 문서 배치·판독성 검증",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 수행/구현 증거 아님 — 현행 업무 가정",
+      "notes": "원문의 단계 배열은 명시된 순서로 표시. 기능 항목 목록은 실행 순서나 인과관계로 확정하지 않음."
+    },
+    {
+      "id": "EDITORIAL-DIAGRAM-DESIGN-02",
+      "name": "개선 업무 설계",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/diagrams/1"
+        }
+      ],
+      "path": "diagram-02.png",
+      "sha256": "4f955aa207e6906b02127db4d1b8f723a28d5442f83e6b488b4a3f6bc7608927",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "제공된 합성 업무/명세 항목의 도식과 문서 배치·판독성 검증",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 수행/구현 증거 아님 — 개선 업무 설계",
+      "notes": "원문의 단계 배열은 명시된 순서로 표시. 기능 항목 목록은 실행 순서나 인과관계로 확정하지 않음."
+    },
+    {
+      "id": "EDITORIAL-DIAGRAM-DESIGN-03",
+      "name": "현행 시스템 가정",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/diagrams/2"
+        }
+      ],
+      "path": "diagram-03.png",
+      "sha256": "b062a25ba323c018913dd911f9c048c3189ba59133ec547f18e4c88a8aa35f16",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "제공된 합성 업무/명세 항목의 도식과 문서 배치·판독성 검증",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 수행/구현 증거 아님 — 현행 시스템 가정",
+      "notes": "원문의 단계 배열은 명시된 순서로 표시. 기능 항목 목록은 실행 순서나 인과관계로 확정하지 않음."
+    },
+    {
+      "id": "EDITORIAL-DIAGRAM-DESIGN-04",
+      "name": "목표 시스템 설계",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/diagrams/3"
+        }
+      ],
+      "path": "diagram-04.png",
+      "sha256": "85b571a583f205ed5efefc4b4425e15dbc66592431fa6bfa5096e3c1978c6c4b",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "제공된 합성 업무/명세 항목의 도식과 문서 배치·판독성 검증",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 수행/구현 증거 아님 — 목표 시스템 설계",
+      "notes": "원문의 단계 배열은 명시된 순서로 표시. 기능 항목 목록은 실행 순서나 인과관계로 확정하지 않음."
+    },
+    {
+      "id": "EDITORIAL-DIAGRAM-DESIGN-05",
+      "name": "프로그램 기능 명세 항목(실행 순서 미확정)",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/diagrams/4"
+        }
+      ],
+      "path": "diagram-05.png",
+      "sha256": "6b98732921f793040a504fd8d129bcc31f28aa96c5e179ca2f9f716527b82b6d",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "제공된 합성 업무/명세 항목의 도식과 문서 배치·판독성 검증",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 수행/구현 증거 아님 — 프로그램 기능 명세 항목(실행 순서 미확정)",
+      "notes": "원문의 단계 배열은 명시된 순서로 표시. 기능 항목 목록은 실행 순서나 인과관계로 확정하지 않음."
+    },
+    {
+      "id": "EDITORIAL-DIAGRAM-DESIGN-06",
+      "name": "프로그램 기능 명세 항목(실행 순서 미확정)",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+          "locator": "/diagrams/5"
+        }
+      ],
+      "path": "diagram-06.png",
+      "sha256": "f86638912bbf1f50a9f6af9bd95b13b660cab234e27a4e63e78e637bef79334d",
+      "source_id": "SOURCE-EDITORIAL-DESIGN-FIXTURES",
+      "purpose": "제공된 합성 업무/명세 항목의 도식과 문서 배치·판독성 검증",
+      "verification_status": "provided",
+      "media_type": "image/png",
+      "caption": "합성 설계 시안·실제 수행/구현 증거 아님 — 프로그램 기능 명세 항목(실행 순서 미확정)",
+      "notes": "원문의 단계 배열은 명시된 순서로 표시. 기능 항목 목록은 실행 순서나 인과관계로 확정하지 않음."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "DEMO-REVIEW-001",
+      "name": "합성 데이터·문서 연결 검토 계획",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/review_plan"
+        }
+      ],
+      "review_type": "business_facts",
+      "outcome": "pending",
+      "artifact_id": null,
+      "artifact_sha256": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_ids": [],
+      "comments": "검토 미수행. 실제 업무 사실·승인·서명·네이티브 출력 검토의 대체 근거가 아니다."
+    }
+  ],
+  "extraction_issues": [
+    {
+      "id": "DEMO-NOT-A-PROJECT",
+      "name": "검증용 합성 범위 및 미수행 사실",
+      "status": "synthetic",
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/purpose"
+        }
+      ],
+      "issue_type": "unverified_fact",
+      "severity": "info",
+      "description": "문서 생성·연결·계산 검증을 위한 합성 원시 입력. 실제 기업·사업·수행 결과·승인 자료가 아니며 제출용으로 사용할 수 없다. 모든 실제 실행·설치·회의 개최·변경 승인·검토·서명은 미수행이다.",
+      "resolution_status": "accepted_with_reason",
+      "resolution": "기계적 생성과 검증 예시로만 사용하며 submission_ready=false를 유지한다."
+    }
+  ],
+  "submission_ready": false,
+  "synthetic_notice": "검증용 합성 자료(제출용 아님)"
+}

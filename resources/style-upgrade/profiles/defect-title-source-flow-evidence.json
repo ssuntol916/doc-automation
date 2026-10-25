@@ -1,0 +1,148 @@
+{
+  "schema_version": "defect-title-source-flow-evidence-1",
+  "recorded_at": "2026-10-24T19:09:07.399440+00:00",
+  "category": "implementation_choice_from_confirmed_native_defect",
+  "roles": [
+    "SF-CD1",
+    "SF-TI1",
+    "SF-TI4"
+  ],
+  "source_observations": [
+    {
+      "role": "SF-CD1",
+      "source_selection": {
+        "source_sha256": "a8dcbee7067d625523e072129fbde87ceba6211bbbf81e7006673244c5227416",
+        "xml": "Contents/section1.xml",
+        "xpath": "/hs:sec/hp:p[4]",
+        "text_before_generation_verbatim": "2. 결함관리 내역",
+        "table_vert_offset_hwp": "1800",
+        "table_horz_offset_hwp": "0",
+        "table_column_count": 6
+      },
+      "original_run_children": [
+        "tbl",
+        "t"
+      ],
+      "original_table_position": {
+        "treatAsChar": "0",
+        "affectLSpacing": "0",
+        "flowWithText": "1",
+        "allowOverlap": "0",
+        "holdAnchorAndSO": "0",
+        "vertRelTo": "PARA",
+        "horzRelTo": "PARA",
+        "vertAlign": "TOP",
+        "horzAlign": "LEFT",
+        "vertOffset": "1800",
+        "horzOffset": "0"
+      },
+      "source_wrap": "TOP_AND_BOTTOM",
+      "native_defect_observation": {
+        "category": "observed_current_native_defect",
+        "scope": "existing frozen R06 original page; diagnostic observation, no new score",
+        "page_png": {
+          "sha256": "0318b1fc3b9aa2dce0a0a3e669e0226525da11c07bfe7c28face98706cbda2a4"
+        },
+        "physical_page": 4,
+        "finding": "Defect register is physically before the title 2. 결함관리 내역; expected heading precedes its register.",
+        "observer": "root/baseline independent review for CD1/TI1; reference_95_gate_audit direct page diagnostic for TI4"
+      }
+    },
+    {
+      "role": "SF-TI1",
+      "source_selection": {
+        "source_sha256": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218",
+        "xml": "Contents/section1.xml",
+        "xpath": "/hs:sec/hp:p[4]",
+        "text_before_generation_verbatim": "2. 결함관리 내역",
+        "table_vert_offset_hwp": "1800",
+        "table_horz_offset_hwp": "0",
+        "table_column_count": 6
+      },
+      "original_run_children": [
+        "tbl",
+        "t"
+      ],
+      "original_table_position": {
+        "treatAsChar": "0",
+        "affectLSpacing": "0",
+        "flowWithText": "1",
+        "allowOverlap": "0",
+        "holdAnchorAndSO": "0",
+        "vertRelTo": "PARA",
+        "horzRelTo": "PARA",
+        "vertAlign": "TOP",
+        "horzAlign": "LEFT",
+        "vertOffset": "1800",
+        "horzOffset": "0"
+      },
+      "source_wrap": "TOP_AND_BOTTOM",
+      "native_defect_observation": {
+        "category": "observed_current_native_defect",
+        "scope": "existing frozen R06 original page; diagnostic observation, no new score",
+        "page_png": {
+          "sha256": "e6458b27696e7558d119802dddeeb71a4b6849d60957322acd5205f739c3ef3d"
+        },
+        "physical_page": 3,
+        "finding": "Defect register is physically before the title 2. 결함관리 내역; expected heading precedes its register.",
+        "observer": "root/baseline independent review for CD1/TI1; reference_95_gate_audit direct page diagnostic for TI4"
+      }
+    },
+    {
+      "role": "SF-TI4",
+      "source_selection": {
+        "source_sha256": "1edcfa29aab5fed372286e05d1aef47b447b336864e20c605471830be5c07bd5",
+        "xml": "Contents/section1.xml",
+        "xpath": "/hs:sec/hp:p[4]",
+        "text_before_generation_verbatim": "2. 결함관리 내역",
+        "table_vert_offset_hwp": "1800",
+        "table_horz_offset_hwp": "0",
+        "table_column_count": 7
+      },
+      "original_run_children": [
+        "tbl",
+        "t"
+      ],
+      "original_table_position": {
+        "treatAsChar": "0",
+        "affectLSpacing": "0",
+        "flowWithText": "1",
+        "allowOverlap": "0",
+        "holdAnchorAndSO": "0",
+        "vertRelTo": "PARA",
+        "horzRelTo": "PARA",
+        "vertAlign": "TOP",
+        "horzAlign": "LEFT",
+        "vertOffset": "1800",
+        "horzOffset": "0"
+      },
+      "source_wrap": "TOP_AND_BOTTOM",
+      "native_defect_observation": {
+        "category": "observed_current_native_defect",
+        "scope": "existing frozen R06 original page; diagnostic observation, no new score",
+        "page_png": {
+          "sha256": "4a0339669bb716bf33aa9f6eb234f250508715ed24c477bae8e85287fcb8d357"
+        },
+        "physical_page": 4,
+        "finding": "Defect register is physically before the title 2. 결함관리 내역; expected heading precedes its register.",
+        "observer": "root/baseline independent review for CD1/TI1; reference_95_gate_audit direct page diagnostic for TI4"
+      }
+    }
+  ],
+  "implementation": {
+    "scope": "exact original source title/table owner only",
+    "pagination": "floating0; TABLE for bounded register rows, CELL for arbitrarily long values as before",
+    "preserved": [
+      "same source paragraph/run/table identity",
+      "original floating offsets and PAGE/secPr/control carriers",
+      "all values/types/IDs/owners/status/evidence/source links",
+      "all fonts/sizes/widths and keyed full-width defect details"
+    ],
+    "excluded": [
+      "main test case tables inline1 behavior",
+      "other roles or general table policy"
+    ]
+  },
+  "native_status": "pending_new_v9_bytes",
+  "score_percent": null
+}

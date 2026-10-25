@@ -1,0 +1,78 @@
+{
+  "schema_version": "engineering-frame-record-refinement-evidence-1",
+  "recorded_at": "2026-10-24T17:49:50.722807+00:00",
+  "category": "implementation_choice_from_current_native_defects",
+  "source_observations": [
+    {
+      "role": "SF-AD1",
+      "page": 3,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-AD1/page-3.png",
+      "sha256": "276dde1beef3a8a7183bfe887c9dd722e61879b44f3b739a76fe4bf405a07f0e"
+    },
+    {
+      "role": "SF-AD1",
+      "page": 4,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-AD1/page-4.png",
+      "sha256": "339f2bb9afd8f87bbdb7e613ff4cd9429ef2d976fa712938fa377bc23c99996a"
+    },
+    {
+      "role": "SF-AD3",
+      "page": 2,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-AD3/page-2.png",
+      "sha256": "c19731de8cd8ce001cde30f4f42721066028f7df912e32d06de493b03e3b324d"
+    },
+    {
+      "role": "SF-AD3",
+      "page": 3,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-AD3/page-3.png",
+      "sha256": "77461934ab038a8f2605f08d5d08b39cca90e7bae833bed86c1d4eb909ca2df9"
+    },
+    {
+      "role": "SF-TD1",
+      "page": 3,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-TD1/page-3.png",
+      "sha256": "1af93e0118d349d71d165cc77c311332d95ced50d461503de6ec6394583bca14"
+    },
+    {
+      "role": "SF-TD1",
+      "page": 4,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-TD1/page-4.png",
+      "sha256": "19635768c6d407470ae8b5dee5677c192d749f06d6783865c5292eb1c8eb07fc"
+    },
+    {
+      "role": "SF-TD2",
+      "page": 3,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-TD2/page-3.png",
+      "sha256": "b85ac98e4999b5101b7ee08f4724f357fa429b4014b02d1b9bc97c7f2a1fd022"
+    },
+    {
+      "role": "SF-TD2",
+      "page": 4,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-TD2/page-4.png",
+      "sha256": "235d0b673921af29a59af16d9b0197b55fe6e1d0ee15aa7683737ec8bf44dda7"
+    },
+    {
+      "role": "SF-TD4",
+      "page": 3,
+      "path": "outputs/quality-loop/r01/native/rendered/SF-TD4/page-3.png",
+      "sha256": "28dc18ccb32b1bbc654f0beb3cbd461cb279588f4caf57a38c6150210a23b666"
+    }
+  ],
+  "independent_review_scope": {
+    "path": "outputs/quality-loop/r01/evaluation/visual-remaining-nine/scope-before-view.json",
+    "sha256": "2ecc710b271e46cd18e97fc5ab964befb788a9d1d25a262d61ecb627ca7ea60f"
+  },
+  "choices": {
+    "SF-AD1/SF-TD1": "Move only generated notice from the source secPr-owning frame anchor next-neighbor into first owned frame paragraph; keep source secPr/PAGE anchor. Declared body own paragraphs become regular bold=false/LEFT, headings remain explicitly bold.",
+    "SF-AD3": "Rebalance only actual six-column feature register; short rows use TABLE atomic pagination and repeated header. Narrow remarks use F key, full requirement/meeting/review/source/notes in page-width detail. Every detail paragraph carries F owner context and title keeps only next field.",
+    "SF-TD2": "Every installation-plan paragraph carries its I key, with first line I key + unchanged item ID/name. Full field input/type and own XML mapping preserved. Notice moves from after original source frame into its first paragraph.",
+    "SF-TD4": "Move only generated notice into first program description. The same source card becomes first paragraph of its dedicated body section, so section start replaces its redundant paragraph pageBreak; PAGE=1 ownership and all card controls/objects remain.",
+    "captions": "AD1/TD1/TD2/TD4 actual renderer captions use LEFT + Latin KEEP_WORD to prevent avoidable A-key splits; font height/image bytes and geometry profiles unchanged."
+  },
+  "font_reduction": false,
+  "raster_metadata": "Use separately explicit Hancom Mac12.30 PNG metadata profile via CLI when requested; do not change display geometry or originals. BMP source bytes remain source-hash-bound and are losslessly converted for embedding.",
+  "project_fact_or_state_changes": false,
+  "global_rubric_or_95_gate_changes": false,
+  "native_status": "pending_new_v8_bytes",
+  "actual_score_percent": null
+}

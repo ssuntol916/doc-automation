@@ -1,0 +1,188 @@
+{
+  "schema_version": "new-picture-viewport-native-observations-1",
+  "scope": "Newly authored PNG objects only; preserve full embedded raster and use explicit source-pixel viewport. This is not a rule for rewriting arbitrary existing source pictures.",
+  "application": {
+    "CFBundleIdentifier": "com.hancom.office.hwp12.mac.general",
+    "CFBundleShortVersionString": "12.30.0",
+    "CFBundleVersion": "6544"
+  },
+  "option": "hancom-mac-12.30.0-png",
+  "pixel_rectangle": "[left, top, right, bottom), integer source pixels; nonempty strict subset; whole default view retained by quotation renderer",
+  "observed_new_object_basis": {
+    "orgSz": "source width/height *75",
+    "imgClip": "source rectangle *75; independent of rounded imgDim ratios",
+    "imgDim": "nearest60-unit size from source pixel75; positive ties up",
+    "curSz_and_sz": "fit the viewport pixel aspect in the declared display bounds",
+    "matrix_storage": "float32 rounded to6decimal characters; source-coupled offset and inverse translations",
+    "outside_rounded_dim": "Right/bottom clip may reach orgSz beyond rounded imgDim; actual native loaded-image SaveAs preserves this representation."
+  },
+  "independent_coordinate_cases": {
+    "sizes_px": [
+      [
+        509,
+        313
+      ],
+      [
+        13,
+        9
+      ]
+    ],
+    "internal_LTRB": [
+      [
+        73,
+        41,
+        398,
+        227
+      ],
+      [
+        3,
+        2,
+        10,
+        7
+      ]
+    ],
+    "left_edge_LTRB": [
+      [
+        0,
+        79,
+        211,
+        301
+      ],
+      [
+        0,
+        1,
+        7,
+        8
+      ]
+    ],
+    "right_bottom_LTRB": [
+      [
+        301,
+        199,
+        509,
+        313
+      ],
+      [
+        6,
+        3,
+        13,
+        9
+      ]
+    ],
+    "discriminating_small_expected_pixels": {
+      "internal": [
+        7,
+        5
+      ],
+      "right_bottom": [
+        7,
+        6
+      ]
+    },
+    "rejected_interpretation": "imgDim-normalized coordinates produced6x4 instead of7x5 and7x5 instead of7x6; keep as negative controls."
+  },
+  "current_historical_source_partial_viewport_control": {
+    "path": "outputs/quality-loop/r16/independent-p0-source-viewport/summary.json",
+    "sha256": "aa35d43f7b81040eb3676a4a0b55d5aadd00486ef4d9f8f92956c70faa42b3c7"
+  },
+  "coordinate_independent_review": {
+    "path": "outputs/quality-loop/r16/independent-p1-coordinate-calibration/summary.json",
+    "sha256": "50b47baa130829a33278b9fa2f9ba55f5f60ccd1d9355f713e5b7d59011324e7"
+  },
+  "edge_loaded_independent_review": {
+    "path": "outputs/quality-loop/r16/independent-p1-edge-f32/summary.json",
+    "sha256": "3e7537e2ddce69790ebc7b0ad0cc20442e6c20c703b6ddcbb912f91acde76bc2"
+  },
+  "native_cycles": [
+    {
+      "before_sha256": "c20b169f42ff7032cc5523e233595b02a4742fb21e0d0a56e2d1b7222eca1117",
+      "after_sha256": "f5322350f92ec66154591ef9084af3e231e6b20804c549469f646b94253ac20e",
+      "pdf_sha256": "5a2b2c5ad1dadb47629b300ed9af75fb0474c79e0b99bbf7362b601b41e99131",
+      "events": [
+        {
+          "action": "open",
+          "observed_at": "2026-10-24T21:09:21.920Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "save_as",
+          "observed_at": "2026-10-24T21:09:26.490Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "close",
+          "observed_at": "2026-10-24T21:09:28.319Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "reopen",
+          "observed_at": "2026-10-24T21:09:30.969Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "export_pdf",
+          "observed_at": "2026-10-24T21:09:35.502Z",
+          "status": "passed",
+          "compatibility_notice": null
+        }
+      ],
+      "strict": {
+        "checks": 12,
+        "failed": 0
+      }
+    },
+    {
+      "before_sha256": "f5322350f92ec66154591ef9084af3e231e6b20804c549469f646b94253ac20e",
+      "after_sha256": "1ded8278b08799169508bd4ec7acc5d08942722ab2f00566d25bc0678797281a",
+      "pdf_sha256": "c3d87204eff633b76ec654557e78acfed2653449292e45f72e1963c4c4a7fdde",
+      "events": [
+        {
+          "action": "open",
+          "observed_at": "2026-10-24T21:10:53.034Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "save_as",
+          "observed_at": "2026-10-24T21:11:01.789Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "close",
+          "observed_at": "2026-10-24T21:11:03.721Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "reopen",
+          "observed_at": "2026-10-24T21:11:06.316Z",
+          "status": "passed",
+          "compatibility_notice": null
+        },
+        {
+          "action": "export_pdf",
+          "observed_at": "2026-10-24T21:11:10.870Z",
+          "status": "passed",
+          "compatibility_notice": null
+        }
+      ],
+      "extra_pre_save_image_materialization_export_at": "2026-10-24T21:10:57.664Z",
+      "strict": {
+        "checks": 12,
+        "failed": 0
+      }
+    }
+  ],
+  "limits": [
+    "Source PNG bytes and decoded pixels are preserved in HWPX. Native PDF recompresses pictures as JPEG, so PDF pixels are not claimed lossless.",
+    "The historical source control had an upper-version warning, three whole-document strict failures and one source/cross-version edge clipping case; these are not positive style rules.",
+    "The first calibration float64-to6decimal variant failed strict matrix comparison; the native float32 representation anticipates serialization instead of relaxing the verifier.",
+    "This observation profile does not grant actual document legibility, business evidence, G02, or reference95% acceptance. Each current output still needs actual Hancom and all-page review."
+  ],
+  "actual_quality_score_percent": null
+}

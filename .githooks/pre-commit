@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+repo_root="$(git rev-parse --show-toplevel)"
+private_rules="$(git config --local --get docAutomation.privateDenylist || true)"
+args=(--root "$repo_root" --staged)
+if [ -n "$private_rules" ]; then
+  args+=(--forbidden-values "$private_rules")
+fi
+python3 "$repo_root/scripts/audit_public_repository.py" "${args[@]}"

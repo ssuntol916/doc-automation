@@ -1,0 +1,24 @@
+{
+  "schema_version": "td2-installation-heading-keep-evidence-1",
+  "recorded_at": "2026-10-24T19:09:07.400704+00:00",
+  "role": "SF-TD2",
+  "category": "implementation_choice_from_confirmed_native_defect",
+  "baseline_independent_review": {
+    "sha256": "64497746a03b015dffd42289ee13e686cbf10f54251fda09f5e1d1a513a78ca0"
+  },
+  "observed_issue": "R06 physical page3 last I2 identity heading is separated from its first plan value on page4.",
+  "implementation": {
+    "selector": "exact registry of each deployment item owned [I#] paragraphs in the TD2 source one-cell body frame; owners[0] only",
+    "keep_lines": true,
+    "keep_with_next": true,
+    "first_plan_value_keep_with_next": false,
+    "bounded_link": "identity paragraph plus first following plan paragraph, never whole-record chain",
+    "preserved": [
+      "all I-key text/order/IDs/input values/types/status/evidence/source links",
+      "font sizes, character properties and existing floating CELL frame",
+      "all later paragraph keep properties"
+    ]
+  },
+  "native_status": "pending_new_v10_bytes",
+  "score_percent": null
+}

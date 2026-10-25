@@ -1,0 +1,535 @@
+{
+  "schema_version": "reference-editorial-profile-1",
+  "profile_id": "reference-quality/SF-PM3/v11",
+  "version": 11,
+  "role": "SF-PM3",
+  "status": "candidate_unvalidated",
+  "source_template": {
+    "sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+    "source_id": "template-sf-pm3"
+  },
+  "reference_relationship": "same_role",
+  "reference_sources": [
+    {
+      "sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+      "relationship": "same_role",
+      "source_id": "reference-sf-pm5"
+    }
+  ],
+  "targets": {
+    "body_font_face": "함초롬바탕",
+    "body_height_hwp": 1100,
+    "body_line_spacing_percent": 140,
+    "heading_font_face": "함초롬바탕",
+    "heading_height_hwp": 1200,
+    "heading_line_spacing_percent": 150,
+    "heading_bold": true,
+    "table_header_font_face": "함초롬바탕",
+    "table_header_height_hwp": 1000,
+    "table_header_line_spacing_percent": 130,
+    "table_header_bold": true,
+    "caption_font_face": "함초롬바탕",
+    "caption_height_hwp": 950,
+    "caption_line_spacing_percent": 130,
+    "landscape_body": false,
+    "paper_margin_hwp": {
+      "left": 5102,
+      "right": 5102,
+      "top": 4252,
+      "bottom": 4252,
+      "header": 2268,
+      "footer": 2268,
+      "gutter": 0
+    },
+    "table_width_hwp": 48500,
+    "cell_margin_hwp": {
+      "left": 283,
+      "right": 283,
+      "top": 141,
+      "bottom": 141
+    },
+    "identifier_wrap": "natural_no_mutation",
+    "character_spacing_percent": 0,
+    "character_ratio_percent": 100,
+    "cover_roles": {
+      "customer": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2400,
+        "bold": true
+      },
+      "program": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2000,
+        "bold": false
+      },
+      "title": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2600,
+        "bold": true
+      },
+      "date": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2000,
+        "bold": true
+      },
+      "supplier": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2800,
+        "bold": false
+      }
+    },
+    "sync_header_footer_frames": true,
+    "table_column_widths_hwp": {
+      "0": [
+        3000,
+        10500,
+        8500,
+        5500,
+        5000,
+        5000,
+        5500,
+        5500
+      ]
+    },
+    "management_character_roles": {
+      "change_request_number_value": {
+        "italic": false
+      }
+    },
+    "management_preserved_titles": {
+      "change_request_title": {
+        "preserve_source_own_run_styles": true,
+        "preserve_source_paragraph_except_declared_keeps": true
+      }
+    },
+    "cover_program_paragraph": {
+      "break_non_latin": "BREAK_WORD"
+    }
+  },
+  "target_units": {
+    "*_height_hwp": "charPr height: point size multiplied by100, not page HWPUNIT",
+    "paper_margin_hwp/table_width_hwp/table_column_widths_hwp/cell_margin_hwp": "HWPUNIT:1inch=7200;1mm=7200/25.4",
+    "*_line_spacing_percent": "percent; must remain PERCENT type"
+  },
+  "selectors": {
+    "cover": "Only5named cover paragraph font/height/bold targets are editable; existing geometry, table/object/control, paragraph spacing and supplied fact text remain preserved.",
+    "body": "role-aware first actual body table/card or body section after cover/TOC; never arbitrary first nonempty paragraph",
+    "headings": "Explicit renderer semantic heading identities or genuine numbered top-level section titles only; context keys [Tn]/[Cn]/[Fn] do not establish heading status.",
+    "table_header": "header cells in selected body tables; continue page field/ID context",
+    "captions": "Only renderer-registered actual caption owner paragraphs; source captions require a separately verified exact owner declaration. Text prefixes such as 그림/표/화면/출처 never imply caption role. Unselected body instructions and source notes keep body typography.",
+    "notes": "source/uncertainty appendices; no shrink of required data to make page fit",
+    "management_character_roles": "Exact immutable source paragraph/run/row/address + renderer-registered label/value element identities; apply only declared bold/italic after table labels; preserve all other character properties, header/cover/control/text/type/source",
+    "management_preserved_titles": "Restore only the exact source p29 request-card title with source location/text + renderer element identity; preserve source18pt/bold/CENTER/between-line spacing and existing explicit keep/page-break decisions, not the general body11pt or heading12pt target"
+  },
+  "allowed_changes": [
+    "derived_character_font_face_and_size_on_declared_body_targets",
+    "derived_character_spacing_ratio_on_declared_body_targets",
+    "derived_paragraph_line_spacing_on_declared_targets",
+    "body_section_orientation_and_margins_only_where_profile_declares",
+    "body_table_whole_width_cell_width_margin_coherent_change",
+    "semantic_caption_style_and_keep_with_figure",
+    "declared_body_header_bold_and_spacing",
+    "derived_font_height_bold_on_five_exact_semantic_cover_owner_paragraphs_geometry_and_controls_preserved",
+    "declared_body_section_header_footer_frame_extents_only_text_ids_and_styles_preserved",
+    "source_guarded_management_body_start_and_preserved_intro_typography",
+    "declared_management_value_bold_italic_alignment_and_identifier_width",
+    "source_guarded_management_label_value_character_roles_only",
+    "source_guarded_management_card_title_own_styles_and_spacing_preserved",
+    "derived_breakNonLatinWord_only_on_exact_source_and_registry_owned_cover_program_paragraph_with_already_matching_owner_byte_noop"
+  ],
+  "preservation_contract": {
+    "content_boundary": "input_field/type/ID/relation/status/source_refs to rendered meaning/position mapping; intentional prose and table transformations logged",
+    "editorial_boundary": "exact text, field meaning and object references retained outside explicit semantic relocations; definitions derived, cover and controls protected",
+    "native_boundary": "strict current styled-byte before/after preservation; fallback loss remains failure until exact repair and new actual final-byte QA"
+  },
+  "mandatory_template_instructions": [
+    {
+      "category": "template_instruction",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[33]",
+      "text_verbatim": "- 변경관리대장은 수행기업 등이 일정, 인력뿐만 아니라 요구사항, 장비 규격 등에 대한 변경 사항이 발생될 경우 변경 사유, 승인 여부, 관련 공문, 관련 증빙자료를 작성 관리한다.",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[34]",
+      "text_verbatim": "   1. 변경관리대장 : 문서 목차로 승인 요청한 문서 정보 및 승인(회신)된 문서 정보를 기술함.",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[37]",
+      "text_verbatim": "   4. 전담(운영)기관 승인 공문(사업관리시스템에서 캡처한 승인 또는 확인 화면 증적)",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    }
+  ],
+  "template_field_observations": [
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[30]/hp:run/hp:tbl/hp:tr[4]/hp:tc[2]/hp:subList/hp:p",
+      "text_verbatim": "변경 사유에 대해 객관적인 자료를 첨부할 필요가 있음",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[30]/hp:run/hp:tbl/hp:tr[5]/hp:tc[2]/hp:subList/hp:p[1]",
+      "text_verbatim": "",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[30]/hp:run/hp:tbl/hp:tr[6]/hp:tc[2]/hp:subList/hp:p",
+      "text_verbatim": "변경에 따른 영향도 및 파급 효과를 명확히 제시할 필요가 있음.",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[35]",
+      "text_verbatim": "   2. 사업변경신청서(변경요청서)",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[36]",
+      "text_verbatim": "   3. 사업변경 사유 및 내용(도입기업, 공급기업이 서명한 회의록), 관련 증빙자료",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    }
+  ],
+  "local_catalog_document_requirement": {
+    "required": false,
+    "evidence": {
+      "stage": "Contents/section0.xml#T1/R17C1/P89",
+      "work": "Contents/section0.xml#T1/R19C1/P100",
+      "name": "Contents/section0.xml#T1/R19C2/P101",
+      "requirement": "Contents/section0.xml#T1/R19C3/P102",
+      "description": "Contents/section0.xml#T1/R19C4/P103",
+      "code": "Contents/section0.xml#T1/R19C5/P104"
+    },
+    "scope": "Only the selected localv2catalog document-presence rule; not every field mandatory or current universal submission law"
+  },
+  "observed_convention_evidence": {
+    "path": "resources/style-upgrade/profiles/SF-PM3.evidence.json",
+    "sha256": "529831cd2c9f74bb92b201bc399ebe5ae2ee4c6163a23728659086e17c995b3a",
+    "used_format_scope": "all actual nonempty owner run usage, resolved fonts and paragraph definitions; source values retained separately from targets"
+  },
+  "implementation_choices": [
+    {
+      "category": "implementation_choice",
+      "choice": "role-specific10/11pt body and130/140/150/160% line spacing with12pt headings",
+      "rationale": "table roles need compact stable field comparison; narrative roles need paragraph rhythm. Candidate values are within observed families but not copied as universal rules.",
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "TD3/TD5/PM4 landscape body; cover remains portrait",
+      "rationale": "support long IDs and wide multi-column specifications while retaining original fields and declared layout transition; declared75000HWP wide table allows outer margin/offset within75684HWP body",
+      "applies": false,
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "safe15/18mm side margins,1mm horizontal cell padding and0.5mm vertical padding",
+      "rationale": "exclude extreme exemplar margins and preserve legibility; final native wrapping decides suitability",
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Adopt exact reference-used cover font/size/bold by customer/program/title/date/supplier role; OS1 uses explicitly adjacent OS2 cover and PM1 retains partial cadence mapping.",
+      "rationale": "Whole-document editorial review includes the cover; original BatangChe cover preservation alone did not match adopted reference typography. Geometry remains fixed, and long supplied program/date labels still need current native review.",
+      "native_status": "pending_new_v3_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Synchronize only body-section header/footer frame extents to declared page geometry; preserve cover-section frames and all text/IDs/character/paragraph definitions.",
+      "rationale": "Historical Hancom12.30.0build6544 TD5 SaveAs changed stale portrait header49324×4252 to landscape75684×2268. The generator must create coherent frames before strict native comparison.",
+      "native_status": "pending_new_v4_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Apply caption typography only to renderer-registered actual captions; body instructions and source notes retain body typography.",
+      "rationale": "A generic 화면/그림/표 prefix can describe business content or an image-location instruction. Caption identity must come from the actual attachment owner registry; a source-specific caption would need separate exact source evidence.",
+      "native_status": "pending_new_v5_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Preserve body value typography/keeps when a paragraph merely carries a T/C/F context key; genuine key headings require explicit renderer registration.",
+      "rationale": "Previous prefix inference made PM4 context values bold and keepWithNext despite the renderer declaring them body text. Removing that inference preserves the intended role.",
+      "native_status": "pending_new_v7_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Start the body at the exact source change-register heading, preserving heading typography/controls; use regular LEFT value prose and readable status columns; empty approval evidence links remain input0 with actual absence undetermined.",
+      "rationale": "Actual r01 original-page findings PM3-TITLE-ONLY-PAGE/PM3-PROSE-ITALIC-CENTER/PM3-EMPTY-APPROVAL-EVIDENCE-SCOPE; source facts, types, original numeric values/notes and existing controls stay separate from editorial choices. No point-size or line-spacing reduction.",
+      "evidence": "outputs/quality-loop/r01/evaluation/visual-remaining-nine/SF-PM3.visual-review.json",
+      "native_status": "pending_new_v8_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Discard only separately source-verified pure-empty p25 immediately before this role body title when splitting its body section. Preserve p23/p24, source title/pageHiding, cover typography and all other owners.",
+      "rationale": "Current Hancom12.30.0 build6544 original physical2 contains only a running header; native old-section p25 resets to vertpos0 after p24 at64591 and actual body starts physical3. Exact pure-empty source suffix is redundant at the intentional new body-section boundary.",
+      "evidence": "outputs/quality-loop/r05/pm1-blank-diagnosis/SF-PM3/diagnosis.json",
+      "native_status": "pending_new_v9_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Declare BREAK_WORD on the exact source-owned cover program paragraph across all19 roles; skip derivation for already matching original definitions.",
+      "rationale": "Bounded Mac12.30.0 controlled probe recovers whole-word wrapping without changing supplied text/font/geometry; enum spelling alone is not a universal semantic rule.",
+      "native_status": "pending_new_current_role_bytes"
+    }
+  ],
+  "excluded_or_unresolved": [
+    "Do not copy extreme source right margins, crowded line spacing, missing continuation headers, incomplete sentences or reference facts/signatures.",
+    "Do not use source paragraph/character numeric IDs as runtime style selectors.",
+    "Do not turn null/unknown into performed/not_applicable/optional/nonfunctional or create absent captures/approvals.",
+    "Native SaveAs fallback loss is a compatibility defect, not an accepted formatting delta; restore only exact declarations and review final bytes."
+  ],
+  "iteration_refinement": {
+    "previous_profile_version": 7,
+    "previous_bytes_preserved": "outputs/quality-loop/r03/management-layout/SF-PM3.v7.profile.json",
+    "basis": "PM3-TITLE-ONLY-PAGE/PM3-PROSE-ITALIC-CENTER/PM3-EMPTY-APPROVAL-EVIDENCE-SCOPE",
+    "native_status": "pending_new_v8_bytes",
+    "v9": {
+      "reason": "Remove only exact source-empty p25 at new body boundary; no common blanket empty-paragraph deletion.",
+      "evidence": "outputs/quality-loop/r05/pm1-blank-diagnosis/SF-PM3/diagnosis.json",
+      "previous_bytes_preserved": "outputs/quality-loop/r07/pm1-spacer/SF-PM3.v8.profile.json",
+      "native_status": "pending_new_v9_bytes"
+    }
+  },
+  "project_fact_policy": "This profile contains no project execution/approval/signature/measurement facts. Supplied fact values/status/source_refs remain separate.",
+  "baseline_output": {
+    "availability": "private_evidence_not_distributed",
+    "quality_verified": false,
+    "submission_ready": false
+  },
+  "assessment": {
+    "rubric_id": "reference-quality-observed-rubric/v1",
+    "score_percent": null,
+    "status": "not_assessed",
+    "evidence_required": [
+      "current_native_hwpx_pdf_png_hashes",
+      "actual_native_actions_and_app_version",
+      "font_and_spacing_observations",
+      "all_original_page_editorial_observations",
+      "same_content_reproduction",
+      "heldout_input_evaluation"
+    ]
+  },
+  "cover_selectors": {
+    "customer": {
+      "template": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]",
+        "text_before_generation_verbatim": "도입기업명 "
+      },
+      "reference": {
+        "source_sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[19]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "program": {
+      "template": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+        "text_before_generation_verbatim": "스마트공장 보급·확산사업"
+      },
+      "reference": {
+        "source_sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[9]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[38]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "title": {
+      "template": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+        "text_before_generation_verbatim": "변경관리내역서"
+      },
+      "reference": {
+        "source_sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[9]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[31]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "date": {
+      "template": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[17]",
+        "text_before_generation_verbatim": "202 .  ."
+      },
+      "reference": {
+        "source_sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[16]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[30]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "supplier": {
+      "template": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[22]",
+        "text_before_generation_verbatim": "공급기업명"
+      },
+      "reference": {
+        "source_sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[20]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[20]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    }
+  },
+  "cover_observed_evidence": {
+    "path": "resources/style-upgrade/profiles/SF-PM3.cover-evidence.json",
+    "sha256": "ea1a23cdcd250cd719083dcf01afcac856801bd53e6246daea4bd73c06f4fb52"
+  },
+  "native_layout_evidence": {
+    "path": "resources/style-upgrade/profiles/native-layout-refinement-evidence.json",
+    "sha256": "0fe6a849fe5264b047613a81df28d7c12b6e6652a3dd64a6a3050d78cc4bac20"
+  },
+  "toc_scope": {
+    "present_in_selected_template_and_reference": false,
+    "relationship": "same_role",
+    "reference_is_adjacent": false
+  },
+  "section_boundary_spacer_selectors": [
+    {
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[25]",
+      "text_before_generation_verbatim": ""
+    }
+  ],
+  "section_boundary_evidence": {
+    "path": "resources/style-upgrade/profiles/pm4-boundary-refinement-evidence.json",
+    "sha256": "5f85c2f4338a83f7056f23df46386b925748c9f1d21fc642ccdb11c494134c77"
+  },
+  "section_heading_owner_evidence": {
+    "path": "resources/style-upgrade/profiles/td3-section-and-heading-refinement-evidence.json",
+    "sha256": "28f44f1abd885f40877d9e25db08a79c37e09a429d5d8802c5e532054645ec62"
+  },
+  "body_section_start": {
+    "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+    "xml": "Contents/section0.xml",
+    "xpath": "/hs:sec/hp:p[26]",
+    "text_before_generation_verbatim": "변경관리대장",
+    "first_table_carrier": {
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[27]",
+      "text_before_generation_verbatim": ""
+    },
+    "source_bridge": []
+  },
+  "management_character_role_sources": {
+    "change_request_number_value": {
+      "source": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[2]/hp:tc[3]/hp:subList/hp:p",
+        "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[2]/hp:tc[3]/hp:subList/hp:p/hp:run",
+        "text_before_generation_verbatim": "발송된 공문번호를 기록",
+        "cell_address": {
+          "colAddr": "2",
+          "rowAddr": "1"
+        },
+        "source_flags": {
+          "bold": false,
+          "italic": true
+        },
+        "source_height_hwp": 1100
+      },
+      "regular_reference": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[3]/hp:tc[3]/hp:subList/hp:p",
+        "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[3]/hp:tc[3]/hp:subList/hp:p/hp:run",
+        "text_before_generation_verbatim": "",
+        "cell_address": {
+          "colAddr": "2",
+          "rowAddr": "2"
+        },
+        "source_flags": {
+          "bold": false,
+          "italic": false
+        },
+        "source_height_hwp": 1100
+      }
+    }
+  },
+  "management_character_role_evidence": {
+    "path": "resources/style-upgrade/profiles/management-label-value-source-role-evidence.json",
+    "sha256": "3f4282b347219441072ee42f92b4e6ad26d3f3a785678e2b62849c505eb724e7"
+  },
+  "management_preserved_title_sources": {
+    "change_request_title": {
+      "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[29]",
+      "run_xpath": "/hs:sec/hp:p[29]/hp:run",
+      "text_before_generation_verbatim": "변경요청서",
+      "cell_address": null,
+      "source_flags": {
+        "bold": true,
+        "italic": false
+      },
+      "source_height_hwp": 1800
+    }
+  },
+  "cover_program_paragraph_source": {
+    "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+    "xml": "Contents/section0.xml",
+    "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+    "paragraph_c14n_sha256": "de6acd274c8db3e00581d78a9fcefad9455770256a13900be23b44866a07af59",
+    "paragraph_definition_c14n_sha256": "3c04159397470efc5e047c6ac89f7067bf66d7a0183ab54e5e4009e32f476f97",
+    "break_non_latin": "KEEP_WORD"
+  },
+  "cover_program_wordbreak_evidence": {
+    "path": "resources/style-upgrade/profiles/cover-program-wordbreak-evidence.json",
+    "sha256": "32e0b6ace2c8023a13d50f9fcfe8dcf3da24b961f4eef4cb80b8f4a16446d01f"
+  },
+  "cover_program_wordbreak_refinement": {
+    "previous_profile_version": 10,
+    "source_property": "KEEP_WORD",
+    "target_property": "BREAK_WORD",
+    "exact_source_guard": "exclusive XML C14N owner and paragraph definition; five cover owner registry guard retained",
+    "new_role_native_status": "pending",
+    "previous_R19_verdicts": "preserved; not rewritten"
+  },
+  "public_evidence_scope": "Formatting targets, exact template guards and reference hashes/locators only; private reference literals/business facts are not distributed. No prior quality acceptance is transferred."
+}

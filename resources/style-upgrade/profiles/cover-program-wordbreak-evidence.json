@@ -1,0 +1,73 @@
+{
+  "schema": "cover-program-paragraph-wordbreak-evidence-1",
+  "classification": "implementation_choice_supported_by_bounded_current_native_comparison",
+  "policy": {
+    "profile": "reference-v1",
+    "target": "cover_program_paragraph",
+    "break_non_latin": "BREAK_WORD",
+    "scope": "exact source-owned program paragraph only, across all19 supported roles",
+    "already_matching": "skip paragraph derivation/cache invalidation entirely"
+  },
+  "source_observation": {
+    "KEEP_WORD": 17,
+    "BREAK_WORD": 2,
+    "source_to_R19_current_property_unchanged": true,
+    "enum_names_are_not_runtime_semantic_proof": true
+  },
+  "current_probe": {
+    "scope": "one AD3 cover and four unchanged body pages only; not acceptance of newly generated19",
+    "before_probe_delta_path": "outputs/quality-loop/r20/cover-program-wordbreak-study/probe-delta.json",
+    "before_probe_delta_sha256": "8d6f4b7eecb7bdd9083ae596546ad5aac0195035a2e42e2e8fc6b1502b7815b6",
+    "independent_review_path": "outputs/quality-loop/r20/independent-cover-program-wordbreak/summary.json",
+    "independent_review_sha256": "3f7c735386493878e0ef3d741c8442f501b5d75e62f56bc868ee613e5694037a",
+    "actual_application": "Hancom Office HWP Mac12.30.0 build6544",
+    "observed": "whole final Korean word on second line, same supplied characters/year/name/22pt/font/other cover owner positions; body4 page images exact"
+  },
+  "primary_enum_recognition": [
+    {
+      "publisher": "hancom-io",
+      "commit": "1453388472c703a4b299a0834f425cdac16644b9",
+      "source_file": "OWPML/Class/enumdef.h",
+      "url": "https://github.com/hancom-io/hwpx-owpml-model/blob/1453388472c703a4b299a0834f425cdac16644b9/OWPML/Class/enumdef.h",
+      "raw_bytes_sha256": "1c86392c934ac85f7ddd85c710b76be7649403a8404bce146db52558a0b95457",
+      "evidence_line_numbers": {
+        "BRNONLATINTYPE": [
+          560
+        ],
+        "g_BreakNonLatinWordList": [
+          562
+        ]
+      },
+      "claim_scope": "Official model lists and serializes the two enum spellings. This is not a normative assertion about runtime Korean word-breaking semantics, nor full XSD validation."
+    },
+    {
+      "publisher": "hancom-io",
+      "commit": "1453388472c703a4b299a0834f425cdac16644b9",
+      "source_file": "OWPML/Class/Head/breakSetting.cpp",
+      "url": "https://github.com/hancom-io/hwpx-owpml-model/blob/1453388472c703a4b299a0834f425cdac16644b9/OWPML/Class/Head/breakSetting.cpp",
+      "raw_bytes_sha256": "e051deac166e2c1d0ae8b455a128d88fc673fdef941f1ffdb2b94c09213f617e",
+      "evidence_line_numbers": {
+        "breakNonLatinWord": [
+          47,
+          61
+        ],
+        "g_BreakNonLatinWordList": [
+          47,
+          61
+        ]
+      },
+      "claim_scope": "Official model lists and serializes the two enum spellings. This is not a normative assertion about runtime Korean word-breaking semantics, nor full XSD validation."
+    }
+  ],
+  "protected": [
+    "all provided text/year/name/date/status and fact types",
+    "all five cover owners character formatting already adopted by separate target",
+    "cover page/table/cell/paragraph geometry, controls and other paragraph properties",
+    "body geometry/text/object/image payloads",
+    "default None whole HWPX output",
+    "already BREAK_WORD AD1/AD2 whole HWPX output"
+  ],
+  "required_followup": "Fresh current17 changed roles native execution/strict/current original-page inspection and all19 scoped differential; no inheritance of one-probe visual acceptance",
+  "old_R19_failures_and_unknowns": "retained immutable; no denominator or score edits",
+  "new_facts_approvals_execution_results": 0
+}

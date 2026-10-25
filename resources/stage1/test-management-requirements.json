@@ -1,0 +1,1129 @@
+[
+  {
+    "title": "단위테스트결과서",
+    "row": 9,
+    "status": "필수",
+    "inputs": [
+      "단위테스트ID",
+      "단위테스트명",
+      "테스트시나리오",
+      "테스트데이터",
+      "예상결과",
+      "테스트결과와 증적",
+      "결함번호",
+      "연결 단위테스트ID",
+      "결함 현황과 원인",
+      "발생일자",
+      "조치 내용과 증적",
+      "완료일자"
+    ],
+    "repeat": [
+      "기능별 시험행",
+      "결함별 행"
+    ],
+    "rules": [
+      "Contents/section1.xml#P109",
+      "Contents/section1.xml#P111",
+      "Contents/section1.xml#P112",
+      "Contents/section1.xml#P113",
+      "Contents/section1.xml#P114",
+      "Contents/section1.xml#P115",
+      "Contents/section1.xml#P116",
+      "Contents/section1.xml#P117",
+      "Contents/section1.xml#P119",
+      "Contents/section1.xml#P120"
+    ],
+    "refs": [
+      "AD2 요구사항 요건·제약",
+      "TD3 화면 주요 체크사항",
+      "PM4 단위테스트ID"
+    ],
+    "pending": [
+      "CD2 ID 접두사와 SF-CD1 양식번호 관계",
+      "시험일·시험자·판정 기준의 추가 관리",
+      "결함 없음 표기"
+    ],
+    "code": "SF-CD1",
+    "source_sha256": "a8dcbee7067d625523e072129fbde87ceba6211bbbf81e7006673244c5227416",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R9C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R9C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R9C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section1.xml#T1",
+        "rows": "11",
+        "columns": "6",
+        "pageBreak": "CELL",
+        "width": "48940",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section1.xml#T2",
+        "rows": "6",
+        "columns": "6",
+        "pageBreak": "CELL",
+        "width": "49327",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "통합테스트결과서",
+    "row": 10,
+    "status": "필수",
+    "inputs": [
+      "공정명",
+      "통합테스트ID",
+      "통합테스트명",
+      "업무흐름도",
+      "절차·조건별 테스트케이스",
+      "입력데이터",
+      "예상결과",
+      "실제 결과와 증적",
+      "결함번호",
+      "연결 통합테스트ID",
+      "결함 현황과 원인",
+      "발생일자",
+      "조치내용과 증적",
+      "완료일자"
+    ],
+    "repeat": [
+      "공정·통합시험ID별 상세표",
+      "시험케이스 행",
+      "결함 행"
+    ],
+    "rules": [
+      "Contents/section1.xml#P71",
+      "Contents/section1.xml#P73",
+      "Contents/section1.xml#P74",
+      "Contents/section1.xml#P75",
+      "Contents/section1.xml#P76",
+      "Contents/section1.xml#P77",
+      "Contents/section1.xml#P78",
+      "Contents/section1.xml#P79",
+      "Contents/section1.xml#P80",
+      "Contents/section1.xml#P82",
+      "Contents/section1.xml#P83"
+    ],
+    "refs": [
+      "주요 공정별 스마트化 추진 목표 달성 상황 외부 원문",
+      "PM4 통합테스트ID",
+      "목차/결함표 시험ID"
+    ],
+    "pending": [
+      "외부 인용 목표 문서의 정체와 버전",
+      "공정/시험 다중 관계",
+      "결함 없음/미해결 표기"
+    ],
+    "code": "SF-TI1",
+    "source_sha256": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R10C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R10C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R10C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section1.xml#T1",
+        "rows": "8",
+        "columns": "7",
+        "pageBreak": "NONE",
+        "width": "49034",
+        "merged_cells": [
+          {
+            "ref": "Contents/section1.xml#T1/R0C1",
+            "span": {
+              "colSpan": "6",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R1C1",
+            "span": {
+              "colSpan": "3",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R1C4",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R2C1",
+            "span": {
+              "colSpan": "6",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R3C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R3C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R3C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R4C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R4C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R4C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R5C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R5C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R5C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R6C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R6C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R6C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R7C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R7C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R7C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          }
+        ]
+      },
+      {
+        "ref": "Contents/section1.xml#T2",
+        "rows": "6",
+        "columns": "6",
+        "pageBreak": "CELL",
+        "width": "49327",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "시스템전환결과서",
+    "row": 11,
+    "status": "필수",
+    "inputs": [
+      "계획·착수 장비 품명/규격/수량",
+      "실제 설치 품명/규격/수량/상태",
+      "모델명·시스템정보·라이선스·설치 증거",
+      "아키텍처 검증방안과 결과",
+      "필요한 장비의 도입기업 확인·서명",
+      "업무별 프로그램 개발 본수",
+      "물리DB 구축",
+      "소프트웨어 환경설정과 전환 증거",
+      "클라우드 제공내용·자원할당·전환 증거(해당시)",
+      "초기데이터 대상·유형별 전환건수",
+      "정합성·충분성 검사·도입기업 확인"
+    ],
+    "repeat": [
+      "장비/소프트웨어/네트워크별 결과와 증적 블록",
+      "데이터 유형별 전환/검증 블록"
+    ],
+    "rules": [
+      "Contents/section0.xml#P68",
+      "Contents/section0.xml#P70",
+      "Contents/section0.xml#P72",
+      "Contents/section0.xml#P73",
+      "Contents/section0.xml#P74",
+      "Contents/section0.xml#P75",
+      "Contents/section0.xml#P76",
+      "Contents/section0.xml#P78",
+      "Contents/section0.xml#P79",
+      "Contents/section0.xml#P80",
+      "Contents/section0.xml#P81"
+    ],
+    "refs": [
+      "사업계획서·착수계",
+      "TD2 아키텍처 검증방안",
+      "TD4 프로그램 목록",
+      "TD5 DB 설계",
+      "OS2 구축현황"
+    ],
+    "pending": [
+      "초기/기초 용어 정리",
+      "해당 없는 범위의 표기",
+      "검증 증적/실제 서명 확보"
+    ],
+    "code": "SF-TI2",
+    "source_sha256": "43a5b06c81b7803f0dd1f7648d9249a5ab9da7154d315f1ed63604fadeeff63c",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R11C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R11C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R11C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "47626",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "메뉴얼",
+    "row": 12,
+    "status": "필수",
+    "inputs": [
+      "시스템 개요/구성도/메뉴구조도",
+      "공통 사용방법",
+      "화면명/설명/실행화면/순서/기능·이벤트/참고·제약",
+      "상용SW 설치·환경설정·실행·종료·패치",
+      "응용SW 설치·디렉터리·실행·종료·업그레이드",
+      "권한·프로그램 등록/삭제·버전관리",
+      "보안 적용/관리",
+      "장애유형·대응·백업/복구",
+      "담당자·긴급연락처",
+      "클라우드 접속 등 관리절차(해당시)"
+    ],
+    "repeat": [
+      "화면별 설명 블록",
+      "관리 대상SW·장애 유형·연락 담당자 항목"
+    ],
+    "rules": [
+      "Contents/section0.xml#P69",
+      "Contents/section0.xml#P71",
+      "Contents/section0.xml#P72",
+      "Contents/section0.xml#P73",
+      "Contents/section0.xml#P79",
+      "Contents/section0.xml#P81",
+      "Contents/section0.xml#P82",
+      "Contents/section0.xml#P84",
+      "Contents/section0.xml#P85",
+      "Contents/section0.xml#P86",
+      "Contents/section0.xml#P87",
+      "Contents/section0.xml#P88",
+      "Contents/section0.xml#P89",
+      "Contents/section0.xml#P90"
+    ],
+    "refs": [
+      "TD3 화면/메뉴",
+      "AD3 변경/추가 기능",
+      "실제 운영/관리 시스템"
+    ],
+    "pending": [
+      "온라인 매뉴얼의 제출·접근·버전·보관 증거",
+      "메뉴얼/매뉴얼 명칭 정규화"
+    ],
+    "code": "SF-TI3",
+    "source_sha256": "45a58751fb3a5f7b6bf3f0035f3a3e39d74fa62ccca6a9af57305287361431c4",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R12C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R12C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R12C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "47626",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "사용자테스트결과서",
+    "row": 13,
+    "status": "필수",
+    "inputs": [
+      "사용자테스트ID",
+      "사용자테스트명",
+      "공정별 업무흐름도",
+      "케이스·절차·조건·화면경로",
+      "입력데이터",
+      "예상결과",
+      "실제결과·증적",
+      "결함번호",
+      "연결 사용자시험ID",
+      "결함 현황·원인",
+      "발생일자",
+      "조치내용·증적",
+      "업무담당자",
+      "확인자",
+      "도입기업 시험담당자·운영환경"
+    ],
+    "repeat": [
+      "사용자시험ID별 상세표",
+      "케이스 행",
+      "결함 행"
+    ],
+    "rules": [
+      "Contents/section1.xml#P76",
+      "Contents/section1.xml#P78",
+      "Contents/section1.xml#P79",
+      "Contents/section1.xml#P80",
+      "Contents/section1.xml#P81",
+      "Contents/section1.xml#P82",
+      "Contents/section1.xml#P83",
+      "Contents/section1.xml#P84",
+      "Contents/section1.xml#P85",
+      "Contents/section1.xml#P87",
+      "Contents/section1.xml#P88"
+    ],
+    "refs": [
+      "공정별 추진목표 외부 원문",
+      "PM4 사용자테스트ID",
+      "목차/결함표 시험ID"
+    ],
+    "pending": [
+      "TI5 ID 접두사와 SF-TI4 양식번호 관계",
+      "공정명 독립 칸 부재시 공정 연결방법",
+      "결함 업무담당자 필드는 지침보다 표가 추가 요구"
+    ],
+    "code": "SF-TI4",
+    "source_sha256": "1edcfa29aab5fed372286e05d1aef47b447b336864e20c605471830be5c07bd5",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R13C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R13C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R13C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section1.xml#T1",
+        "rows": "7",
+        "columns": "7",
+        "pageBreak": "NONE",
+        "width": "49034",
+        "merged_cells": [
+          {
+            "ref": "Contents/section1.xml#T1/R0C1",
+            "span": {
+              "colSpan": "3",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R0C4",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R1C1",
+            "span": {
+              "colSpan": "6",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R2C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R2C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R2C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R3C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R3C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R3C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R4C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R4C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R4C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R5C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R5C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R5C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R6C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R6C3",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section1.xml#T1/R6C5",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          }
+        ]
+      },
+      {
+        "ref": "Contents/section1.xml#T2",
+        "rows": "6",
+        "columns": "7",
+        "pageBreak": "CELL",
+        "width": "49588",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "운영지원계획서",
+    "row": 14,
+    "status": "선택",
+    "inputs": [
+      "H/W·S/W·N/W·시스템·초기데이터 지원대상",
+      "전환 이후~사업 종료 지원기간",
+      "실제 지원인력",
+      "헬프데스크 즉시 대응 방안",
+      "일일 로그인·평균시간·기능활용 분석 관리방안",
+      "운영미흡시 추가교육 계획",
+      "운영미흡시 활성화 이벤트 계획"
+    ],
+    "repeat": [
+      "지원대상·인력·활동별 항목"
+    ],
+    "rules": [
+      "Contents/section0.xml#P71",
+      "Contents/section0.xml#P73",
+      "Contents/section0.xml#P74",
+      "Contents/section0.xml#P75",
+      "Contents/section0.xml#P76",
+      "Contents/section0.xml#P78",
+      "Contents/section0.xml#P79",
+      "Contents/section0.xml#P80",
+      "Contents/section0.xml#P81"
+    ],
+    "refs": [
+      "TI2 전환시점",
+      "TI4 사용자시험 기간",
+      "사업기간 종료일",
+      "OS2 지원내역"
+    ],
+    "pending": [
+      "선택 산출물 포함여부",
+      "표지 공식 사업명",
+      "지표 산식·교육/활성화 발동조건"
+    ],
+    "code": "SF-OS1",
+    "source_sha256": "938b08355d5914e1bf401f0a76a860dbe1915548b03b7487e7c0f22e330b3778",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R14C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R14C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R14C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "47626",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "운영현황보고서",
+    "row": 15,
+    "status": "필수",
+    "inputs": [
+      "H/W·S/W·N/W 설치·환경설정",
+      "클라우드 자원/설치/운영 증적(해당시)",
+      "주간 사용자·거래처·제품·생산계획/실적·거래 등록활용",
+      "일별 로그인수·사용자별 접속시간 분석·증적",
+      "주간 장애/오류·조치",
+      "주간 공급기업 지원내역"
+    ],
+    "repeat": [
+      "보고기간/주",
+      "일별·사용자별 활용 기록",
+      "데이터 유형·장애·지원 건"
+    ],
+    "rules": [
+      "Contents/section0.xml#P57",
+      "Contents/section0.xml#P59",
+      "Contents/section0.xml#P60",
+      "Contents/section0.xml#P61",
+      "Contents/section0.xml#P64",
+      "Contents/section0.xml#P65",
+      "Contents/section0.xml#P66",
+      "Contents/section0.xml#P67"
+    ],
+    "refs": [
+      "TI2 설치/전환",
+      "OS1 지원계획",
+      "실제 로그·등록·거래 데이터"
+    ],
+    "pending": [
+      "목차/본문 구축(4) 누락 해소",
+      "운영/활용 장제목 통일",
+      "지표 산식과 기간",
+      "표지 공식 사업명"
+    ],
+    "code": "SF-OS2",
+    "source_sha256": "440efb20ec57c1d2a737390e74fbf4d8671ce0bc534ecf9edfa056327792a6b0",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R15C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R15C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R15C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "47626",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "월간보고서",
+    "row": 16,
+    "status": "필수",
+    "inputs": [
+      "보고월",
+      "과제명",
+      "보고기간",
+      "금월 계획/실적 진척률",
+      "누적 계획/실적 진척률",
+      "사업관리 실적·차월계획",
+      "단계·투입인력·작업별 개발실적/계획",
+      "위험/이슈번호·구분·내용·처리현황",
+      "작성일",
+      "공급기업PM·날인"
+    ],
+    "repeat": [
+      "월별 보고서",
+      "관리영역·단계·작업·인력 문단",
+      "위험/이슈 행"
+    ],
+    "rules": [
+      "Contents/section0.xml#P29",
+      "Contents/section0.xml#P31",
+      "Contents/section0.xml#P32",
+      "Contents/section0.xml#P33",
+      "Contents/section0.xml#T2/R1C0",
+      "Contents/section0.xml#T2/R1C1",
+      "Contents/section0.xml#T3",
+      "Contents/section0.xml#P115",
+      "Contents/section0.xml#P116"
+    ],
+    "refs": [
+      "일정/인력 계획",
+      "실제 작업기록",
+      "PM3 변경",
+      "PM2 협의",
+      "전월 보고"
+    ],
+    "pending": [
+      "진척률 산식/가중치",
+      "지역 내역 문구의 의도",
+      "실제 날인 확보"
+    ],
+    "code": "SF-PM1",
+    "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R16C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R16C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R16C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "2",
+        "columns": "2",
+        "pageBreak": "CELL",
+        "width": "51031",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T3",
+        "rows": "5",
+        "columns": "4",
+        "pageBreak": "CELL",
+        "width": "51031",
+        "merged_cells": []
+      }
+    ]
+  },
+  {
+    "title": "회의록",
+    "row": 17,
+    "status": "필수",
+    "inputs": [
+      "일시·요일",
+      "장소",
+      "주최자",
+      "안건",
+      "회의내용",
+      "합의사항",
+      "특이사항",
+      "도입기업/공급기업/기타 참석자"
+    ],
+    "repeat": [
+      "회의별 문서/블록",
+      "안건·논의·합의 항목",
+      "소속별 참석자"
+    ],
+    "rules": [
+      "Contents/section0.xml#T2/R0C0",
+      "Contents/section0.xml#T2/R1C0",
+      "Contents/section0.xml#T2/R2C0",
+      "Contents/section0.xml#T2/R3C0",
+      "Contents/section0.xml#T2/R4C0",
+      "Contents/section0.xml#T2/R5C0",
+      "Contents/section0.xml#T2/R6C0",
+      "Contents/section0.xml#T2/R7C0"
+    ],
+    "refs": [
+      "AD2 요구사항 근거",
+      "PM3 변경 사유·서명 회의록"
+    ],
+    "pending": [
+      "장문 pageBreak NONE 표 배치",
+      "변경 증빙 시 양 기업 서명 확보",
+      "잘못 남은 2019 일정계획서 머리말"
+    ],
+    "code": "SF-PM2",
+    "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R17C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R17C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R17C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "8",
+        "columns": "2",
+        "pageBreak": "NONE",
+        "width": "49438",
+        "merged_cells": [
+          {
+            "ref": "Contents/section0.xml#T2/R4C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section0.xml#T2/R5C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section0.xml#T2/R6C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section0.xml#T2/R7C0",
+            "span": {
+              "colSpan": "2",
+              "rowSpan": "1"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "변경관리내역서",
+    "row": 18,
+    "status": "선택",
+    "inputs": [
+      "대장 번호·제목·발송공문번호·요청일·요청자",
+      "회신번호·회신내용·회신일",
+      "사업명·과제번호·도입/공급기업",
+      "변경사유·객관증거",
+      "변경전후 내용",
+      "영향/파급효과",
+      "양 기업 서명 회의록·관련증빙",
+      "전담/운영기관 승인 공문 또는 승인/확인 화면"
+    ],
+    "repeat": [
+      "변경건별 대장행+요청서+근거·승인 증적 묶음"
+    ],
+    "rules": [
+      "Contents/section0.xml#P111",
+      "Contents/section0.xml#P113",
+      "Contents/section0.xml#P117",
+      "Contents/section0.xml#P122",
+      "Contents/section0.xml#P123",
+      "Contents/section0.xml#P124",
+      "Contents/section0.xml#P125",
+      "Contents/section0.xml#P126"
+    ],
+    "refs": [
+      "PM2 서명회의록",
+      "AD2/일정/인력/TD2 변경대상",
+      "PM4 추가/변경/삭제 근거"
+    ],
+    "pending": [
+      "선택 문서 적용여부와 변경시 처리기준",
+      "실제 승인상태",
+      "2019 일정계획서 머리말"
+    ],
+    "code": "SF-PM3",
+    "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R18C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R18C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R18C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "8",
+        "columns": "8",
+        "pageBreak": "CELL",
+        "width": "49167",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T3",
+        "rows": "7",
+        "columns": "4",
+        "pageBreak": "NONE",
+        "width": "49223",
+        "merged_cells": [
+          {
+            "ref": "Contents/section0.xml#T3/R3C1",
+            "span": {
+              "colSpan": "3",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section0.xml#T3/R4C1",
+            "span": {
+              "colSpan": "3",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section0.xml#T3/R5C1",
+            "span": {
+              "colSpan": "3",
+              "rowSpan": "1"
+            }
+          },
+          {
+            "ref": "Contents/section0.xml#T3/R6C1",
+            "span": {
+              "colSpan": "3",
+              "rowSpan": "1"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "요구사항추적표",
+    "row": 19,
+    "status": "필수",
+    "inputs": [
+      "요구사항ID·명·설명",
+      "기능 요구별 실제 화면·프로그램·단위/통합/사용자시험ID",
+      "추가/변경/삭제 근거",
+      "비기능 실제 결과물명",
+      "비기능 이행현황(진행중/완료/미진행)"
+    ],
+    "repeat": [
+      "기능요구별 연결행",
+      "비기능요구별 이행행"
+    ],
+    "rules": [
+      "Contents/section0.xml#P136",
+      "Contents/section0.xml#P137",
+      "Contents/section0.xml#P139",
+      "Contents/section0.xml#P140",
+      "Contents/section0.xml#P141",
+      "Contents/section0.xml#P143",
+      "Contents/section0.xml#P144"
+    ],
+    "refs": [
+      "AD2 기능/비기능 원본",
+      "TD3/TD4/CD1/TI1/TI4 선언ID",
+      "PM3 변경근거"
+    ],
+    "pending": [
+      "다중ID/다중행 표기정책",
+      "해당 없는 설계/시험 칸 표기",
+      "CD2/TI5 접두사 충돌 해소",
+      "2019 일정계획서 머리말",
+      "상태판정 근거·기준일"
+    ],
+    "code": "SF-PM4",
+    "source_sha256": "4de6810e6e75d070380cc88ec8196adbc6ca6ce042f545b343da6c2d90ff2bd1",
+    "source_rules_are_local_templates_not_latest_regulations": true,
+    "field_requirement_semantics": "Inputs are derived from labels/instructions; individual field mandatory flags are not present.",
+    "mandatory_evidence": "목록 Contents/section0.xml#T1/R19C3",
+    "purpose_evidence": "목록 Contents/section0.xml#T1/R19C4",
+    "code_evidence": "목록 Contents/section0.xml#T1/R19C5",
+    "repeat_classification": "implementation interpretation from template structure and enumerated placeholders",
+    "tables": [
+      {
+        "ref": "Contents/section0.xml#T1",
+        "rows": "1",
+        "columns": "1",
+        "pageBreak": "CELL",
+        "width": "46934",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T2",
+        "rows": "6",
+        "columns": "10",
+        "pageBreak": "CELL",
+        "width": "49076",
+        "merged_cells": []
+      },
+      {
+        "ref": "Contents/section0.xml#T3",
+        "rows": "6",
+        "columns": "7",
+        "pageBreak": "CELL",
+        "width": "49168",
+        "merged_cells": []
+      }
+    ]
+  }
+]

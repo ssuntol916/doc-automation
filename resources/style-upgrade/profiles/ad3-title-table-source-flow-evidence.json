@@ -1,0 +1,30 @@
+{
+  "schema_version": "ad3-title-table-source-flow-evidence-1",
+  "recorded_at": "2026-10-24T18:50:15.006287+00:00",
+  "category": "implementation_choice_from_confirmed_native_title_order_defect",
+  "before": {
+    "pdf": {
+      "path": "outputs/quality-loop/r05/review-safe-five/SF-AD3.pdf",
+      "sha256": "504ad1cad029d782bf2b2713376032bb46ce842a7c0e45f2496e72a8b4dde2c0"
+    },
+    "native_hwpx": {
+      "path": "outputs/quality-loop/r05/review-safe-five/SF-AD3.hwpx",
+      "sha256": "aaad969da174a7b1af07ad0adcbca2497decbebbc7d46ec1cec6f8b74139446e"
+    },
+    "independent_review": "outputs/quality-loop/r05/review-safe-five/independent-review/SF-AD3.review.json"
+  },
+  "exact_source_owner": {
+    "source_sha256": "9efec96c01034fb1e49035c1db44b15f45b30b563713a351ce3be879a9617a11",
+    "xml": "Contents/section0.xml",
+    "xpath": "/hs:sec/hp:p[26]",
+    "text_before_generation_verbatim": "1. 000시스템",
+    "table_vert_offset_hwp": "2672"
+  },
+  "source_shape": "Title is owned hp:t after6column hp:tbl inside same source paragraph/run, not a standalone heading paragraph. Source table floating0+vertOffset2672 places title above table physically.",
+  "cause": "Prior editorial inline1 exposed tbl-before-title inline order in physical output. The title and table controls themselves were preserved.",
+  "minimal_change": "Restore only AD3 table floating0; keep source paragraph, source text owner and all table controls/offsets. Bounded TABLE row mode retained. No new paragraph before secPr/PAGE carrier, no text movement across source paragraphs, no new layout selector API.",
+  "guard": "Renderer requires exact original source SHA/XML/XPath/owntext and original floating offset plus existing source paragraph identity before changing title text.",
+  "font_content_changes": false,
+  "native_status": "pending_new_r08_native_title_position_and_full_table_review",
+  "actual_score_percent": null
+}

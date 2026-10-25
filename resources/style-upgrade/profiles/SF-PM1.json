@@ -1,0 +1,514 @@
+{
+  "schema_version": "reference-editorial-profile-1",
+  "profile_id": "reference-quality/SF-PM1/v10",
+  "version": 10,
+  "role": "SF-PM1",
+  "status": "candidate_unvalidated",
+  "source_template": {
+    "sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+    "source_id": "template-sf-pm1"
+  },
+  "reference_relationship": "partial_role",
+  "reference_sources": [
+    {
+      "sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+      "relationship": "partial_role",
+      "source_id": "reference-sf-pm2"
+    }
+  ],
+  "targets": {
+    "body_font_face": "함초롬바탕",
+    "body_height_hwp": 1000,
+    "body_line_spacing_percent": 130,
+    "heading_font_face": "함초롬바탕",
+    "heading_height_hwp": 1200,
+    "heading_line_spacing_percent": 150,
+    "heading_bold": true,
+    "table_header_font_face": "함초롬바탕",
+    "table_header_height_hwp": 1000,
+    "table_header_line_spacing_percent": 130,
+    "table_header_bold": true,
+    "caption_font_face": "함초롬바탕",
+    "caption_height_hwp": 950,
+    "caption_line_spacing_percent": 130,
+    "landscape_body": false,
+    "paper_margin_hwp": {
+      "left": 5102,
+      "right": 5102,
+      "top": 4252,
+      "bottom": 4252,
+      "header": 2268,
+      "footer": 2268,
+      "gutter": 0
+    },
+    "table_width_hwp": 48500,
+    "cell_margin_hwp": {
+      "left": 283,
+      "right": 283,
+      "top": 141,
+      "bottom": 141
+    },
+    "identifier_wrap": "natural_no_mutation",
+    "character_spacing_percent": 0,
+    "character_ratio_percent": 100,
+    "cover_roles": {
+      "customer": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2400,
+        "bold": true
+      },
+      "program": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2000,
+        "bold": false
+      },
+      "title": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2600,
+        "bold": true
+      },
+      "date": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2000,
+        "bold": true
+      },
+      "supplier": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2800,
+        "bold": false
+      }
+    },
+    "sync_header_footer_frames": true,
+    "table_column_widths_hwp": {
+      "1": [
+        10000,
+        4000,
+        16000,
+        18500
+      ]
+    },
+    "cover_program_paragraph": {
+      "break_non_latin": "BREAK_WORD"
+    }
+  },
+  "target_units": {
+    "*_height_hwp": "charPr height: point size multiplied by100, not page HWPUNIT",
+    "paper_margin_hwp/table_width_hwp/table_column_widths_hwp/cell_margin_hwp": "HWPUNIT:1inch=7200;1mm=7200/25.4",
+    "*_line_spacing_percent": "percent; must remain PERCENT type"
+  },
+  "selectors": {
+    "cover": "Only5named cover paragraph font/height/bold targets are editable; existing geometry, table/object/control, paragraph spacing and supplied fact text remain preserved.",
+    "body": "role-aware first actual body table/card or body section after cover/TOC; never arbitrary first nonempty paragraph",
+    "headings": "Explicit renderer semantic heading identities or genuine numbered top-level section titles only; context keys [Tn]/[Cn]/[Fn] do not establish heading status.",
+    "table_header": "header cells in selected body tables; continue page field/ID context",
+    "captions": "Only renderer-registered actual caption owner paragraphs; source captions require a separately verified exact owner declaration. Text prefixes such as 그림/표/화면/출처 never imply caption role. Unselected body instructions and source notes keep body typography.",
+    "notes": "source/uncertainty appendices; no shrink of required data to make page fit"
+  },
+  "allowed_changes": [
+    "derived_character_font_face_and_size_on_declared_body_targets",
+    "derived_character_spacing_ratio_on_declared_body_targets",
+    "derived_paragraph_line_spacing_on_declared_targets",
+    "body_section_orientation_and_margins_only_where_profile_declares",
+    "body_table_whole_width_cell_width_margin_coherent_change",
+    "semantic_caption_style_and_keep_with_figure",
+    "declared_body_header_bold_and_spacing",
+    "derived_font_height_bold_on_five_exact_semantic_cover_owner_paragraphs_geometry_and_controls_preserved",
+    "declared_body_section_header_footer_frame_extents_only_text_ids_and_styles_preserved",
+    "discard_only_exact_declared_pure_empty_paragraph_suffix_at_new_body_section_boundary_no_objects_controls_or_numbering",
+    "source_guarded_management_body_start_and_preserved_intro_typography",
+    "declared_management_value_bold_italic_alignment_and_identifier_width",
+    "derived_breakNonLatinWord_only_on_exact_source_and_registry_owned_cover_program_paragraph_with_already_matching_owner_byte_noop"
+  ],
+  "preservation_contract": {
+    "content_boundary": "input_field/type/ID/relation/status/source_refs to rendered meaning/position mapping; intentional prose and table transformations logged",
+    "editorial_boundary": "exact text, field meaning and object references retained outside explicit semantic relocations; definitions derived, cover and controls protected",
+    "native_boundary": "strict current styled-byte before/after preservation; fallback loss remains failure until exact repair and new actual final-byte QA"
+  },
+  "mandatory_template_instructions": [
+    {
+      "category": "template_instruction",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[38]",
+      "text_verbatim": "                                                                                   작성일자 : 202 년   월  일",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    }
+  ],
+  "template_field_observations": [
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[26]",
+      "text_verbatim": "00월 월간보고서",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[28]",
+      "text_verbatim": "과제명 : ",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[29]",
+      "text_verbatim": "기  간 : 202 년  월  일부터  -  202 년  월  일까지",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[30]",
+      "text_verbatim": "진척율 : 금월 계획 0%, 금월 실적 0%,  누적 계획 00%, 누적 실적 00% ",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[33]/hp:run/hp:tbl/hp:tr/hp:tc[hp:cellAddr/@rowAddr='1' and hp:cellAddr/@colAddr='0']",
+      "text_verbatim": " 가. 사업관리\n  1) 월간단위 수행 결과를 기술\n    가)\n    나) \n  \n  n) 월간단위 변경사항, 장비발주, 착수보고 등 기타 이벤트에 대한 수행 결과 기술\n    가) \n    나) \n 나. 개발관리\n 1) 수행단계  투입인력별 월간단위 수행 결과 기술\n    가) 일정계획과 연계해 작업별로 실질적으로 수행한 결과 및 지역 내역을 기술\n    나) \n  \n  2) \n    가) \n    나) \n  3) \n    가) \n    나) \n  4) \n    가) \n    나) ",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[33]/hp:run/hp:tbl/hp:tr/hp:tc[hp:cellAddr/@rowAddr='1' and hp:cellAddr/@colAddr='1']",
+      "text_verbatim": " 가. 사업관리\n  1) 월간단위 수행 계획을 기술\n    가)\n    나) \n  \n  n) 월간단위 장비입고계획, 중간보고 등 기타 이벤트에 대한 계획을 기술\n    가) \n    나) \n 나. 개발관리\n 1) 수행단계  투입인력별 월간단위 수행 계획을 기술\n    가) 일정계획과 연계해 작업별로 월간 계획을 기술\n    나)\n  2) \n    가) \n    나) \n  3) \n    가) \n    나) \n  4) \n    가) \n    나) ",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[37]/hp:run/hp:tbl",
+      "text_verbatim": "번호\n구분\n내  용\n처리 현황\n1\n위험\n\n\n2\n이슈사항\n\n\n\n\n\n\n\n\n\n",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    },
+    {
+      "category": "template_structure_or_field_observation",
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[39]",
+      "text_verbatim": "                                                 공급기업 PM :  O  O  O   (인)",
+      "current_regulatory_requirement_verified": false,
+      "field_label_does_not_establish_individual_mandatory_status": true
+    }
+  ],
+  "local_catalog_document_requirement": {
+    "required": true,
+    "evidence": {
+      "stage": "Contents/section0.xml#T1/R17C1/P89",
+      "work": "Contents/section0.xml#T1/R17C2/P90",
+      "name": "Contents/section0.xml#T1/R17C3/P91",
+      "requirement": "Contents/section0.xml#T1/R17C4/P92",
+      "description": "Contents/section0.xml#T1/R17C5/P93",
+      "code": "Contents/section0.xml#T1/R17C6/P94"
+    },
+    "scope": "Only the selected localv2catalog document-presence rule; not every field mandatory or current universal submission law"
+  },
+  "observed_convention_evidence": {
+    "path": "resources/style-upgrade/profiles/SF-PM1.evidence.json",
+    "sha256": "281fcbd5f54111e5546e60968cbb58ec548386f861e122d83b22bce6ac681bf8",
+    "used_format_scope": "all actual nonempty owner run usage, resolved fonts and paragraph definitions; source values retained separately from targets"
+  },
+  "implementation_choices": [
+    {
+      "category": "implementation_choice",
+      "choice": "role-specific10/11pt body and130/140/150/160% line spacing with12pt headings",
+      "rationale": "table roles need compact stable field comparison; narrative roles need paragraph rhythm. Candidate values are within observed families but not copied as universal rules.",
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "TD3/TD5/PM4 landscape body; cover remains portrait",
+      "rationale": "support long IDs and wide multi-column specifications while retaining original fields and declared layout transition; declared75000HWP wide table allows outer margin/offset within75684HWP body",
+      "applies": false,
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "safe15/18mm side margins,1mm horizontal cell padding and0.5mm vertical padding",
+      "rationale": "exclude extreme exemplar margins and preserve legibility; final native wrapping decides suitability",
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Adopt exact reference-used cover font/size/bold by customer/program/title/date/supplier role; OS1 uses explicitly adjacent OS2 cover and PM1 retains partial cadence mapping.",
+      "rationale": "Whole-document editorial review includes the cover; original BatangChe cover preservation alone did not match adopted reference typography. Geometry remains fixed, and long supplied program/date labels still need current native review.",
+      "native_status": "pending_new_v3_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Synchronize only body-section header/footer frame extents to declared page geometry; preserve cover-section frames and all text/IDs/character/paragraph definitions.",
+      "rationale": "Historical Hancom12.30.0build6544 TD5 SaveAs changed stale portrait header49324×4252 to landscape75684×2268. The generator must create coherent frames before strict native comparison.",
+      "native_status": "pending_new_v4_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Apply caption typography only to renderer-registered actual captions; body instructions and source notes retain body typography.",
+      "rationale": "A generic 화면/그림/표 prefix can describe business content or an image-location instruction. Caption identity must come from the actual attachment owner registry; a source-specific caption would need separate exact source evidence.",
+      "native_status": "pending_new_v5_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Discard only declared originally empty suffix paragraphs immediately before a new body section; preserve all preceding visible text geometry and every semantic control.",
+      "rationale": "A new section already supplies the page transition. Empty trailing flow can create a portrait header-only page. Source-exact guards and pure-empty/control-free validation prevent deleting a meaningful spacer owner.",
+      "native_status": "pending_new_v6_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Preserve body value typography/keeps when a paragraph merely carries a T/C/F context key; genuine key headings require explicit renderer registration.",
+      "rationale": "Previous prefix inference made PM4 context values bold and keepWithNext despite the renderer declaring them body text. Removing that inference preserves the intended role.",
+      "native_status": "pending_new_v7_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Start the body section at the exact source report title, preserving source-owned title/period/progress intro typography and all controls; normal-weight work/risk values; reserve enough risk-ID width.",
+      "rationale": "Actual r01 original-page findings PM1-SUMMARY-ONLY-PAGE/PM1-BODY-BOLD/PM1-RISK-ID-WRAP; source facts, types, original numeric values/notes and existing controls stay separate from editorial choices. No point-size or line-spacing reduction. The former pre-table p31 spacer is now part of the declared source intro bridge and is preserved instead of discarded at the old section boundary.",
+      "evidence": "outputs/quality-loop/r01/evaluation/visual-remaining-nine/SF-PM1.visual-review.json",
+      "native_status": "pending_new_v8_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Discard only exact source-empty p25 immediately before source-bound report title when creating PM1 body section. Preserve p23/p24, title/source pageHiding, cover typography and all other owners.",
+      "rationale": "Actual Hancom12.30.0 build6544 r04 native section0 p25 has vertpos0 after p23/p24 at62991/64591; current original PNG physical2 is wholly blank and body starts physical3. Explicit title pageBreak and resolved pageBreakBefore are0, so the source-empty old-section suffix, followed by intentional section transition, causes the blank page.",
+      "evidence": "outputs/quality-loop/r05/pm1-blank-diagnosis/diagnosis.json",
+      "native_status": "pending_new_v9_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Declare BREAK_WORD on the exact source-owned cover program paragraph across all19 roles; skip derivation for already matching original definitions.",
+      "rationale": "Bounded Mac12.30.0 controlled probe recovers whole-word wrapping without changing supplied text/font/geometry; enum spelling alone is not a universal semantic rule.",
+      "native_status": "pending_new_current_role_bytes"
+    }
+  ],
+  "excluded_or_unresolved": [
+    "Do not copy extreme source right margins, crowded line spacing, missing continuation headers, incomplete sentences or reference facts/signatures.",
+    "Do not use source paragraph/character numeric IDs as runtime style selectors.",
+    "Do not turn null/unknown into performed/not_applicable/optional/nonfunctional or create absent captures/approvals.",
+    "Weekly reference is a partial cadence match only; never relabel provided weekly actuals as monthly."
+  ],
+  "iteration_refinement": {
+    "previous_profile_version": 7,
+    "previous_bytes_preserved": "outputs/quality-loop/r03/management-layout/SF-PM1.v7.profile.json",
+    "basis": "PM1-SUMMARY-ONLY-PAGE/PM1-BODY-BOLD/PM1-RISK-ID-WRAP",
+    "native_status": "pending_new_v8_bytes",
+    "v9": {
+      "reason": "Exact pure-empty source boundary spacer p25 removal only; current original native blank-page cause independently diagnosed.",
+      "evidence": "outputs/quality-loop/r05/pm1-blank-diagnosis/diagnosis.json",
+      "previous_bytes_preserved": "outputs/quality-loop/r07/pm1-spacer/SF-PM1.v8.profile.json",
+      "native_status": "pending_new_v9_bytes"
+    }
+  },
+  "project_fact_policy": "This profile contains no project execution/approval/signature/measurement facts. Supplied fact values/status/source_refs remain separate.",
+  "baseline_output": {
+    "availability": "private_evidence_not_distributed",
+    "quality_verified": false,
+    "submission_ready": false
+  },
+  "assessment": {
+    "rubric_id": "reference-quality-observed-rubric/v1",
+    "score_percent": null,
+    "status": "not_assessed",
+    "evidence_required": [
+      "current_native_hwpx_pdf_png_hashes",
+      "actual_native_actions_and_app_version",
+      "font_and_spacing_observations",
+      "all_original_page_editorial_observations",
+      "same_content_reproduction",
+      "heldout_input_evaluation"
+    ]
+  },
+  "cover_selectors": {
+    "customer": {
+      "template": {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]",
+        "text_before_generation_verbatim": "도입기업명 "
+      },
+      "reference": {
+        "source_sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[9]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[4]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "program": {
+      "template": {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+        "text_before_generation_verbatim": "스마트공장 보급·확산사업"
+      },
+      "reference": {
+        "source_sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[9]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[16]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "title": {
+      "template": {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+        "text_before_generation_verbatim": "월간보고서"
+      },
+      "reference": {
+        "source_sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[9]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[11]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "date": {
+      "template": {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[17]",
+        "text_before_generation_verbatim": "202 .  ."
+      },
+      "reference": {
+        "source_sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[16]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[6]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "supplier": {
+      "template": {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[22]",
+        "text_before_generation_verbatim": "공급기업명"
+      },
+      "reference": {
+        "source_sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[20]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[5]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    }
+  },
+  "cover_observed_evidence": {
+    "path": "resources/style-upgrade/profiles/SF-PM1.cover-evidence.json",
+    "sha256": "ca1edbd565ca633133f3342fc13fa5f004665b32953919cf649a7e0fd9102310"
+  },
+  "native_layout_evidence": {
+    "path": "resources/style-upgrade/profiles/native-layout-refinement-evidence.json",
+    "sha256": "0fe6a849fe5264b047613a81df28d7c12b6e6652a3dd64a6a3050d78cc4bac20"
+  },
+  "toc_scope": {
+    "present_in_selected_template_and_reference": false,
+    "relationship": "partial_role",
+    "reference_is_adjacent": false
+  },
+  "section_boundary_spacer_selectors": [
+    {
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[25]",
+      "text_before_generation_verbatim": ""
+    }
+  ],
+  "section_boundary_evidence": {
+    "path": "resources/style-upgrade/profiles/pm4-boundary-refinement-evidence.json",
+    "sha256": "5f85c2f4338a83f7056f23df46386b925748c9f1d21fc642ccdb11c494134c77"
+  },
+  "section_heading_owner_evidence": {
+    "path": "resources/style-upgrade/profiles/td3-section-and-heading-refinement-evidence.json",
+    "sha256": "28f44f1abd885f40877d9e25db08a79c37e09a429d5d8802c5e532054645ec62"
+  },
+  "body_section_start": {
+    "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+    "xml": "Contents/section0.xml",
+    "xpath": "/hs:sec/hp:p[26]",
+    "text_before_generation_verbatim": "00월 월간보고서",
+    "first_table_carrier": {
+      "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[33]",
+      "text_before_generation_verbatim": ""
+    },
+    "source_bridge": [
+      {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[27]",
+        "text_before_generation_verbatim": ""
+      },
+      {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[28]",
+        "text_before_generation_verbatim": "과제명 : "
+      },
+      {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[29]",
+        "text_before_generation_verbatim": "기  간 : 202 년  월  일부터  -  202 년  월  일까지"
+      },
+      {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[30]",
+        "text_before_generation_verbatim": "진척율 : 금월 계획 0%, 금월 실적 0%,  누적 계획 00%, 누적 실적 00% "
+      },
+      {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[31]",
+        "text_before_generation_verbatim": ""
+      },
+      {
+        "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[32]",
+        "text_before_generation_verbatim": "1. 월간 업무 "
+      }
+    ]
+  },
+  "cover_program_paragraph_source": {
+    "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+    "xml": "Contents/section0.xml",
+    "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+    "paragraph_c14n_sha256": "6c7649e52cdbdbf516a690916016bee66ff0f6ee007efc05b3f2f3f269a037b2",
+    "paragraph_definition_c14n_sha256": "1c54ef61bc80d9817ea31099e63ac7ba8f590e00ba5bd61ace6c6a1d543deb15",
+    "break_non_latin": "KEEP_WORD"
+  },
+  "cover_program_wordbreak_evidence": {
+    "path": "resources/style-upgrade/profiles/cover-program-wordbreak-evidence.json",
+    "sha256": "32e0b6ace2c8023a13d50f9fcfe8dcf3da24b961f4eef4cb80b8f4a16446d01f"
+  },
+  "cover_program_wordbreak_refinement": {
+    "previous_profile_version": 9,
+    "source_property": "KEEP_WORD",
+    "target_property": "BREAK_WORD",
+    "exact_source_guard": "exclusive XML C14N owner and paragraph definition; five cover owner registry guard retained",
+    "new_role_native_status": "pending",
+    "previous_R19_verdicts": "preserved; not rewritten"
+  },
+  "public_evidence_scope": "Formatting targets, exact template guards and reference hashes/locators only; private reference literals/business facts are not distributed. No prior quality acceptance is transferred."
+}

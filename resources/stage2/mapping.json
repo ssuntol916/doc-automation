@@ -1,0 +1,183 @@
+{
+  "scope": "Source-hash and document-role alignment only; private exemplar content and compliance adjudications are not distributed.",
+  "mappings": [
+    {
+      "reference_id": "reference-sf-ad1",
+      "reference_sha256": "1223df9b753dd879712d0004ef88c749089bd268fc00d40b5790a5895b733cf2",
+      "template_id": "template-sf-ad1",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "7ceb7516c6542abe25c1c3a03e5451f18751948154e5f00308c79b02a30d357b"
+    },
+    {
+      "reference_id": "reference-sf-ad2",
+      "reference_sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+      "template_id": "template-sf-ad2",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53"
+    },
+    {
+      "reference_id": "reference-sf-ad3",
+      "reference_sha256": "3a3a8fb67cc35ce5c5530043d63b49a411634654f498d5b949955be08056aa22",
+      "template_id": "template-sf-ad3",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "9efec96c01034fb1e49035c1db44b15f45b30b563713a351ce3be879a9617a11"
+    },
+    {
+      "reference_id": "reference-sf-td1",
+      "reference_sha256": "df0cf49b640e04730b3e8a124f4aa0296400737e24d923102d4c944b4c447ebb",
+      "template_id": "template-sf-td1",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "879c760d5c550194be331bf165e68fa306b9af762692d876c150f0c36af600d5"
+    },
+    {
+      "reference_id": "reference-sf-td2",
+      "reference_sha256": "4b41ef75cf4edac279d18e4a09b92a50cf7b20e2eea4bf3e4112963fa54f06d0",
+      "template_id": "template-sf-td2",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "eb231acacfeb0f8cbe9d10c588a6cdb0e71c3345bf9e64251810989571b877be"
+    },
+    {
+      "reference_id": "reference-sf-td3",
+      "reference_sha256": "4f60d94a45a57ba1e4a0eda6bf2974d6b4ad730a7c1c4e3702534786373f5594",
+      "template_id": "template-sf-td3",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9"
+    },
+    {
+      "reference_id": "reference-sf-td4",
+      "reference_sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+      "template_id": "template-sf-td4",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "9276e4e82d26a6a7bd94e764b8e26f891323aa1549deb03c85aa11a9482b51e4"
+    },
+    {
+      "reference_id": "reference-sf-td5",
+      "reference_sha256": "2de12e8bc75b2da9fcf1f2d3917fda864ba51a4c7a8ffc37742a91016cf8329c",
+      "template_id": "template-sf-td5",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "c59bf581983711bddd7b96543d2fbea2dd21764109bc95440aa2314260e1dd54"
+    },
+    {
+      "reference_id": "reference-sf-cd1",
+      "reference_sha256": "33a3567f8ff05e15bbbd865970d1e5bfe6cf3a69dd2a0049beadddbf83614a85",
+      "template_id": "template-sf-cd1",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "a8dcbee7067d625523e072129fbde87ceba6211bbbf81e7006673244c5227416"
+    },
+    {
+      "reference_id": "reference-sf-ti1",
+      "reference_sha256": "d0ad6265f35c2c430d14d6a23436c83d1ff2ae43f78358bbaba748c5884cd44f",
+      "template_id": "template-sf-ti1",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218"
+    },
+    {
+      "reference_id": "reference-sf-ti2",
+      "reference_sha256": "ee74747e32b154a761c4faae96a7be5a51b25b855a50a55c14d9940907da395b",
+      "template_id": "template-sf-ti2",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "43a5b06c81b7803f0dd1f7648d9249a5ab9da7154d315f1ed63604fadeeff63c"
+    },
+    {
+      "reference_id": "reference-sf-ti3",
+      "reference_sha256": "c0cb953e9a0a79f407b37972ebf56b1e7182f1ae0bb3ae4867ab7eee9dd139d8",
+      "template_id": "template-sf-ti3",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "45a58751fb3a5f7b6bf3f0035f3a3e39d74fa62ccca6a9af57305287361431c4"
+    },
+    {
+      "reference_id": "reference-sf-ti4",
+      "reference_sha256": "968bee7b61b11efbc5853129147c3dbacfbe6ca294cb39dc637f1c195ab102e7",
+      "template_id": "template-sf-ti4",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "1edcfa29aab5fed372286e05d1aef47b447b336864e20c605471830be5c07bd5"
+    },
+    {
+      "reference_id": "reference-sf-os2",
+      "reference_sha256": "7eae812da3893c131f914e28250e3df0adb296755385374ab8304a0de70e7de4",
+      "template_id": "template-sf-os2",
+      "relationship": "same_role",
+      "basis": "코드뿐 아니라 제목과 내부 문서 역할을 상세 비교 보고서에서 확인",
+      "version_equivalence": "unverified",
+      "template_sha256": "440efb20ec57c1d2a737390e74fbf4d8671ce0bc534ecf9edfa056327792a6b0"
+    },
+    {
+      "reference_id": "reference-sf-pm2",
+      "reference_sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+      "template_id": "template-sf-pm1",
+      "relationship": "partial_role",
+      "basis": "주간보고서와 월간보고서는 보고 주기·집계 단위가 달라 부분 대응",
+      "version_equivalence": "unverified",
+      "template_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38"
+    },
+    {
+      "reference_id": "reference-sf-pm4",
+      "reference_sha256": "5eb4586a7b0983cab9e8f6c84daf1ce7db6ee7a4de582da6426d2acecd6441dc",
+      "template_id": "template-sf-pm2",
+      "relationship": "same_role",
+      "basis": "회의록: 참조 코드 PM4와 양식 코드 PM2",
+      "version_equivalence": "unverified",
+      "template_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b"
+    },
+    {
+      "reference_id": "reference-sf-pm5",
+      "reference_sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+      "template_id": "template-sf-pm3",
+      "relationship": "same_role",
+      "basis": "변경관리내역서: 참조 PM5와 양식 PM3",
+      "version_equivalence": "unverified",
+      "template_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a"
+    },
+    {
+      "reference_id": "reference-sf-pm6",
+      "reference_sha256": "ae628f453231ad69d2aeaf6d8d30675171fb338c6cdc6e022587bec9076e728a",
+      "template_id": null,
+      "relationship": "no_dedicated_template",
+      "basis": "성과측정결과서: v2.0 개발산출물 19종에 전용 양식 없음; 2025 서식 KPI는 보조 근거",
+      "version_equivalence": "unverified"
+    },
+    {
+      "reference_id": "reference-sf-pm7",
+      "reference_sha256": "0a710b34766dca97caf42ea5cee9258c1cebf56b8b50b8142f0a08425dbee852",
+      "template_id": "template-sf-pm4",
+      "relationship": "same_role",
+      "basis": "요구사항추적표: 참조 PM7와 양식 PM4",
+      "version_equivalence": "unverified",
+      "template_sha256": "4de6810e6e75d070380cc88ec8196adbc6ca6ce042f545b343da6c2d90ff2bd1"
+    }
+  ],
+  "templates_without_same_role_reference": [
+    "template-sf-os1",
+    "template-sf-pm1"
+  ],
+  "notes": [
+    "Monthly report has only a partial weekly-report analogue",
+    "All 19 reference files belong to one project; observations are not universal requirements"
+  ]
+}

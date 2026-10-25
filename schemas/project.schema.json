@@ -1,0 +1,6593 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://doc-automation.local/schemas/project.schema.json",
+  "title": "Government grant document fact dataset",
+  "description": "Evidence-aware common data model derived from the local 19 development deliverables and 34 forms. Schema validity is not factual verification or submission approval.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "dataset_kind": {
+      "enum": [
+        "project",
+        "reference_extraction",
+        "synthetic"
+      ]
+    },
+    "synthetic_notice": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "submission_ready": {
+      "type": "boolean",
+      "default": false
+    },
+    "project": {
+      "$ref": "#/$defs/project"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/requirement"
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/feature"
+      }
+    },
+    "screens": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/screen"
+      }
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/program"
+      }
+    },
+    "database_tables": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/database_table"
+      }
+    },
+    "test_cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/test_case"
+      }
+    },
+    "defects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/defect"
+      }
+    },
+    "deployment_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/deployment_item"
+      }
+    },
+    "operation_periods": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/operation_period"
+      }
+    },
+    "progress_reports": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/progress_report"
+      }
+    },
+    "meetings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/meeting"
+      }
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/change"
+      }
+    },
+    "kpis": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/kpi"
+      }
+    },
+    "trace_links": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/trace_link"
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/attachment"
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/review"
+      }
+    },
+    "extraction_issues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/extraction_issue"
+      }
+    },
+    "form_records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/form_record"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "dataset_kind",
+    "project",
+    "sources",
+    "requirements",
+    "features",
+    "screens",
+    "programs",
+    "database_tables",
+    "test_cases",
+    "defects",
+    "deployment_items",
+    "operation_periods",
+    "progress_reports",
+    "meetings",
+    "changes",
+    "kpis",
+    "trace_links",
+    "attachments",
+    "reviews",
+    "extraction_issues",
+    "submission_ready"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "status": {
+      "enum": [
+        "verified",
+        "provided",
+        "unverified",
+        "synthetic",
+        "not_applicable"
+      ]
+    },
+    "nullable_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "date_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_ref": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "source_id",
+        "locator"
+      ],
+      "additionalProperties": false
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source_ref"
+      }
+    },
+    "field_state": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "person": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "review_status": {
+          "$ref": "#/$defs/status"
+        },
+        "organization_role": {
+          "enum": [
+            "customer",
+            "supplier",
+            "operating_agency",
+            "other",
+            null
+          ]
+        },
+        "organization_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "contact": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "name",
+        "review_status"
+      ],
+      "additionalProperties": false
+    },
+    "organization": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "business_registration_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "representative": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "address": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "contact": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "email"
+        },
+        "industry": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "main_products": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "employee_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "year": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 9999
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "source_refs": {
+                "$ref": "#/$defs/source_refs"
+              }
+            },
+            "required": [
+              "year",
+              "description",
+              "source_refs"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "financials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "year": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 9999
+              },
+              "revenue": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "debt": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "equity": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "employee_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "currency": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "status": {
+                "$ref": "#/$defs/status"
+              },
+              "source_refs": {
+                "$ref": "#/$defs/source_refs"
+              }
+            },
+            "required": [
+              "year",
+              "revenue",
+              "debt",
+              "equity",
+              "employee_count",
+              "currency",
+              "unit",
+              "status",
+              "source_refs"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "name",
+        "status",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "template",
+            "reference_document",
+            "project_document",
+            "meeting_record",
+            "interview",
+            "system_export",
+            "database_export",
+            "image",
+            "manual_input",
+            "synthetic",
+            "other"
+          ]
+        },
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "verification_status": {
+          "$ref": "#/$defs/status"
+        },
+        "document_role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "document_code": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "document_version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "retrieved_at": {
+          "$ref": "#/$defs/date_time"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "path",
+        "sha256",
+        "verification_status"
+      ],
+      "additionalProperties": false
+    },
+    "process": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "current_steps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "target_steps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "expected_effects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "as_is_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "to_be_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "smartization_target": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "data_collection_mode": {
+          "enum": [
+            "automatic",
+            "semiautomatic",
+            "manual",
+            null
+          ]
+        },
+        "automation_level": {
+          "enum": [
+            "full",
+            "partial",
+            "manual",
+            null
+          ]
+        },
+        "real_time_control": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "related_process_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "description",
+        "current_steps",
+        "target_steps",
+        "issues",
+        "expected_effects"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "system": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "lifecycle": {
+          "enum": [
+            "existing",
+            "planned",
+            "implemented",
+            null
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "as_is_description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "to_be_description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "as_is_diagram_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "to_be_diagram_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "configuration": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "network_method": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "description"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "schedule_item": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "phase": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "planned_start": {
+          "$ref": "#/$defs/date"
+        },
+        "planned_end": {
+          "$ref": "#/$defs/date"
+        },
+        "actual_start": {
+          "$ref": "#/$defs/date"
+        },
+        "actual_end": {
+          "$ref": "#/$defs/date"
+        },
+        "owner": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "planned_progress": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "actual_progress": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "phase",
+        "planned_start",
+        "planned_end",
+        "actual_start",
+        "actual_end"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "budget_item": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "original_cost_code": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "planned_amount": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "approved_amount": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spent_amount": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "contribution_kind": {
+          "enum": [
+            "grant",
+            "cash",
+            "in_kind",
+            "other",
+            null
+          ]
+        },
+        "payer_role": {
+          "enum": [
+            "customer",
+            "supplier",
+            "government",
+            "other",
+            null
+          ]
+        },
+        "basis": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "category",
+        "planned_amount",
+        "approved_amount",
+        "spent_amount",
+        "currency",
+        "unit"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "staff_member": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "organization_role": {
+          "enum": [
+            "customer",
+            "supplier",
+            "mentor",
+            "other",
+            null
+          ]
+        },
+        "role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "work_description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "participation_start": {
+          "$ref": "#/$defs/date"
+        },
+        "participation_end": {
+          "$ref": "#/$defs/date"
+        },
+        "participation_rate": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "person": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "organization_role",
+        "role"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "manual_section": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "audience": {
+          "enum": [
+            "user",
+            "administrator",
+            null
+          ]
+        },
+        "topic": {
+          "enum": [
+            "overview",
+            "configuration",
+            "menu",
+            "common_usage",
+            "screen",
+            "installation",
+            "environment",
+            "deployment",
+            "permissions",
+            "security",
+            "incident_response",
+            "backup_restore",
+            "contacts",
+            "cloud",
+            "other",
+            null
+          ]
+        },
+        "content": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "screen_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "online_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "audience",
+        "topic",
+        "content"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "support_activity": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "helpdesk",
+            "operations_analysis",
+            "training",
+            "pilot",
+            "maintenance",
+            "other",
+            null
+          ]
+        },
+        "plan": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "period_start": {
+          "$ref": "#/$defs/date"
+        },
+        "period_end": {
+          "$ref": "#/$defs/date"
+        },
+        "contact": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actual_result": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "category",
+        "plan",
+        "period_start",
+        "period_end",
+        "actual_result"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "project": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "requested_deliverables": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "SF-AD1",
+                  "SF-AD2",
+                  "SF-AD3",
+                  "SF-TD1",
+                  "SF-TD2",
+                  "SF-TD3",
+                  "SF-TD4",
+                  "SF-TD5",
+                  "SF-CD1",
+                  "SF-TI1",
+                  "SF-TI2",
+                  "SF-TI3",
+                  "SF-TI4",
+                  "SF-OS1",
+                  "SF-OS2",
+                  "SF-PM1",
+                  "SF-PM2",
+                  "SF-PM3",
+                  "SF-PM4"
+                ]
+              },
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requested_forms": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "1",
+                  "1-1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "8-1",
+                  "8-2",
+                  "8-3",
+                  "9",
+                  "10",
+                  "10-1",
+                  "11",
+                  "12",
+                  "13",
+                  "13-1",
+                  "13-2",
+                  "13-3",
+                  "14",
+                  "15",
+                  "15-1",
+                  "16",
+                  "16-1",
+                  "17",
+                  "18",
+                  "18-1",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23"
+                ]
+              },
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "program_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "program_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900,
+          "maximum": 9999
+        },
+        "template_version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "customer": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/organization"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "supplier": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/organization"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "start_date": {
+          "$ref": "#/$defs/date"
+        },
+        "end_date": {
+          "$ref": "#/$defs/date"
+        },
+        "task_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "implementation_scope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "business_profile": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "organization_chart_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "Source-owned organization-chart attachments for the customer overview in SF-AD1; synthetic charts remain labelled design artifacts, not verified company organization evidence."
+        },
+        "business_processes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/process"
+          }
+        },
+        "systems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/system"
+          }
+        },
+        "schedule_items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/schedule_item"
+          }
+        },
+        "budget_items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/budget_item"
+          }
+        },
+        "staff_members": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/staff_member"
+          }
+        },
+        "manual_sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/manual_section"
+          }
+        },
+        "support_activities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/support_activity"
+          }
+        },
+        "current_smart_factory_level": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "target_smart_factory_level": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "requested_deliverables",
+        "program_name",
+        "program_year",
+        "template_version",
+        "customer",
+        "supplier",
+        "start_date",
+        "end_date"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "requirement": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "system_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "business_area": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "functional",
+            "nonfunctional",
+            null
+          ]
+        },
+        "change_type": {
+          "enum": [
+            "existing",
+            "new",
+            "modified",
+            "deleted",
+            null
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "owner": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fulfillment_status": {
+          "enum": [
+            "not_started",
+            "in_progress",
+            "completed",
+            "not_applicable",
+            null
+          ]
+        },
+        "deliverable_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "References attachments.id for actual result documents; requested canonical template roles belong to project.requested_deliverables."
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "system_name",
+        "business_area",
+        "kind",
+        "change_type",
+        "description",
+        "details",
+        "constraints",
+        "owner"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "system_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "major_category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "middle_category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "minor_category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "change_type": {
+          "enum": [
+            "existing",
+            "new",
+            "modified",
+            "deleted",
+            null
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "before": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "after": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "meeting_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "system_name",
+        "major_category",
+        "middle_category",
+        "minor_category",
+        "change_type",
+        "description",
+        "before",
+        "after",
+        "requirement_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "menu_permission": {
+      "type": "object",
+      "properties": {
+        "role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "permission": {
+          "enum": [
+            "allowed",
+            "denied",
+            "unverified",
+            "not_applicable"
+          ]
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "role",
+        "permission",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "screen_field": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "data_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "default_value": {},
+        "validation": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "name",
+        "data_type",
+        "required",
+        "default_value",
+        "validation",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "screen_button": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "action": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "name",
+        "action",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "screen": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "system_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "screen_kind": {
+          "enum": [
+            "screen",
+            "report",
+            "popup",
+            null
+          ]
+        },
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "menu_levels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "change_type": {
+          "enum": [
+            "existing",
+            "new",
+            "modified",
+            "deleted",
+            null
+          ]
+        },
+        "before_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "after_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "standard_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/screen_field"
+          }
+        },
+        "buttons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/screen_button"
+          }
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "permissions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/menu_permission"
+          }
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "feature_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "program_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "system_name",
+        "path",
+        "description",
+        "change_type",
+        "steps",
+        "checks",
+        "requirement_ids",
+        "feature_ids",
+        "program_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "program": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "system_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "change_type": {
+          "enum": [
+            "existing",
+            "new",
+            "modified",
+            "deleted",
+            null
+          ]
+        },
+        "module_flow_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "query_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "registration_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "output_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "functions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "interfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "calculation_rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "screen_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "table_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "expected_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "expected_description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "definition_source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "system_name",
+        "description",
+        "change_type",
+        "functions",
+        "requirement_ids",
+        "screen_ids",
+        "table_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "encryption": {
+      "type": "object",
+      "properties": {
+        "applied": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "algorithm": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "applied",
+        "algorithm",
+        "notes",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "column": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "length": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "precision": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "scale": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "nullable": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "key": {
+          "enum": [
+            "none",
+            "primary",
+            "foreign",
+            "primary_foreign",
+            null
+          ]
+        },
+        "default_value": {},
+        "encryption": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/encryption"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "foreign_table_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "foreign_column_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "expected_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "expected_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "definition_source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "type",
+        "length",
+        "nullable",
+        "key",
+        "default_value",
+        "encryption"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "description": "id is the physical column identifier; name is the human-readable logical label. Original errors remain in original_id/extraction_issues, not silently corrected."
+    },
+    "database_table": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/column"
+          }
+        },
+        "expected_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "expected_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "definition_source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "physical_export_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "change_type": {
+          "enum": [
+            "existing",
+            "new",
+            "modified",
+            "deleted",
+            null
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "description",
+        "columns"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "description": "id is the physical table identifier (schema-qualified where applicable); name is its logical label. Column ids are unique within this table, not globally."
+    },
+    "comparison": {
+      "type": "object",
+      "properties": {
+        "operator": {
+          "enum": [
+            "equal",
+            "not_equal",
+            "greater_than",
+            "greater_or_equal",
+            "less_than",
+            "less_or_equal",
+            "contains"
+          ]
+        },
+        "tolerance": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "operator"
+      ],
+      "additionalProperties": false
+    },
+    "test_case": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "stage": {
+          "enum": [
+            "unit",
+            "integration",
+            "acceptance"
+          ]
+        },
+        "group_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "case_number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "process_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "scenario": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "data": {},
+        "expected": {},
+        "actual": {},
+        "result": {
+          "enum": [
+            "planned",
+            "passed",
+            "failed",
+            "blocked",
+            "not_run"
+          ]
+        },
+        "execution_date": {
+          "$ref": "#/$defs/date"
+        },
+        "executor": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "environment": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "flow_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "screen_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "program_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "comparison": {
+          "$ref": "#/$defs/comparison"
+        },
+        "reference_result_quotations": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/reference_figure_quotation"
+              },
+              {
+                "properties": {
+                  "quotation_kind": {
+                    "const": "historical_test_result"
+                  }
+                }
+              }
+            ]
+          },
+          "description": "Optional historical reference quotation, never flow/evidence. Absent/empty emits nothing. Optional source-pixel detail_regions retains the whole original and requires the explicit Hancom Mac12.30 PNG profile for generation."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "stage",
+        "scenario",
+        "data",
+        "expected",
+        "actual",
+        "result",
+        "execution_date",
+        "executor",
+        "evidence_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "defect": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "test_case_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "cause": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "detected_date": {
+          "$ref": "#/$defs/date"
+        },
+        "resolution": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "resolved_date": {
+          "$ref": "#/$defs/date"
+        },
+        "owner": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "resolution_status": {
+          "enum": [
+            "open",
+            "in_progress",
+            "resolved",
+            "verified",
+            "deferred",
+            "unverified",
+            null
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "verification_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "test_case_id",
+        "description",
+        "cause",
+        "detected_date",
+        "resolution",
+        "resolved_date",
+        "resolution_status",
+        "evidence_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "migration_count": {
+      "type": "object",
+      "properties": {
+        "data_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "planned_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "actual_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "validation_result": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "data_type",
+        "planned_count",
+        "actual_count",
+        "validation_result",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "deployment_item": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "hardware",
+            "software",
+            "network",
+            "cloud",
+            "initial_data",
+            null
+          ]
+        },
+        "system_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "manufacturer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "planned_specification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "actual_specification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "planned_quantity": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "installed_quantity": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "scheduled_date": {
+          "$ref": "#/$defs/date"
+        },
+        "installation_date": {
+          "$ref": "#/$defs/date"
+        },
+        "installation_status": {
+          "enum": [
+            "planned",
+            "ordered",
+            "delivered",
+            "installed",
+            "verified",
+            "blocked",
+            "not_applicable",
+            "unverified",
+            null
+          ]
+        },
+        "verification_method": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "verification_result": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "license_info": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "migration_counts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/migration_count"
+          }
+        },
+        "related_program_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "related_table_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reference_installation_quotations": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/reference_figure_quotation"
+              },
+              {
+                "properties": {
+                  "quotation_kind": {
+                    "const": "historical_installation_photo"
+                  }
+                }
+              }
+            ]
+          },
+          "description": "Optional historical reference quotation, never flow/evidence. Absent/empty emits nothing. Optional source-pixel detail_regions retains the whole original and requires the explicit Hancom Mac12.30 PNG profile for generation."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "category",
+        "planned_specification",
+        "actual_specification",
+        "planned_quantity",
+        "installed_quantity",
+        "unit",
+        "installation_date",
+        "installation_status",
+        "verification_method",
+        "verification_result",
+        "evidence_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "operation_raw_record": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "$ref": "#/$defs/date"
+        },
+        "user_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "usage_minutes": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "incident_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "login_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "registration_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "transaction_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        }
+      },
+      "required": [
+        "date",
+        "source_refs",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "operation_totals": {
+      "type": "object",
+      "properties": {
+        "user_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "usage_minutes": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "incident_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "login_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "registration_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "transaction_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "average_user_count": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "average_usage_minutes": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "support_record": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "$ref": "#/$defs/date"
+        },
+        "provider": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "result": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        }
+      },
+      "required": [
+        "date",
+        "provider",
+        "description",
+        "result",
+        "source_refs",
+        "evidence_ids",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "aggregation_rule": {
+      "type": "object",
+      "properties": {
+        "source_field": {
+          "enum": [
+            "user_count",
+            "usage_minutes",
+            "incident_count",
+            "login_count",
+            "registration_count",
+            "transaction_count"
+          ]
+        },
+        "method": {
+          "enum": [
+            "sum",
+            "average",
+            "min",
+            "max",
+            "last"
+          ]
+        }
+      },
+      "required": [
+        "source_field",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "aggregation_rules": {
+      "type": "object",
+      "properties": {
+        "user_count": {
+          "$ref": "#/$defs/aggregation_rule"
+        },
+        "usage_minutes": {
+          "$ref": "#/$defs/aggregation_rule"
+        },
+        "incident_count": {
+          "$ref": "#/$defs/aggregation_rule"
+        },
+        "login_count": {
+          "$ref": "#/$defs/aggregation_rule"
+        },
+        "registration_count": {
+          "$ref": "#/$defs/aggregation_rule"
+        },
+        "transaction_count": {
+          "$ref": "#/$defs/aggregation_rule"
+        },
+        "average_user_count": {
+          "$ref": "#/$defs/aggregation_rule"
+        },
+        "average_usage_minutes": {
+          "$ref": "#/$defs/aggregation_rule"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "operation_period": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "period_kind": {
+          "enum": [
+            "daily",
+            "weekly",
+            "monthly",
+            "pilot",
+            "intensive_as",
+            "other",
+            null
+          ]
+        },
+        "period_start": {
+          "$ref": "#/$defs/date"
+        },
+        "period_end": {
+          "$ref": "#/$defs/date"
+        },
+        "system_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "raw_records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/operation_raw_record"
+          }
+        },
+        "reported_totals": {
+          "$ref": "#/$defs/operation_totals"
+        },
+        "aggregation_method": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Human-readable aggregation basis. Exact known single-method tokens may be computed; per-field aggregation_rules are authoritative when supplied."
+        },
+        "aggregation_rules": {
+          "$ref": "#/$defs/aggregation_rules"
+        },
+        "incident_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "References defects.id for observed incidents; not evidence of incident resolution."
+        },
+        "support_records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/support_record"
+          }
+        },
+        "deployment_item_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "period_start",
+        "period_end",
+        "raw_records",
+        "reported_totals",
+        "aggregation_method"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "progress_work_item": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "enum": [
+            "project_management",
+            "development",
+            "hardware",
+            "software",
+            "network",
+            "other",
+            null
+          ]
+        },
+        "phase": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "person_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "plan": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "actual": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "next_plan": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "planned_progress": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "actual_progress": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "category",
+        "phase",
+        "person_name",
+        "plan",
+        "actual",
+        "next_plan",
+        "planned_progress",
+        "actual_progress",
+        "status",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "risk": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "risk",
+            "issue",
+            null
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "handling_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "action": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "number",
+        "kind",
+        "description",
+        "handling_status",
+        "action",
+        "status",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "progress_report": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "report_kind": {
+          "enum": [
+            "monthly",
+            "weekly",
+            "interim",
+            "completion",
+            "other",
+            null
+          ]
+        },
+        "period_start": {
+          "$ref": "#/$defs/date"
+        },
+        "period_end": {
+          "$ref": "#/$defs/date"
+        },
+        "report_date": {
+          "$ref": "#/$defs/date"
+        },
+        "current_plan_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "current_actual_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "cumulative_plan_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "cumulative_actual_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "calculation_basis": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "work_items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/progress_work_item"
+          }
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/risk"
+          }
+        },
+        "author": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "report_kind",
+        "period_start",
+        "period_end",
+        "current_plan_percent",
+        "current_actual_percent",
+        "cumulative_plan_percent",
+        "cumulative_actual_percent",
+        "work_items",
+        "risks"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "meeting_attendee": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "organization_role": {
+          "enum": [
+            "customer",
+            "supplier",
+            "operating_agency",
+            "other",
+            null
+          ]
+        },
+        "organization_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "signature_review_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "organization_role",
+        "status",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "meeting": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "date": {
+          "$ref": "#/$defs/date"
+        },
+        "weekday": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 6
+        },
+        "original_weekday": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "start_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?$"
+        },
+        "end_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?$"
+        },
+        "location": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "organizer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "agenda": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "discussions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "special_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "attendees": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/meeting_attendee"
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "date",
+        "location",
+        "organizer",
+        "agenda",
+        "discussions",
+        "decisions",
+        "attendees"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "entity_ref": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "requirements",
+            "features",
+            "screens",
+            "programs",
+            "database_tables",
+            "test_cases",
+            "defects",
+            "deployment_items",
+            "operation_periods",
+            "progress_reports",
+            "meetings",
+            "changes",
+            "kpis",
+            "trace_links",
+            "attachments",
+            "reviews"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "change": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "scope",
+              "schedule",
+              "personnel",
+              "requirement",
+              "equipment",
+              "budget",
+              "other"
+            ]
+          }
+        },
+        "request_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "request_date": {
+          "$ref": "#/$defs/date"
+        },
+        "requester": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/person"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "before": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "after": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "impact": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "response_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "response_date": {
+          "$ref": "#/$defs/date"
+        },
+        "response_content": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "approval_status": {
+          "enum": [
+            "unrequested",
+            "requested",
+            "pending",
+            "approved",
+            "rejected",
+            "not_required",
+            "unverified",
+            null
+          ]
+        },
+        "approval_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "meeting_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "affected_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entity_ref"
+          }
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "categories",
+        "request_number",
+        "request_date",
+        "reason",
+        "before",
+        "after",
+        "impact",
+        "approval_status",
+        "approval_evidence_ids",
+        "meeting_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "kpi_measurement": {
+      "type": "object",
+      "properties": {
+        "period_start": {
+          "$ref": "#/$defs/date"
+        },
+        "period_end": {
+          "$ref": "#/$defs/date"
+        },
+        "numerator": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "denominator": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        }
+      },
+      "required": [
+        "period_start",
+        "period_end",
+        "numerator",
+        "denominator",
+        "value",
+        "status",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "kpi": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "maintain",
+            null
+          ]
+        },
+        "formula_kind": {
+          "enum": [
+            "ratio",
+            "percent",
+            "difference",
+            "direct",
+            null
+          ]
+        },
+        "formula": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "numerator": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "denominator": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "baseline": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "target": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "actual": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "actual_precision": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 12
+        },
+        "measurement_period_start": {
+          "$ref": "#/$defs/date"
+        },
+        "measurement_period_end": {
+          "$ref": "#/$defs/date"
+        },
+        "baseline_source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "target_source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "actual_source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "measurements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/kpi_measurement"
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "unit",
+        "direction",
+        "formula_kind",
+        "formula",
+        "numerator",
+        "denominator",
+        "baseline",
+        "target",
+        "actual"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "trace_link": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_kind": {
+          "enum": [
+            "requirements",
+            "features",
+            "screens",
+            "programs",
+            "database_tables",
+            "test_cases",
+            "defects",
+            "deployment_items",
+            "operation_periods",
+            "progress_reports",
+            "meetings",
+            "changes",
+            "kpis",
+            "trace_links",
+            "attachments",
+            "reviews"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_kind": {
+          "enum": [
+            "requirements",
+            "features",
+            "screens",
+            "programs",
+            "database_tables",
+            "test_cases",
+            "defects",
+            "deployment_items",
+            "operation_periods",
+            "progress_reports",
+            "meetings",
+            "changes",
+            "kpis",
+            "trace_links",
+            "attachments",
+            "reviews"
+          ]
+        },
+        "target_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relation": {
+          "enum": [
+            "implements",
+            "implemented_by",
+            "tests",
+            "tested_by",
+            "verifies",
+            "verified_by",
+            "depends_on",
+            "changes",
+            "supports",
+            "documents",
+            "produces",
+            "derived_from",
+            "related_to"
+          ]
+        },
+        "rationale": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "content_review_status": {
+          "enum": [
+            "not_reviewed",
+            "confirmed",
+            "needs_changes",
+            "not_applicable"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "source_kind",
+        "source_id",
+        "target_kind",
+        "target_id",
+        "relation",
+        "rationale"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "description": "Endpoint existence is separate from the substantive content_review_status; an existing ID is not proof of requirement fulfillment."
+    },
+    "attachment": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "purpose": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "verification_status": {
+          "$ref": "#/$defs/status"
+        },
+        "media_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "caption": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "original_filename": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "document_role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "path",
+        "sha256",
+        "source_id",
+        "purpose",
+        "verification_status"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "review_type": {
+          "enum": [
+            "business_facts",
+            "approval",
+            "native_render",
+            "technical",
+            "compliance"
+          ]
+        },
+        "outcome": {
+          "enum": [
+            "approved",
+            "needs_changes",
+            "pending",
+            "rejected",
+            "not_applicable"
+          ]
+        },
+        "artifact_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "artifact_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "reviewed_at": {
+          "$ref": "#/$defs/date_time"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "subject_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entity_ref"
+          }
+        },
+        "comments": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "review_type",
+        "outcome",
+        "artifact_id",
+        "artifact_sha256",
+        "reviewer",
+        "reviewed_at",
+        "evidence_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "extraction_issue": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "issue_type": {
+          "enum": [
+            "source_conflict",
+            "missing_input",
+            "unverified_fact",
+            "original_id_mismatch",
+            "classification_ambiguity",
+            "layout_risk",
+            "other"
+          ]
+        },
+        "severity": {
+          "enum": [
+            "info",
+            "warning",
+            "error"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "original_value": {},
+        "proposed_value": {},
+        "resolution_status": {
+          "enum": [
+            "open",
+            "resolved",
+            "accepted_with_reason"
+          ]
+        },
+        "resolution": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "affected_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entity_ref"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "issue_type",
+        "severity",
+        "description",
+        "resolution_status"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "form_field": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "value_type": {
+          "enum": [
+            "text",
+            "number",
+            "integer",
+            "boolean",
+            "date",
+            "money",
+            "percent",
+            "list",
+            "table",
+            "attachment_ref"
+          ]
+        },
+        "value": {},
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "author_role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "review_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "key",
+        "label",
+        "locator",
+        "value_type",
+        "value",
+        "status",
+        "source_refs"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "text"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "number"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "integer"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "boolean"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "date"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/date"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "money"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "percent"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 100
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "list"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "array",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "table"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": [
+                    "object",
+                    "array"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_type": {
+                "const": "attachment_ref"
+              }
+            },
+            "required": [
+              "value_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "form_record": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/source_refs"
+        },
+        "original_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "Unaltered identifier observed in the source; never silently repaired."
+        },
+        "original_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "field_states": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/field_state"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "form_id": {
+          "enum": [
+            "1",
+            "1-1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "8-1",
+            "8-2",
+            "8-3",
+            "9",
+            "10",
+            "10-1",
+            "11",
+            "12",
+            "13",
+            "13-1",
+            "13-2",
+            "13-3",
+            "14",
+            "15",
+            "15-1",
+            "16",
+            "16-1",
+            "17",
+            "18",
+            "18-1",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"
+          ]
+        },
+        "form_version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "document_role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "author_role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "record_date": {
+          "$ref": "#/$defs/date"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/form_field"
+          }
+        },
+        "attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "source_refs",
+        "form_id",
+        "author_role",
+        "record_date",
+        "fields"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "description": "Lossless typed fact fields for the 34 source forms, especially finance, bank accounts, declarations, assessments and committee-owned outcomes. Does not authorize creating approvals or changing fixed clauses."
+    },
+    "reference_figure_quotation": {
+      "type": "object",
+      "required": [
+        "attachment_id",
+        "quotation_kind",
+        "scope",
+        "source_document_id",
+        "source_document_sha256",
+        "source_xml",
+        "source_picture_xpath",
+        "source_binary_item_id",
+        "source_binary_member",
+        "source_binary_sha256",
+        "source_pixel_sha256",
+        "historical_owner"
+      ],
+      "properties": {
+        "attachment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quotation_kind": {
+          "enum": [
+            "historical_test_result",
+            "historical_installation_photo"
+          ]
+        },
+        "scope": {
+          "const": "historical_reference_only"
+        },
+        "source_document_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_document_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_xml": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_picture_xpath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_binary_item_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_binary_member": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_binary_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_pixel_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "historical_owner": {
+          "type": "object",
+          "required": [
+            "document_role",
+            "owner_kind",
+            "identity_refs"
+          ],
+          "properties": {
+            "document_role": {
+              "enum": [
+                "SF-TI1",
+                "SF-TI2",
+                "SF-TI4"
+              ]
+            },
+            "owner_kind": {
+              "enum": [
+                "test_case_result_cell",
+                "installation_photo_panel"
+              ]
+            },
+            "group_id_literal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "group_name_literal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "case_number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "case_label_literal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "panel_heading_literal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "identity_refs": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "xml_member",
+                  "xpath",
+                  "text_verbatim"
+                ],
+                "properties": {
+                  "xml_member": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "xpath": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text_verbatim": {
+                    "type": "string"
+                  },
+                  "cell_address": {
+                    "type": "object",
+                    "required": [
+                      "colAddr",
+                      "rowAddr"
+                    ],
+                    "properties": {
+                      "colAddr": {
+                        "type": "string",
+                        "pattern": "^[0-9]+$"
+                      },
+                      "rowAddr": {
+                        "type": "string",
+                        "pattern": "^[0-9]+$"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "paragraph_owned_texts": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "detail_regions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "box_pixels"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "box_pixels": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                ],
+                "items": false,
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "additionalProperties": false,
+            "description": "Optional source-pixel detail view. Coordinates are [left,top,right,bottom), bounded by verified source pixels; full original view is always retained. Generation requires the explicit Hancom Mac12.30 PNG profile. No invented glyphs, resampling or enhancement of the embedded source raster."
+          },
+          "maxItems": 6
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "quotation_kind": {
+                "const": "historical_test_result"
+              }
+            },
+            "required": [
+              "quotation_kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "historical_owner": {
+                "properties": {
+                  "document_role": {
+                    "enum": [
+                      "SF-TI1",
+                      "SF-TI4"
+                    ]
+                  },
+                  "owner_kind": {
+                    "const": "test_case_result_cell"
+                  }
+                },
+                "required": [
+                  "group_id_literal",
+                  "group_name_literal",
+                  "case_number",
+                  "case_label_literal"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "quotation_kind": {
+                "const": "historical_installation_photo"
+              }
+            },
+            "required": [
+              "quotation_kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "historical_owner": {
+                "properties": {
+                  "document_role": {
+                    "const": "SF-TI2"
+                  },
+                  "owner_kind": {
+                    "const": "installation_photo_panel"
+                  }
+                },
+                "required": [
+                  "panel_heading_literal"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "description": "Historical source-figure quotation only; does not establish current test execution or installation. Initial supported source registry contains six ownership instances."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "dataset_kind": {
+            "const": "synthetic"
+          }
+        },
+        "required": [
+          "dataset_kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "synthetic_notice"
+        ],
+        "properties": {
+          "synthetic_notice": {
+            "const": "검증용 합성 자료(제출용 아님)"
+          },
+          "submission_ready": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "dataset_kind": {
+            "const": "reference_extraction"
+          }
+        },
+        "required": [
+          "dataset_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "submission_ready": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}

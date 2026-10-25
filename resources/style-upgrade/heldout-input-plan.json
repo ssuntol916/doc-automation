@@ -1,0 +1,449 @@
+{
+  "schema_version": "editorial-heldout-plan-1",
+  "case_freeze_policy": "Realize complete schema-valid input+attachment files, record hashes and semantic/essential-figure inventories, then freeze profile/code before current native evaluation. No hidden reference answer or pixelmatching tuning.",
+  "roles": [
+    {
+      "role": "SF-AD1",
+      "case_id": "SF-AD1-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-AD1"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-AD2",
+      "case_id": "SF-AD2-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-AD2"
+      ],
+      "variants": [
+        "functional+nonfunctional+kind=null interleaving with stable originalIDs",
+        "short1paragraph/medium3paragraph/long17paragraph requirements",
+        "mixed LatinID with73characters, Hangul name43characters, constraints and owner/source unknowns"
+      ],
+      "must_observe": [
+        "classification groups and TOC",
+        "no manualID abbreviation",
+        "continued card identity and final marker",
+        "null group remains unknown"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-AD3",
+      "case_id": "SF-AD3-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-AD3"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TD1",
+      "case_id": "SF-TD1-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TD1"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TD2",
+      "case_id": "SF-TD2-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TD2"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TD3",
+      "case_id": "SF-TD3-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TD3"
+      ],
+      "variants": [
+        "2new screenIDs; fields with required=true/false/null and defaults0,false,emptystring,null",
+        "one declared synthetic capture with6frozen essential labels and before/after meanings",
+        "one missing-required-image case; no fake completion/approval"
+      ],
+      "must_observe": [
+        "screen/figure/caption/body element correspondence",
+        "critical6labels at native printed size",
+        "unknown required/default state",
+        "absence is disclosed/held rather than synthesizedactualscreen"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TD4",
+      "case_id": "SF-TD4-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TD4"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TD5",
+      "case_id": "SF-TD5-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TD5"
+      ],
+      "variants": [
+        "3new synthetic tables with7/23/37columns (not previous55/74fixture)",
+        "long physicalIDs and logicalnames; defaults0,false,emptystring,null; scale0/null/3",
+        "composite UNIQUE+FK+source notes across continued rows"
+      ],
+      "must_observe": [
+        "every table/column/default/type/state/constraint mapping",
+        "landscape longID wrapping and9column headers",
+        "last-column marker and human-readable appendix"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-CD1",
+      "case_id": "SF-CD1-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-CD1"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TI1",
+      "case_id": "SF-TI1-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TI1"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TI2",
+      "case_id": "SF-TI2-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TI2"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TI3",
+      "case_id": "SF-TI3-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TI3"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-TI4",
+      "case_id": "SF-TI4-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-TI4"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-OS1",
+      "case_id": "SF-OS1-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-OS1"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-OS2",
+      "case_id": "SF-OS2-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-OS2"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-PM1",
+      "case_id": "SF-PM1-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-PM1"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-PM2",
+      "case_id": "SF-PM2-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-PM2"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-PM3",
+      "case_id": "SF-PM3-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-PM3"
+      ],
+      "variants": [
+        "new role-specific synthetic facts with short/medium/long records and mixed Hangul/Latin identifiers",
+        "explicit knownfalse/0,unknownnull and empty-text boundary when schema permits",
+        "multi-page content or absent-supplied-evidence boundary appropriate to role"
+      ],
+      "must_observe": [
+        "all role-specific semantic fields and state meaning",
+        "body/heading/table hierarchy and last item",
+        "current native whole-page readability and declared source/figure limits"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    },
+    {
+      "role": "SF-PM4",
+      "case_id": "SF-PM4-HELDOUT-v1",
+      "dataset_kind": "synthetic",
+      "notice": "검증용 합성 자료(제출용 아님)",
+      "requested_roles": [
+        "SF-PM4"
+      ],
+      "variants": [
+        "functional/nonfunctional/kind=null requirements with long explicit notes",
+        "direct and reverse explicit links, two-stage tests and unrelated control links",
+        "JSON-shaped source data rendered as readable typed relation/specification rows"
+      ],
+      "must_observe": [
+        "direction/relation/notes/status/source retained",
+        "no transitive invented links",
+        "rawJSON not businessbody",
+        "unknown kind not forced into functional/nonfunctional"
+      ],
+      "profile_design_use": "Must not be used to choose targets before first frozen-profile evaluation. If a failure informs an implementation fix, rerun and disclose that this case became regression; author a new independent heldout case for finalgeneralization.",
+      "input_file_status": "planned_not_realized",
+      "input_sha256": null,
+      "actual_score_percent": null
+    }
+  ],
+  "same_content_policy": "AD2,TD5,TD3,PM4 run controlled source reproduction first, then unusedcases. Other15 roles need same-content selected representative source/adjacent-designed cases and unusedinput before acceptance. OS1 adjacent design/PM1partial cadence are labelled separately.",
+  "quality_status": "not_assessed",
+  "actual_suite_score_percent": null
+}

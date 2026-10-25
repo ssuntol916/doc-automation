@@ -1,0 +1,24 @@
+{
+  "schema_version": "td2-function-list-order-evidence-1",
+  "recorded_at": "2026-10-24T19:20:02.771942+00:00",
+  "role": "SF-TD2",
+  "category": "implementation_choice_correcting_unproven_relation",
+  "basis": "Independent C04 review found TD4 infers arrows/execution order from an unordered functions array; source inspection confirms TD2 software section used the same generated arrow join. TD2 condition is code-derived, not a separate new actual-page failure claim.",
+  "source_field": "/programs/<index>/functions",
+  "before": "처리: function1 → function2",
+  "after": "기능 목록(번호는 입력 배열 위치, 실행순서 미확정): 1. function1; 2. function2",
+  "content_contract": {
+    "all_function_strings_verbatim": true,
+    "array_item_positions_preserved_as_input_positions": true,
+    "input_types_status_sources_and_explicit_relations_unchanged": true,
+    "no_execution_causality_inferred": true,
+    "no_generic_text_normalization": true,
+    "scope": "Only the exact TD2 software-section paragraph generated from each program functions array; other arrows supplied in actual source data are outside this change."
+  },
+  "previous_candidate_profile": {
+    "path": "outputs/quality-loop/r09/title-flow-and-installation/before/SF-TD2.v10.keep-only.json",
+    "sha256": "5434d6e6ebbd0ee856770234e25843751be19e465e039632156053027f6761a2"
+  },
+  "native_status": "pending_current_v10_bytes",
+  "score_percent": null
+}

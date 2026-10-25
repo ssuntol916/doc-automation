@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "filename_nfc": "스마트공장 보급·확산사업 각 단계별 개발산출물 목록_v2.0.hwpx",
+  "sha256": "36225a53e481a65e066c184ff14fb6d7ae60cfca47aa479cfdef2ef2a804c36f",
+  "version": {
+    "value": "v2.0",
+    "basis": "원본 파일명",
+    "in_body_verified": false
+  },
+  "business_year": null,
+  "currency_verified": false,
+  "source_title": "스마트공장 보급·확산사업 각 단계별 개발산출물 목록",
+  "document_count": 19,
+  "required_count": 17,
+  "optional_count": 2,
+  "notes": [
+    "사업연도는 원문 제목/목록에 없음. 2025 서식자료와 같은 연도/사업으로 임의 통합하지 않음.",
+    "단계는 cellAddr/rowSpan 병합을 고려하여 상속. 물리적 tc 순서로 열을 고정하면 오독 가능.",
+    "원문의 메뉴얼은 name_source에 보존하고 canonical_name만 매뉴얼로 정규화."
+  ],
+  "documents": [
+    {
+      "stage": "분석단계",
+      "work": "현행업무 분석",
+      "name_source": "현행업무분석서",
+      "canonical_name": "현행업무분석서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "도입기업에서 운영 중인 업무와 시스템 현황을 조사하여 업무 현황과 시스템 현황 분석 결과를 작성한다",
+      "form_code": "SF-AD1",
+      "source_row": 2,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R2C1/P9",
+        "work": "Contents/section0.xml#T1/R2C2/P10",
+        "name": "Contents/section0.xml#T1/R2C3/P11",
+        "requirement": "Contents/section0.xml#T1/R2C4/P12",
+        "description": "Contents/section0.xml#T1/R2C5/P13",
+        "code": "Contents/section0.xml#T1/R2C6/P14"
+      }
+    },
+    {
+      "stage": "분석단계",
+      "work": "요구사항 분석",
+      "name_source": "요구사항정의서",
+      "canonical_name": "요구사항정의서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "착수계, 사업계획서에 제시된 사업범위를 기준으로 인터뷰 및 회의 결과 등을 반영한 요구사항 세부요건, 제약사항 등을 명확히 정의한다(기능/비기능 분리)",
+      "form_code": "SF-AD2",
+      "source_row": 3,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R2C1/P9",
+        "work": "Contents/section0.xml#T1/R3C1/P15",
+        "name": "Contents/section0.xml#T1/R3C2/P16",
+        "requirement": "Contents/section0.xml#T1/R3C3/P17",
+        "description": "Contents/section0.xml#T1/R3C4/P18",
+        "code": "Contents/section0.xml#T1/R3C5/P19"
+      }
+    },
+    {
+      "stage": "분석단계",
+      "work": "기능 분석",
+      "name_source": "기능대비표",
+      "canonical_name": "기능대비표",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "솔루션 고유 기능들을 기준으로 기존(재활용), 추가, 변경, 삭제로 구분하고 추가, 변경, 삭제 기능은 관련 내용 및 근거를 제시한다",
+      "form_code": "SF-AD3",
+      "source_row": 4,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R2C1/P9",
+        "work": "Contents/section0.xml#T1/R4C1/P20",
+        "name": "Contents/section0.xml#T1/R4C2/P21",
+        "requirement": "Contents/section0.xml#T1/R4C3/P22",
+        "description": "Contents/section0.xml#T1/R4C4/P23",
+        "code": "Contents/section0.xml#T1/R4C5/P24"
+      }
+    },
+    {
+      "stage": "설계단계",
+      "work": "개선업무 설계",
+      "name_source": "개선업무설계서",
+      "canonical_name": "개선업무설계서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "요구사항이 반영된 개선된 전체 업무 흐름도와 개선된 업무(공정)별로 세부적인 업무 절차 흐름도 등을 작성한다",
+      "form_code": "SF-TD1",
+      "source_row": 5,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R5C1/P25",
+        "work": "Contents/section0.xml#T1/R5C2/P26",
+        "name": "Contents/section0.xml#T1/R5C3/P27",
+        "requirement": "Contents/section0.xml#T1/R5C4/P28",
+        "description": "Contents/section0.xml#T1/R5C5/P29",
+        "code": "Contents/section0.xml#T1/R5C6/P30"
+      }
+    },
+    {
+      "stage": "설계단계",
+      "work": "아키텍처 설계",
+      "name_source": "아키텍처설계서",
+      "canonical_name": "아키텍처설계서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "시스템 구축 계획을 제시하는 것으로 본 사업에서 도입되는 장비들을 반영한 H/W, S/W, N/W 구성도와 도입 장비별로 세부 규격, 설치 계획 등을 작성한다",
+      "form_code": "SF-TD2",
+      "source_row": 6,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R5C1/P25",
+        "work": "Contents/section0.xml#T1/R6C1/P31",
+        "name": "Contents/section0.xml#T1/R6C2/P32",
+        "requirement": "Contents/section0.xml#T1/R6C3/P33",
+        "description": "Contents/section0.xml#T1/R6C4/P34",
+        "code": "Contents/section0.xml#T1/R6C5/P35"
+      }
+    },
+    {
+      "stage": "설계단계",
+      "work": "화면 설계",
+      "name_source": "화면설계서",
+      "canonical_name": "화면설계서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "화면표준, 메뉴구조도, 각 화면(보고서)별 구성 항목에 대한 세부 내용을 제시하며, 변경 화면(기능)에 대해서 는 변경 전/후 화면과 변경 내용을 작성한다",
+      "form_code": "SF-TD3",
+      "source_row": 7,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R5C1/P25",
+        "work": "Contents/section0.xml#T1/R7C1/P36",
+        "name": "Contents/section0.xml#T1/R7C2/P37",
+        "requirement": "Contents/section0.xml#T1/R7C3/P38",
+        "description": "Contents/section0.xml#T1/R7C4/P39",
+        "code": "Contents/section0.xml#T1/R7C5/P40"
+      }
+    },
+    {
+      "stage": "설계단계",
+      "work": "프로그램 설계",
+      "name_source": "프로그램설계서",
+      "canonical_name": "프로그램설계서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "전체 프로그램 목록과 본 사업에서 추가 및 변경되는 기능(모듈)단위로 소스코드를 구현하기 위한 세부 구성 내용을 작성한다(인터페이스 설계 포함)",
+      "form_code": "SF-TD4",
+      "source_row": 8,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R5C1/P25",
+        "work": "Contents/section0.xml#T1/R8C1/P41",
+        "name": "Contents/section0.xml#T1/R8C2/P42",
+        "requirement": "Contents/section0.xml#T1/R8C3/P43",
+        "description": "Contents/section0.xml#T1/R8C4/P44",
+        "code": "Contents/section0.xml#T1/R8C5/P45"
+      }
+    },
+    {
+      "stage": "설계단계",
+      "work": "데이터베이스설계",
+      "name_source": "데이터베이스설계서",
+      "canonical_name": "데이터베이스설계서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "전체 테이블 목록과 본 사업에서 추가 및 변경되는 기능과 관련된 테이블의 세부 구성 내용을 작성한다",
+      "form_code": "SF-TD5",
+      "source_row": 9,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R5C1/P25",
+        "work": "Contents/section0.xml#T1/R9C1/P46",
+        "name": "Contents/section0.xml#T1/R9C2/P47",
+        "requirement": "Contents/section0.xml#T1/R9C3/P48",
+        "description": "Contents/section0.xml#T1/R9C4/P49",
+        "code": "Contents/section0.xml#T1/R9C5/P50"
+      }
+    },
+    {
+      "stage": "구현단계",
+      "work": "단위시험 실시",
+      "name_source": "단위테스트결과서",
+      "canonical_name": "단위테스트결과서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "기능 단위로 테스트 시나리오, 테스트 데이터, 예상결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다",
+      "form_code": "SF-CD1",
+      "source_row": 10,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R10C1/P51",
+        "work": "Contents/section0.xml#T1/R10C2/P52",
+        "name": "Contents/section0.xml#T1/R10C3/P53",
+        "requirement": "Contents/section0.xml#T1/R10C4/P54",
+        "description": "Contents/section0.xml#T1/R10C5/P55",
+        "code": "Contents/section0.xml#T1/R10C6/P56"
+      }
+    },
+    {
+      "stage": "시험 및 전환단계",
+      "work": "통합시험 실시",
+      "name_source": "통합테스트결과서",
+      "canonical_name": "통합테스트결과서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "개발자 관점에서 “2. 주요 공정별 스마트化 추진 목표 달성 상황”의 각 공정에 대한 스마트화 적용결과를 확인하기 위한 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다",
+      "form_code": "SF-TI1",
+      "source_row": 11,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R11C1/P57",
+        "work": "Contents/section0.xml#T1/R11C2/P58",
+        "name": "Contents/section0.xml#T1/R11C3/P59",
+        "requirement": "Contents/section0.xml#T1/R11C4/P60",
+        "description": "Contents/section0.xml#T1/R11C5/P61",
+        "code": "Contents/section0.xml#T1/R11C6/P62"
+      }
+    },
+    {
+      "stage": "시험 및 전환단계",
+      "work": "시스템 전환",
+      "name_source": "시스템전환결과서",
+      "canonical_name": "시스템전환결과서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "H/W, S/W, N/W의 설치 및 전환 결과와 초기데이터 구축 결과 등을 작성한다(증적 자료 제시)",
+      "form_code": "SF-TI2",
+      "source_row": 12,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R11C1/P57",
+        "work": "Contents/section0.xml#T1/R12C1/P63",
+        "name": "Contents/section0.xml#T1/R12C2/P64",
+        "requirement": "Contents/section0.xml#T1/R12C3/P65",
+        "description": "Contents/section0.xml#T1/R12C4/P66",
+        "code": "Contents/section0.xml#T1/R12C5/P67"
+      }
+    },
+    {
+      "stage": "시험 및 전환단계",
+      "work": "매뉴얼 작성",
+      "name_source": "메뉴얼",
+      "canonical_name": "매뉴얼",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "사용자와 관리자(운영자)별로 업무에 참조할 수 있는 매뉴얼을 작성한다",
+      "form_code": "SF-TI3",
+      "source_row": 13,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R11C1/P57",
+        "work": "Contents/section0.xml#T1/R13C1/P68",
+        "name": "Contents/section0.xml#T1/R13C2/P69",
+        "requirement": "Contents/section0.xml#T1/R13C3/P70",
+        "description": "Contents/section0.xml#T1/R13C4/P71",
+        "code": "Contents/section0.xml#T1/R13C5/P72"
+      }
+    },
+    {
+      "stage": "시험 및 전환단계",
+      "work": "사용자(인수) 시험 실시",
+      "name_source": "사용자테스트결과서",
+      "canonical_name": "사용자테스트결과서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "도입기업 담당자가 운영환경에서 “주요 공정별 스마트化 추진 목표 달성 상황”에 제시되어 있는 각 공정에 대해 스마트화 적용결과를 확인할 수 있는 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다",
+      "form_code": "SF-TI4",
+      "source_row": 14,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R11C1/P57",
+        "work": "Contents/section0.xml#T1/R14C1/P73",
+        "name": "Contents/section0.xml#T1/R14C2/P74",
+        "requirement": "Contents/section0.xml#T1/R14C3/P75",
+        "description": "Contents/section0.xml#T1/R14C4/P76",
+        "code": "Contents/section0.xml#T1/R14C5/P77"
+      }
+    },
+    {
+      "stage": "운영지원단계",
+      "work": "운영지원 계획",
+      "name_source": "운영지원계획서",
+      "canonical_name": "운영지원계획서",
+      "requirement_source": "선택",
+      "required": false,
+      "description_source": "운영 지원, 헬프 데스크 운영, 운영 현황 분석 및 관리 지원, 추가 교육 실시, 시범운영 방안 등을 작성한다",
+      "form_code": "SF-OS1",
+      "source_row": 15,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R15C1/P78",
+        "work": "Contents/section0.xml#T1/R15C2/P79",
+        "name": "Contents/section0.xml#T1/R15C3/P80",
+        "requirement": "Contents/section0.xml#T1/R15C4/P81",
+        "description": "Contents/section0.xml#T1/R15C5/P82",
+        "code": "Contents/section0.xml#T1/R15C6/P83"
+      }
+    },
+    {
+      "stage": "운영지원단계",
+      "work": "운영 및 통제",
+      "name_source": "운영현황보고서",
+      "canonical_name": "운영현황보고서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "시스템 구축 및 운영(시범) 현황을 작성한다, 시스템 운영(시범) 현황은 일일(주간) 단위로 사용자 수, 평균 사용 시간, 장애(오류)관리 내역 등 운영 현황 및 지원 내용을 작성한다",
+      "form_code": "SF-OS2",
+      "source_row": 16,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R15C1/P78",
+        "work": "Contents/section0.xml#T1/R16C1/P84",
+        "name": "Contents/section0.xml#T1/R16C2/P85",
+        "requirement": "Contents/section0.xml#T1/R16C3/P86",
+        "description": "Contents/section0.xml#T1/R16C4/P87",
+        "code": "Contents/section0.xml#T1/R16C5/P88"
+      }
+    },
+    {
+      "stage": "프로젝트관리",
+      "work": "보고 관리",
+      "name_source": "월간보고서",
+      "canonical_name": "월간보고서",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "월간단위로 업무 수행 계획 및 실적과 이슈사항등을 기록하여 도입기업에 보고한다",
+      "form_code": "SF-PM1",
+      "source_row": 17,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R17C1/P89",
+        "work": "Contents/section0.xml#T1/R17C2/P90",
+        "name": "Contents/section0.xml#T1/R17C3/P91",
+        "requirement": "Contents/section0.xml#T1/R17C4/P92",
+        "description": "Contents/section0.xml#T1/R17C5/P93",
+        "code": "Contents/section0.xml#T1/R17C6/P94"
+      }
+    },
+    {
+      "stage": "프로젝트관리",
+      "work": "의사소통 관리",
+      "name_source": "회의록",
+      "canonical_name": "회의록",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "도입기업과 업무 협의 내용 및 결과 등을 작성한다",
+      "form_code": "SF-PM2",
+      "source_row": 18,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R17C1/P89",
+        "work": "Contents/section0.xml#T1/R18C1/P95",
+        "name": "Contents/section0.xml#T1/R18C2/P96",
+        "requirement": "Contents/section0.xml#T1/R18C3/P97",
+        "description": "Contents/section0.xml#T1/R18C4/P98",
+        "code": "Contents/section0.xml#T1/R18C5/P99"
+      }
+    },
+    {
+      "stage": "프로젝트관리",
+      "work": "변경 관리",
+      "name_source": "변경관리내역서",
+      "canonical_name": "변경관리내역서",
+      "requirement_source": "선택",
+      "required": false,
+      "description_source": "사업범위, 일정, 인력뿐만 아니라 요구사항, 장비 규격 등 변경 사항이 발생될 경우 변경 사유 및 승인 여부, 관련 공문 등을 기록한다",
+      "form_code": "SF-PM3",
+      "source_row": 19,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R17C1/P89",
+        "work": "Contents/section0.xml#T1/R19C1/P100",
+        "name": "Contents/section0.xml#T1/R19C2/P101",
+        "requirement": "Contents/section0.xml#T1/R19C3/P102",
+        "description": "Contents/section0.xml#T1/R19C4/P103",
+        "code": "Contents/section0.xml#T1/R19C5/P104"
+      }
+    },
+    {
+      "stage": "프로젝트관리",
+      "work": "범위관리",
+      "name_source": "요구사항추적표",
+      "canonical_name": "요구사항추적표",
+      "requirement_source": "필수",
+      "required": true,
+      "description_source": "기능요구사항은 요구사항ID를 기준으로 각 요구사항들이 화면설계서, 프로그램설계서, 단위테스트결과서, 통합테스트결과서, 사용자테스트결과서 등에 반영되어 있는지를 추적할 수 있도록 관련된 ID를 작성하며, 비기능요구사항은 관련된 결과물 및 추진 현황을 작성한다",
+      "form_code": "SF-PM4",
+      "source_row": 20,
+      "evidence": {
+        "stage": "Contents/section0.xml#T1/R17C1/P89",
+        "work": "Contents/section0.xml#T1/R20C1/P105",
+        "name": "Contents/section0.xml#T1/R20C2/P106",
+        "requirement": "Contents/section0.xml#T1/R20C3/P107",
+        "description": "Contents/section0.xml#T1/R20C4/P108",
+        "code": "Contents/section0.xml#T1/R20C5/P109"
+      }
+    }
+  ],
+  "source_id": "template-deliverables-v2"
+}

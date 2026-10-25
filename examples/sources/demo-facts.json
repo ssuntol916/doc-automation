@@ -1,0 +1,972 @@
+{
+  "fact_set_id": "DEMO-FACTS-001",
+  "classification": "synthetic",
+  "purpose": "문서 생성·연결·계산 검증을 위한 합성 원시 입력. 실제 기업·사업·수행 결과·승인 자료가 아니며 제출용으로 사용할 수 없다.",
+  "execution_assertion": "not_performed",
+  "approval_assertion": "not_requested_or_approved",
+  "signature_assertion": "no_signatures",
+  "project_input": {
+    "internal_id": "DEMO-PROJECT-001",
+    "display_name": "검증용 배치 생산·품질관리 MES",
+    "program_name": "검증용 스마트공장 문서 자동화 예제",
+    "program_year": 2026,
+    "template_version": "v2.0",
+    "customer_label": "검증용 도입기업 A",
+    "supplier_label": "검증용 공급기업 B",
+    "planned_start": "2026-11-02",
+    "planned_end": "2026-11-13",
+    "actual_start": null,
+    "actual_end": null
+  },
+  "requirement_notes": [
+    {
+      "key": "R01",
+      "kind": "functional",
+      "change": "modified",
+      "system": "DEMO MES",
+      "business_area": "생산관리",
+      "title": "배치별 생산실적 입력 검증 및 저장",
+      "summary": "작업지시와 배치를 선택하여 양품·불량 수량을 입력하고 합계 및 중복 조건을 검증한 후 저장하는 검증용 기능이다.",
+      "details": [
+        "작업일자, 작업지시번호, 배치번호, 품목코드, 양품수량, 불량수량을 필수 입력으로 둔다.",
+        "총수량은 양품수량과 불량수량의 합으로 계산하며 사용자가 임의로 덮어쓰지 못하도록 설계한다.",
+        "수량은 0 이상, 소수 셋째 자리까지 허용하는 가정이다. 작업일자·작업지시번호·배치번호 조합이 중복되면 저장을 차단한다.",
+        "조회 조건은 작업일자 범위·작업지시번호·배치번호이며 저장 성공 여부와 입력 오류를 구분하여 안내하도록 계획한다."
+      ],
+      "constraints": [
+        "작업지시와 품목코드는 사전에 등록된 합성 기준정보를 참조한다.",
+        "소수 수량 허용 범위는 변경검토 C01이 확정되기 전에는 실제 업무 기준으로 해석하지 않는다."
+      ],
+      "owner_name": null,
+      "execution": "not_run"
+    },
+    {
+      "key": "R02",
+      "kind": "functional",
+      "change": "new",
+      "system": "DEMO MES",
+      "business_area": "품질관리",
+      "title": "배치별 검사수량 판정 및 이력 조회",
+      "summary": "생산실적에 연결된 검사수량·합격수량·불합격수량을 검증하고 검사 판정 이력을 조회하도록 계획한 기능이다.",
+      "details": [
+        "생산실적 식별자, 검사일자, 검사수량, 합격수량, 불합격수량을 입력받는다.",
+        "검사수량은 합격수량과 불합격수량의 합과 같아야 하고 수량은 모두 0 이상 정수여야 한다.",
+        "불합격수량이 0이면 합격, 1 이상이면 검토필요로 계산하는 합성 판정 규칙을 사용한다.",
+        "검사이력은 배치번호·검사일자·판정으로 조회하며 검사수량과 판정의 수정 이력을 기록하도록 계획한다."
+      ],
+      "constraints": [
+        "대상 생산실적 식별자가 존재해야 하며 존재하지 않는 식별자는 저장을 차단한다.",
+        "합성 판정 규칙은 실제 품질기준이나 검사 승인으로 사용할 수 없다."
+      ],
+      "owner_name": null,
+      "execution": "not_run"
+    },
+    {
+      "key": "R03",
+      "kind": "nonfunctional",
+      "change": "new",
+      "system": "DEMO MES",
+      "business_area": "접근권한",
+      "title": "역할별 생산·품질 데이터 접근 제한",
+      "summary": "생산담당·품질담당·관리자 역할에 따라 화면과 저장 API의 접근을 제한하는 검증용 보안 요구사항이다.",
+      "details": [
+        "생산담당은 생산실적 화면·저장 API를 사용하고 품질 판정 수정은 수행할 수 없도록 설계한다.",
+        "품질담당은 검사 판정 화면·저장 API를 사용하고 생산실적은 참조 조회만 가능하도록 설계한다.",
+        "관리자 역할 부여·회수와 데이터 수정은 사용자 식별자·시각·변경 필드를 포함한 감사 이력으로 남기도록 계획한다."
+      ],
+      "constraints": [
+        "실제 사용자 계정·인증연동·접근권한 승인자는 미확인이다.",
+        "권한 검증은 화면 표시와 API 호출에 모두 적용해야 한다."
+      ],
+      "owner_name": null,
+      "execution": "not_run"
+    }
+  ],
+  "feature_inventory": [
+    {
+      "key": "F01",
+      "name": "품목기준정보 조회",
+      "classification": "existing",
+      "before": "합성 품목코드와 품목명을 조회하는 기본 기능",
+      "after": "동일 기능을 재사용하는 가정",
+      "requirement_keys": [
+        "R01"
+      ],
+      "reason": "입력 품목코드 검증에 필요한 기준정보"
+    },
+    {
+      "key": "F02",
+      "name": "작업지시 조회",
+      "classification": "existing",
+      "before": "합성 작업지시번호·품목을 조회하는 기본 기능",
+      "after": "동일 기능을 재사용하는 가정",
+      "requirement_keys": [
+        "R01"
+      ],
+      "reason": "실적 입력의 작업지시 선택"
+    },
+    {
+      "key": "F03",
+      "name": "생산실적 수량 검증",
+      "classification": "modified",
+      "before": "양품·불량 수량을 개별 입력하는 예시 기능",
+      "after": "합계 계산·음수 차단·소수 셋째 자리 검증을 추가하는 계획",
+      "requirement_keys": [
+        "R01"
+      ],
+      "reason": "수량 정합성 확보를 위한 검증 가정"
+    },
+    {
+      "key": "F04",
+      "name": "배치 중복 저장 차단",
+      "classification": "new",
+      "before": "해당 기능 없음으로 가정",
+      "after": "작업일자·작업지시·배치 조합 중복을 검출하는 계획",
+      "requirement_keys": [
+        "R01"
+      ],
+      "reason": "동일 합성 배치의 중복 등록 방지"
+    },
+    {
+      "key": "F05",
+      "name": "검사 판정과 이력 조회",
+      "classification": "new",
+      "before": "해당 기능 없음으로 가정",
+      "after": "검사수량 정합 검증·판정 계산·이력 조회를 추가하는 계획",
+      "requirement_keys": [
+        "R02"
+      ],
+      "reason": "합성 검사 데이터와 생산실적의 연결"
+    },
+    {
+      "key": "F06",
+      "name": "역할별 저장 API 접근 제한",
+      "classification": "modified",
+      "before": "모든 합성 역할에 동일 저장 API 접근을 허용하는 초기 가정",
+      "after": "생산/품질 역할별 API 접근을 제한하는 계획",
+      "requirement_keys": [
+        "R03"
+      ],
+      "reason": "화면 권한과 API 권한의 일치 검증"
+    }
+  ],
+  "screen_plan": [
+    {
+      "key": "S01",
+      "title": "배치 생산실적 등록",
+      "role": "생산담당",
+      "menu": "생산관리 > 배치 생산실적",
+      "requirement_keys": [
+        "R01",
+        "R03"
+      ],
+      "input_fields": [
+        "작업일자",
+        "작업지시번호",
+        "배치번호",
+        "품목코드",
+        "양품수량",
+        "불량수량"
+      ],
+      "output_fields": [
+        "총수량",
+        "오류메시지",
+        "저장상태"
+      ],
+      "actions": [
+        "조회",
+        "신규",
+        "저장",
+        "취소"
+      ],
+      "change": "modified",
+      "steps": [
+        "조회 조건을 입력하고 합성 대상 자료를 선택할 계획이다.",
+        "필수값과 수량을 입력한 뒤 계산 결과·오류를 검토할 계획이다.",
+        "저장 요청 시 서버 검증 결과를 표시하도록 설계한다. 실제 실행은 미수행이다."
+      ],
+      "checks": [
+        "화면과 저장 API에서 동일 역할 권한을 검사하도록 계획한다.",
+        "필수값·수량 범위·합계·대상 식별자 조건은 연결 요구사항을 따른다."
+      ],
+      "field_definitions": [
+        {
+          "name": "작업일자",
+          "data_type": "date",
+          "required": true,
+          "default": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요"
+        },
+        {
+          "name": "작업지시번호",
+          "data_type": "string",
+          "required": true,
+          "default": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요"
+        },
+        {
+          "name": "배치번호",
+          "data_type": "string",
+          "required": true,
+          "default": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요"
+        },
+        {
+          "name": "품목코드",
+          "data_type": "string",
+          "required": true,
+          "default": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요"
+        },
+        {
+          "name": "양품수량",
+          "data_type": "decimal(12,3)",
+          "required": true,
+          "default": null,
+          "validation": "0 이상, 소수 셋째 자리까지의 합성 설계안"
+        },
+        {
+          "name": "불량수량",
+          "data_type": "decimal(12,3)",
+          "required": true,
+          "default": null,
+          "validation": "0 이상, 소수 셋째 자리까지의 합성 설계안"
+        }
+      ],
+      "button_definitions": [
+        {
+          "name": "조회",
+          "action": "조회 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        },
+        {
+          "name": "신규",
+          "action": "신규 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        },
+        {
+          "name": "저장",
+          "action": "저장 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        },
+        {
+          "name": "취소",
+          "action": "취소 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        }
+      ]
+    },
+    {
+      "key": "S02",
+      "title": "배치 검사 판정",
+      "role": "품질담당",
+      "menu": "품질관리 > 배치 검사 판정",
+      "requirement_keys": [
+        "R02",
+        "R03"
+      ],
+      "input_fields": [
+        "생산실적 식별자",
+        "검사일자",
+        "검사수량",
+        "합격수량",
+        "불합격수량"
+      ],
+      "output_fields": [
+        "판정",
+        "검사이력",
+        "오류메시지"
+      ],
+      "actions": [
+        "조회",
+        "신규",
+        "판정계산",
+        "저장"
+      ],
+      "change": "new",
+      "steps": [
+        "조회 조건을 입력하고 합성 대상 자료를 선택할 계획이다.",
+        "필수값과 수량을 입력한 뒤 계산 결과·오류를 검토할 계획이다.",
+        "저장 요청 시 서버 검증 결과를 표시하도록 설계한다. 실제 실행은 미수행이다."
+      ],
+      "checks": [
+        "화면과 저장 API에서 동일 역할 권한을 검사하도록 계획한다.",
+        "필수값·수량 범위·합계·대상 식별자 조건은 연결 요구사항을 따른다."
+      ],
+      "field_definitions": [
+        {
+          "name": "생산실적 식별자",
+          "data_type": "string",
+          "required": true,
+          "default": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요"
+        },
+        {
+          "name": "검사일자",
+          "data_type": "date",
+          "required": true,
+          "default": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요"
+        },
+        {
+          "name": "검사수량",
+          "data_type": "integer",
+          "required": true,
+          "default": null,
+          "validation": "0 이상 정수"
+        },
+        {
+          "name": "합격수량",
+          "data_type": "integer",
+          "required": true,
+          "default": null,
+          "validation": "0 이상 정수"
+        },
+        {
+          "name": "불합격수량",
+          "data_type": "integer",
+          "required": true,
+          "default": null,
+          "validation": "0 이상 정수"
+        }
+      ],
+      "button_definitions": [
+        {
+          "name": "조회",
+          "action": "조회 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        },
+        {
+          "name": "신규",
+          "action": "신규 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        },
+        {
+          "name": "판정계산",
+          "action": "판정계산 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        },
+        {
+          "name": "저장",
+          "action": "저장 요청을 처리하도록 설계하는 계획; 실제 실행 미수행"
+        }
+      ]
+    }
+  ],
+  "program_plan": [
+    {
+      "key": "P01",
+      "title": "배치 생산실적 API",
+      "screen_key": "S01",
+      "requirement_keys": [
+        "R01",
+        "R03"
+      ],
+      "entrypoint": "POST /demo/production-results",
+      "logic": [
+        "역할 확인",
+        "필수값·수량 정합 검증",
+        "배치 중복 조회",
+        "총수량 계산",
+        "트랜잭션 저장 또는 오류 반환"
+      ],
+      "database_keys": [
+        "DB01"
+      ]
+    },
+    {
+      "key": "P02",
+      "title": "배치 검사 판정 API",
+      "screen_key": "S02",
+      "requirement_keys": [
+        "R02",
+        "R03"
+      ],
+      "entrypoint": "POST /demo/quality-inspections",
+      "logic": [
+        "역할 확인",
+        "생산실적 존재 확인",
+        "검사수량 합계 검증",
+        "합성 판정 계산",
+        "검사 이력 저장 또는 오류 반환"
+      ],
+      "database_keys": [
+        "DB01",
+        "DB02"
+      ]
+    }
+  ],
+  "database_plan": [
+    {
+      "key": "DB01",
+      "physical_name": "DEMO_PRODUCTION_RESULT",
+      "title": "검증용 배치 생산실적",
+      "columns": [
+        [
+          "result_id",
+          "실적 식별자",
+          "VARCHAR",
+          "36",
+          false,
+          "PK",
+          null,
+          "정책 미확인"
+        ],
+        [
+          "work_date",
+          "작업일자",
+          "DATE",
+          null,
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "work_order_no",
+          "작업지시번호",
+          "VARCHAR",
+          "30",
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "batch_no",
+          "배치번호",
+          "VARCHAR",
+          "30",
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "item_code",
+          "품목코드",
+          "VARCHAR",
+          "30",
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "good_qty",
+          "양품수량",
+          "DECIMAL",
+          "12,3",
+          false,
+          null,
+          "0",
+          "정책 미확인"
+        ],
+        [
+          "defect_qty",
+          "불량수량",
+          "DECIMAL",
+          "12,3",
+          false,
+          null,
+          "0",
+          "정책 미확인"
+        ],
+        [
+          "total_qty",
+          "총수량",
+          "DECIMAL",
+          "12,3",
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "created_by",
+          "생성 사용자 식별자",
+          "VARCHAR",
+          "50",
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "created_at",
+          "생성시각",
+          "TIMESTAMP",
+          null,
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ]
+      ],
+      "unique_rule": [
+        "work_date",
+        "work_order_no",
+        "batch_no"
+      ]
+    },
+    {
+      "key": "DB02",
+      "physical_name": "DEMO_QUALITY_INSPECTION",
+      "title": "검증용 배치 검사이력",
+      "columns": [
+        [
+          "inspection_id",
+          "검사 식별자",
+          "VARCHAR",
+          "36",
+          false,
+          "PK",
+          null,
+          "정책 미확인"
+        ],
+        [
+          "result_id",
+          "생산실적 식별자",
+          "VARCHAR",
+          "36",
+          false,
+          "FK",
+          null,
+          "정책 미확인"
+        ],
+        [
+          "inspection_date",
+          "검사일자",
+          "DATE",
+          null,
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "inspected_qty",
+          "검사수량",
+          "INTEGER",
+          null,
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "pass_qty",
+          "합격수량",
+          "INTEGER",
+          null,
+          false,
+          null,
+          "0",
+          "정책 미확인"
+        ],
+        [
+          "fail_qty",
+          "불합격수량",
+          "INTEGER",
+          null,
+          false,
+          null,
+          "0",
+          "정책 미확인"
+        ],
+        [
+          "judgement",
+          "합성 판정",
+          "VARCHAR",
+          "20",
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "inspector_id",
+          "검사 사용자 식별자",
+          "VARCHAR",
+          "50",
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ],
+        [
+          "inspected_at",
+          "검사기록시각",
+          "TIMESTAMP",
+          null,
+          false,
+          null,
+          null,
+          "정책 미확인"
+        ]
+      ],
+      "foreign_rule": {
+        "column": "result_id",
+        "target_table_key": "DB01",
+        "target_column": "result_id"
+      }
+    }
+  ],
+  "test_plan": [
+    {
+      "key": "UT01",
+      "stage": "unit",
+      "name": "배치 중복 저장 차단 계획",
+      "requirement_keys": [
+        "R01"
+      ],
+      "program_key": "P01",
+      "scenario": "동일 작업일자·작업지시·배치 조합을 두 번 저장 요청한다.",
+      "input": "합성 작업일자 2026-11-02, 작업지시 DEMO-WO-001, 배치 DEMO-BATCH-001, 양품9, 불량1",
+      "expected": "두 번째 요청을 중복 오류로 차단하고 생산실적 행은 1개만 유지한다.",
+      "actual": null,
+      "result": "not_run"
+    },
+    {
+      "key": "UT02",
+      "stage": "unit",
+      "name": "검사수량 합계 불일치 차단 계획",
+      "requirement_keys": [
+        "R02"
+      ],
+      "program_key": "P02",
+      "scenario": "검사수량과 합격·불합격 합계가 다른 입력을 저장 요청한다.",
+      "input": "합성 검사수량10, 합격8, 불합격1",
+      "expected": "합계 불일치 오류를 반환하고 검사이력을 저장하지 않는다.",
+      "actual": null,
+      "result": "not_run"
+    },
+    {
+      "key": "IT01",
+      "stage": "integration",
+      "name": "생산실적과 검사이력 연결 계획",
+      "requirement_keys": [
+        "R01",
+        "R02"
+      ],
+      "program_key": null,
+      "scenario": "합성 생산실적 식별자를 이용하여 검사이력을 등록하고 조회 연결을 확인하도록 계획한다.",
+      "input": "합성 생산실적 총수량10, 검사수량10, 합격9, 불합격1",
+      "expected": "검사이력이 대상 생산실적에 연결되며 합성 판정은 검토필요로 표시된다.",
+      "actual": null,
+      "result": "not_run"
+    },
+    {
+      "key": "AT01",
+      "stage": "acceptance",
+      "name": "생산 역할의 품질 수정 차단 계획",
+      "requirement_keys": [
+        "R03"
+      ],
+      "program_key": null,
+      "scenario": "생산담당 합성 역할로 품질 판정 저장 API를 호출하도록 계획한다.",
+      "input": "합성 역할 production, 품질 판정 수정 요청",
+      "expected": "권한 오류로 차단되고 기존 검사값이 변경되지 않는다.",
+      "actual": null,
+      "result": "not_run"
+    },
+    {
+      "key": "AT02",
+      "stage": "acceptance",
+      "name": "생산·검사 입력 업무 흐름 검토 계획",
+      "requirement_keys": [
+        "R01",
+        "R02"
+      ],
+      "program_key": null,
+      "scenario": "검토자가 합성 생산수량 입력부터 연결 검사이력 조회까지 절차를 확인하도록 계획한다.",
+      "input": "합성 배치 DEMO-BATCH-002, 양품9·불량1, 검사10·합격9·불합격1",
+      "expected": "생산 총수량10과 연결된 검사이력 및 검토필요 판정을 확인하도록 계획한다. 실제 인수·승인은 수행하지 않았다.",
+      "actual": null,
+      "result": "not_run"
+    }
+  ],
+  "unconfirmed_defect_fixture": {
+    "key": "D01",
+    "name": "중복 저장 결함 분류 검증용 가정",
+    "description": "실제 발생 결함이 아니다. UT01을 수행한 뒤 중복 행이 생기는 경우에만 결함으로 확정하는 예시 후보이다.",
+    "requirement_key": "R01",
+    "test_key": "UT01",
+    "observed_actual": null,
+    "detected_on": null,
+    "resolution": null,
+    "verification": "not_run"
+  },
+  "deployment_plan": {
+    "key": "DP01",
+    "name": "검증 환경 배포 계획",
+    "target": "검증용 격리 환경(실제 주소 미확인)",
+    "planned_date": "2026-11-09",
+    "installed_date": null,
+    "result": "not_run",
+    "evidence_files": [],
+    "category": "software",
+    "planned_specification": "합성 검증용 DEMO MES 웹/API 1식. 실제 설치 환경·주소·라이선스 미확인.",
+    "planned_quantity": 1,
+    "installed_quantity": null,
+    "unit": "식",
+    "verification_plan": "배포 전 버전·접근권한·DB 연결·백업 설정을 검토할 계획. 실제 설치확인은 미수행."
+  },
+  "operation_calculation_fixture": {
+    "key": "OP01",
+    "name": "합성 사용자 이용집계 계산 예제",
+    "period_start": "2026-11-02",
+    "period_end": "2026-11-03",
+    "execution": "not_run",
+    "warning": "아래 행은 실제 접속 로그가 아닌 독립 합성 계산 입력이다.",
+    "rows": [
+      {
+        "day": "2026-11-02",
+        "actor_key": "DEMO-USER-A",
+        "login_events": 2,
+        "access_minutes": 30
+      },
+      {
+        "day": "2026-11-02",
+        "actor_key": "DEMO-USER-B",
+        "login_events": 1,
+        "access_minutes": 20
+      },
+      {
+        "day": "2026-11-03",
+        "actor_key": "DEMO-USER-A",
+        "login_events": 3,
+        "access_minutes": 45
+      },
+      {
+        "day": "2026-11-03",
+        "actor_key": "DEMO-USER-B",
+        "login_events": 2,
+        "access_minutes": 55
+      }
+    ],
+    "expected_totals": {
+      "login_events": 8,
+      "access_minutes": 150,
+      "distinct_actors": 2,
+      "mean_minutes_per_login": 18.75
+    }
+  },
+  "kpi_calculation_fixture": {
+    "key": "K01",
+    "name": "합성 생산실적 검증 통과율",
+    "unit": "%",
+    "direction": "increase",
+    "numerator_count": 18,
+    "denominator_count": 20,
+    "baseline_percent": 80,
+    "target_percent": 95,
+    "weight": 1,
+    "expected_calculated_actual_percent": 90,
+    "expected_attainment_percent": 66.66666666666667,
+    "expected_improvement_percent": 12.5,
+    "execution": "not_run",
+    "warning": "actual은 계산 검증용 합성값이며 실제 업무 성과·테스트 수행 성공이 아니다."
+  },
+  "progress_plan": {
+    "key": "PR01",
+    "name": "검증용 1주차 진행계획",
+    "period_start": "2026-11-02",
+    "period_end": "2026-11-06",
+    "planned_increment_percent": 20,
+    "actual_increment_percent": 0,
+    "planned_cumulative_percent": 20,
+    "actual_cumulative_percent": 0,
+    "current_work": [
+      "입력 요구사항·수량 규칙 검토 예정",
+      "화면·프로그램·DB 연결 검토 예정"
+    ],
+    "next_work": [
+      "미수행 단위·통합·사용자 시험 계획 검토 예정"
+    ],
+    "risk": "실제 사업 입력과 승인 기준이 제공되지 않은 검증용 데이터",
+    "execution": "not_run"
+  },
+  "meeting_plan": {
+    "key": "M01",
+    "name": "합성 요구사항 검토회의 계획",
+    "planned_date": "2026-11-02",
+    "held_date": null,
+    "agenda": [
+      "배치 수량과 중복 기준 검토",
+      "검사 판정 규칙과 역할별 권한 검토"
+    ],
+    "participant_roles": [
+      "생산관리 담당자(가상 역할)",
+      "품질관리 담당자(가상 역할)",
+      "문서 검토자(가상 역할)"
+    ],
+    "agreed_results": [],
+    "signatures": [],
+    "execution": "not_run"
+  },
+  "change_proposal": {
+    "key": "C01",
+    "name": "합성 생산실적 소수 수량 허용 검토",
+    "proposed_before": "수량은 0 이상 정수로 입력한다는 초기 가정",
+    "proposed_after": "양품·불량 수량은 0 이상 소수 셋째 자리까지 허용하는 검토안",
+    "reason": "중량 단위 품목을 표현하는 합성 시나리오의 입력 검증을 비교하기 위한 가정",
+    "impact": [
+      "생산 화면 수량 입력 검증 재검토",
+      "생산 API 및 DECIMAL 컬럼 정합 재검토",
+      "음수·자릿수·합계 검증 시험 계획 보완"
+    ],
+    "requested_date": null,
+    "approved_date": null,
+    "approval": "not_requested_or_approved",
+    "execution": "not_run"
+  },
+  "review_plan": {
+    "key": "RV01",
+    "name": "합성 데이터·문서 연결 검토 계획",
+    "reviewer_name": null,
+    "review_date": null,
+    "outcome": "not_reviewed",
+    "signature": null
+  },
+  "source_use_policy": {
+    "raw_fixture_is_independent": true,
+    "derived_project_file_is_not_a_source": true,
+    "original_business_identifiers_reused": false,
+    "actual_performance_or_approval_asserted": false
+  },
+  "project_context": {
+    "business_profile": "가상 소량 배치 조립품을 생산하고 배치별 생산수량과 검사수량의 연결을 검토하는 합성 시나리오이다. 실제 제품·사업장·생산실적은 제공되지 않았다.",
+    "scope": [
+      "배치 생산실적 입력 검증",
+      "생산실적에 연결된 검사 판정 이력",
+      "역할별 화면과 API 접근 통제"
+    ],
+    "process": {
+      "key": "B01",
+      "name": "배치 생산·검사 연결 프로세스",
+      "current_steps": [
+        "합성 작업지시 선택",
+        "생산수량과 검사수량을 별도 입력하는 초기 가정"
+      ],
+      "target_steps": [
+        "작업지시·배치 조합 검증",
+        "생산수량 합계 계산",
+        "생산실적에 검사이력 연결",
+        "역할별 저장 권한 확인"
+      ],
+      "issues": [
+        "초기 가정의 중복 배치 등록 위험",
+        "생산과 검사 합계의 비교 기준 미정"
+      ],
+      "expected_effects": [
+        "중복·수량 불일치 검증 항목을 명확히 계획",
+        "검사 이력의 생산실적 연결 조건을 명시"
+      ],
+      "collection": "manual",
+      "automation": "partial"
+    },
+    "system": {
+      "key": "SYS01",
+      "name": "DEMO MES",
+      "before": "작업지시 조회와 단순 생산수량 입력만 있는 합성 초기 상태를 가정한다.",
+      "after": "생산수량 검증·검사이력 연결·역할별 API 검증을 계획한다.",
+      "configuration": "검증용 웹 화면 2개, API 2개, 관계형 테이블 2개. 실제 서버·네트워크 주소·인증 연동은 미확인.",
+      "network_method": null
+    },
+    "schedule": [
+      {
+        "key": "SCH01",
+        "name": "요구사항·기능·화면 설계 검토 계획",
+        "phase": "분석·설계",
+        "start": "2026-11-02",
+        "end": "2026-11-06"
+      },
+      {
+        "key": "SCH02",
+        "name": "개발·시험·배포 문서 검토 계획",
+        "phase": "개발·시험",
+        "start": "2026-11-09",
+        "end": "2026-11-13"
+      }
+    ],
+    "budget": {
+      "key": "BUD01",
+      "name": "검증용 소프트웨어 설계 예산 가정",
+      "category": "소프트웨어 개발비",
+      "planned_krw": 1000000,
+      "approved_krw": null,
+      "spent_krw": null,
+      "basis": "문서 금액 형식 검증용으로만 둔 합성 계획액. 보조금·자부담 확정액이 아니며 집행하지 않았다."
+    },
+    "staff_roles": [
+      {
+        "key": "ST01",
+        "organization_role": "customer",
+        "role": "생산·품질 요구사항 확인 예정 담당",
+        "person_name": null
+      },
+      {
+        "key": "ST02",
+        "organization_role": "supplier",
+        "role": "설계·시험 계획 작성 예정 담당",
+        "person_name": null
+      }
+    ],
+    "manual_topics": [
+      {
+        "key": "MAN01",
+        "audience": "user",
+        "topic": "screen",
+        "name": "생산실적 입력 검증 안내 초안",
+        "content": "합성 작업일자·작업지시·배치를 선택하고 양품·불량수량을 입력하도록 계획한다. 총수량은 자동계산 대상이며 중복·음수·자릿수 오류를 표시하도록 설계한다. 실제 화면은 구현·운영하지 않았으므로 화면 캡처와 실행 결과는 확인 필요.",
+        "screen_key": "S01"
+      },
+      {
+        "key": "MAN02",
+        "audience": "administrator",
+        "topic": "permissions",
+        "name": "역할 권한 관리 안내 초안",
+        "content": "생산·품질·관리자 역할 분리와 API 접근 검증을 계획한다. 계정 발급·회수 승인자, 인증 연동, 로그 보관기간은 미확인. 실제 관리자 수행 내역은 없다.",
+        "screen_key": null
+      }
+    ],
+    "support_plan": [
+      {
+        "key": "SP01",
+        "category": "pilot",
+        "name": "합성 시범운영 점검 계획",
+        "plan": "2026-11-09~13에 중복·검사합계·권한 차단 시험 계획을 검토할 예정이다. 실제 시범운영·접속 로그·교육 수행은 미수행.",
+        "start": "2026-11-09",
+        "end": "2026-11-13"
+      },
+      {
+        "key": "SP02",
+        "category": "training",
+        "name": "사용자 교육자료 검토 계획",
+        "plan": "생산실적·검사판정 입력 절차와 오류 안내를 교육 목차로 검토할 예정이다. 교육 개최·참석·서명은 미수행.",
+        "start": "2026-11-09",
+        "end": "2026-11-13"
+      }
+    ]
+  },
+  "initial_data_plan": {
+    "key": "DP02",
+    "name": "합성 기준정보 초기 적재 계획",
+    "planned_date": "2026-11-09",
+    "category": "initial_data",
+    "planned_specification": "검증용 품목·작업지시 합성 레코드의 초기 적재를 계획한다. 실제 DB·적재파일은 제공되지 않았다.",
+    "planned_quantity": 1,
+    "installed_quantity": null,
+    "unit": "회",
+    "installed_date": null,
+    "verification_plan": "적재 전후 건수·필수값·중복 키 비교를 계획한다. 실제 적재·검증은 미수행.",
+    "migration_counts": [
+      {
+        "data_type": "합성 품목기준정보",
+        "planned_count": 2,
+        "actual_count": null,
+        "validation_result": null
+      },
+      {
+        "data_type": "합성 작업지시",
+        "planned_count": 2,
+        "actual_count": null,
+        "validation_result": null
+      }
+    ]
+  }
+}

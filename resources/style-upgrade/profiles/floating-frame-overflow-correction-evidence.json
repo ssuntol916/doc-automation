@@ -1,0 +1,40 @@
+{
+  "schema_version": "floating-frame-overflow-correction-evidence-1",
+  "recorded_at": "2026-10-24T18:19:22.027993+00:00",
+  "category": "implementation_choice_from_confirmed_current_native_critical_defect",
+  "source_observations": [
+    {
+      "role": "SF-TD2",
+      "current_native_hwpx": {
+        "path": "outputs/quality-loop/r04/integrated/native/SF-TD2.hwpx",
+        "sha256": "2697d2859a8dd6d6f7fe22534af69a9e5fe37b481f28aa840211bae00e1b0b80"
+      },
+      "current_native_pdf": {
+        "path": "outputs/quality-loop/r04/integrated/native/SF-TD2.pdf",
+        "sha256": "7615b217f399b9a2b6bc7b001670ab96c08771dbd74b029121cabfd52bb2d26d"
+      },
+      "r04_toc_failure": "outputs/quality-loop/r04/integrated/toc-ready/SF-TD2-toc.json"
+    },
+    {
+      "role": "SF-TI3",
+      "current_native_hwpx": {
+        "path": "outputs/quality-loop/r04/integrated/native/SF-TI3.hwpx",
+        "sha256": "4dd7e6ac6d32690c5203ff5d25098835fba5cdb878430cd986ffbef07625958b"
+      },
+      "current_native_pdf": {
+        "path": "outputs/quality-loop/r04/integrated/native/SF-TI3.pdf",
+        "sha256": "25c5ebd25626a9a7074763bd1c93d7614ea7556992217aed6963ef7b9b21d5b4"
+      },
+      "r04_toc_failure": "outputs/quality-loop/r04/integrated/toc-ready/SF-TI3-toc.json"
+    }
+  ],
+  "observed": {
+    "SF-TD2": "Exact6.cloud heading remains in HWPX but absent from all6PDFpages; p3 installationI2 text crosses footer/physicalbottom, p4 starts appendix, both main body pictures absent.",
+    "SF-TI3": "Exact administrator heading remains in HWPX but absent from all9PDFpages; first screen image is cut at physical bottom on p3, remaining main frame not continued; p4startsappendix."
+  },
+  "cause_status": "Inline=True oversized single-cell frame is the isolated source-selection change against prior working floating CELL baseline; causal fix remains pending new native A/B verification. Strict native package preservation is not printed-layout proof.",
+  "change": "Only SF-TD2 and SF-TI3 renderer override the shared helper result to floating CELL (inline=False). Keep the original source offsets, notice-in-frame position, regular body font, identifiers, image bytes/geometry metadata and all field owners. Shared helper/default/other role policies untouched.",
+  "source_or_font_reduction": false,
+  "new_native_status": "pending_r05_native",
+  "actual_score_percent": null
+}

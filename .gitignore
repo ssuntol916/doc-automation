@@ -1,0 +1,34 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+node_modules/
+
+# Local analysis runs, native evidence and generated documents stay on disk.
+# Curated source resources live in resources/, not these work directories.
+/analysis/
+/verification/
+/outputs/
+/generated/
+/archives/
+
+# Packaging, editor and test runtime artifacts.
+/build/
+/dist/
+*.egg-info/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+
+# Private source maps, raw business inputs and local configuration.
+/private/
+.env
+.env.*
+*.private.json
+.source-map*.json
+/examples/reference-extract.project.json
+/examples/style-upgrade/control-*.project.json

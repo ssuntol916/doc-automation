@@ -1,0 +1,400 @@
+{
+  "schema_version": "reference-observed-quality-rubric-1",
+  "rubric_id": "reference-quality-observed-rubric/v1",
+  "recorded_at": "2026-10-24T09:38:12.495598+00:00",
+  "scope": "Operational interpretation of user95%reference-quality target. Measures evidence-backed compliance with frozen adopted editorial criteria, not pixel/aesthetic similarity95% or factual submission validity.",
+  "criteria": [
+    {
+      "id": "F01",
+      "category": "font",
+      "requirement": "All used scripts resolve to selected face/fallback declarations; final native PDF glyphs show no unexpected substitution or missing glyph.",
+      "observation_unit": "each semantically distinct body/header/caption/ID run style and each used Hangul/Latin/numeric/symbol sample",
+      "critical": true,
+      "required_evidence": [
+        "current HWPX resolved7script font definitions",
+        "current native PDF font extraction",
+        "full-original-page glyph observations"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "F02",
+      "category": "font",
+      "requirement": "Cover, TOC, heading, label, value, identifier and caption have the profile hierarchy, with no ad-hoc size reduction to fit.",
+      "observation_unit": "each semantic text-role occurrence and style exception",
+      "critical": true,
+      "required_evidence": [
+        "profile target association",
+        "current HWPX charPr heights and derived-definition report",
+        "paired reference/output original-page crop"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "S01",
+      "category": "spacing",
+      "requirement": "Role-specific line spacing and character spacing/ratio match targets; text remains readable without ink collisions.",
+      "observation_unit": "each used paragraph-role definition plus every dense paragraph on original pages",
+      "critical": true,
+      "required_evidence": [
+        "resolved paraPr lineSpacing and charPr spacing/ratio",
+        "full-page and dense-cell original images"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "S02",
+      "category": "spacing",
+      "requirement": "Paragraph separation, indentation and cell padding are consistent within their role and do not create false grouping.",
+      "observation_unit": "each semantic paragraph group and repeated cell type",
+      "critical": false,
+      "required_evidence": [
+        "current para/margin definitions",
+        "original-page editorial observations with paragraph/cell locator"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "L01",
+      "category": "layout",
+      "requirement": "Body orientation/margins/usable width obey the selected profile while cover, controls, page numbers and anchors remain coherent.",
+      "observation_unit": "each section boundary and selected body table",
+      "critical": true,
+      "required_evidence": [
+        "current secPr/pagePr/width evidence",
+        "actual native PDF page boxes and original pages",
+        "declared-change report"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "L02",
+      "category": "layout",
+      "requirement": "Logical/physical names, long IDs, type, keys, units and header labels are readable in their columns at final printed size.",
+      "observation_unit": "each nonempty data/header cell; long-ID rows are individually inspected",
+      "critical": true,
+      "required_evidence": [
+        "row/column mapping and current cell widths",
+        "full-original-page observations",
+        "long-row original crop or enlargement"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "L03",
+      "category": "layout",
+      "requirement": "Long IDs and words wrap consistently at declared boundaries without changing, abbreviating or dropping their values.",
+      "observation_unit": "each long identifier and each page-boundary word",
+      "critical": true,
+      "required_evidence": [
+        "input/output exact ID mapping",
+        "current original-page glyph reading"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "L04",
+      "category": "layout",
+      "requirement": "Heading remains with meaningful following content and continuation pages retain table/record identity.",
+      "observation_unit": "each heading at page end and each continued card/table boundary",
+      "critical": true,
+      "required_evidence": [
+        "every boundary original page pair",
+        "ID/header/last-marker mapping"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "L05",
+      "category": "layout",
+      "requirement": "White space and density support the role; large empty areas have an explicit editorial reason and are not a layout failure hidden by total page count.",
+      "observation_unit": "each physical page and each conspicuous blank region",
+      "critical": false,
+      "required_evidence": [
+        "whole-original-page review",
+        "reference/current/improved comparable content regions",
+        "explicit exception rationale"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "C01",
+      "category": "business_expression",
+      "requirement": "Body explanations and trace records use readable business sentences/specification tables rather than raw JSON/debug strings.",
+      "observation_unit": "each requirement/screen/table/program/test/trace or management record",
+      "critical": true,
+      "required_evidence": [
+        "semantic field-to-output map",
+        "original-page body reading",
+        "raw JSON token search as auxiliary only"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "C02",
+      "category": "business_expression",
+      "requirement": "Every supplied meaningful field, type, relation, note and source has an explicit document/appendix location or justified nonprinting decision.",
+      "observation_unit": "each supplied semantic leaf or relation in input",
+      "critical": true,
+      "required_evidence": [
+        "typed input/field mapping",
+        "current XML owner mapping",
+        "original-page location observations"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "C03",
+      "category": "business_expression",
+      "requirement": "Unknown/null/false/0/empty string, planned/performed and actual claims remain distinct and human-readable.",
+      "observation_unit": "each state/type boundary case and its rendered occurrence",
+      "critical": true,
+      "required_evidence": [
+        "typed heldout inputs",
+        "rendered semantic mapping",
+        "current-page state wording"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "C04",
+      "category": "business_expression",
+      "requirement": "Same facts, IDs, units, periods, directions and direct trace relations stay consistent across roles without transitive invention.",
+      "observation_unit": "each shared fact or explicit relation appearing in two roles",
+      "critical": true,
+      "required_evidence": [
+        "cross-document relation/fact comparison",
+        "current output positions",
+        "source input hash"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "C05",
+      "category": "business_expression",
+      "requirement": "Template instructions and required fields remain satisfied; expert conventions, source defects and implementation choices are explicitly distinguished.",
+      "observation_unit": "each applicable mandatory instruction and each adopted/excluded convention",
+      "critical": true,
+      "required_evidence": [
+        "profile mandatory locators and source hashes",
+        "output field/instruction compliance mapping",
+        "named editorial judgment"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "G01",
+      "category": "figure",
+      "requirement": "Every supplied or test figure is mapped to a meaningful slot with correct screen/record ID, source hash, caption and declared real/reference/synthetic status.",
+      "observation_unit": "each supplied/test figure and each absent-required-figure slot",
+      "critical": true,
+      "required_evidence": [
+        "attachment/SHA/slot map",
+        "current HWPX image binding",
+        "caption/source text on native original page"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "G02",
+      "category": "figure",
+      "requirement": "At final printed size a reader can identify essential screen fields, diagram nodes/arrows and the steps described in the body.",
+      "observation_unit": "each essential label/field/node/arrow in each figure",
+      "critical": true,
+      "required_evidence": [
+        "essential-element inventory frozen before review",
+        "native original-page enlarged figure",
+        "named reviewer observation for each essential element"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "G03",
+      "category": "figure",
+      "requirement": "Aspect ratio, crop, display size and placement preserve essential content and keep the figure with its caption/explanation.",
+      "observation_unit": "each figure and caption/adjacent-body association",
+      "critical": true,
+      "required_evidence": [
+        "source pixel/ratio/clip data",
+        "current shape geometry",
+        "current native original-page image/caption observation"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "N01",
+      "category": "native",
+      "requirement": "Current final bytes were actually opened/saved/closed/reopened/exported in the recorded Hancom version, or explicit8event repair workflow completed.",
+      "observation_unit": "each current final HWPX artifact under review",
+      "critical": true,
+      "required_evidence": [
+        "actual5event or8event observation with timestamps/path/SHA",
+        "current app version/build",
+        "source/styled/native/saved/repaired endpoints"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "N02",
+      "category": "native",
+      "requirement": "Strict styled-before/native-after semantics/formatting and current TOC/page sequence pass; every current PDF page has a matched original PNG and explicit editorial review.",
+      "observation_unit": "each strict invariant, TOC entry, printed-page boundary and physical PDF page",
+      "critical": true,
+      "required_evidence": [
+        "current strict roundtrip report",
+        "current TOC fixedpoint",
+        "HWPX/PDF/allPNG hashes",
+        "explicit every-original-page judgments"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    },
+    {
+      "id": "R01",
+      "category": "reference_comparison",
+      "requirement": "For the same meaningful content, the improved output meets the adopted reference conventions and excluded source defects are independently explained; heldout output meets the same criteria.",
+      "observation_unit": "each preselected comparable content block in same-content and heldout cases",
+      "critical": true,
+      "required_evidence": [
+        "reference/current/improved side-by-side region mapping",
+        "same-content input/source hashes",
+        "heldout input freeze and named independent observations"
+      ],
+      "status": "not_assessed",
+      "observed_units": null,
+      "passed_units": null,
+      "failed_units": null,
+      "unknown_units": null,
+      "pass_rate_percent": null
+    }
+  ],
+  "score_policy": {
+    "threshold_percent": 95,
+    "per_criterion": "100*passed_units/required_observation_units; failed+unknown remain in denominator. Units and applicability frozen from input/profile before output review.",
+    "per_role": "minimum of all applicable criterion pass rates, not a weighted average. Every role must reach95%. Also report pooled counts/rate for transparency.",
+    "whole_suite": "minimum of19 role scores must be>=95%, pooled rate>=95%, and all mandatory gates pass. A strong role cannot compensate a weak role.",
+    "critical_failure_policy": "Any observed critical failure blocks acceptance regardless of rate. A missing/wrong state, lost field, unreadable essential image label, changed ID, missing page, wrong font substitution or stale native evidence is critical.",
+    "unknown_policy": "Unknown/missing evidence never counts as pass; it remains in denominator. Final completion requires zero unknown/unreviewed required units.",
+    "applicability_policy": "No post-hoc exemption to raise score. An inherently absent figure may replace G02/G03 units only with a predeclared absence/required-slot test; provided/required figures may not be removed. Same-content graphic roles require actual reference or clearly labelled synthetic test-figure cases.",
+    "no_inflation": "Do not count every ordinary glyph as a separate easy pass, repeat cover checks to inflate denominator, or split one semantic unit after observing a failure. Unit inventory is fixed and hashed before review.",
+    "score_without_evidence": "Prohibited; all actual counts/rates remain null until current source/output/native/original-image evidence is entered."
+  },
+  "review_record_required_fields": [
+    "role",
+    "case_id",
+    "criterion_id",
+    "unit_id",
+    "unit_locator",
+    "profile_sha256",
+    "input_sha256",
+    "source_sha256",
+    "styled_hwpx_sha256",
+    "native_final_hwpx_sha256",
+    "native_pdf_sha256",
+    "page_png_sha256",
+    "physical_page",
+    "observation",
+    "status(pass/fail/unknown)",
+    "reviewer",
+    "reviewed_at",
+    "critical_failure",
+    "limitations"
+  ],
+  "independence": "Implementation author cannot be the sole final editorial reviewer. Independent evaluation uses the declared environment/inputs outside repository cwd and no hidden paths or author adjustments.",
+  "status": "rubric_defined_actual_assessment_pending",
+  "actual_suite_score_percent": null
+}

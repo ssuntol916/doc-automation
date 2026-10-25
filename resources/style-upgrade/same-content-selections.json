@@ -1,0 +1,56 @@
+{
+  "schema_version": "public-same-content-locator-catalog-1",
+  "scope": "Only source hashes and role/structural locators are public. Actual schema, procedures, source facts and copied content are private; no private values are relabelled synthetic.",
+  "selections": [
+    {
+      "role": "SF-TD5",
+      "case_id": "SF-TD5-SAME-CONTENT-01",
+      "xml": "Contents/section2.xml",
+      "table_xpath": "/hs:sec/hp:p[2]/hp:run/hp:tbl",
+      "table_locator": "Contents/section2.xml#T1",
+      "source": {
+        "sha256": "2de12e8bc75b2da9fcf1f2d3917fda864ba51a4c7a8ffc37742a91016cf8329c",
+        "source_id": "reference-sf-td5"
+      },
+      "raw_contents_availability": "private_evidence_not_distributed"
+    },
+    {
+      "role": "SF-TD3",
+      "case_id": "SF-TD3-SAME-CONTENT-01",
+      "xml": "Contents/section1.xml",
+      "table_xpath": "/hs:sec/hp:p[17]/hp:run/hp:tbl",
+      "table_locator": "Contents/section1.xml#T6",
+      "source": {
+        "sha256": "4f60d94a45a57ba1e4a0eda6bf2974d6b4ad730a7c1c4e3702534786373f5594",
+        "source_id": "reference-sf-td3"
+      },
+      "raw_contents_availability": "private_evidence_not_distributed"
+    },
+    {
+      "role": "SF-PM4",
+      "case_id": "SF-PM4-SAME-CONTENT-01",
+      "xml": "Contents/section1.xml",
+      "table_xpath": "/hs:sec/hp:p[2]/hp:run/hp:tbl",
+      "table_locator": "Contents/section1.xml#T1",
+      "source": {
+        "sha256": "0a710b34766dca97caf42ea5cee9258c1cebf56b8b50b8142f0a08425dbee852",
+        "source_id": "reference-sf-pm7"
+      },
+      "raw_contents_availability": "private_evidence_not_distributed"
+    },
+    {
+      "role": "SF-PM4",
+      "case_id": "SF-PM4-SAME-CONTENT-01",
+      "xml": "Contents/section1.xml",
+      "table_xpath": "/hs:sec/hp:p[6]/hp:run/hp:tbl",
+      "table_locator": "Contents/section1.xml#T2",
+      "source": {
+        "sha256": "0a710b34766dca97caf42ea5cee9258c1cebf56b8b50b8142f0a08425dbee852",
+        "source_id": "reference-sf-pm7"
+      },
+      "raw_contents_availability": "private_evidence_not_distributed"
+    }
+  ],
+  "raw_contents_availability": "private_evidence_not_distributed",
+  "quality_acceptance_claim": false
+}

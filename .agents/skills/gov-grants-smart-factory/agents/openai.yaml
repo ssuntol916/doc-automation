@@ -1,0 +1,4 @@
+interface:
+  display_name: "스마트공장 정부지원 산출물"
+  short_description: "근거 있는 사업 사실로 스마트공장 산출물과 관련 서식 작성"
+  default_prompt: "$gov-grants-smart-factory 스킬로 제공한 사업 사실과 양식에 맞춰 스마트공장 산출물 초안을 작성해 주세요."

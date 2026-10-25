@@ -1,0 +1,460 @@
+{
+  "schema_version": "pm4-boundary-and-width-refinement-evidence-1",
+  "source_observations": {
+    "SF-AD1": {
+      "source": {
+        "sha256": "7ceb7516c6542abe25c1c3a03e5451f18751948154e5f00308c79b02a30d357b",
+        "source_id": "template-sf-ad1"
+      },
+      "spine_sections": [
+        "Contents/section0.xml",
+        "Contents/section1.xml"
+      ],
+      "source_section_count": 2,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "pure_empty_suffix": []
+    },
+    "SF-AD2": {
+      "source": {
+        "sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "source_id": "template-sf-ad2"
+      },
+      "spine_sections": [
+        "Contents/section0.xml",
+        "Contents/section1.xml"
+      ],
+      "source_section_count": 2,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "pure_empty_suffix": []
+    },
+    "SF-AD3": {
+      "source": {
+        "sha256": "9efec96c01034fb1e49035c1db44b15f45b30b563713a351ce3be879a9617a11",
+        "source_id": "template-sf-ad3"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[26]",
+      "body_source_own_text": "1. 000시스템",
+      "pure_empty_suffix": [
+        {
+          "source_sha256": "9efec96c01034fb1e49035c1db44b15f45b30b563713a351ce3be879a9617a11",
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[24]",
+          "text_before_generation_verbatim": "",
+          "paragraph_attributes": {
+            "id": "2147483648",
+            "paraPrIDRef": "0",
+            "styleIDRef": "0",
+            "pageBreak": "0",
+            "columnBreak": "0",
+            "merged": "0"
+          }
+        },
+        {
+          "source_sha256": "9efec96c01034fb1e49035c1db44b15f45b30b563713a351ce3be879a9617a11",
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[25]",
+          "text_before_generation_verbatim": "",
+          "paragraph_attributes": {
+            "id": "2147483648",
+            "paraPrIDRef": "0",
+            "styleIDRef": "0",
+            "pageBreak": "0",
+            "columnBreak": "0",
+            "merged": "0"
+          }
+        }
+      ]
+    },
+    "SF-TD1": {
+      "source": {
+        "sha256": "879c760d5c550194be331bf165e68fa306b9af762692d876c150f0c36af600d5",
+        "source_id": "template-sf-td1"
+      },
+      "spine_sections": [
+        "Contents/section0.xml",
+        "Contents/section1.xml"
+      ],
+      "source_section_count": 2,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "pure_empty_suffix": []
+    },
+    "SF-TD2": {
+      "source": {
+        "sha256": "eb231acacfeb0f8cbe9d10c588a6cdb0e71c3345bf9e64251810989571b877be",
+        "source_id": "template-sf-td2"
+      },
+      "spine_sections": [
+        "Contents/section0.xml",
+        "Contents/section1.xml"
+      ],
+      "source_section_count": 2,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "pure_empty_suffix": []
+    },
+    "SF-TD3": {
+      "source": {
+        "sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9",
+        "source_id": "template-sf-td3"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[52]",
+      "body_source_own_text": "1. 화면 표준",
+      "pure_empty_suffix": []
+    },
+    "SF-TD4": {
+      "source": {
+        "sha256": "9276e4e82d26a6a7bd94e764b8e26f891323aa1549deb03c85aa11a9482b51e4",
+        "source_id": "template-sf-td4"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[37]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": []
+    },
+    "SF-TD5": {
+      "source": {
+        "sha256": "c59bf581983711bddd7b96543d2fbea2dd21764109bc95440aa2314260e1dd54",
+        "source_id": "template-sf-td5"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[37]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": []
+    },
+    "SF-CD1": {
+      "source": {
+        "sha256": "a8dcbee7067d625523e072129fbde87ceba6211bbbf81e7006673244c5227416",
+        "source_id": "template-sf-cd1"
+      },
+      "spine_sections": [
+        "Contents/section0.xml",
+        "Contents/section1.xml"
+      ],
+      "source_section_count": 2,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "pure_empty_suffix": []
+    },
+    "SF-TI1": {
+      "source": {
+        "sha256": "8d3f960d7eede72a16b37a0c444db62d4d8fd231a33665e63bd3fc1723911218",
+        "source_id": "template-sf-ti1"
+      },
+      "spine_sections": [
+        "Contents/section0.xml",
+        "Contents/section1.xml"
+      ],
+      "source_section_count": 2,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "pure_empty_suffix": []
+    },
+    "SF-TI2": {
+      "source": {
+        "sha256": "43a5b06c81b7803f0dd1f7648d9249a5ab9da7154d315f1ed63604fadeeff63c",
+        "source_id": "template-sf-ti2"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[51]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": [
+        {
+          "source_sha256": "43a5b06c81b7803f0dd1f7648d9249a5ab9da7154d315f1ed63604fadeeff63c",
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[50]",
+          "text_before_generation_verbatim": "",
+          "paragraph_attributes": {
+            "id": "0",
+            "paraPrIDRef": "24",
+            "styleIDRef": "0",
+            "pageBreak": "0",
+            "columnBreak": "0",
+            "merged": "0"
+          }
+        }
+      ]
+    },
+    "SF-TI3": {
+      "source": {
+        "sha256": "45a58751fb3a5f7b6bf3f0035f3a3e39d74fa62ccca6a9af57305287361431c4",
+        "source_id": "template-sf-ti3"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[48]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": []
+    },
+    "SF-TI4": {
+      "source": {
+        "sha256": "1edcfa29aab5fed372286e05d1aef47b447b336864e20c605471830be5c07bd5",
+        "source_id": "template-sf-ti4"
+      },
+      "spine_sections": [
+        "Contents/section0.xml",
+        "Contents/section1.xml"
+      ],
+      "source_section_count": 2,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "pure_empty_suffix": []
+    },
+    "SF-OS1": {
+      "source": {
+        "sha256": "938b08355d5914e1bf401f0a76a860dbe1915548b03b7487e7c0f22e330b3778",
+        "source_id": "template-sf-os1"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[47]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": []
+    },
+    "SF-OS2": {
+      "source": {
+        "sha256": "440efb20ec57c1d2a737390e74fbf4d8671ce0bc534ecf9edfa056327792a6b0",
+        "source_id": "template-sf-os2"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[41]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": []
+    },
+    "SF-PM1": {
+      "source": {
+        "sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+        "source_id": "template-sf-pm1"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[32]",
+      "body_source_own_text": "1. 월간 업무 ",
+      "pure_empty_suffix": [
+        {
+          "source_sha256": "9f8082908379c95896d262069eb37f406b3cc0cbbcd8e336628c3363491a5c38",
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[31]",
+          "text_before_generation_verbatim": "",
+          "paragraph_attributes": {
+            "id": "2147483648",
+            "paraPrIDRef": "2",
+            "styleIDRef": "0",
+            "pageBreak": "0",
+            "columnBreak": "0",
+            "merged": "0"
+          }
+        }
+      ]
+    },
+    "SF-PM2": {
+      "source": {
+        "sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+        "source_id": "template-sf-pm2"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[27]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": []
+    },
+    "SF-PM3": {
+      "source": {
+        "sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "source_id": "template-sf-pm3"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[27]",
+      "body_source_own_text": "",
+      "pure_empty_suffix": []
+    },
+    "SF-PM4": {
+      "source": {
+        "sha256": "4de6810e6e75d070380cc88ec8196adbc6ca6ce042f545b343da6c2d90ff2bd1",
+        "source_id": "template-sf-pm4"
+      },
+      "spine_sections": [
+        "Contents/section0.xml"
+      ],
+      "source_section_count": 1,
+      "category": "source_structure_observation_not_universal_template_requirement",
+      "body_member": "Contents/section0.xml",
+      "body_source_xpath": "/hs:sec/hp:p[24]",
+      "body_source_own_text": "1. 기능 요구사항",
+      "pure_empty_suffix": [
+        {
+          "source_sha256": "4de6810e6e75d070380cc88ec8196adbc6ca6ce042f545b343da6c2d90ff2bd1",
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[21]",
+          "text_before_generation_verbatim": "",
+          "paragraph_attributes": {
+            "id": "2147483648",
+            "paraPrIDRef": "0",
+            "styleIDRef": "0",
+            "pageBreak": "0",
+            "columnBreak": "0",
+            "merged": "0"
+          }
+        },
+        {
+          "source_sha256": "4de6810e6e75d070380cc88ec8196adbc6ca6ce042f545b343da6c2d90ff2bd1",
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[22]",
+          "text_before_generation_verbatim": "",
+          "paragraph_attributes": {
+            "id": "2147483648",
+            "paraPrIDRef": "0",
+            "styleIDRef": "0",
+            "pageBreak": "0",
+            "columnBreak": "0",
+            "merged": "0"
+          }
+        },
+        {
+          "source_sha256": "4de6810e6e75d070380cc88ec8196adbc6ca6ce042f545b343da6c2d90ff2bd1",
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[23]",
+          "text_before_generation_verbatim": "",
+          "paragraph_attributes": {
+            "id": "2147483648",
+            "paraPrIDRef": "0",
+            "styleIDRef": "0",
+            "pageBreak": "0",
+            "columnBreak": "0",
+            "merged": "0"
+          }
+        }
+      ]
+    }
+  },
+  "native_observation": {
+    "pdf": {
+      "sha256": "ae99dc194da8b60ad44bf15db3f30c23fdcf6678f4458f2db931cac6cd4eda86"
+    },
+    "candidate": {
+      "sha256": "1a3b1777c607725fdc5ad3844d9cb4226170c7925b8bd961ddd833a88b867358"
+    },
+    "page_count": 10,
+    "page2_paper_pt": [
+      0.0,
+      0.0,
+      595.0,
+      842.0
+    ],
+    "page2_text_verbatim": "2026년도 검증용 스마트공장 문서 자동화 예제 | 요구사항추적표\n",
+    "observed": "Portrait page2 contains the running header only; landscape body begins onpage3. Candidate cover suffix has three pure empty text paragraphs; no page/column break, object or control is present in those owners.",
+    "inference": "Trailing empty flow after the cover can spill to a blank portrait page before a new section starts. Remove only exact declared pure-empty suffix owners; actual new native output must verify the diagnosis."
+  },
+  "width_choice": {
+    "font_path": "/Applications/Hancom Office HWP.app/Contents/Resources/Hnc/Shared/TTF/Install/HANBatang.ttf",
+    "font_sha256": "c5d544769d832477d48b7318222b9c3c2eced25455f7ba9acb23060dcecac104",
+    "resolved_font_name": "HCR Batang Regular",
+    "declared_font_size_pt": 10,
+    "horizontal_padding_hwp": 566,
+    "measurement_engine": "PyMuPDF Font.text_length; support for width selection, not native pagination proof",
+    "metrics": [
+      {
+        "text_verbatim": "DEMO-TEST-001",
+        "advance_hwp_at_10pt": 8248.999893665314,
+        "required_width_hwp_ceiling": 8815
+      },
+      {
+        "text_verbatim": "DEMO-TD3-001",
+        "advance_hwp_at_10pt": 7599.999964237213,
+        "required_width_hwp_ceiling": 8166
+      },
+      {
+        "text_verbatim": "DEMO-TD4-001",
+        "advance_hwp_at_10pt": 7599.999964237213,
+        "required_width_hwp_ceiling": 8166
+      },
+      {
+        "text_verbatim": "DEMO-AD2-001",
+        "advance_hwp_at_10pt": 7641.999959945679,
+        "required_width_hwp_ceiling": 8208
+      },
+      {
+        "text_verbatim": "DEMO-TRACE-001",
+        "advance_hwp_at_10pt": 9008.999943733215,
+        "required_width_hwp_ceiling": 9575
+      },
+      {
+        "text_verbatim": "T1",
+        "advance_hwp_at_10pt": 1213.9999866485596,
+        "required_width_hwp_ceiling": 1780
+      }
+    ],
+    "functional_grid_columns_hwp": [
+      2500,
+      9000,
+      9000,
+      8500,
+      8500,
+      8500,
+      9000,
+      9000,
+      9000,
+      2000
+    ],
+    "trace_grid_columns_hwp": [
+      10000,
+      16000,
+      16000,
+      7000,
+      9000,
+      8000,
+      9000
+    ],
+    "tradeoff": "Functional description/name columns become narrower to preserve complete screen/program/test IDs at10pt within75000HWP. Long body text and status values may continue across lines/pages; no character shrinking, truncation or ID mutation."
+  },
+  "actual_quality_score_percent": null,
+  "native_status": "pending_new_v6_bytes"
+}

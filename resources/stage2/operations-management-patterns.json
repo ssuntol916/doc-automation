@@ -1,0 +1,86 @@
+{
+  "schema_version": "public-writing-guidance-1",
+  "scope": "Abstract operations/management writing guidance only. Actual meeting, change, progress, performance, trace and approval records are not distributed.",
+  "reusable_patterns": [
+    {
+      "category": "generalized_writing_guidance",
+      "statement": "사업연도·작성일·수행일을 구분하고 문서 역할과 기업 역할을 분리한다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generalized_writing_guidance",
+      "statement": "운영현황은 설치목록→시스템/모듈규모→화면별주간집계→일별사용자건수·시간→장애→추가지원 순서로 설명한다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generalized_writing_guidance",
+      "statement": "주간기록은금주실적/차주계획을나란히두고,각셀을가.사업관리/나.개발관리→단계→구체업무로분해한다.결과는완료/검토/협의 등의동사·명사형,계획은예정으로표현한다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generalized_writing_guidance",
+      "statement": "회의록은배경·이슈→당사자별의견→처리방안·제안→결과를분리하고,화면과표를해당논의바로뒤에배치한다.화살표☞,괄호조건,가/1)/a)계층을자주쓴다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generalized_writing_guidance",
+      "statement": "변경은1개대장에서전체목록을관리한뒤요청서와승인공문/관리화면을반복한다.전/후사양이나기간을같은항목명으로나란히기록한다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generalized_writing_guidance",
+      "statement": "성과는요약수치→달성/개선수식→기준·실적원천값→지표정의/기간/산출기준→붉은박스/화살표를단결과화면순서로근거를좁혀간다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generalized_writing_guidance",
+      "statement": "추적표는 원요구·화면·프로그램·시험의 명시 연결을 기록하고 비기능 항목의 확인 자료와 상태를 구분한다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "official_template_instruction",
+      "statement": "운영현황은등록·거래주간현황과일별로그인수/접속시간·증적을구분하여제시해야한다.화면조회수만으로데이터등록량을대체하지않는다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "official_template_instruction",
+      "statement": "변경은일정/인력뿐아니라요구·장비규격까지사유,승인여부,관련공문,증적을관리하고,쌍방서명회의록·승인공문또는확인화면을연결한다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "official_template_instruction",
+      "statement": "요구사항추적은요구정의서의ID·명·설명을활용하고산출물의관련ID를명시하며비고에추가/변경/삭제근거를둔다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "project_fact_boundary",
+      "statement": "기업·인명·사업번호·장비·주소·일정·측정·서명·승인 정보는 해당 사업의 제공 자료로 관리하며 다른 사업으로 복제하지 않는다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generation_recommendation",
+      "statement": "사업원장에기업역할,보고기간,변경ID,승인증적ID,요구ID,산출물ID,KPI정의·분자분모,설치/검수일을두고문서가참조한다.본문복사로원장을대체하지않는다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generation_recommendation",
+      "statement": "같은형식의반복블록은원본블록을복제하되행수/높이/머리글반복/쪽나눔/이미지앵커를확인한다.참조의좁은여백·9pt글자를모든문서에일괄적용하지않는다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generation_recommendation",
+      "statement": "요약숫자·총계·날짜/요일·공문캡션을코드로파생하고,사실입력누락이나원장모순은검토필드로남긴다.참조에서검출한결함은스타일학습의긍정예시에서제외한다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    },
+    {
+      "category": "generation_recommendation",
+      "statement": "실제승인공문·서명·원시로그는입력증거로만받는다.기존사업의서명/직인을새문서에복사하거나예시생성으로완료/승인을확정하지않는다.",
+      "source_evidence_availability": "private_exemplar_not_distributed"
+    }
+  ],
+  "generation_exclusions": [
+    "Invented execution, installation, measurement, approval or signature facts",
+    "Reusing a reference signature, approval letter, contact list or source screenshot as a new project fact"
+  ],
+  "private_evidence_availability": "not_distributed"
+}

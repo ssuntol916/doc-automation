@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760">
+<rect width="1600" height="760" fill="#f4f6f8"/>
+<rect width="1600" height="80" fill="#23364c"/>
+<text x="32" y="51" font-family="sans-serif" font-size="30" fill="#ffffff" font-weight="bold">DEMO MES</text>
+<text x="895" y="49" font-family="sans-serif" font-size="27" fill="#ffffff" font-weight="normal">합성 설계 시안 | 실제 실행 화면 아님</text>
+<text x="42" y="126" font-family="sans-serif" font-size="22" fill="#65748a" font-weight="normal">품질관리 &gt; 배치 검사 판정</text>
+<text x="42" y="181" font-family="sans-serif" font-size="36" fill="#233044" font-weight="bold">배치 검사 판정</text>
+<text x="42" y="222" font-family="sans-serif" font-size="23" fill="#65748a" font-weight="normal">화면 ID: DEMO-TD3-002 · 입력 항목의 배치 검토용</text>
+<text x="42" y="280" font-family="sans-serif" font-size="25" fill="#233044" font-weight="bold">생산실적 식별자 *</text>
+<rect x="257" y="249" width="485" height="53" rx="4" fill="#ffffff" stroke="#bec8d2" stroke-width="2"/>
+<text x="272" y="284" font-family="sans-serif" font-size="22" fill="#75849a" font-weight="normal">값 미입력 · 형식: string</text>
+<text x="822" y="280" font-family="sans-serif" font-size="25" fill="#233044" font-weight="bold">검사일자 *</text>
+<rect x="1037" y="249" width="485" height="53" rx="4" fill="#ffffff" stroke="#bec8d2" stroke-width="2"/>
+<text x="1052" y="284" font-family="sans-serif" font-size="22" fill="#75849a" font-weight="normal">값 미입력 · 형식: date</text>
+<text x="42" y="380" font-family="sans-serif" font-size="25" fill="#233044" font-weight="bold">검사수량 *</text>
+<rect x="257" y="349" width="485" height="53" rx="4" fill="#ffffff" stroke="#bec8d2" stroke-width="2"/>
+<text x="272" y="384" font-family="sans-serif" font-size="22" fill="#75849a" font-weight="normal">값 미입력 · 형식: integer</text>
+<text x="822" y="380" font-family="sans-serif" font-size="25" fill="#233044" font-weight="bold">합격수량 *</text>
+<rect x="1037" y="349" width="485" height="53" rx="4" fill="#ffffff" stroke="#bec8d2" stroke-width="2"/>
+<text x="1052" y="384" font-family="sans-serif" font-size="22" fill="#75849a" font-weight="normal">값 미입력 · 형식: integer</text>
+<text x="42" y="480" font-family="sans-serif" font-size="25" fill="#233044" font-weight="bold">불합격수량 *</text>
+<rect x="257" y="449" width="485" height="53" rx="4" fill="#ffffff" stroke="#bec8d2" stroke-width="2"/>
+<text x="272" y="484" font-family="sans-serif" font-size="22" fill="#75849a" font-weight="normal">값 미입력 · 형식: integer</text>
+<rect x="42" y="605" width="150" height="56" rx="5" fill="#315e88" stroke="#315e88" stroke-width="2"/>
+<text x="89" y="642" font-family="sans-serif" font-size="25" fill="#ffffff" font-weight="normal">조회</text>
+<rect x="222" y="605" width="150" height="56" rx="5" fill="#ffffff" stroke="#315e88" stroke-width="2"/>
+<text x="269" y="642" font-family="sans-serif" font-size="25" fill="#315e88" font-weight="normal">신규</text>
+<rect x="402" y="605" width="150" height="56" rx="5" fill="#ffffff" stroke="#315e88" stroke-width="2"/>
+<text x="449" y="642" font-family="sans-serif" font-size="25" fill="#315e88" font-weight="normal">판정계산</text>
+<rect x="582" y="605" width="150" height="56" rx="5" fill="#ffffff" stroke="#315e88" stroke-width="2"/>
+<text x="629" y="642" font-family="sans-serif" font-size="25" fill="#315e88" font-weight="normal">저장</text>
+<text x="42" y="707" font-family="sans-serif" font-size="23" fill="#65748a" font-weight="normal">* 필수 입력 설계 · 검증 결과, 저장 성공, 측정값은 표시하지 않음</text>
+</svg>

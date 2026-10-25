@@ -1,0 +1,102 @@
+{
+  "kind": "reference",
+  "scope": "Hash-only provenance catalog; source names, raw content and local bindings are private.",
+  "documents": [
+    {
+      "id": "reference-sf-ad1",
+      "sha256": "1223df9b753dd879712d0004ef88c749089bd268fc00d40b5790a5895b733cf2",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-ad2",
+      "sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-ad3",
+      "sha256": "3a3a8fb67cc35ce5c5530043d63b49a411634654f498d5b949955be08056aa22",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-td1",
+      "sha256": "df0cf49b640e04730b3e8a124f4aa0296400737e24d923102d4c944b4c447ebb",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-td2",
+      "sha256": "4b41ef75cf4edac279d18e4a09b92a50cf7b20e2eea4bf3e4112963fa54f06d0",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-td3",
+      "sha256": "4f60d94a45a57ba1e4a0eda6bf2974d6b4ad730a7c1c4e3702534786373f5594",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-td4",
+      "sha256": "b1d236e5e582be03caf96839bbdbd3db0e916fd3ff663e5d1a4d353ce88f276f",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-td5",
+      "sha256": "2de12e8bc75b2da9fcf1f2d3917fda864ba51a4c7a8ffc37742a91016cf8329c",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-cd1",
+      "sha256": "33a3567f8ff05e15bbbd865970d1e5bfe6cf3a69dd2a0049beadddbf83614a85",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-ti1",
+      "sha256": "d0ad6265f35c2c430d14d6a23436c83d1ff2ae43f78358bbaba748c5884cd44f",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-ti2",
+      "sha256": "ee74747e32b154a761c4faae96a7be5a51b25b855a50a55c14d9940907da395b",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-ti3",
+      "sha256": "c0cb953e9a0a79f407b37972ebf56b1e7182f1ae0bb3ae4867ab7eee9dd139d8",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-ti4",
+      "sha256": "968bee7b61b11efbc5853129147c3dbacfbe6ca294cb39dc637f1c195ab102e7",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-os2",
+      "sha256": "7eae812da3893c131f914e28250e3df0adb296755385374ab8304a0de70e7de4",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-pm2",
+      "sha256": "f68ea501603aed31b12d161b0e7e5950e0a5d4c5f84acb269f4a3f58ba7d3219",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-pm4",
+      "sha256": "5eb4586a7b0983cab9e8f6c84daf1ce7db6ee7a4de582da6426d2acecd6441dc",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-pm5",
+      "sha256": "87d40c16afe088d7be7f9ba6fca393a5f434c41f771fd9d2c0e0a5e9a9efb49b",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-pm6",
+      "sha256": "ae628f453231ad69d2aeaf6d8d30675171fb338c6cdc6e022587bec9076e728a",
+      "source_kind": "reference_document"
+    },
+    {
+      "id": "reference-sf-pm7",
+      "sha256": "0a710b34766dca97caf42ea5cee9258c1cebf56b8b50b8142f0a08425dbee852",
+      "source_kind": "reference_document"
+    }
+  ],
+  "unsupported_inputs": []
+}

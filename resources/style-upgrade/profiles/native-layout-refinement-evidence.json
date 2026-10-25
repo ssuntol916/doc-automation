@@ -1,0 +1,122 @@
+{
+  "schema_version": "native-layout-refinement-evidence-1",
+  "category": "observed_native_behavior_and_implementation_choice",
+  "application": {
+    "name": "Hancom Office HWP",
+    "version": "12.30.0",
+    "build": "6544"
+  },
+  "native_event_record": {
+    "sha256": "55b1fce9cf4666345c1d6ca255fd85c1aa43424f5ebbe5f9d191ac6bdea87378"
+  },
+  "strict_roundtrip_record": {
+    "sha256": "29d3979e5cce3ab6e0fd9865ec35bb27ecf1ab44c6c35114baaac41c08f29d49",
+    "passed": false
+  },
+  "observations": [
+    {
+      "artifact": "native_before",
+      "member": "Contents/section1.xml",
+      "page_xpath": "/hs:sec/hp:p[1]/hp:run[1]/hp:secPr/hp:pagePr",
+      "page_attributes": {
+        "landscape": "NARROWLY",
+        "width": "59528",
+        "height": "84188",
+        "gutterType": "LEFT_ONLY"
+      },
+      "margin": {
+        "header": "2268",
+        "footer": "2268",
+        "gutter": "0",
+        "left": "4252",
+        "right": "4252",
+        "top": "4252",
+        "bottom": "4252"
+      },
+      "frames": [
+        {
+          "xpath": "/hs:sec/hp:p[1]/hp:run[1]/hp:ctrl[2]/hp:header/hp:subList",
+          "attributes": {
+            "id": "",
+            "textDirection": "HORIZONTAL",
+            "lineWrap": "BREAK",
+            "vertAlign": "TOP",
+            "linkListIDRef": "0",
+            "linkListNextIDRef": "0",
+            "textWidth": "49324",
+            "textHeight": "4252",
+            "hasTextRef": "0",
+            "hasNumRef": "0"
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "native_after",
+      "member": "Contents/section1.xml",
+      "page_xpath": "/hs:sec/hp:p[1]/hp:run[1]/hp:secPr/hp:pagePr",
+      "page_attributes": {
+        "landscape": "NARROWLY",
+        "width": "59528",
+        "height": "84188",
+        "gutterType": "LEFT_ONLY"
+      },
+      "margin": {
+        "header": "2268",
+        "footer": "2268",
+        "gutter": "0",
+        "left": "4252",
+        "right": "4252",
+        "top": "4252",
+        "bottom": "4252"
+      },
+      "frames": [
+        {
+          "xpath": "/hs:sec/hp:p[1]/hp:run[2]/hp:ctrl[1]/hp:header/hp:subList",
+          "attributes": {
+            "id": "",
+            "textDirection": "HORIZONTAL",
+            "lineWrap": "BREAK",
+            "vertAlign": "TOP",
+            "linkListIDRef": "0",
+            "linkListNextIDRef": "0",
+            "textWidth": "75684",
+            "textHeight": "2268",
+            "hasTextRef": "0",
+            "hasNumRef": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "frame_target_choice": "Direct section header/footer subList width = oriented paper width minus left/right/gutter; height = declared header/footer margin. This changes only frame extents, preserving text/IDs/character and paragraph definitions.",
+  "identifier_width_choice": {
+    "font_path": "/Applications/Hancom Office HWP.app/Contents/Resources/Hnc/Shared/TTF/Install/HANBatang.ttf",
+    "font_sha256": "c5d544769d832477d48b7318222b9c3c2eced25455f7ba9acb23060dcecac104",
+    "resolved_font_name": "HCR Batang Regular",
+    "font_size_pt": 11,
+    "measurement_engine": "PyMuPDF Font.text_length; glyph advances are supporting evidence, not native pagination proof",
+    "padding_left_right_hwp": 566,
+    "old_table_id_column_width_hwp": 16000,
+    "new_table_id_column_width_hwp": 17000,
+    "identifiers": [
+      {
+        "exact_identifier": "DEMO_PRODUCTION_RESULT",
+        "advance_hwp_at_11pt": 15945.599925518036,
+        "required_cell_width_hwp_ceiling": 16512
+      },
+      {
+        "exact_identifier": "DEMO_QUALITY_INSPECTION",
+        "advance_hwp_at_11pt": 15899.399864673615,
+        "required_cell_width_hwp_ceiling": 16466
+      }
+    ],
+    "width_donor": "Remarks column7000→6000; its compact constraint reference keys retain full meaning in the linked constraint details. Other columns and whole75000HWP table width remain unchanged.",
+    "choice_category": "implementation_choice_not_template_requirement",
+    "native_status": "pending_new_v4_bytes"
+  },
+  "limits": [
+    "The historical TD5 SaveAs changed the body header frame; this is not a universal source convention.",
+    "The new targets require actual SaveAs/reopen/PDF/all-page review. No current native pass or95% score assigned."
+  ]
+}

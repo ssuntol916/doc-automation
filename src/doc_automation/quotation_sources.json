@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "scope": "Six historical quotation ownership instances; source-specific provenance allowlist, not a universal form rule",
+  "historical_owner_digest": "SHA256 UTF-8 canonical JSON (ensure_ascii=False,sort_keys=True,separators=(comma,colon))",
+  "entries": [
+    {
+      "quotation_kind": "historical_test_result",
+      "source_document_sha256": "d0ad6265f35c2c430d14d6a23436c83d1ff2ae43f78358bbaba748c5884cd44f",
+      "source_xml": "Contents/section2.xml",
+      "source_picture_xpath": "/hs:sec/hp:p[3]/hp:run/hp:tbl/hp:tr[4]/hp:tc[4]/hp:subList/hp:p[1]/hp:run/hp:pic",
+      "source_binary_item_id": "image2",
+      "source_binary_member": "BinData/image2.bmp",
+      "source_binary_sha256": "7463c3a0adae233a8eac919fc13f2dc7c19ee1cbc955be6c60f2b024d97e324f",
+      "source_pixel_sha256": "ec00b69ed78e7d21087f81193c29400ac3ae3f60db1cdbfab19c12761b8c8e84",
+      "historical_owner_sha256": "1c34a0363d63a5d962dbae6e862ddd52e38b7a24c3c73eaa0e3627ec26d14ef5",
+      "document_role": "SF-TI1"
+    },
+    {
+      "quotation_kind": "historical_test_result",
+      "source_document_sha256": "d0ad6265f35c2c430d14d6a23436c83d1ff2ae43f78358bbaba748c5884cd44f",
+      "source_xml": "Contents/section2.xml",
+      "source_picture_xpath": "/hs:sec/hp:p[3]/hp:run/hp:tbl/hp:tr[5]/hp:tc[4]/hp:subList/hp:p[1]/hp:run/hp:pic",
+      "source_binary_item_id": "image3",
+      "source_binary_member": "BinData/image3.bmp",
+      "source_binary_sha256": "f6857463ae22c8d9b4839a0c1f3fe9006ce5ab03b8e3c6dd8e7aac251e58fa64",
+      "source_pixel_sha256": "06d5206b0b6be5f7d7396151e06e8b49702fa8d7d7b438576c9ddf246f8c61e2",
+      "historical_owner_sha256": "7273e7084acebc987870365811a907c66505cfc33f1c4acbc8d50c24b9b6850b",
+      "document_role": "SF-TI1"
+    },
+    {
+      "quotation_kind": "historical_installation_photo",
+      "source_document_sha256": "ee74747e32b154a761c4faae96a7be5a51b25b855a50a55c14d9940907da395b",
+      "source_xml": "Contents/section0.xml",
+      "source_picture_xpath": "/hs:sec/hp:p[69]/hp:run/hp:tbl/hp:tr[3]/hp:tc[1]/hp:subList/hp:p/hp:run/hp:pic",
+      "source_binary_item_id": "image50",
+      "source_binary_member": "BinData/image50.bmp",
+      "source_binary_sha256": "ee85959c046028e95930bd8ffb52744090515694ec236b81612c6f8bfdb3b0f4",
+      "source_pixel_sha256": "925e4f21bd4a055eb0916ed8821a19f7d443555874c1b92e9ad09c5aa425c38e",
+      "historical_owner_sha256": "c6be8b9427df3b9947791272dec6ec41b9422e872fdfba6b08ef45b5625624b0",
+      "document_role": "SF-TI2"
+    },
+    {
+      "quotation_kind": "historical_installation_photo",
+      "source_document_sha256": "ee74747e32b154a761c4faae96a7be5a51b25b855a50a55c14d9940907da395b",
+      "source_xml": "Contents/section0.xml",
+      "source_picture_xpath": "/hs:sec/hp:p[69]/hp:run/hp:tbl/hp:tr[3]/hp:tc[2]/hp:subList/hp:p/hp:run/hp:pic",
+      "source_binary_item_id": "image51",
+      "source_binary_member": "BinData/image51.bmp",
+      "source_binary_sha256": "e71ba0f61838db246f3eab1f5786ec5906e4dc48835629735e74e320d2def3a9",
+      "source_pixel_sha256": "593267227d1b106b11f4c2ff94a854dbb5d2024cd0412aa69685b78f6b6ec420",
+      "historical_owner_sha256": "c6be8b9427df3b9947791272dec6ec41b9422e872fdfba6b08ef45b5625624b0",
+      "document_role": "SF-TI2"
+    },
+    {
+      "quotation_kind": "historical_test_result",
+      "source_document_sha256": "968bee7b61b11efbc5853129147c3dbacfbe6ca294cb39dc637f1c195ab102e7",
+      "source_xml": "Contents/section2.xml",
+      "source_picture_xpath": "/hs:sec/hp:p[3]/hp:run/hp:tbl/hp:tr[4]/hp:tc[4]/hp:subList/hp:p[1]/hp:run/hp:pic",
+      "source_binary_item_id": "image2",
+      "source_binary_member": "BinData/image2.bmp",
+      "source_binary_sha256": "7463c3a0adae233a8eac919fc13f2dc7c19ee1cbc955be6c60f2b024d97e324f",
+      "source_pixel_sha256": "ec00b69ed78e7d21087f81193c29400ac3ae3f60db1cdbfab19c12761b8c8e84",
+      "historical_owner_sha256": "2182e314f077c076475d2ee953fc296fe95fbf3b727aa476a436a0afa1bcb048",
+      "document_role": "SF-TI4"
+    },
+    {
+      "quotation_kind": "historical_test_result",
+      "source_document_sha256": "968bee7b61b11efbc5853129147c3dbacfbe6ca294cb39dc637f1c195ab102e7",
+      "source_xml": "Contents/section2.xml",
+      "source_picture_xpath": "/hs:sec/hp:p[3]/hp:run/hp:tbl/hp:tr[5]/hp:tc[4]/hp:subList/hp:p[1]/hp:run/hp:pic",
+      "source_binary_item_id": "image3",
+      "source_binary_member": "BinData/image3.bmp",
+      "source_binary_sha256": "f6857463ae22c8d9b4839a0c1f3fe9006ce5ab03b8e3c6dd8e7aac251e58fa64",
+      "source_pixel_sha256": "06d5206b0b6be5f7d7396151e06e8b49702fa8d7d7b438576c9ddf246f8c61e2",
+      "historical_owner_sha256": "54a27decc09ed2892cff837a46ca404bbb31edaa61f9b31235b770122ce49884",
+      "document_role": "SF-TI4"
+    }
+  ]
+}

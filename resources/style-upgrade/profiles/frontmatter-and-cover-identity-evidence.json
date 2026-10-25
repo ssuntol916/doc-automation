@@ -1,0 +1,47 @@
+{
+  "schema": "prospective-frontmatter-role-and-cover-identity-source-evidence-1",
+  "status": "implementation_choice_not_native_acceptance",
+  "TD3_source_template": {
+    "sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9",
+    "source_id": "template-sf-td3"
+  },
+  "TD3_initial_sources": {
+    "standards": {
+      "source_sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[52]",
+      "own_text": "1. 화면 표준",
+      "paragraph_c14n_sha256": "b58da3c8b35094e1f2928e4fe1fa30d2ac51a9206cf1c37acb83aaca60b3fdb1",
+      "paragraph_definition_c14n_sha256": "4d0d1d7b9d57575489a52609c42ae877ec5789d385cedc86a2122ab5d798ff51",
+      "section_page_c14n_sha256": "0ae1c8015f8e918d1b32fd166be3325e71ad9f6b5b220a81ed55e3591fb780cb"
+    },
+    "menu": {
+      "source_sha256": "e61b0de12d7ee0a2e56f6cb1a0e5699b30d23f79247380eae81d95187052acf9",
+      "xml": "Contents/section0.xml",
+      "xpath": "/hs:sec/hp:p[53]",
+      "own_text": "2. 메뉴구조도",
+      "paragraph_c14n_sha256": "4a1451eb01e2a1cf284c1c3b94051cb2049db046cabf6e75825081db92c20437",
+      "paragraph_definition_c14n_sha256": "4d0d1d7b9d57575489a52609c42ae877ec5789d385cedc86a2122ab5d798ff51",
+      "section_page_c14n_sha256": "0ae1c8015f8e918d1b32fd166be3325e71ad9f6b5b220a81ed55e3591fb780cb"
+    }
+  },
+  "observations": {
+    "template": "Two actual source titles are BatangChe13pt bold/160 with negative intent. No regular13pt initial-section prose is supplied.",
+    "expert": "Actual corresponding title own-runs are HCRBatang12pt bold/160, explanation11..12pt, menu text10pt with100/130 line spacing; LEFT/zero intent differs by role. This single project is not universal.",
+    "implementation_choice": "Apply already adopted common HCRBatang body11/130 and heading12/150,spacing0/ratio100 to the new declared initial-role scope.150/130 are consistency choices, not a claim that source160 was copied. New prose LEFT/zero left/intent; source-title paragraph geometry/controls and portrait/body-landscape boundaries stay fixed."
+  },
+  "cover_identity": {
+    "policy": "Reference-v1 only: compose provided integer program_year and original program_name, unless original name already begins with YYYY년/년도, then preserve the entire name without interpreting conflict. Never a document/execution date.",
+    "precedent": "Expert cover supplies a grant/business year separately from a later document date. Exact source literals remain in the ignored local study and are never runtime replacement values.",
+    "independent_controlled_fit": {
+      "path": "outputs/quality-loop/r18/independent-cover-identity/summary.json",
+      "sha256": "bd8800db1664f3c614c0a8f936ea1cf7e93b46d21fc049aa52a4d089246bbe39",
+      "scope": "One actual current cover only, not all19 native fit acceptance."
+    },
+    "unknown_year": "No year invented; keep provided name.",
+    "existing_year_name": "Do not add structural year as a new cover-owner assertion; preserve existing body/header source owners."
+  },
+  "existing_units": "Original F01unknowns and TD3six F02/S01unknowns/denominators remain unchanged. Future current-byte native/independent QA required.",
+  "native_quality": "pending",
+  "score_percent": null
+}

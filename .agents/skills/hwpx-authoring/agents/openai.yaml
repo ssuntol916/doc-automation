@@ -1,0 +1,4 @@
+interface:
+  display_name: "HWPX 문서 작성"
+  short_description: "한글 HWPX의 구조와 직접 서식을 보존하여 분석·편집·검증"
+  default_prompt: "$hwpx-authoring 스킬로 이 HWPX 양식의 구조를 분석하고 서식을 보존해 문서를 작성해 주세요."

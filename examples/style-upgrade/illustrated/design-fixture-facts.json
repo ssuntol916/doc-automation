@@ -1,0 +1,280 @@
+{
+  "scope": "Synthetic screen design diagrams, not implementation/execution/approval evidence",
+  "input": {
+    "path": "../../demo-suite.project.json",
+    "sha256": "01025315c9d449bc7d6438768838080284c5f43ea24d14aad1dd157b0708f92e"
+  },
+  "screens": [
+    {
+      "id": "DEMO-TD3-001",
+      "name": "배치 생산실적 등록",
+      "fields": [
+        {
+          "name": "작업일자",
+          "data_type": "date",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "작업지시번호",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "배치번호",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "품목코드",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/3"
+            }
+          ]
+        },
+        {
+          "name": "양품수량",
+          "data_type": "decimal(12,3)",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상, 소수 셋째 자리까지의 합성 설계안",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/4"
+            }
+          ]
+        },
+        {
+          "name": "불량수량",
+          "data_type": "decimal(12,3)",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상, 소수 셋째 자리까지의 합성 설계안",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/field_definitions/5"
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "name": "조회",
+          "action": "조회 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "신규",
+          "action": "신규 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "저장",
+          "action": "저장 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "취소",
+          "action": "취소 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/0/button_definitions/3"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/0"
+        }
+      ],
+      "svg": {
+        "path": "screen-01.svg",
+        "sha256": "cb6af25e39342c7a41af2742bf80c5fa5cc23413012f3f9c45e43b3541e1d6e9"
+      },
+      "png": {
+        "path": "screen-01.png",
+        "sha256": "b80002e9b9a97c0c41026e4c51884d605f545a58bcc181748eeb5cd0216bff15"
+      },
+      "is_synthetic_design": true,
+      "actual_execution": false
+    },
+    {
+      "id": "DEMO-TD3-002",
+      "name": "배치 검사 판정",
+      "fields": [
+        {
+          "name": "생산실적 식별자",
+          "data_type": "string",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "검사일자",
+          "data_type": "date",
+          "required": true,
+          "default_value": null,
+          "validation": "필수 입력; 실제 업무 형식은 확인 필요",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "검사수량",
+          "data_type": "integer",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상 정수",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "합격수량",
+          "data_type": "integer",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상 정수",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/3"
+            }
+          ]
+        },
+        {
+          "name": "불합격수량",
+          "data_type": "integer",
+          "required": true,
+          "default_value": null,
+          "validation": "0 이상 정수",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/field_definitions/4"
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "name": "조회",
+          "action": "조회 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/0"
+            }
+          ]
+        },
+        {
+          "name": "신규",
+          "action": "신규 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/1"
+            }
+          ]
+        },
+        {
+          "name": "판정계산",
+          "action": "판정계산 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/2"
+            }
+          ]
+        },
+        {
+          "name": "저장",
+          "action": "저장 요청을 처리하도록 설계하는 계획; 실제 실행 미수행",
+          "source_refs": [
+            {
+              "source_id": "SOURCE-DEMO-FACTS",
+              "locator": "/screen_plan/1/button_definitions/3"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "SOURCE-DEMO-FACTS",
+          "locator": "/screen_plan/1"
+        }
+      ],
+      "svg": {
+        "path": "screen-02.svg",
+        "sha256": "f396e213e31ca8df643d68675817aacdcb6c5b71adf6f23bc278499ce088039a"
+      },
+      "png": {
+        "path": "screen-02.png",
+        "sha256": "0ff154139aa4d1da2ae41f72446cd6611470a787acb0f7531551a4a5b5910599"
+      },
+      "is_synthetic_design": true,
+      "actual_execution": false
+    }
+  ]
+}

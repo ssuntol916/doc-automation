@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "category": "template_source_role_evidence_and_bounded_implementation_choice",
+  "observations": [
+    {
+      "role": "SF-PM2",
+      "source_template": {
+        "sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+        "source_id": "template-sf-pm2"
+      },
+      "original_table_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl",
+      "targets": {
+        "meeting_discussions_label": {
+          "bold": true
+        },
+        "meeting_discussions_value": {
+          "bold": false
+        },
+        "meeting_decisions_label": {
+          "bold": true
+        },
+        "meeting_decisions_value": {
+          "bold": false
+        },
+        "meeting_special_notes_label": {
+          "bold": true
+        },
+        "meeting_special_notes_value": {
+          "bold": false
+        },
+        "meeting_attendees_label": {
+          "bold": true
+        },
+        "meeting_attendees_value": {
+          "bold": false
+        }
+      },
+      "source_selectors": {
+        "meeting_discussions_label": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[5]/hp:tc/hp:subList/hp:p[2]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[5]/hp:tc/hp:subList/hp:p[2]/hp:run[2]",
+            "text_before_generation_verbatim": "  5. 회의내용",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "4"
+            },
+            "source_flags": {
+              "bold": true,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 1
+        },
+        "meeting_discussions_value": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[5]/hp:tc/hp:subList/hp:p[3]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[5]/hp:tc/hp:subList/hp:p[3]/hp:run",
+            "text_before_generation_verbatim": "   가. ",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "4"
+            },
+            "source_flags": {
+              "bold": false,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 2
+        },
+        "meeting_decisions_label": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[6]/hp:tc/hp:subList/hp:p[1]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[6]/hp:tc/hp:subList/hp:p[1]/hp:run[2]",
+            "text_before_generation_verbatim": "  6. 회의결과(합의사항)",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "5"
+            },
+            "source_flags": {
+              "bold": true,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 0
+        },
+        "meeting_decisions_value": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[6]/hp:tc/hp:subList/hp:p[2]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[6]/hp:tc/hp:subList/hp:p[2]/hp:run",
+            "text_before_generation_verbatim": "",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "5"
+            },
+            "source_flags": {
+              "bold": false,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 1
+        },
+        "meeting_special_notes_label": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[7]/hp:tc/hp:subList/hp:p[1]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[7]/hp:tc/hp:subList/hp:p[1]/hp:run",
+            "text_before_generation_verbatim": "  7. 특이사항",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "6"
+            },
+            "source_flags": {
+              "bold": true,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 0
+        },
+        "meeting_special_notes_value": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[7]/hp:tc/hp:subList/hp:p[2]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[7]/hp:tc/hp:subList/hp:p[2]/hp:run",
+            "text_before_generation_verbatim": "",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "6"
+            },
+            "source_flags": {
+              "bold": false,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 1
+        },
+        "meeting_attendees_label": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[8]/hp:tc/hp:subList/hp:p[1]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[8]/hp:tc/hp:subList/hp:p[1]/hp:run",
+            "text_before_generation_verbatim": "  8. 참석자",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "7"
+            },
+            "source_flags": {
+              "bold": true,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 0
+        },
+        "meeting_attendees_value": {
+          "source": {
+            "source_sha256": "933e260782e6430045774c88e5e79a92c530340a4ec416bfaea33b521689596b",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[8]/hp:tc/hp:subList/hp:p[2]",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[8]/hp:tc/hp:subList/hp:p[2]/hp:run",
+            "text_before_generation_verbatim": "   가. 도입기업  :",
+            "cell_address": {
+              "colAddr": "0",
+              "rowAddr": "7"
+            },
+            "source_flags": {
+              "bold": false,
+              "italic": false
+            },
+            "source_height_hwp": 1200
+          },
+          "source_paragraph_index": 1
+        }
+      },
+      "selection": "Template labels and actual empty/regular value roles; guide italics are not business-value style rules",
+      "implementation_choice": "PM2 split only four full-span label/value cells; PM3 request_number values only italic=False, retain other char properties",
+      "actual_native_QA": "pending",
+      "score_percent": null
+    },
+    {
+      "role": "SF-PM3",
+      "source_template": {
+        "sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "source_id": "template-sf-pm3"
+      },
+      "original_table_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl",
+      "targets": {
+        "change_request_number_value": {
+          "italic": false
+        }
+      },
+      "source_selectors": {
+        "change_request_number_value": {
+          "source": {
+            "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[2]/hp:tc[3]/hp:subList/hp:p",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[2]/hp:tc[3]/hp:subList/hp:p/hp:run",
+            "text_before_generation_verbatim": "발송된 공문번호를 기록",
+            "cell_address": {
+              "colAddr": "2",
+              "rowAddr": "1"
+            },
+            "source_flags": {
+              "bold": false,
+              "italic": true
+            },
+            "source_height_hwp": 1100
+          },
+          "regular_reference": {
+            "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+            "xml": "Contents/section0.xml",
+            "xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[3]/hp:tc[3]/hp:subList/hp:p",
+            "run_xpath": "/hs:sec/hp:p[27]/hp:run/hp:tbl/hp:tr[3]/hp:tc[3]/hp:subList/hp:p/hp:run",
+            "text_before_generation_verbatim": "",
+            "cell_address": {
+              "colAddr": "2",
+              "rowAddr": "2"
+            },
+            "source_flags": {
+              "bold": false,
+              "italic": false
+            },
+            "source_height_hwp": 1100
+          }
+        }
+      },
+      "selection": "Template labels and actual empty/regular value roles; guide italics are not business-value style rules",
+      "implementation_choice": "PM2 split only four full-span label/value cells; PM3 request_number values only italic=False, retain other char properties",
+      "actual_native_QA": "pending",
+      "score_percent": null,
+      "preserved_title_source": {
+        "source_sha256": "812481d48274a956393d5cc07a807d5c342f0d5c50cb60396f23a6c70440b60a",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[29]",
+        "run_xpath": "/hs:sec/hp:p[29]/hp:run",
+        "text_before_generation_verbatim": "변경요청서",
+        "cell_address": null,
+        "source_flags": {
+          "bold": true,
+          "italic": false
+        },
+        "source_height_hwp": 1800
+      },
+      "preserved_title_paragraph_role": {
+        "alignment": "CENTER",
+        "line_spacing_case": {
+          "type": "BETWEEN_LINES",
+          "value": "96",
+          "unit": "HWPUNIT"
+        },
+        "line_spacing_default": {
+          "type": "BETWEEN_LINES",
+          "value": "192",
+          "unit": "HWPUNIT"
+        },
+        "decision": "Preserve source own-run styles and original paragraph formatting; retain the existing renderer explicit keep/page break; no subjective size-fitting"
+      }
+    }
+  ],
+  "source_original_files_read_only": true,
+  "no_expert_business_literals_or_bitmaps_copied": true,
+  "current_native_QA": "pending",
+  "quality_score_percent": null
+}

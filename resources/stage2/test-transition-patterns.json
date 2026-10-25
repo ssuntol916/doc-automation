@@ -1,0 +1,60 @@
+{
+  "schema_version": "public-writing-guidance-1",
+  "scope": "Generic test, transition and manual writing guidance. Private execution cases, installation registers, source screenshots, serials and per-project findings are not distributed.",
+  "patterns": [
+    {
+      "id": "PAT-TEST-01",
+      "scope": "이 참고사례의 세 시험문서",
+      "pattern": "시나리오=조회조건/선택→팝업·시트 이동→필드입력→버튼동작; 데이터=필드명:구체값; 예상=식별키의필드값과저장/조회/출력행위",
+      "generalization": "candidate",
+      "guard": "필드값·결과는해당사업의검증된입력을사용하고예상과실제를구분한다."
+    },
+    {
+      "id": "PAT-TEST-02",
+      "scope": "TI1/TI4",
+      "pattern": "업무영역1개=시험ID1개+업무흐름도1개+케이스여러행;결과셀에는화면과판정텍스트,출력물은보조그림",
+      "generalization": "candidate",
+      "guard": "업무영역이나케이스수/ID/공정은고정하지않는다. 현재양식의공정명·담당자·확인자필드는보충한다."
+    },
+    {
+      "id": "PAT-TEST-03",
+      "scope": "CD1/TI1 결함",
+      "pattern": "증상→영향받은시험ID→발생일→원인/수정층(Front-end/Back-end)과조치→완료일",
+      "generalization": "candidate_with_quality_improvement",
+      "guard": "실제조치증거와재시험을추가연결하고동일UT-ERR번호는문서/시험단계로범위를정한다."
+    },
+    {
+      "id": "PAT-TRANS-01",
+      "scope": "TI2",
+      "pattern": "대상요약표→모델/수량/Serial목록→장비별설치사진→라벨·시스템정보→거래명세서",
+      "generalization": "candidate",
+      "guard": "사진수만으로수량/설치/기능검증을대체하지않고장비단위키로연결한다."
+    },
+    {
+      "id": "PAT-TRANS-02",
+      "scope": "TI2",
+      "pattern": "전환내역의프로그램/DB모듈별집계→실제시작화면·환경설정→초기데이터대상/전후건수/전환율/확인자→유형별화면",
+      "generalization": "candidate",
+      "guard": "개발본수·테이블수·논리기능수는구분하며100%/정상/확인은실증자료가있을때만쓴다."
+    },
+    {
+      "id": "PAT-MANUAL-01",
+      "scope": "TI3",
+      "pattern": "개요의효과설명→전체/HW/SW/NW구성도와설명→메뉴/역할매트릭스→공통UI그림→사용자/관리자행동절차",
+      "generalization": "candidate",
+      "guard": "기업/설비/기술구성은사례사실이며일반규칙으로복제하지않는다. 외부첨부는실제제공여부검증한다."
+    },
+    {
+      "id": "PAT-MANUAL-02",
+      "scope": "TI3",
+      "pattern": "번호가붙은화면·빨간강조/화살표→같은번호의동작설명;장애흐름→담당역할→실명연락망;백업/복구는선택·옵션·진행·완료화면",
+      "generalization": "candidate",
+      "guard": "연락처·포트·계정·보안정책은사업별입력이다. 마스킹이나백업스케줄을고정기준으로학습하지않는다."
+    }
+  ],
+  "do_not_learn_as_fixed_rules": [
+    "Company or personal identities, addresses, contacts, account or device identifiers, dates, measured results, approvals and signatures are project facts supplied separately.",
+    "A reference figure or source claim is never proof of a new project execution or installation."
+  ],
+  "private_evidence_availability": "not_distributed"
+}

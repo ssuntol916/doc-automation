@@ -1,0 +1,3624 @@
+{
+  "schema_version": "source-style-evidence-1",
+  "role": "SF-AD3",
+  "template": {
+    "sha256": "9efec96c01034fb1e49035c1db44b15f45b30b563713a351ce3be879a9617a11",
+    "spine_sections": [
+      "Contents/header.xml",
+      "Contents/section0.xml"
+    ],
+    "used_character_formats": [
+      {
+        "local_charPr_id": "6",
+        "characters": 350,
+        "attributes": {
+          "id": "6",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "4"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[7]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[31]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[31]",
+          "text": "- 000시스템은 대상 사업과 관련된 시스템이 여러개 있을 경우 시스템별로 기술함",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "25",
+        "characters": 263,
+        "attributes": {
+          "id": "25",
+          "height": "1000",
+          "textColor": "#0000FF",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "4"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[26]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[29]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[29]",
+          "text": "- 본 사업에서 솔루션(패키지)이 신규로 도입되는 경우에는 솔루션 고유 기능들을 기준으로 기존(재활용), 추가, 변경, 삭제로 구분하고 추가, 변경, 삭제 기능은 관련 내용 및 근거를 제시한다",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "24",
+        "characters": 18,
+        "attributes": {
+          "id": "24",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[25]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[26]/hp:run/hp:tbl/hp:tr[1]/hp:tc[1]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[26]/hp:run/hp:tbl/hp:tr[1]/hp:tc[1]/hp:subList/hp:p",
+          "text": "대분류",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "21",
+        "characters": 13,
+        "attributes": {
+          "id": "21",
+          "height": "2200",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 22.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[22]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+          "text": "스마트공장 보급·확산사업",
+          "baseline_pdf_candidate_pages": [
+            1
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "17",
+        "characters": 9,
+        "attributes": {
+          "id": "17",
+          "height": "1300",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 13.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[18]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[26]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[26]",
+          "text": "1. 000시스템",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "1",
+        "characters": 8,
+        "attributes": {
+          "id": "1",
+          "height": "2000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 20.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[2]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[17]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[17]",
+          "text": "202 .  .",
+          "baseline_pdf_candidate_pages": [
+            1
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "3",
+        "characters": 7,
+        "attributes": {
+          "id": "3",
+          "height": "1100",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "4"
+        },
+        "height_pt": 11.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[4]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[28]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[28]",
+          "text": "※ 작성 방법",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "23",
+        "characters": 6,
+        "attributes": {
+          "id": "23",
+          "height": "2400",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "1",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "4"
+        },
+        "height_pt": 24.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[24]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[8]/hp:run[1]",
+          "paragraph_xpath": "/hs:sec/hp:p[8]",
+          "text": "도입기업명 ",
+          "baseline_pdf_candidate_pages": [
+            1
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "22",
+        "characters": 5,
+        "attributes": {
+          "id": "22",
+          "height": "2600",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 26.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[23]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+          "text": "기능대비표"
+        }
+      },
+      {
+        "local_charPr_id": "16",
+        "characters": 5,
+        "attributes": {
+          "id": "16",
+          "height": "2800",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 28.0,
+        "fonts": {
+          "hangul": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "latin": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "바탕체",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[17]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[23]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[23]",
+          "text": "공급기업명"
+        }
+      }
+    ],
+    "used_paragraph_formats": [
+      {
+        "local_paraPr_id": "4",
+        "characters": 613,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[5]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "140",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "140",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"-1200\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"-2400\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[29]",
+          "text": "- 본 사업에서 솔루션(패키지)이 신규로 도입되는 경우에는 솔루션 고유 기능들을 기준으로 기존(재활용), 추가, 변경, 삭제로 구분하고 추가, 변경, 삭제 기능은 관련 내용 및 근거를 제시한다"
+        }
+      },
+      {
+        "local_paraPr_id": "2",
+        "characters": 18,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[3]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[26]/hp:run/hp:tbl/hp:tr[1]/hp:tc[1]/hp:subList/hp:p",
+          "text": "대분류"
+        }
+      },
+      {
+        "local_paraPr_id": "21",
+        "characters": 13,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[22]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+          "text": "스마트공장 보급·확산사업"
+        }
+      },
+      {
+        "local_paraPr_id": "23",
+        "characters": 9,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[24]",
+        "line_spacing": [
+          {
+            "type": "BETWEEN_LINES",
+            "value": "96",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "BETWEEN_LINES",
+            "value": "192",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"500\" unit=\"HWPUNIT\"/><hc:next value=\"500\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"1000\" unit=\"HWPUNIT\"/><hc:next value=\"1000\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[26]",
+          "text": "1. 000시스템"
+        }
+      },
+      {
+        "local_paraPr_id": "6",
+        "characters": 8,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[7]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[17]",
+          "text": "202 .  ."
+        }
+      },
+      {
+        "local_paraPr_id": "5",
+        "characters": 7,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[6]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "140",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "140",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[28]",
+          "text": "※ 작성 방법"
+        }
+      },
+      {
+        "local_paraPr_id": "22",
+        "characters": 6,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[23]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[8]",
+          "text": "도입기업명 "
+        }
+      },
+      {
+        "local_paraPr_id": "3",
+        "characters": 5,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[4]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "140",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "140",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+          "text": "기능대비표"
+        }
+      },
+      {
+        "local_paraPr_id": "11",
+        "characters": 5,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[12]",
+        "line_spacing": [
+          {
+            "type": "BETWEEN_LINES",
+            "value": "96",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "BETWEEN_LINES",
+            "value": "192",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"500\" unit=\"HWPUNIT\"/><hc:next value=\"500\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"1000\" unit=\"HWPUNIT\"/><hc:next value=\"1000\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[23]",
+          "text": "공급기업명"
+        }
+      }
+    ],
+    "section_page_properties": [
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[1]/hp:run[1]/hp:secPr/hp:pagePr",
+        "attributes": {
+          "landscape": "WIDELY",
+          "width": "59528",
+          "height": "84188",
+          "gutterType": "LEFT_ONLY"
+        },
+        "margin": {
+          "header": "4252",
+          "footer": "4252",
+          "gutter": "0",
+          "left": "5102",
+          "right": "5102",
+          "top": "4252",
+          "bottom": "4252"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[8]/hp:run[2]/hp:tbl",
+        "attributes": {
+          "id": "2075864341",
+          "zOrder": "0",
+          "numberingType": "TABLE",
+          "textWrap": "TOP_AND_BOTTOM",
+          "textFlow": "BOTH_SIDES",
+          "lock": "0",
+          "dropcapstyle": "None",
+          "pageBreak": "CELL",
+          "repeatHeader": "1",
+          "rowCnt": "1",
+          "colCnt": "1",
+          "cellSpacing": "0",
+          "borderFillIDRef": "5",
+          "noAdjust": "0"
+        },
+        "size": {
+          "width": "46934",
+          "widthRelTo": "ABSOLUTE",
+          "height": "9069",
+          "heightRelTo": "ABSOLUTE",
+          "protect": "0"
+        },
+        "first_row_cells": [
+          {
+            "address": {
+              "colAddr": "0",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "46934",
+              "height": "9069"
+            }
+          }
+        ]
+      },
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[26]/hp:run/hp:tbl",
+        "attributes": {
+          "id": "2075864400",
+          "zOrder": "1",
+          "numberingType": "TABLE",
+          "textWrap": "TOP_AND_BOTTOM",
+          "textFlow": "BOTH_SIDES",
+          "lock": "0",
+          "dropcapstyle": "None",
+          "pageBreak": "CELL",
+          "repeatHeader": "1",
+          "rowCnt": "10",
+          "colCnt": "6",
+          "cellSpacing": "0",
+          "borderFillIDRef": "2",
+          "noAdjust": "0"
+        },
+        "size": {
+          "width": "48777",
+          "widthRelTo": "ABSOLUTE",
+          "height": "13386",
+          "heightRelTo": "ABSOLUTE",
+          "protect": "0"
+        },
+        "first_row_cells": [
+          {
+            "address": {
+              "colAddr": "0",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "5585",
+              "height": "1848"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "1",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "6151",
+              "height": "1848"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "2",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "7283",
+              "height": "1848"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "3",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "3321",
+              "height": "1848"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "4",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "20018",
+              "height": "1848"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "5",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "6419",
+              "height": "1848"
+            }
+          }
+        ]
+      }
+    ],
+    "baseline_pdf": {
+      "sha256": "f1c0573982376f4dd989df2413f0a940563531d321a684c3e1df41a0e0c9fa57"
+    },
+    "limits": [
+      "Actual used run/paragraph definitions resolved within this file; numeric IDs are evidence only and are never cross-file selectors.",
+      "Baseline PDF candidate pages use text search only; absence/ambiguity is not visual proof or a source-layout failure."
+    ],
+    "source_id": "template-sf-ad3"
+  },
+  "reference": {
+    "sha256": "3a3a8fb67cc35ce5c5530043d63b49a411634654f498d5b949955be08056aa22",
+    "spine_sections": [
+      "Contents/header.xml",
+      "Contents/section0.xml"
+    ],
+    "used_character_formats": [
+      {
+        "local_charPr_id": "45",
+        "characters": 1032,
+        "attributes": {
+          "id": "45",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[46]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[17]/hp:tc[3]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[17]/hp:tc[3]/hp:subList/hp:p",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "42",
+        "characters": 473,
+        "attributes": {
+          "id": "42",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[43]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[5]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[5]/hp:subList/hp:p",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "40",
+        "characters": 200,
+        "attributes": {
+          "id": "40",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[41]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:ctrl/hp:footer/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:ctrl/hp:footer/hp:subList/hp:p",
+          "baseline_pdf_candidate_pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "11",
+        "characters": 139,
+        "attributes": {
+          "id": "11",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[12]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[8]/hp:tc[2]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[8]/hp:tc[2]/hp:subList/hp:p",
+          "baseline_pdf_candidate_pages": [
+            2
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "38",
+        "characters": 123,
+        "attributes": {
+          "id": "38",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[39]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[33]/hp:run/hp:ctrl/hp:header/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[33]/hp:run/hp:ctrl/hp:header/hp:subList/hp:p",
+          "baseline_pdf_candidate_pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "10",
+        "characters": 81,
+        "attributes": {
+          "id": "10",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[11]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[1]/hp:tc[1]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[1]/hp:tc[1]/hp:subList/hp:p",
+          "baseline_pdf_candidate_pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "17",
+        "characters": 74,
+        "attributes": {
+          "id": "17",
+          "height": "1100",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 11.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[18]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[32]/hp:run/hp:ctrl/hp:header/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[32]/hp:run/hp:ctrl/hp:header/hp:subList/hp:p",
+          "baseline_pdf_candidate_pages": []
+        }
+      },
+      {
+        "local_charPr_id": "2",
+        "characters": 56,
+        "attributes": {
+          "id": "2",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[3]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[4]/hp:tc[1]/hp:subList/hp:p[1]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[4]/hp:tc[1]/hp:subList/hp:p[1]",
+          "baseline_pdf_candidate_pages": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "local_charPr_id": "46",
+        "characters": 34,
+        "attributes": {
+          "id": "46",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[47]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[20]/hp:tc[3]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[20]/hp:tc[3]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "44",
+        "characters": 27,
+        "attributes": {
+          "id": "44",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[45]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[5]/hp:tc[3]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[5]/hp:tc[3]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "37",
+        "characters": 26,
+        "attributes": {
+          "id": "37",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[38]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[19]/hp:tc[3]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[19]/hp:tc[3]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "15",
+        "characters": 24,
+        "attributes": {
+          "id": "15",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "1"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "맑은 고딕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "latin": {
+            "face": "맑은 고딕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "맑은 고딕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "맑은 고딕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "other": {
+            "face": "굴림",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "맑은 고딕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          },
+          "user": {
+            "face": "맑은 고딕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[2]",
+            "local_font_id": "1",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[16]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[18]/hp:tc[4]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[18]/hp:tc[4]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "1",
+        "characters": 19,
+        "attributes": {
+          "id": "1",
+          "height": "2200",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 22.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[2]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[19]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[19]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]"
+        }
+      },
+      {
+        "local_charPr_id": "16",
+        "characters": 18,
+        "attributes": {
+          "id": "16",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[17]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[19]/hp:tc[2]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[19]/hp:tc[2]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "9",
+        "characters": 14,
+        "attributes": {
+          "id": "9",
+          "height": "1000",
+          "textColor": "#0000FF",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[10]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[22]/hp:tc[2]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[22]/hp:tc[2]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "32",
+        "characters": 12,
+        "attributes": {
+          "id": "32",
+          "height": "2000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "1",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 20.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[33]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[18]/hp:run[2]",
+          "paragraph_xpath": "/hs:sec/hp:p[18]"
+        }
+      },
+      {
+        "local_charPr_id": "8",
+        "characters": 10,
+        "attributes": {
+          "id": "8",
+          "height": "1000",
+          "textColor": "#FF0000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[9]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[3]/hp:tc[2]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[3]/hp:tc[2]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "23",
+        "characters": 9,
+        "attributes": {
+          "id": "23",
+          "height": "2000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 20.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[24]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[26]/hp:run[1]",
+          "paragraph_xpath": "/hs:sec/hp:p[26]"
+        }
+      },
+      {
+        "local_charPr_id": "48",
+        "characters": 9,
+        "attributes": {
+          "id": "48",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[49]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[3]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[3]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "14",
+        "characters": 9,
+        "attributes": {
+          "id": "14",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[15]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[21]/hp:tc[1]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[21]/hp:tc[1]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "47",
+        "characters": 8,
+        "attributes": {
+          "id": "47",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[48]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[41]/hp:run/hp:tbl/hp:tr[12]/hp:tc[1]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[41]/hp:run/hp:tbl/hp:tr[12]/hp:tc[1]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_charPr_id": "19",
+        "characters": 6,
+        "attributes": {
+          "id": "19",
+          "height": "2800",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        "height_pt": 28.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[20]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[32]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[32]"
+        }
+      },
+      {
+        "local_charPr_id": "33",
+        "characters": 5,
+        "attributes": {
+          "id": "33",
+          "height": "2600",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "1",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 26.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": true,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[34]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[19]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[19]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]"
+        }
+      },
+      {
+        "local_charPr_id": "6",
+        "characters": 5,
+        "attributes": {
+          "id": "6",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        },
+        "height_pt": 10.0,
+        "fonts": {
+          "hangul": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[1]/hh:font[8]",
+            "local_font_id": "7",
+            "fallback": null
+          },
+          "latin": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[2]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "hanja": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[3]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "japanese": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[4]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          },
+          "other": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[5]/hh:font[6]",
+            "local_font_id": "5",
+            "fallback": null
+          },
+          "symbol": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[6]/hh:font[4]",
+            "local_font_id": "3",
+            "fallback": null
+          },
+          "user": {
+            "face": "함초롬바탕",
+            "font_definition_xpath": "/hh:head/hh:refList/hh:fontfaces/hh:fontface[7]/hh:font[5]",
+            "local_font_id": "4",
+            "fallback": null
+          }
+        },
+        "bold": false,
+        "definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[7]",
+        "run_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[2]/hp:subList/hp:p/hp:run",
+          "paragraph_xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[2]/hp:subList/hp:p"
+        }
+      }
+    ],
+    "used_paragraph_formats": [
+      {
+        "local_paraPr_id": "31",
+        "characters": 1729,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[32]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[33]/hp:run/hp:ctrl/hp:header/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "8",
+        "characters": 142,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[9]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "100",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "100",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[8]/hp:tc[2]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "2",
+        "characters": 108,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[3]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:ctrl/hp:footer/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "6",
+        "characters": 100,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[7]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[4]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "3",
+        "characters": 97,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[4]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[1]/hp:tc[4]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "38",
+        "characters": 74,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[39]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[32]/hp:run/hp:ctrl/hp:header/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "0",
+        "characters": 31,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[1]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[1]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "13",
+        "characters": 24,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[14]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "115",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "115",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl/hp:tr[18]/hp:tc[4]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "10",
+        "characters": 19,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[11]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[19]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]"
+        }
+      },
+      {
+        "local_paraPr_id": "33",
+        "characters": 16,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[34]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "100",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "100",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[1]/hp:tc[3]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "16",
+        "characters": 14,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[17]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[1]/hp:tc[1]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "30",
+        "characters": 12,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[31]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[18]"
+        }
+      },
+      {
+        "local_paraPr_id": "32",
+        "characters": 12,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[33]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[14]/hp:tc[2]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "29",
+        "characters": 9,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[30]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[26]"
+        }
+      },
+      {
+        "local_paraPr_id": "34",
+        "characters": 9,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[35]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "160",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[2]/hp:tc[3]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "25",
+        "characters": 6,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[26]",
+        "line_spacing": [
+          {
+            "type": "BETWEEN_LINES",
+            "value": "96",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "BETWEEN_LINES",
+            "value": "192",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"500\" unit=\"HWPUNIT\"/><hc:next value=\"500\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"1000\" unit=\"HWPUNIT\"/><hc:next value=\"1000\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[32]"
+        }
+      },
+      {
+        "local_paraPr_id": "11",
+        "characters": 6,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[12]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "100",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "100",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl/hp:tr[18]/hp:tc[2]/hp:subList/hp:p"
+        }
+      },
+      {
+        "local_paraPr_id": "37",
+        "characters": 5,
+        "definition_xpath": "/hh:head/hh:refList/hh:paraProperties/hh:paraPr[38]",
+        "line_spacing": [
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          },
+          {
+            "type": "PERCENT",
+            "value": "130",
+            "unit": "HWPUNIT"
+          }
+        ],
+        "margins": [
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>",
+          "<hh:margin xmlns:hh=\"http://www.hancom.co.kr/hwpml/2011/head\" xmlns:ha=\"http://www.hancom.co.kr/hwpml/2011/app\" xmlns:hp=\"http://www.hancom.co.kr/hwpml/2011/paragraph\" xmlns:hp10=\"http://www.hancom.co.kr/hwpml/2016/paragraph\" xmlns:hs=\"http://www.hancom.co.kr/hwpml/2011/section\" xmlns:hc=\"http://www.hancom.co.kr/hwpml/2011/core\" xmlns:hhs=\"http://www.hancom.co.kr/hwpml/2011/history\" xmlns:hm=\"http://www.hancom.co.kr/hwpml/2011/master-page\" xmlns:hpf=\"http://www.hancom.co.kr/schema/2011/hpf\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:opf=\"http://www.idpf.org/2007/opf/\" xmlns:ooxmlchart=\"http://www.hancom.co.kr/hwpml/2016/ooxmlchart\" xmlns:hwpunitchar=\"http://www.hancom.co.kr/hwpml/2016/HwpUnitChar\" xmlns:epub=\"http://www.idpf.org/2007/ops\" xmlns:config=\"urn:oasis:names:tc:opendocument:xmlns:config:1.0\"><hc:intent value=\"0\" unit=\"HWPUNIT\"/><hc:left value=\"0\" unit=\"HWPUNIT\"/><hc:right value=\"0\" unit=\"HWPUNIT\"/><hc:prev value=\"0\" unit=\"HWPUNIT\"/><hc:next value=\"0\" unit=\"HWPUNIT\"/></hh:margin>"
+        ],
+        "paragraph_evidence": {
+          "xml": "Contents/section0.xml",
+          "xpath": "/hs:sec/hp:p[19]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]"
+        }
+      }
+    ],
+    "section_page_properties": [
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[1]/hp:run[1]/hp:secPr/hp:pagePr",
+        "attributes": {
+          "landscape": "WIDELY",
+          "width": "59528",
+          "height": "84188",
+          "gutterType": "LEFT_ONLY"
+        },
+        "margin": {
+          "header": "0",
+          "footer": "1417",
+          "gutter": "0",
+          "left": "3968",
+          "right": "440",
+          "top": "2976",
+          "bottom": "2834"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[19]/hp:run/hp:tbl",
+        "attributes": {
+          "id": "1454709587",
+          "zOrder": "1",
+          "numberingType": "TABLE",
+          "textWrap": "TOP_AND_BOTTOM",
+          "textFlow": "BOTH_SIDES",
+          "lock": "0",
+          "dropcapstyle": "None",
+          "pageBreak": "CELL",
+          "repeatHeader": "1",
+          "rowCnt": "1",
+          "colCnt": "1",
+          "cellSpacing": "0",
+          "borderFillIDRef": "4",
+          "noAdjust": "0"
+        },
+        "size": {
+          "width": "46934",
+          "widthRelTo": "ABSOLUTE",
+          "height": "9384",
+          "heightRelTo": "ABSOLUTE",
+          "protect": "0"
+        },
+        "first_row_cells": [
+          {
+            "address": {
+              "colAddr": "0",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "46934",
+              "height": "9384"
+            }
+          }
+        ]
+      },
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[35]/hp:run/hp:tbl",
+        "attributes": {
+          "id": "1322540617",
+          "zOrder": "0",
+          "numberingType": "TABLE",
+          "textWrap": "TOP_AND_BOTTOM",
+          "textFlow": "BOTH_SIDES",
+          "lock": "0",
+          "dropcapstyle": "None",
+          "pageBreak": "CELL",
+          "repeatHeader": "1",
+          "rowCnt": "21",
+          "colCnt": "6",
+          "cellSpacing": "0",
+          "borderFillIDRef": "10",
+          "noAdjust": "0"
+        },
+        "size": {
+          "width": "55093",
+          "widthRelTo": "ABSOLUTE",
+          "height": "73988",
+          "heightRelTo": "ABSOLUTE",
+          "protect": "0"
+        },
+        "first_row_cells": [
+          {
+            "address": {
+              "colAddr": "0",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "5273",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "1",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "5556",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "2",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "7942",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "3",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "3980",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "4",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "22824",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "5",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "9518",
+              "height": "3300"
+            }
+          }
+        ]
+      },
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[38]/hp:run/hp:tbl",
+        "attributes": {
+          "id": "1598380216",
+          "zOrder": "3",
+          "numberingType": "TABLE",
+          "textWrap": "TOP_AND_BOTTOM",
+          "textFlow": "BOTH_SIDES",
+          "lock": "0",
+          "dropcapstyle": "None",
+          "pageBreak": "CELL",
+          "repeatHeader": "1",
+          "rowCnt": "23",
+          "colCnt": "6",
+          "cellSpacing": "0",
+          "borderFillIDRef": "10",
+          "noAdjust": "0"
+        },
+        "size": {
+          "width": "55093",
+          "widthRelTo": "ABSOLUTE",
+          "height": "74028",
+          "heightRelTo": "ABSOLUTE",
+          "protect": "0"
+        },
+        "first_row_cells": [
+          {
+            "address": {
+              "colAddr": "0",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "5273",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "1",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "5556",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "2",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "7942",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "3",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "3980",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "4",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "22824",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "5",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "9518",
+              "height": "3300"
+            }
+          }
+        ]
+      },
+      {
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[41]/hp:run/hp:tbl",
+        "attributes": {
+          "id": "2146204030",
+          "zOrder": "2",
+          "numberingType": "TABLE",
+          "textWrap": "TOP_AND_BOTTOM",
+          "textFlow": "BOTH_SIDES",
+          "lock": "0",
+          "dropcapstyle": "None",
+          "pageBreak": "CELL",
+          "repeatHeader": "1",
+          "rowCnt": "12",
+          "colCnt": "6",
+          "cellSpacing": "0",
+          "borderFillIDRef": "10",
+          "noAdjust": "0"
+        },
+        "size": {
+          "width": "55093",
+          "widthRelTo": "ABSOLUTE",
+          "height": "38161",
+          "heightRelTo": "ABSOLUTE",
+          "protect": "0"
+        },
+        "first_row_cells": [
+          {
+            "address": {
+              "colAddr": "0",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "5273",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "1",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "5273",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "2",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "7942",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "3",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "3980",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "4",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "23107",
+              "height": "3300"
+            }
+          },
+          {
+            "address": {
+              "colAddr": "5",
+              "rowAddr": "0"
+            },
+            "span": {
+              "colSpan": "1",
+              "rowSpan": "1"
+            },
+            "size": {
+              "width": "9518",
+              "height": "3300"
+            }
+          }
+        ]
+      }
+    ],
+    "baseline_pdf": {
+      "sha256": "6099acfd5ba6a1eb25e489f11c571da21792c42fd17cea5f5320c4f7342ce07d"
+    },
+    "limits": [
+      "Actual used run/paragraph definitions resolved within this file; numeric IDs are evidence only and are never cross-file selectors.",
+      "Baseline PDF candidate pages use text search only; absence/ambiguity is not visual proof or a source-layout failure."
+    ],
+    "source_id": "reference-sf-ad3"
+  },
+  "adjacent_references": [],
+  "relationship": "same_role",
+  "evidence_kind": "observed_expert_convention_not_universal_requirement",
+  "native_editorial_judgment": {
+    "status": "private_evidence_not_distributed",
+    "current_public_output_acceptance": false
+  }
+}

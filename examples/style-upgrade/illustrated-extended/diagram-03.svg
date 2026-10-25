@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="500" viewBox="0 0 1800 500">
+<rect width="1800" height="500" fill="#ffffff"/>
+<rect width="1800" height="82" fill="#23364c"/>
+<text x="35" y="52" font-family="sans-serif" font-size="31" fill="#ffffff" font-weight="bold">현행 시스템 가정</text>
+<text x="35" y="132" font-family="sans-serif" font-size="27" fill="#65748a" font-weight="normal">합성 설계 시안 | 실제 수행·구현 증거 아님</text>
+<text x="35" y="175" font-family="sans-serif" font-size="25" fill="#65748a" font-weight="normal">DEMO-SYSTEM-001</text>
+<rect x="55.0" y="220" width="1590.0" height="210" rx="8" fill="#eef3f8" stroke="#5d7792" stroke-width="2"/>
+<text x="75.0" y="260" font-family="sans-serif" font-size="24" fill="#233044" font-weight="normal">작업지시 조회와 단순 생산수량 입력만 있는 합성 초기 상태를 가정한다.</text>
+</svg>

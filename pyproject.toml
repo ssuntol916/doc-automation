@@ -1,0 +1,33 @@
+[project]
+name = "doc-automation"
+version = "0.1.0"
+description = "Evidence-based HWPX analysis, generation, and quality verification"
+requires-python = ">=3.11"
+dependencies = [
+    "lxml>=5.3",
+    "jsonschema[format]>=4.23",
+    "pillow>=11",
+    "pymupdf>=1.25,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyyaml>=6"]
+
+[project.scripts]
+doc-automation = "doc_automation.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not corpus and not native'"
+markers = [
+    "corpus: integration against external read-only government-grant templates (missing selected inputs fail)",
+    "native: regression against locally retained Hancom exports and their exact-byte evidence (missing selected inputs fail)",
+]
+
+[tool.hatch.build.targets.wheel.force-include]
+"schemas" = "doc_automation/schemas"
+

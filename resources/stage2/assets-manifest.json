@@ -1,0 +1,7 @@
+{
+  "schema_version": "private-asset-boundary-1",
+  "scope": "Reference raster assets and their full per-project inventories are not distributed. Source-owned runtime quotation allowlists retain only declared hashes and semantic locators.",
+  "records": [],
+  "records_availability": "private_evidence_not_distributed",
+  "execution_or_approval_evidence": false
+}

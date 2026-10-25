@@ -1,0 +1,771 @@
+{
+  "schema_version": "public-curated-resource-map-1",
+  "scope": "Current public resource bytes. Original source/document fingerprints are retained in source catalogs; raw project facts, private locations and local execution observations are withheld. Historical private resource hashes are hashes only, not a current public-content assertion.",
+  "files": [
+    {
+      "path": "resources/README.md",
+      "sha256": "550eeb4d1f54fdcff1fa585bb46b06e6926ad1f25a9c07f2698e008ba7035d36",
+      "original_sha256": "f78abbdcfa880c8f3167c6f7e2eb8454058b868fd88dad0b079114fd90d55697",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/picture-viewport-native-profile.json",
+      "sha256": "fdc85eaff35004f09213271465eda449cd068f04d4060fcf85ebfe2fb5dc985f",
+      "original_sha256": "fdc85eaff35004f09213271465eda449cd068f04d4060fcf85ebfe2fb5dc985f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/stage1/analysis-design-rules.json",
+      "sha256": "42533ebcc88bcedd899c1bbb8cd8062c5c25971b15ca27082dd6b603b043fba8",
+      "original_sha256": "ab0caebcc320183276a2d0950a5dc6edc21b187cf4e15443a1b2fa96bbee5c29",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/stage1/analysis-design.md",
+      "sha256": "d0651c80fbff98fe22fe2016b34240b9ebe5e7501d86217210b6571502867e1b",
+      "original_sha256": "e4eb2b4bfccf0068f9423d1e968749a6101e5bfea1ed8e36f1a12f7f679b18e5",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/stage1/deliverables-catalog.json",
+      "sha256": "0c91225920df10f383e50b65b0a5e498b86b6656a27f8486c62e2bd3fb27aea7",
+      "original_sha256": "889393cf239834271041bac9774ed8bb3d0ca9eb14e67b2cef80029e0864b891",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage1/forms-catalog.json",
+      "sha256": "4563a4b47f8adf38cfc174edbdc76b41cf42b36d3e6100596809d14b12ff8a69",
+      "original_sha256": "b3d6190a49e313a73b50ea870415efd6ea5be1d9bb06d70940dd1221ea7aaf5b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage1/forms-catalog.md",
+      "sha256": "10783f76701f8038b6765bc68cd7d96bc4c52601cb4c43395bc292530618858a",
+      "original_sha256": "4433ac452e2f95e69a907c501822f6fdae18ee9308628faaf98f93a861e1969b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/stage1/inventory.json",
+      "sha256": "acb574b98d6080bd207be1ba92433655f815a4518b0f53ac3dd372a5f6cdeb2e",
+      "original_sha256": "3892917de09b7bbd3c84d4252e22d6a29ba5545c11a24b7eb11951d3d0064ad5",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage1/test-management-requirements.json",
+      "sha256": "3f731901fc8bf170244b97be0eafe00fe0bf34b822a5758eb74f729d08071ae6",
+      "original_sha256": "c26af4171eb282f883f26604c9093ab483f44ef828f88758ee6f127e4c40eb3f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage1/test-management.md",
+      "sha256": "08121cbe31e36390a6c70ea8b5b02434afcf678f63b8edf61039f819cc0acc6e",
+      "original_sha256": "1df340c555ec0c5c6e63fc0c106186203d7d5ada7291d1cdbcdbd1dc95ab3472",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/stage2/analysis-design-comparison.md",
+      "sha256": "bafabf208ad58e6f9f5236548be87f8c1936882829dcdf166e58e9ae134db3c4",
+      "original_sha256": "7ad4fedf692b95d2162b925dec9ab9fe8cdabe12863cb122e4bb8c5b42e2b8dc",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/analysis-design-patterns.json",
+      "sha256": "6c99f6b17368f9174cd202b238a05ba93bcbba2d7863e6667ee912e452c8e499",
+      "original_sha256": "14fa3b3201fec4bc3c2009ed6fb57cdce89c0b3ed1856577c7620f77478832e5",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/assets-manifest.json",
+      "sha256": "818b1fa0fdd178e04fa83a99280f2f9d9d9c222b3f7c029110eabc4dbb91d990",
+      "original_sha256": "20f0e5f25366166ee1fabbc6ed05c0c15136401ee4f1f37a46c474b81f2e4e67",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/inventory.json",
+      "sha256": "fddf9127108f4bd0a26f6368d048acb8cbd6411f20613e6de5259d501f0ead9a",
+      "original_sha256": "1e4841f2406bc48557bea54b5a346bb95d8aeea061bbae4e1a788633990ca58a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/mapping.json",
+      "sha256": "0e5026a1bd19b4e5f8b642bcfb90728466dad102d44390b6ac7209cbd38de9e4",
+      "original_sha256": "da9804c16f76ffae0c520b64bdfdfd0777a0cfc4405ef2a7aa6f36585fe798a5",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/operations-management-comparison.md",
+      "sha256": "6850abefb1402d58deb35f231da547126abc846b61d18aaa7291940466842b90",
+      "original_sha256": "faf14b36ff522338d4277d9a4e7b4996ce1b2b86de80c331cb69faf2226057f6",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/operations-management-patterns.json",
+      "sha256": "9720b0d239c660389ce988c72f86a748392f767b418baafecdaf2713f1ddd3e3",
+      "original_sha256": "9d211edcdc9676f4c755223860c9a64e5875ece6e990ed49039e844ef5ba9aa9",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/test-transition-comparison.md",
+      "sha256": "9fb6d4cd03080f87b433b5d66134319259cf0741dcedf873f99b8eb1b1717866",
+      "original_sha256": "0d16d8880604b835e808f4be5595904d563ecfd87b896a48078cb6f6d0bf69be",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/stage2/test-transition-patterns.json",
+      "sha256": "0c312cd91fc5aa0c4ea7a6a6729581c72d3dc9b440b6e146cb4835d40f1bd047",
+      "original_sha256": "00851092235d4015204eb6b6480783ffa5666fec4bae9cabb482462b7ece59ef",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/heldout-input-plan.json",
+      "sha256": "d7679c8ad5431495136bdb44a4ebc060e8dccbf825fd9d21a60cc07bb073e57a",
+      "original_sha256": "d7679c8ad5431495136bdb44a4ebc060e8dccbf825fd9d21a60cc07bb073e57a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD1.cover-evidence.json",
+      "sha256": "d3e879927ea549c7881ff76a91df5d2f51cfdcf530899b910798ea4fee3576cb",
+      "original_sha256": "e4cd2fce878a501bcedf53854f4566d82940d0ac5c7824bcd31b1f9a75590c02",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD1.evidence.json",
+      "sha256": "fc430fba0ea04c8f82ddb86f57fad1bf955e9f65dee381258fc4296003b7c313",
+      "original_sha256": "120a8c3acb13f2f14fcc5024dc71694a3854926b273fc573f1667f43c9bd50a1",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD1.json",
+      "sha256": "942b658f9444502e6d9bc4c432412ea0d4e3a6c6cd35b1c365eb49c9f897d53c",
+      "original_sha256": "a502d61011c8601cb89a7a326a5c7ed2d536d3a4ca510d9089129c5b762344f9",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD1.toc-evidence.json",
+      "sha256": "6c9919d8dbd15cc3f3df8c976830c8168e75892f1a94b35ccbed29436e0b246c",
+      "original_sha256": "78c0cc1c2f61e3e7425bf3dcdb4cf4bf351f660a76b7043a54b7348cf0299873",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD2.cover-evidence.json",
+      "sha256": "39d957c76846047624daff37b040ceecc2e47ef81e29889cdec3a082866090fa",
+      "original_sha256": "c72c8de72b26dd3f7d81849133647e4351062a2e174fe81b752e238d04006387",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD2.evidence.json",
+      "sha256": "facfc78b3e380613a0150e72c0d5f625e57bf734f1cfb750d255590891112fb6",
+      "original_sha256": "3c851cf081f012584f5ed5d184d368e0648c1041e37343236640a16379c3cbd6",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD2.json",
+      "sha256": "342a0a68f4c358c455e53758b8396971dda4516abb8c0517a190181bf0cad6b6",
+      "original_sha256": "91a9273109b0e51c47b267615fac446c2cbbd5eca91ede731e23ed761c6978fd",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD2.toc-evidence.json",
+      "sha256": "f8eefd5a8cb80afc218e6fff2a1a91b526b1449f53c9d34a6fb68f1daa1d11de",
+      "original_sha256": "ed67400b4bd53e72ef3a935bcf6c622b85a033eaa829971a30d1c7405fcf600f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD3.cover-evidence.json",
+      "sha256": "c1fd29ce933743b46734458b8c90fcd41ef2e918db5872deefb593eb507f694e",
+      "original_sha256": "8c9658540b984a652d554d837f36b44869916f1d95e2d81fb026738fb3ad6340",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD3.evidence.json",
+      "sha256": "bf96f6b26e3e8826b1c5cf842e5da53d05cc16464f199a2faead4bf61e42bb8a",
+      "original_sha256": "26bcceb4766a0accd3ea08388e4fce7c8c2e434011fbcdcc4e9cb8262508ed09",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-AD3.json",
+      "sha256": "b805512f958692c2c9d32a0f7bc1954d8d0ff10cd0cef96269f7c43df54cb93c",
+      "original_sha256": "7c2b697a8135ac22755c95763a070ab499afecd992303fd3a889968422d0506b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-CD1.cover-evidence.json",
+      "sha256": "2de09a0927ed4532085c3ee29af24fa76dfa8b69976e93a2e6a85eb3c6de837e",
+      "original_sha256": "953838eb868c62b067575af4c246cf436e639b823c8e01d7fd02a9f73549a0b2",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-CD1.evidence.json",
+      "sha256": "16afb03870ee1187d8d556b82aa2fea762b7820c17560f10997c54ee4fc7248d",
+      "original_sha256": "460ddb6b3ba3ff9ab12f00535f5860becfda94edd0416e058b2a1da7417bdea5",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-CD1.json",
+      "sha256": "8cb5ff8a722c0457f963046322df894bbd2890986aae0f6ba33d3660e36b82a5",
+      "original_sha256": "620ccb757eda13ed6ef087e62543b1ed1eb16e0baa6c7f5f4bc8fd501f6ef000",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-CD1.toc-evidence.json",
+      "sha256": "f1bc75c5bf1151e788688258af3e6e1414ebfef538531c62cb2175e12a1d2f43",
+      "original_sha256": "6c32e5b03fd51835448541eacbb4df56cde0ab30a933ef8a7db9c806e5373ee1",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS1.cover-evidence.json",
+      "sha256": "c51dee28518aff55a5e320eaa785431260b974f041e8dfce656a8941364012b1",
+      "original_sha256": "0aad07c211a8f9302d8640c6ae03928c20954f0c31805a339337b96d98eeac27",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS1.evidence.json",
+      "sha256": "6183d143665c5404bf8455358062547673227438c3bf932eb882b3a9b1eec406",
+      "original_sha256": "37a87253bb8146715cc54cc49b27751a8a26ebef19fd8c65d3e3da6804fe6aca",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS1.json",
+      "sha256": "ca498aef271ce520a643427ae27654a789b23db868f6b7f6f056fdbef1bec7b6",
+      "original_sha256": "c09bcf1bda5d4f4ac957ac0fb9facd80cac45ed82e65b2d301b8694d0c36799b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS1.toc-evidence.json",
+      "sha256": "1bd7cacfa0920e4afc23b86a691110dde68d40114d884cfb10b91622775c49bb",
+      "original_sha256": "69baecb9fa12be77ba22b883f1dae6b8a5d61cf3916375e2527af79a154ef25d",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS2.cover-evidence.json",
+      "sha256": "55c44eb9f9324b59e19553db8a2d1f0b4ca102863ca31509715b90caeaed7412",
+      "original_sha256": "d95d540e5fbc104f1c8c5a2dac036e2d36c6df15e6b141c89ca4090d8363065a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS2.evidence.json",
+      "sha256": "72e4b2b8c83861f85fb7818d9c83162f958a8bf99fdb4720b6c5e40910cdfd2f",
+      "original_sha256": "f468491ea7018f4d58994b399dc7cfffaafa55673a6dbd3b3923eec66ab3ac54",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS2.json",
+      "sha256": "fae8e30acac4b5a008fbf73f585d9c99d196c4fe725d83f4409b02e5c6c7fceb",
+      "original_sha256": "742883219bcb47837f130ab047caf09accc312ec9a26f4e31e45bbb3155afd7b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-OS2.toc-evidence.json",
+      "sha256": "f2d1cccf9d039b92447a1f25b02823f552a81f40682d0334b4e40e0f8138c5f0",
+      "original_sha256": "74e432a380cfead0d328b331dcf34dd90411681aa866fc69667f508403b91354",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM1.cover-evidence.json",
+      "sha256": "ca1edbd565ca633133f3342fc13fa5f004665b32953919cf649a7e0fd9102310",
+      "original_sha256": "f35ab06fd4497e36ebd3e5a90da04c9432665a7faf5662355e538d01da4a342f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM1.evidence.json",
+      "sha256": "281fcbd5f54111e5546e60968cbb58ec548386f861e122d83b22bce6ac681bf8",
+      "original_sha256": "453423038f2fc47451e895a432540c0729f5e747fa61cf60c88bb64c05316418",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM1.json",
+      "sha256": "27bb8f01fc697a07d1b11d345161f5b65c504dc2d78cd0dd8cbcd95c8b23219c",
+      "original_sha256": "5bd4b15080262cbee48d8734f2be2d0fcc696e6587cdea8e8ced7c5f114194e9",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM2.cover-evidence.json",
+      "sha256": "8866871884c75c0b82c0a60d0bf7268847f87ddb2c9c222e8122da260a60e5dd",
+      "original_sha256": "0b6737509f8412a983e12d78bda12917171554b43bf3ff2ab4027a3baa0fe315",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM2.evidence.json",
+      "sha256": "f7f408bacdbd375b25ff305e04942e1dd0c794061db445a9ce211a92d87713af",
+      "original_sha256": "bf3c630357ebeb3cb6daa29c79e1e68138181368b7722299f2c054e8436c36bc",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM2.json",
+      "sha256": "639d8bfc651df5018037985ee507a46fdc10a9a88aeb92fdcabda09f950a81b2",
+      "original_sha256": "cd0bf3bc42cdfa34f84cd5662f36e45e168868d9f0334184d06f6724a6921ab6",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM3.cover-evidence.json",
+      "sha256": "ea1a23cdcd250cd719083dcf01afcac856801bd53e6246daea4bd73c06f4fb52",
+      "original_sha256": "4f68b15713388382d99784c148f309999d3571a6a26a43e1db16fa192b32c2de",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM3.evidence.json",
+      "sha256": "529831cd2c9f74bb92b201bc399ebe5ae2ee4c6163a23728659086e17c995b3a",
+      "original_sha256": "144e415188ffecbfc58cc6797d687e131c0c92cffe47bf0bb8b0a2c959776102",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM3.json",
+      "sha256": "30404883a0a397673f0b6431237750aea31bf40177fce85df488aef365932151",
+      "original_sha256": "5524e8f4535a2ccb36ee8a15070bd75cb9597ba1cc447ff408c275cc8d7479f3",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM4.cover-evidence.json",
+      "sha256": "a6f6885dac091fedaf42bebe67e09f3bfcc29f3a89994ac92ceb5eda5b400d55",
+      "original_sha256": "a5bf61aff20b3ddf21a6a735cf3cb744b41eb880d5fbc2d84c1d08de2c6091ca",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM4.evidence.json",
+      "sha256": "071c366f9d08cc9d270ad73ab2f8c48e44129018bc0cc0bbf049694632520c2f",
+      "original_sha256": "d106a9b937fca9b31e702fef5ec383846b31b7dedf6fe29682535bc103ab859b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-PM4.json",
+      "sha256": "983d03fc29f01f10cca6f133da8e19b2549a444c325f20e7a764ee04107ce5e3",
+      "original_sha256": "1328884a65e6bbfaea050f8aab2bda3577907f1b079acb00e10eaaaa5e1e8671",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD1.cover-evidence.json",
+      "sha256": "66154ef8102be387884f645dd09ec984461ed30f4a7d0c8c95ec78f296b7a386",
+      "original_sha256": "02298aa904a15717be36a9d06eb08a1c41dcc4472aa1d8b06fbfb8fb6211d116",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD1.evidence.json",
+      "sha256": "0ff3a3da6e6265e41de1f44071faea26210a43e01ce00da71df7e33490c84922",
+      "original_sha256": "7e6d75fdfb6e95259150cad571c94407a7767bb4df6b86260725831f6bff0e5c",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD1.json",
+      "sha256": "abf5b40a47d3ae821587f031322e64c60857f371f3fce238868b3bb7517c1748",
+      "original_sha256": "e3caa3790f4525cb6524048957debe5a2cb5611133f865207536678c0290e357",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD1.toc-evidence.json",
+      "sha256": "6591b1161906896098ee93dc6717c367b8aede36006ba1989d718e8df8833329",
+      "original_sha256": "a888b790404472f9d54a8a429dd55b4bb7009f58f80f6f947cf7dedafb412126",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD2.cover-evidence.json",
+      "sha256": "0b4cad437d54038bb5500a934e60050b049eb5f56c26a80fbb9d0444ca1b7b6e",
+      "original_sha256": "775b1fa73d5c0c5e82e0dd632b503dbc8be5950c189b1dc9e7895fd5be0a5c00",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD2.evidence.json",
+      "sha256": "8fa6ec0b18c303848730ce42db193da0d24c242560bc431dca8ad201f58394ce",
+      "original_sha256": "ed451ac6c9a8972bdcc9752af1b962fa25e73f61f7e2909b49031a71ee693d45",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD2.json",
+      "sha256": "32dcae8b84203d5256d9377df57930f2f117736b535942b830bb2413a6bdb72a",
+      "original_sha256": "d4c25ff4683fe5a1aebfb500844025a3acaab533cb08ea6c7d793beb12a1bd9f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD2.toc-evidence.json",
+      "sha256": "78a2981aa894dcf4ce3e4db54d5a8b454a1381511703d693a1f525ebbe74c2b1",
+      "original_sha256": "460121052250f5e231bbd146dfcc1ac165942104f2b412d90877c3b3f0f03775",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD3.cover-evidence.json",
+      "sha256": "b78bdd128c95c2d16354ebc2358aeafd90cccaa612b0062b4edbc4c9d12d3165",
+      "original_sha256": "610ee0df0d84d1be3c0556546ebdeb66c5e4db5d01bf2ef9b507ef1b45ad42fc",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD3.evidence.json",
+      "sha256": "511377866b4fb1092f8f956b0099743e959f1a7746975da5c93b9842a1c095fb",
+      "original_sha256": "b6cb2276096e3fb71a0a9f386c256a3f017786393cdbee04ad392c3d45fbcd6a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD3.json",
+      "sha256": "e499889cae0dd04ac0de27523887cdf4a15d0ec7b33d36eeb3b5995ec0c83c20",
+      "original_sha256": "b4b44421757e4d275b4dfdff7d507ea2c7f7ea926797f078853d0e6924dad02c",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD3.toc-evidence.json",
+      "sha256": "7f81ce0d473c148cc25aed0fb90b0106993e5b56bf9fb8ee66873ec74c39939f",
+      "original_sha256": "a62484ab5f21cd1f1113174456c8744d15909a437276f2c830b573ca9f0a3c39",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD4.cover-evidence.json",
+      "sha256": "43e2f7eee3ad092b1379e0a1341dba43991735ed607ca963fd95564a4ea8d41e",
+      "original_sha256": "52c1810f7bcfab786b322d0b94308fc4b3e941654e8cf0caf78fe31cb99266ec",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD4.evidence.json",
+      "sha256": "2a79b03b882d94bb91af7416f046ba1a231eb1f9d6a466274ade4e9334b39806",
+      "original_sha256": "ae9040b99fe754b687987cd59bb2fa519a6acac6cec2ee32b9c9b357121405f0",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD4.json",
+      "sha256": "dd6a29c576c49e95f30c8ad6beb60bef6851136b466545ea67db234d4e184ebb",
+      "original_sha256": "090a68a2ddb37c6e8de61df2f77bdce28027b6afdc801b5f4b254ac97f1647ea",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD4.toc-evidence.json",
+      "sha256": "716ce29c115570b09a6a168458a731b4a2316779efce7b59f7d5ba2d616e3cd6",
+      "original_sha256": "4fa8d95e1a4c323acf581bd082c464ce0747a34f8f9b5b2f657b6bb5076fdbee",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD5.cover-evidence.json",
+      "sha256": "582a016339f6810938ae455e686e4208001475292fc027ccf0be9aed10d95765",
+      "original_sha256": "6b2416ce4d73d3a6a8680450b2432904c0edef625583cd71f1542d3f4ee86911",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD5.evidence.json",
+      "sha256": "8648dbb637ff9166208f1d6194acfca2eb3fbfc7c8816384cc0b8995c62fb7ca",
+      "original_sha256": "3a89ae0f644ac5345a6156c1cca0e46fa9486bd8a1f552715119562aef11705e",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD5.json",
+      "sha256": "99acc2a26d22d287d4f0e023b11d8bfb3f985e187aff1e8d551ae6bf6c4e0fdd",
+      "original_sha256": "01fa943e575cd3fcafbf4d190c0fa4e5f7398d325556c7e7bc35807a8ba4cac4",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TD5.toc-evidence.json",
+      "sha256": "77e8d3d6a81fc020769c46ab122a25651d4bded98387e365a2fdd2dc1f4578ac",
+      "original_sha256": "34856c0c348c61a436233e92fa7025e7e07425bb40035b78f2565a5c211f4a5a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI1.cover-evidence.json",
+      "sha256": "45022b973412e1242c8afc85994cd298fcbddd54db199db53da0560776105cdf",
+      "original_sha256": "42a12e70d73058c359f8e62998670d7e1d07d876be0c9909b0109dc41c1e6136",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI1.evidence.json",
+      "sha256": "eeefab49895c92812de9c9f851e4b8767fbd0ec48b13f8b0303125d5d3cd1aed",
+      "original_sha256": "4de1a17f22cc51827431299b4c56b40a180b421a1a60e56d376ef97f3b23608a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI1.json",
+      "sha256": "8bb7cbda01086af6e7eb434e1f2482a2e0f9e9ed437393b3ed253d1ba3e1e636",
+      "original_sha256": "ebfa261a4d2808344e60cb3060e0fba6dc10290ce5a2155e9f56d75321e3addf",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI1.toc-evidence.json",
+      "sha256": "bd00dec8529367d6eea933004c497a2902bf7364d3c84cbaad83c3646bea9c69",
+      "original_sha256": "f023a2d9c379c1fa3fa138314f47f1eaf0d15aecade374ee26cf3ae12feb3b33",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI2.cover-evidence.json",
+      "sha256": "f82c4bfed3fa95f529520ee38c27e0402eb3662e4cab4e257b2cf335fb6761b4",
+      "original_sha256": "e7b94897a59aaec6d35248a3bc80b648e3509fa16dfb48f7352031f3495c88ca",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI2.evidence.json",
+      "sha256": "cc407dad2f259b379f10b3b3b66851d92eb2e3b1a4c29c532f0ce0e59b49c496",
+      "original_sha256": "1e73c8c9fe234133187ab964dac3c095c80bad6a64630a699b98851eda7adf0f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI2.json",
+      "sha256": "c9d8af3db48c479e7f046bc94df86d5601057134b41fbc825c7b2cce42df5e54",
+      "original_sha256": "f7cd2f2ae3543dfe7d234e922502d73faa9a911a9585100a16251626676c687c",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI2.toc-evidence.json",
+      "sha256": "c38dfd30fedb79663cd21d832e601a7e6ddf5b929929f7d5f23051467a2ad4ed",
+      "original_sha256": "e17c4a37f3960de5c3e12eda3515ccb0e3e4ec405e8940362c9d6cb15cff8e9f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI3.cover-evidence.json",
+      "sha256": "fe0b3785b3004eb9fdbdbad0b544a077d95ebcc6ea33ba79a370747e0f6da2fb",
+      "original_sha256": "e00d3ba34015e25cd6d1cff2ffb5b2a3d3c7d2789f044d58cae2238f63491467",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI3.evidence.json",
+      "sha256": "bc00b8e2fdae61c55a9fd105120084c61d9339d3526c525036fcc84c9010b2e3",
+      "original_sha256": "d23dfe486568026a4a29e0700a203dd833602068a4c17c939f80ca01653c28e6",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI3.json",
+      "sha256": "091fdf1df96a920d5cda6c75a55734eb2118fa9c43bc9ab0abecfc0e64b22925",
+      "original_sha256": "a272b338242580d1cb8af54b215f0418597e9ff9e703d7785938d6c9c2b9ffb6",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI3.toc-evidence.json",
+      "sha256": "1f4d410d2066b334325139dd58c94f709875067d1dfb911efc40873d5d63b0af",
+      "original_sha256": "8d6902174e704045984fdcdb8159946f7759b085d75aa7f29233fce984f4fce3",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI4.cover-evidence.json",
+      "sha256": "679eaa9b2d4bb6c901b3e90c59c1e7348854d79f26276c00a6e5c0de4fbc6399",
+      "original_sha256": "6b90866587795fb7cdb8c68c456c7c35d2a0286046497ca596c815717c31806a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI4.evidence.json",
+      "sha256": "cc653622cb09f68b848f9cdff090cc566decc6898202b80e47e68f334604bcc7",
+      "original_sha256": "8c83a42d0b8f942182ba6eaaa1914d254a842af77dc35ab03beabbf7a47f7035",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI4.json",
+      "sha256": "afbfc8e81b1a4ddbd4c2fa1cb76f9788e998fe8df6296f18d69a8ce7b23b12b1",
+      "original_sha256": "d4c8a40b93179961c122b8ddfd5e5ef40f7e880a88d77ae581fd9cdb86ac7ea4",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/SF-TI4.toc-evidence.json",
+      "sha256": "7113e1169d3d38b1d355d6e48d8c8743880d8620cc3d06efb2d36ac32e97f17d",
+      "original_sha256": "0a76ab6b9edd7a3e47133fbd2b6d8eb3077d76b3f89b91c09c2a1056ae5d6b4a",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/ad3-title-table-source-flow-evidence.json",
+      "sha256": "7c879b58317b921727812b0bccb979466e841ae230d6184300e0f614b0253e31",
+      "original_sha256": "7c879b58317b921727812b0bccb979466e841ae230d6184300e0f614b0253e31",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/profiles/cover-program-wordbreak-evidence.json",
+      "sha256": "32e0b6ace2c8023a13d50f9fcfe8dcf3da24b961f4eef4cb80b8f4a16446d01f",
+      "original_sha256": "32e0b6ace2c8023a13d50f9fcfe8dcf3da24b961f4eef4cb80b8f4a16446d01f",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/profiles/defect-title-source-flow-evidence.json",
+      "sha256": "b1c23ab1cf637c17db1b0c31b14ae69ca14df5699a174244de41ef13dad5b3bc",
+      "original_sha256": "23ad0dcc16ca68ba245e2d8dda2ab3f7a2809c84711af1d38b06ec66620c6d26",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/engineering-frame-record-refinement-evidence.json",
+      "sha256": "9f06dd4e69afaf0a4e9e2ec30a3766186dc0eaefbf89ed2e6465389ee3d2d8f5",
+      "original_sha256": "9f06dd4e69afaf0a4e9e2ec30a3766186dc0eaefbf89ed2e6465389ee3d2d8f5",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/profiles/floating-frame-overflow-correction-evidence.json",
+      "sha256": "1f5afee7920b6bfaa08f59f0a5c28cf283394c07f7de24849681404ad5887ccb",
+      "original_sha256": "1f5afee7920b6bfaa08f59f0a5c28cf283394c07f7de24849681404ad5887ccb",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/profiles/frontmatter-and-cover-identity-evidence.json",
+      "sha256": "b9905d29ffeeae5bdd951615412790a4341bece41e1578cb421675bb30ac8249",
+      "original_sha256": "7ef1293a72615934246ee0a70e1c19830b336b182eea6dce3c239274d9b1bc5b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/index.json",
+      "sha256": "69cbb3b1e1148e8033afc7b28961e40cb3d4a3897f56bf951703ffed5fe002da",
+      "original_sha256": "93ecb452e52cf74084e7248731d846f0813a4a3c3f032db52ebd50f08e6891da",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/management-label-value-source-role-evidence.json",
+      "sha256": "3f4282b347219441072ee42f92b4e6ad26d3f3a785678e2b62849c505eb724e7",
+      "original_sha256": "3ca38127194efe57a7e03f64748bd36d47076d4ee050e918ccb10bd1408e2838",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/native-layout-refinement-evidence.json",
+      "sha256": "0fe6a849fe5264b047613a81df28d7c12b6e6652a3dd64a6a3050d78cc4bac20",
+      "original_sha256": "ea60a2fb11655fc2bdbc8f60e40258b8cd3a98d8e173bdc84ab1b8369f1cd3f2",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/pm4-boundary-refinement-evidence.json",
+      "sha256": "5f85c2f4338a83f7056f23df46386b925748c9f1d21fc642ccdb11c494134c77",
+      "original_sha256": "3f9418553d7c94939fe651f69473e48eec8eea5094de2b5322d14bc28ff8d04b",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/td2-function-list-order-evidence.json",
+      "sha256": "e9be336d67869774fadd8b210ac9b163ae3b1c91f98538feaf5ab252986b8cdb",
+      "original_sha256": "e9be336d67869774fadd8b210ac9b163ae3b1c91f98538feaf5ab252986b8cdb",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/profiles/td2-installation-heading-keep-evidence.json",
+      "sha256": "cc07ff9f214bf905d30a17fd75d3d6e077e1323f1934313a35103f835b1c4acc",
+      "original_sha256": "e2956eab7b898debefe6b3ff5b54e474660c1e919d42805c8d06ee0d470973cb",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/td3-section-and-heading-refinement-evidence.json",
+      "sha256": "28f44f1abd885f40877d9e25db08a79c37e09a429d5d8802c5e532054645ec62",
+      "original_sha256": "752ac17d8a1ff1d07a02fc142ce39440370ccf35ef65d6596f5ceb9109b15cec",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/testing-case-and-appendix-flow-evidence.json",
+      "sha256": "1e8a693a5b5714cff86924d5d14f0fa64964ed330c639e7e4b9ab9d144e470ed",
+      "original_sha256": "2373d045717821e06f261c67fb7b92615ad732aa3f4ef36f06cbc01152bc7279",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    },
+    {
+      "path": "resources/style-upgrade/profiles/testing-frame-and-grid-refinement-evidence.json",
+      "sha256": "11b42876add3f255e03ee744680efa35604035cf6eb4a3a198ed6669c30e6ba8",
+      "original_sha256": "11b42876add3f255e03ee744680efa35604035cf6eb4a3a198ed6669c30e6ba8",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/profiles/unbounded-frame-floating-cell-evidence.json",
+      "sha256": "6294ff797d6dbd276b0610a86b62028ba25b8e7dccdc353034dec9b0d7cbd533",
+      "original_sha256": "6294ff797d6dbd276b0610a86b62028ba25b8e7dccdc353034dec9b0d7cbd533",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/rubric.json",
+      "sha256": "a90595d091f143e6c78d7e78bd09e57587f847e31d3337fda63cd45f0c7f4005",
+      "original_sha256": "a90595d091f143e6c78d7e78bd09e57587f847e31d3337fda63cd45f0c7f4005",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": false
+    },
+    {
+      "path": "resources/style-upgrade/same-content-selections.json",
+      "sha256": "413323c50f147dd73682d346f3a8aed8d6aae21c68bd9d534883d22d03dcc777",
+      "original_sha256": "e526bb98a4325b07b368df2b98b1e9020983adfad7ae87d8b6a086bb0267b133",
+      "purpose": "public_generic_guidance_template_guard_or_format_metadata",
+      "privacy_projection": true
+    }
+  ],
+  "prior_private_migration_sha256": "70dcae91426b458f23a5df861b1858f1b130e25b38ff7352aa65140b2ca88a4a",
+  "current_output_quality_acceptance_transferred": false
+}

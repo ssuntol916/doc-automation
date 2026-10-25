@@ -1,0 +1,4664 @@
+{
+  "schema_version": "1.0",
+  "sha256": "dcfe3b1f20a1fc1acebaf46f09e0dee0a0bbd868ddf383568890fe1a8b3d2e29",
+  "currency_verified": false,
+  "title_source": "선도형 제조혁신 / 구축지원사업 관련서식",
+  "filename_nfc": "2025년 선도형 스마트공장 서식자료.hwpx",
+  "document_year_source": "2025.",
+  "independent_form_count": 34,
+  "total_xml_table_count": 208,
+  "body_xml_table_count": 206,
+  "body_banner_table_count": 1,
+  "forms": [
+    {
+      "number": "1",
+      "title": "사업신청서(시스템 입력)",
+      "note": "",
+      "printed_page": "2",
+      "locator": "Contents/section0.xml#T2/R2",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "시스템 입력용 신청 항목과 기업현황·사업구분·동의/날인 원형",
+      "input_groups_interpretation": "사업 유형·지원수준, 기업 식별정보·주소·연락처, 매출·부채·인원, 과거 구축 이력, 신청일/대표자/직인",
+      "handling_note": "시스템 입력 문서로 목차에 표시됨. 시스템 입력값과 인쇄·날인 필드를 구분한다.",
+      "paragraph_start": 26,
+      "paragraph_end": 127,
+      "table_ids": [
+        2
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 26,
+          "text": "[서식 1]"
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축지원 사업 신청서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          2
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T2/R26C2/P95",
+          "text": "외국인근로자가 있을 경우 ‘최근 기준’ : ex) 00년도 기준 00%"
+        },
+        {
+          "locator": "Contents/section1.xml#T2/R27C2/P97",
+          "text": "R&D 인력이 있을 경우 ‘최근 기준 : ex) 00년도 기준 00%"
+        },
+        {
+          "locator": "Contents/section1.xml#T2/R30C3/P110,111",
+          "text": "과거 정부지원 사업에 참여한 기업만 기재\nex) 스마트공장신규구축"
+        }
+      ]
+    },
+    {
+      "number": "1-1",
+      "title": "사업신청서(공통)",
+      "note": "",
+      "printed_page": "3",
+      "locator": "Contents/section0.xml#T2/R3",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "공통 사업신청서: 현재 상태와 구축 희망 범위의 최초 정의",
+      "input_groups_interpretation": "도입기업 정보, 희망 S/W·H/W·플랫폼, 현/목표 수준, 필요성, AS-IS, 구축 희망 내용, 전체 공정, 대상공정별 목표, 선택 표준",
+      "handling_note": "현재 수준 근거 첨부, 대상 공정 선택과 상세 목표의 대응, 데이터 수집 방식/연계/실시간 제어 근거가 핵심이다.",
+      "paragraph_start": 128,
+      "paragraph_end": 373,
+      "table_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 128,
+          "text": "[서식 1-1]"
+        },
+        {
+          "paragraph": 132,
+          "text": "① 도입기업 정보"
+        },
+        {
+          "paragraph": 165,
+          "text": "② 도입희망시스템"
+        },
+        {
+          "paragraph": 174,
+          "text": "③ 스마트공장 구축 목표"
+        },
+        {
+          "paragraph": 180,
+          "text": "* 스마트공장 구축 수준 : ICT미적용 → 기초 → 중간1 → 중간2 → 고도"
+        },
+        {
+          "paragraph": 181,
+          "text": "** 현 수준의 근거를 제시함"
+        },
+        {
+          "paragraph": 182,
+          "text": "1) 신규로 지원하는 경우 : “스마트공장 수준 자가진단표” 작성결과를 “현수준”에 작성하고, 스캔본을 첨부"
+        },
+        {
+          "paragraph": 183,
+          "text": "2) 재참여하는 경우 : 스마트공장 사업 기구축 기업 수준 확인 방법(해당 공고문 참조)을 통해 수준이 조회된 화면을 캡처하여 붙여야 함"
+        },
+        {
+          "paragraph": 185,
+          "text": "④ 구축 필요성"
+        },
+        {
+          "paragraph": 189,
+          "text": "* 기업의 개요, 현황 및 문제점, 해결방안을 기술함"
+        },
+        {
+          "paragraph": 190,
+          "text": "⑤ AS-IS 현황표"
+        },
+        {
+          "paragraph": 212,
+          "text": "* 도입기업의 현재 모습(현행업무분석을 통한 문제점 도출 등)을 정확히 제시함"
+        },
+        {
+          "paragraph": 214,
+          "text": "⑥ 구축 희망 내용"
+        },
+        {
+          "paragraph": 226,
+          "text": "* \"➇ 주요 공정별 스마트化 추진 목표\" 의 주요공정별로 제시한 \"스마트시스템 적용내용\" 중 핵심사항이 요약되도록 작성함"
+        },
+        {
+          "paragraph": 227,
+          "text": "** 스마트공장 구축 로드맵에 따라 단계적으로 스마트공장 구축을 계획 중이며, 구축하고자 하는 범위가 명확하고, 구축목적이 제조혁신과 직접 적으로 연관되도록 작성함"
+        },
+        {
+          "paragraph": 229,
+          "text": "※ 제조혁신과의 연관성 : 스마트공장 구축을 통해 생산성 향상, 품질개선, 불량률 감소, 원가절감, 납기준수와 더불어, 안전한 공장 확보, 작업자 만족도 제고, 신규 고용 창출 등이 추가로 기대될 경우 제조혁신과의 연관성이 있음"
+        },
+        {
+          "paragraph": 230,
+          "text": "⑦ 공정 프로세스 및 스마트화 희망대상 공정"
+        },
+        {
+          "paragraph": 288,
+          "text": "* “주요공정” 란에는 도입기업의 업무(자재관리, 구매관리 등)와 공정(가공, 열처리, 조립 등) 흐름 전체를 자세히 기술함"
+        },
+        {
+          "paragraph": 289,
+          "text": "* “설비명, 수작업 내용” 란 작성 시 “주요공정”이 “업무”일 경우에는 해당업무의 구체적인 작업명(ex: 주요공정이 자재관리일 경우 입고관리, 출고관리 등을 작성)을 기술하고, “주요공정”이 “공정”일 경우에는 해당 공정에 설치된 설비명 또는 품질측정장비명 등을 기술함"
+        },
+        {
+          "paragraph": 290,
+          "text": "* “공정 및 설비·수작업 설명” 란에는 “설비명, 수작업 내용”의 “작업명”, “설비명”, “품질측정장비명”에 의해 진행하는 현행 작업내용 및 문제점 등을 기술함"
+        },
+        {
+          "paragraph": 291,
+          "text": "* “스마트화 희망여부” 란에는 제시한 전체 공정(또는 업무) 중 금번 사업을 통한 응용시스템 도입과 스마트화 희망여부를 기술함"
+        },
+        {
+          "paragraph": 292,
+          "text": "* “표준적용(O, X)” 란에는 스마트공장 가점항목 중 \"스마트제조 표준\"에 해당할 경우 \"O\" 를 작성함. 그리고 “⑨ [선택사항] 표준적용 여부 (가점사항)” 부분을 작성함."
+        },
+        {
+          "paragraph": 294,
+          "text": "➇ 주요 공정별 스마트化 추진 목표"
+        },
+        {
+          "paragraph": 348,
+          "text": "* \"⑦ 공정 프로세스 및 스마트화 희망대상 공정\" 의 \"스마트화 희망 여부\"란에 O 표기된 공정에 대해서만 작성"
+        },
+        {
+          "paragraph": 349,
+          "text": "** 데이터 수집(자동, 반자동, 수동) 작성 기준"
+        },
+        {
+          "paragraph": 350,
+          "text": "(1) “수동” : 제조데이터 수집 형태가 키보드 입력, 키오스크를 통한 화면 터치 입력 등의 휴먼데이터"
+        },
+        {
+          "paragraph": 351,
+          "text": "(2) “자동” : 제조데이터 수집 형태가 설비와의 PLC연계, IoT/센서, 디지털품질측정기기로부터의 자동수집 등의 머신데이터"
+        },
+        {
+          "paragraph": 352,
+          "text": "(3) \"반자동\" : “수동” 방식과 “자동” 방식이 혼용되어 있는 공정으로, 이 경우는 \"스마트시스템 적용내용\"란에 구체적인 데이터 수집 방안을 제시하여야 함"
+        },
+        {
+          "paragraph": 353,
+          "text": "*** \"실시간 제어\" 란에 \"O\" 를 표기할 경우, \"스마트시스템 적용내용\"란에 구체적인 공정제어 흐름과 방식을 제시"
+        },
+        {
+          "paragraph": 354,
+          "text": "**** \"타 공정과의 데이터 연계\" 란에는 연계되는 타 공정(또는 업무)명과 연계하고자 하는 데이터명을 작성"
+        },
+        {
+          "paragraph": 355,
+          "text": "***** “비고\" 란에는 추가적으로 설명이 필요한 사항 또는 해당 공정에서 \"스마트시스템 적용내용\"이 실현 되었을 경우의 기대효과 등을 작성함"
+        },
+        {
+          "paragraph": 357,
+          "text": "⑨ [선택사항] 표준적용 여부 (가점사항)"
+        },
+        {
+          "paragraph": 358,
+          "text": "* 표준가점을 받은 후 정당한 사유없이 표준 미적용시에는 불이익 처분될 수 있음"
+        },
+        {
+          "paragraph": 366,
+          "text": "* \"⑦ 공정 프로세스 및 스마트화 희망대상 공정\" 내용 중 \"표준적용(O, X)\" 란에 \"O\" 인 \"주요공정\" 부분들에 대해 작성함. 스마트제조 표준은 데이터 포맷 규격화(예, AAS 등) 및 통신방식 표준(예, IEC62541, IEC62714 등)을 적용하는 기업으로, 구성방식을 하단에 제시하여야 함. 구성방식의 예시는 \"스마트공장 사업관리시스템\" 사이트를 참조함."
+        },
+        {
+          "paragraph": 368,
+          "text": "※ 기타 (사업신청에 추가로 필요한 사항을 자유롭게 기술)"
+        },
+        {
+          "paragraph": 369,
+          "text": "□"
+        },
+        {
+          "paragraph": 370,
+          "text": "ㅇ"
+        },
+        {
+          "paragraph": 372,
+          "text": "* \"도입기업의 스마트공장 구축 로드맵\", \"스마트공장 구축 후 모습\", \"핵심성과지표 개선안\" 등을 선택적이고 자유롭게 작성 가능함"
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축 지원 신청서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "2",
+      "title": "서면평가표",
+      "note": "",
+      "printed_page": "7",
+      "locator": "Contents/section0.xml#T2/R4",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "서면평가위원의 점수·의견 기록",
+      "input_groups_interpretation": "기업/과제 식별, 5단계 평가 항목별 배점, 평가의견, 평가위원장·평가위원 서명",
+      "handling_note": "평가 점수/판정/서명은 평가위원 작성 영역이다.",
+      "paragraph_start": 374,
+      "paragraph_end": 458,
+      "table_ids": [
+        13,
+        14,
+        15
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 374,
+          "text": "[서식 2]"
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축지원 사업 서면평가표",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          13,
+          14,
+          15
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T14/R5C1/P408",
+          "text": "∘도입기업의 현재 모습(현행업무분석을 통한 문제점 도출 등)을 정확히 제시하였는가?"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "공급기업 추천요청서",
+      "note": "",
+      "printed_page": "8",
+      "locator": "Contents/section0.xml#T2/R5",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "공급기업 추천 필요 사실 및 요청 확인",
+      "input_groups_interpretation": "도입기업, 코디네이터, 추천요청 경위, 일자, 기업/대표 날인",
+      "handling_note": "원문은 사업계획서 제출 시 공급기업 제안서 항목으로 포함하도록 지시한다.",
+      "paragraph_start": 459,
+      "paragraph_end": 490,
+      "table_ids": [
+        16,
+        17
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 459,
+          "text": "[서식 3]"
+        },
+        {
+          "paragraph": 470,
+          "text": "당사 ((주)○○○)는 선도형 스마트공장(정부일반형) 구축지원 사업의 사업신청서에 따라 본사가 요구하는 사항에 대해 공급기업의 스마트공장 구축 제안을 요하나 별도 제안을 받지 못하는 등에 따라 DX코칭단의 공급기업 추천이 필요하여 요청하였음을 확인합니다."
+        },
+        {
+          "paragraph": 473,
+          "text": "202  년    월    일"
+        },
+        {
+          "paragraph": 490,
+          "text": "※ 공급기업 추천요청서 제출은 사업계획서 제출 시 공급기업 제안서 항목으로 포함하여 제출"
+        }
+      ],
+      "first_table_text": "공급기업 추천요청서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          16,
+          17
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "4",
+      "title": "사업계획서(공통)",
+      "note": "’25년 개정 양식",
+      "printed_page": "9",
+      "locator": "Contents/section0.xml#T2/R6",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "사업계획의 기준본: 목표·구현범위·일정·비용·책임·증적 계획의 연결",
+      "input_groups_interpretation": "구축 개요/공정/수준, KPI 및 측정법, 보유·도입 S/W·H/W, 구성도·설치도·데이터집계, 기능 명세, 일정·산출물, 7개 비용항목, 조직, 교육·유지보수·실패조치, 고용, 과거 이력, 안전·보안, 합의서",
+      "handling_note": "붙임 KPI 세부지표는 작성 기준 자료이며 사업실적 값이 아니다. 예시 MES 기능, 수치, 장비목록을 사업 사실로 복사하지 않는다.",
+      "paragraph_start": 491,
+      "paragraph_end": 3518,
+      "table_ids": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "images": [
+        {
+          "form": "4",
+          "paragraph": 525,
+          "binaryItemIDRef": "image2",
+          "package_entry": "BinData/image2.bmp",
+          "sha256": "6f3901497292f039a73a0de6365a36769a6224154efc4701024b6e3955d84aeb"
+        },
+        {
+          "form": "4",
+          "paragraph": 528,
+          "binaryItemIDRef": "image2",
+          "package_entry": "BinData/image2.bmp",
+          "sha256": "6f3901497292f039a73a0de6365a36769a6224154efc4701024b6e3955d84aeb"
+        },
+        {
+          "form": "4",
+          "paragraph": 808,
+          "binaryItemIDRef": "image3",
+          "package_entry": "BinData/image3.bmp",
+          "sha256": "c6ed81cc745dfed357ad6d0654e101a032f0e611fda99caa27db00f07e84a949"
+        },
+        {
+          "form": "4",
+          "paragraph": 964,
+          "binaryItemIDRef": "image4",
+          "package_entry": "BinData/image4.bmp",
+          "sha256": "55de5046dab3209524b22689bd790eaad028f6f89ce16ecc490c143f2123a678"
+        },
+        {
+          "form": "4",
+          "paragraph": 968,
+          "binaryItemIDRef": "image5",
+          "package_entry": "BinData/image5.bmp",
+          "sha256": "48b621f7e2881ea6d14d8c54aef788bced73767c2e593902ab752558e666de03"
+        },
+        {
+          "form": "4",
+          "paragraph": 972,
+          "binaryItemIDRef": "image6",
+          "package_entry": "BinData/image6.bmp",
+          "sha256": "0926cf25ff0ff5bcf124c3c766b3e3bc7ad363dc64cefb4b2803fdbd9c016d9f"
+        },
+        {
+          "form": "4",
+          "paragraph": 980,
+          "binaryItemIDRef": "image7",
+          "package_entry": "BinData/image7.bmp",
+          "sha256": "bf1eeb1e2fabe9d03f2f17e178b5e4aa01ec85e58a74ac71d04f9119650d3861"
+        }
+      ],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 491,
+          "text": "[서식 4]"
+        },
+        {
+          "paragraph": 504,
+          "text": "1. 스마트공장 구축 개요"
+        },
+        {
+          "paragraph": 506,
+          "text": "1.1 스마트공장 구축 목표"
+        },
+        {
+          "paragraph": 508,
+          "text": "□ 스마트공장 구축 주요 내용 및 목표수준"
+        },
+        {
+          "paragraph": 519,
+          "text": "* 스마트공장 구축 수준 : ICT미적용 → 기초 → 중간1 → 중간2 → 고도"
+        },
+        {
+          "paragraph": 522,
+          "text": "1.2 가치사슬 구조 및 공정 흐름"
+        },
+        {
+          "paragraph": 524,
+          "text": "□ 기존 모습"
+        },
+        {
+          "paragraph": 527,
+          "text": "□ 스마트공장 구축 후 모습"
+        },
+        {
+          "paragraph": 530,
+          "text": "1.3 주요 공정별 스마트化 추진 목표"
+        },
+        {
+          "paragraph": 579,
+          "text": "※ 1.3 주요 공정별 스마트化 추진 목표 작성내용은 사업계획 승인과 최종점검시 고도화수준 목표설정의 적절성 및 달성여부 판단의 주요기준으로 활용"
+        },
+        {
+          "paragraph": 581,
+          "text": "1.4 핵심성과지표 개선"
+        },
+        {
+          "paragraph": 583,
+          "text": "□ 핵심성과지표"
+        },
+        {
+          "paragraph": 630,
+          "text": "* 핵심성과지표는 참여기업 목적 및 중요도에 따라 ‘세부지표(붙임1)’를 참고하여 1개 이상 세부지표를 선정하여 필수 작성(가중치는 각 지표별 합이 1이 되어야 함)"
+        },
+        {
+          "paragraph": 632,
+          "text": "□ 핵심성과지표 측정방법"
+        },
+        {
+          "paragraph": 645,
+          "text": "* 핵심성과지표 산출방법은 기업별 공정특성에 맞게 스마트화 성과를 정량적으로 측정 할 수 있는 방법을 기재"
+        },
+        {
+          "paragraph": 646,
+          "text": "1.5 SW, HW 보유현황 및 스마트化 연계표"
+        },
+        {
+          "paragraph": 804,
+          "text": "2. 시스템 구성"
+        },
+        {
+          "paragraph": 806,
+          "text": "2.1 HW 구성도 (예시)"
+        },
+        {
+          "paragraph": 810,
+          "text": "2.2 도입예정 장비 세부내역"
+        },
+        {
+          "paragraph": 962,
+          "text": "* ( )는 기존장비 활용, 기존장비는 추정금액 산정에서 제외"
+        },
+        {
+          "paragraph": 963,
+          "text": "2.3 주요 장비 설치 위치도 (예시)"
+        },
+        {
+          "paragraph": 965,
+          "text": "* 구성도 외 장비 구성 및 운영 내용 추가 기술"
+        },
+        {
+          "paragraph": 967,
+          "text": "2.4 SW 구성도 (예시)"
+        },
+        {
+          "paragraph": 969,
+          "text": "* 구성도외 S/W 구성 관련 내용 추가 기술"
+        },
+        {
+          "paragraph": 970,
+          "text": "2.5 데이터 집계 포인트 (예시)"
+        },
+        {
+          "paragraph": 973,
+          "text": "* 구성도 외 데이터 수집분석 등 관련 내용 추가 기술"
+        },
+        {
+          "paragraph": 975,
+          "text": "2.6 (선택사항) 표준연계     * 표준가점을 신청하는 경우에만 작성"
+        },
+        {
+          "paragraph": 977,
+          "text": "○ 구성도"
+        },
+        {
+          "paragraph": 978,
+          "text": "(예시) - 비전 자동 검사 장비를 OPC-UA 통신표준을 활용하여 MES와 연계"
+        },
+        {
+          "paragraph": 982,
+          "text": "* 구성도 외 데이터 수집분석 등 관련 내용 추가 기술"
+        },
+        {
+          "paragraph": 983,
+          "text": "○ 표준 적용 범위 및 관련 내용"
+        },
+        {
+          "paragraph": 985,
+          "text": "(예시) IEC 62541 OPC-UA 표준 적용"
+        },
+        {
+          "paragraph": 986,
+          "text": "- 신규 구축하는 비전 검사 장비의 데이터를 수집하기 위해 OPC-UA 게이트웨이 적용"
+        },
+        {
+          "paragraph": 987,
+          "text": "- OPC-UA 게이트웨이에서 전송되는 데이터는 기존에 설치된 허브를 통해 MES로 전송"
+        },
+        {
+          "paragraph": 990,
+          "text": "○ 평가 시 점검 사항(현장확인 시 평가위원이 확인할 수 있도록 작성)"
+        },
+        {
+          "paragraph": 991,
+          "text": "(예시) IEC 62541 표준이 적용된 게이트웨이 시험성적서 또는 현장 작동 여부"
+        },
+        {
+          "paragraph": 992,
+          "text": "- 비전 검사 시스템에서 전송된 데이터의 MES 모니터링"
+        },
+        {
+          "paragraph": 994,
+          "text": "2.7 Application 시스템 세부 내용"
+        },
+        {
+          "paragraph": 996,
+          "text": "□ AS-IS 대비 TO-BE 비교표 (예시)"
+        },
+        {
+          "paragraph": 1050,
+          "text": "□ 솔루션 기능 구성도 (예시)"
+        },
+        {
+          "paragraph": 1864,
+          "text": "※ 필요시 기 구축 솔루션의 기능 구성도는 별도 추가 가능"
+        },
+        {
+          "paragraph": 1865,
+          "text": "□ Application 시스템 기능 설명 (예시)"
+        },
+        {
+          "paragraph": 2136,
+          "text": "* ➊기존 : 패키지에 포함된 기능, ➋추가 : 추가 개발이 필요한 기능, ➌수정 : 패키지에서 수정개발이 필요한 기능, ➍미사용 : 패키지에서 요구사항(필요기능)에 포함되지 않은 기능"
+        },
+        {
+          "paragraph": 2137,
+          "text": "3. 프로젝트 일정 계획"
+        },
+        {
+          "paragraph": 2139,
+          "text": "3.1 추진일정 총괄표"
+        },
+        {
+          "paragraph": 2551,
+          "text": "3.2 산출물 예정 목록 (예시)"
+        },
+        {
+          "paragraph": 2615,
+          "text": "4. 사업비 내역 (단위 : 천원 / VAT 별도)"
+        },
+        {
+          "paragraph": 2617,
+          "text": "4.1 총괄"
+        },
+        {
+          "paragraph": 2618,
+          "text": "(단위 : 천원)"
+        },
+        {
+          "paragraph": 2666,
+          "text": "※ 사업비는 사업기간 내 전액 사용이 원칙"
+        },
+        {
+          "paragraph": 2667,
+          "text": "※ 현물은 도입기업 부담금의 20%(고도화 4천만원, 동일수준 1천만원)이내에서 편성"
+        },
+        {
+          "paragraph": 2668,
+          "text": "※ 기타(할인) 비용에 회계정산수수료, 교육비, 기술임치비용 필수계상"
+        },
+        {
+          "paragraph": 2670,
+          "text": "4.2 S/W 구입·개발비(A, B)"
+        },
+        {
+          "paragraph": 2771,
+          "text": "4.3 H/W 구입비(C)"
+        },
+        {
+          "paragraph": 2932,
+          "text": "4.4 N/W 구축비(D)"
+        },
+        {
+          "paragraph": 2969,
+          "text": "4.5 기타(할인) 비용(E) ※회계정산수수료, 교육비, 기술임치비용 필수계상(공고 내 금액 확인)"
+        },
+        {
+          "paragraph": 3013,
+          "text": "4.6 도입기업 인력 인건비(F)"
+        },
+        {
+          "paragraph": 3044,
+          "text": "4.7 클라우드 서비스 이용료(G)"
+        },
+        {
+          "paragraph": 3067,
+          "text": "5. 추진조직 및 업무분장"
+        },
+        {
+          "paragraph": 3115,
+          "text": "6. 지원계획"
+        },
+        {
+          "paragraph": 3117,
+          "text": "6.1 사용자 교육·훈련 계획 (예시)"
+        },
+        {
+          "paragraph": 3167,
+          "text": "6.2 유지관리 및 하자보수 계획 (예시)"
+        },
+        {
+          "paragraph": 3169,
+          "text": "□ 유지보수 범위"
+        },
+        {
+          "paragraph": 3182,
+          "text": "□ 유지보수 구분"
+        },
+        {
+          "paragraph": 3184,
+          "text": "◦ (유상)"
+        },
+        {
+          "paragraph": 3186,
+          "text": "◦ (무상)"
+        },
+        {
+          "paragraph": 3187,
+          "text": "□ 유지보수 세부내용 (예시)"
+        },
+        {
+          "paragraph": 3249,
+          "text": "6.3 사업실패(부적절 판정), 중도포기 시 조치계획(구체적으로 작성)"
+        },
+        {
+          "paragraph": 3250,
+          "text": "* 선금, 중도금, 잔금 및 기 구축된 솔루션 등에 대한 세부적인 조치사항 포함"
+        },
+        {
+          "paragraph": 3252,
+          "text": "□ 구축시스템 후속조치 방안  * 시스템 완료 기준으로 구분하여 작성"
+        },
+        {
+          "paragraph": 3254,
+          "text": "→ 사업실패 시 도입기업과 공급기업 책임분담 및 조치계획"
+        },
+        {
+          "paragraph": 3256,
+          "text": "① 도입기업의 귀책사유로 사업이 실패할 경우"
+        },
+        {
+          "paragraph": 3258,
+          "text": "② 공급기업의 귀책사유로 사업이 실패할 경우"
+        },
+        {
+          "paragraph": 3260,
+          "text": "③ 도입기업 및 공급기업 공동책임이 있을 경우"
+        },
+        {
+          "paragraph": 3263,
+          "text": "□ 기업부담금 후속조치 방안  * 시스템 완료 기준으로 구분하여 작성"
+        },
+        {
+          "paragraph": 3265,
+          "text": "→ 사업실패 시 도입기업과 공급기업 책임분담 및 조치계획"
+        },
+        {
+          "paragraph": 3267,
+          "text": "① 도입기업의 귀책사유로 사업이 실패할 경우"
+        },
+        {
+          "paragraph": 3269,
+          "text": "② 공급기업의 귀책사유로 사업이 실패할 경우"
+        },
+        {
+          "paragraph": 3271,
+          "text": "③ 도입기업 및 공급기업 공동책임이 있을 경우"
+        },
+        {
+          "paragraph": 3273,
+          "text": "7. 교육 수료 계획"
+        },
+        {
+          "paragraph": 3314,
+          "text": "※ (사업관리교육) 도입기업, 공급기업의 대표자 및 사업담당자(총 4명) 협약 후 1개월 이내 필수수료(중간보고시 수료증제출)"
+        },
+        {
+          "paragraph": 3315,
+          "text": "※ (기술교육) 도입기업 대표(또는 임원), 사업담당자(총 2명) 구축 기간 내 수료, 중진공 교육과정 수강을 위한 과제당 100만원이내 필수편성(완료보고시 수료증제출)"
+        },
+        {
+          "paragraph": 3317,
+          "text": "8. 고용유지 및 고용창출 계획"
+        },
+        {
+          "paragraph": 3360,
+          "text": "9. 과거 스마트공장 지원받은 이력 및 활용현황"
+        },
+        {
+          "paragraph": 3362,
+          "text": "9.1 과거 스마트공장 지원받은 이력"
+        },
+        {
+          "paragraph": 3382,
+          "text": "9.2 활용현황 및 주요 성과(제조데이터 활용 성과를 중심으로 기재)"
+        },
+        {
+          "paragraph": 3393,
+          "text": "※ 로그기록 또는 솔루션 內 제조데이터 수집 여부 등을 확인 예정(현장확인 시)"
+        },
+        {
+          "paragraph": 3395,
+          "text": "※ 공급기업 현황 : 공급기업 풀 등록자료 별첨(컨소시엄 참여기업 모두)"
+        },
+        {
+          "paragraph": 3396,
+          "text": "* 필요시 공급기업, 컨소시업 소개자료 별첨"
+        },
+        {
+          "paragraph": 3397,
+          "text": "* 공급기업 컨소시업 구성시, 구축 프로젝트를 책임지고 추진하는 대표기업을 명기"
+        },
+        {
+          "paragraph": 3400,
+          "text": "10. 안전 및 보안대책 수립 계획(구체적으로 작성)"
+        },
+        {
+          "paragraph": 3402,
+          "text": "10.1 안전조치 이행계획"
+        },
+        {
+          "paragraph": 3404,
+          "text": "10.2 보안조치 이행계획"
+        },
+        {
+          "paragraph": 3406,
+          "text": "10.3 그 밖의 조치사항 이행계획(필요시)"
+        },
+        {
+          "paragraph": 3408,
+          "text": "※ 스마트공장 구축 시 안전 및 보안조치 이행계획"
+        },
+        {
+          "paragraph": 3409,
+          "text": "1) 안전조치 이행계획: 안전책임자의 지정ㆍ운영, 안전교육 실시, 안전사고 발생 시 보고 및 조치계획, 사고발생 시 대처방안 및 행동요령을 기재합니다[필요시 해당 기술 관련 안전기준 준수방안 및 과제 수행 중 및 종료 후 안전점검(일상ㆍ정기ㆍ특별 안전점검 등), 정밀안전진단의 실시계획 등을 포함]."
+        },
+        {
+          "paragraph": 3410,
+          "text": "2) 보안조치 이행계획: 참여자 보안교육, 구축시설 및 구축시스템, 사업관리시스템, 사업비관리시스템 등에 대한 보안조치 사항"
+        },
+        {
+          "paragraph": 3411,
+          "text": "3) 그 밖의 조치사항 이행계획: 유전자 변형 생물체 연구시설 및 수입신고 현황 등 안전 및 보안 관련하여 타 법령 등에 기재되어 과제별로 추가적으로 요구되는 사항을 기재합니다."
+        },
+        {
+          "paragraph": 3412,
+          "text": "사업계획 최종합의서"
+        },
+        {
+          "paragraph": 3437,
+          "text": "아래 당사자 모두 위와 같이 사전협의 및 조정을 거쳐 최종 합의된 사업계획서 임을 확인합니다."
+        },
+        {
+          "paragraph": 3439,
+          "text": "일 자 : 202 .   .   ."
+        },
+        {
+          "paragraph": 3462,
+          "text": "[붙임] 스마트공장 핵심 성과지표의 하위 세부지표"
+        },
+        {
+          "paragraph": 3464,
+          "text": "(•)표시는 최우선 순위 적용"
+        }
+      ],
+      "first_table_text": "정부일반형 스마트공장 구축사업 사업계획서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T26/R5C2/P1109",
+          "text": "기준정보관리"
+        },
+        {
+          "locator": "Contents/section1.xml#T26/R9C12/P1179",
+          "text": "계측기점검기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T26/R15C4/P1261",
+          "text": "출하검사기준 등록"
+        },
+        {
+          "locator": "Contents/section1.xml#T26/R17C8/P1295",
+          "text": "자주검사기준 등록"
+        },
+        {
+          "locator": "Contents/section1.xml#T26/R41C2/P1654",
+          "text": "설비점검 기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T27/R3C1/P1876",
+          "text": "기준정보관리"
+        },
+        {
+          "locator": "Contents/section1.xml#T29/R8C3/P2578",
+          "text": "기능 단위로 테스트 시나리오 및 데이터 제시와 테스트 수행 결과, 결함관리 내역 등  "
+        },
+        {
+          "locator": "Contents/section1.xml#T29/R9C2/P2581",
+          "text": "업무 프로세스 단위로 테스트 시나리오 및 데이터 제시와 테스트 수행 결과, 결함관리 내역 등"
+        },
+        {
+          "locator": "Contents/section1.xml#T40/R5C2/P3208,3209",
+          "text": "· 서버 연동시스템과 관련하여 세부 점검 대상 및 일정을 협의하여 성능개선을 위한 방안을 제시하여야 하며, 시스템점검 현황을 보고서로 제출함\n· 분기마다 구축시스템 운영관련 취약점 점검, 분석하여 개선방안을 제시하고, 개선방안에 대한 보고서를 제출"
+        },
+        {
+          "locator": "Contents/section1.xml#T40/R9C2/P3232",
+          "text": "· 공급기업 컨소시업에 의한 업무 수행 시, 공급기업 컨소시엄 대표기업이 컨소시업 참여기업 역할분담, 비상연락망 체계 유지 등 공급기업 컨소시엄 관리에 대한 상세계획을 제시"
+        },
+        {
+          "locator": "Contents/section1.xml#T41/R6C2/P3303",
+          "text": "중간보고 시 수강(예정) 과정명 기재"
+        },
+        {
+          "locator": "Contents/section1.xml#T42/R1C1/P3320",
+          "text": " o [작성요령] 현재 고용현황, 고용유지·창출을 위한 자체적인 방안 및 고용계획 제시\n - 인력을 위한 교육프로그램 운영, 복리후생, 스톡옵션, 성과 공유, 직무보상발명제도, \n  내일채움공제 가입 여부 등"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "기술성 평가표",
+      "note": "",
+      "printed_page": "32",
+      "locator": "Contents/section0.xml#T2/R7",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "기술성 평가위원의 역량·필요성·적정성 심사",
+      "input_groups_interpretation": "기업/과제/검토일, 기업역량30·구축필요성30·지원적정성40 평가, 5단계 점수, 의견/서명",
+      "handling_note": "평가표와 평가의견의 검토 유의사항을 따로 보존한다.",
+      "paragraph_start": 3519,
+      "paragraph_end": 3618,
+      "table_ids": [
+        49,
+        50,
+        51
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 3519,
+          "text": "[서식 5]"
+        }
+      ],
+      "first_table_text": "선도형 스마트공장(정부일반형) 구축지원 사업 기술성 평가표",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          49,
+          50,
+          51
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T50/R3C1/P3545",
+          "text": "∘도입기업의 현재 모습(현행업무분석을 통한 문제점 도출 등)을 정확히 제시하였는가?"
+        },
+        {
+          "locator": "Contents/section1.xml#T50/R4C1/P3551",
+          "text": "∘도입기업의 자부담비율 등을 통해 스마트공장 고도화 및 확장에 대한 의지를 충분히 제시하였는가?"
+        },
+        {
+          "locator": "Contents/section1.xml#T50/R7C1/P3571",
+          "text": "∘핵심성과지표 설정이 타당한가? (구축목표 – 구축내용 - 성과지표간 내용 연결, 기존수치/목표수치의 근거제시, 지표 계산식 제시, 기대효과금액 등의 적절성)"
+        },
+        {
+          "locator": "Contents/section1.xml#T50/R8C2/P3579",
+          "text": "∘“데이터집계 포인트”의 제시가 도입기업 제조공정도를 토대로 각 공정별 수집 대상 데이터의 종류와 집계방법(자동, 반자동, 수동) 등을 정확히 제시하였는가?"
+        },
+        {
+          "locator": "Contents/section1.xml#T50/R9C1/P3585",
+          "text": "∘\"솔루션 기능 구성도\"가 도입기업 업종의 목표수준에 부합되는 기능으로 적절히 제시되었는가?"
+        },
+        {
+          "locator": "Contents/section1.xml#T50/R11C1/P3597",
+          "text": "∘\"추진일정 총괄표\"와 \"산출물 예정 목록\"간의 단계가 일치하며, \"산출물 예정 목록\"에서 각 단계별 필수 산출물이 적절하게 제시되어 있는가?"
+        },
+        {
+          "locator": "Contents/section1.xml#T50/R12C1/P3603",
+          "text": "∘공급기업의 사업수행 전문성(기술력) 및 투입인력(개발PM 등)의 적정성을 적절하게 제시하고 있는가?"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "현장확인서",
+      "note": "",
+      "printed_page": "33",
+      "locator": "Contents/section0.xml#T2/R8",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "현장 실재 여부와 사업계획의 일치 확인",
+      "input_groups_interpretation": "참여자, 사업장 현황, 공정·필요성, 정상가동/설비 일치, 가점 확인, 평가의견, 현장확인 유의사항·가점 부록",
+      "handling_note": "현장 판단·가점 반영·서명은 확인자 기록. 가점 기준은 원문도 공고문 참조로 남겨 두었다.",
+      "paragraph_start": 3619,
+      "paragraph_end": 3788,
+      "table_ids": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 3619,
+          "text": "[서식 6]"
+        },
+        {
+          "paragraph": 3631,
+          "text": "1. 참여자"
+        },
+        {
+          "paragraph": 3665,
+          "text": "2. 사업장 현황"
+        },
+        {
+          "paragraph": 3689,
+          "text": "3. 공정현황"
+        },
+        {
+          "paragraph": 3704,
+          "text": "4. 확인서(평가위원별 작성)"
+        },
+        {
+          "paragraph": 3736,
+          "text": "평가위원  :               (서명)"
+        },
+        {
+          "paragraph": 3737,
+          "text": "<붙임1>"
+        },
+        {
+          "paragraph": 3739,
+          "text": "현장확인 유의사항"
+        },
+        {
+          "paragraph": 3741,
+          "text": "◦ 평가위원은 확인항목 中 부적합 판정 시 현장에서 도입·공급기업에게 부적합 사유에 대한 명확한 설명 안내 필수"
+        },
+        {
+          "paragraph": 3743,
+          "text": "◦ 과거 정부지원 받은 스마트공장 구축시스템 활용여부*는 최근 3년 이내에 한하여 로그기록** 또는 제조데이터 수집·저장 여부를 확인"
+        },
+        {
+          "paragraph": 3745,
+          "text": "* 기 구축시스템을 구축한 동일 공급기업과 컨소시엄 구성 시에 한하여 확인"
+        },
+        {
+          "paragraph": 3746,
+          "text": "** 스마트공장 사업관리시스템 연동 여부 확인 병행(선택사항)"
+        },
+        {
+          "paragraph": 3748,
+          "text": "- 공급기업 폐업 등 미활용에 대해 불가피한 사유가 있는 경우, 평가위원 판단하에 예외로 둘 수 있으며 이 경우 적합으로 처리"
+        },
+        {
+          "paragraph": 3750,
+          "text": "* 적합 처리 시 도입기업이 소명한 내용을 평가의견에 필수 기재"
+        },
+        {
+          "paragraph": 3752,
+          "text": "<붙임2>"
+        },
+        {
+          "paragraph": 3753,
+          "text": "가점 항목"
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축지원 사업 현장확인서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T58/R1C2/P3756",
+          "text": "평가기준 및 제출서류"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "협약변경신청서",
+      "note": "",
+      "printed_page": "38",
+      "locator": "Contents/section0.xml#T2/R9",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "승인된 협약 내용의 변경 신청 및 영향 설명",
+      "input_groups_interpretation": "기업/과제/멘토, 요청제목/요청자/사유, 변경 전·후, 파급효과, 비고, 기업별 날인",
+      "handling_note": "SF-PM3 개발산출물 변경관리내역서와 행정 변경신청서는 별개 역할이다.",
+      "paragraph_start": 3789,
+      "paragraph_end": 3837,
+      "table_ids": [
+        59,
+        60,
+        61
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 3789,
+          "text": "[서식 7]"
+        },
+        {
+          "paragraph": 3819,
+          "text": "202 .   .   ."
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축지원 사업 협약변경 신청서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          59,
+          60,
+          61
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "8",
+      "title": "착수계",
+      "note": "’25년 개정 양식",
+      "printed_page": "39",
+      "locator": "Contents/section0.xml#T2/R10",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "협약 후 착수 시 기간·금액·현금 납부계획 확인",
+      "input_groups_interpretation": "총/구축 협약기간, 중간/완료 제출기한, 정부지원·기업현금/직접구입/현물/클라우드 금액, 1·2차 납부, 당사자 날인",
+      "handling_note": "협약금액과 납부계획은 중첩표 T64/T65이며 외부표 T63과 함께 보존한다.",
+      "paragraph_start": 3838,
+      "paragraph_end": 3924,
+      "table_ids": [
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 3838,
+          "text": "[서식 8]"
+        },
+        {
+          "paragraph": 3901,
+          "text": "[붙임 1] 사업비 입금계좌 신고 및 불법·부당행위 방지 서약서 1부"
+        },
+        {
+          "paragraph": 3902,
+          "text": "[붙임 2] 현물출자확약서 1부"
+        },
+        {
+          "paragraph": 3903,
+          "text": "[별첨] 사업계획서(최종승인된 제출본으로 갈음) 1부"
+        },
+        {
+          "paragraph": 3906,
+          "text": "착수계 제출일자 : 202 .   .   ."
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축지원 사업 착수계",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          62,
+          63,
+          64,
+          65,
+          66
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "8-1",
+      "title": "사업비 입금계좌 신고",
+      "note": "",
+      "printed_page": "40",
+      "locator": "Contents/section0.xml#T2/R11",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "사업비 입금계좌 신고 및 사용인감 신고",
+      "input_groups_interpretation": "공급기업 은행/계좌/예금주/전화, 법인·사용인감, 통장사본/인감증명서 첨부, 기업별 날인",
+      "handling_note": "계좌신고와 사용인감계 문구·첨부 체크·날인이 결합되어 있다.",
+      "paragraph_start": 3925,
+      "paragraph_end": 3992,
+      "table_ids": [
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 3925,
+          "text": "[서식 8-1]"
+        },
+        {
+          "paragraph": 3926,
+          "text": "<사업비 입금계좌 신고 및 불법·부당행위 방지 서약서>"
+        },
+        {
+          "paragraph": 3928,
+          "text": "1. 은행 간 송금수수료는 공급기업이 부담한다."
+        },
+        {
+          "paragraph": 3930,
+          "text": "2. 거래은행은       (은행명)          은행으로 한다."
+        },
+        {
+          "paragraph": 3944,
+          "text": "3. 사용인감계"
+        },
+        {
+          "paragraph": 3966,
+          "text": "아래 서약자는 202 년도 선도형 스마트공장 구축지원 사업에 참여함에 있어서 소중한 국민 세금으로 지원받는 사업임을 감안하여 관련 법과 지침을 준수하여 성실히 사업을 수행할 것이며, 사업비 조성 및 사용과 관련하여 다음의 사항을 철저히 이행할 것을 서약합니다."
+        },
+        {
+          "paragraph": 3968,
+          "text": "1. 사업비 조성과 관련하여 기업부담금 대납 등 일체의 부정행위를 하지 않는다."
+        },
+        {
+          "paragraph": 3969,
+          "text": "2. 사업비 사용과 관련하여 법, 지침에서 금지하는 일체의 불법·부당행위를 하지 않는다."
+        },
+        {
+          "paragraph": 3970,
+          "text": "3. 사업 수행과정에서 불법·부당거래 등을 인지한 경우 즉시 신고한다."
+        },
+        {
+          "paragraph": 3971,
+          "text": "4. 사업추진과 관련하여 모든 서류에 일체의 거짓이나 허위가 없도록 하겠다."
+        },
+        {
+          "paragraph": 3972,
+          "text": "5. 제 1호부터 제5호까지를 위반할 경우 관련 법, 지침에 따라 민·형사상의 책임과 손해배상, 정부사업 참여제한 등의 불이익을 감수하고 이의제기를 하지 않는다."
+        },
+        {
+          "paragraph": 3974,
+          "text": "202 .   .   ."
+        }
+      ],
+      "first_table_text": "구분",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          67,
+          68,
+          69,
+          70,
+          71
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T68/R2C1/P3954,3955,3956,3957,3958,3959",
+          "text": "[첨부서류] 1. 예금통장 사본 1부 \n          2. 인감증명서 1부\n                                    \n   202  년    월    일\n\n"
+        }
+      ]
+    },
+    {
+      "number": "8-2",
+      "title": "현물출자 확약서",
+      "note": "",
+      "printed_page": "41",
+      "locator": "Contents/section0.xml#T2/R12",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "도입기업 인건비 현물출자의 확약",
+      "input_groups_interpretation": "기업/과제/멘토, 현물출자 총액, 인원별 성명/월급여/기간/투입률/소계, 날짜/대표 날인",
+      "handling_note": "T74 인건비 상세는 T73 안의 중첩표이다. 현물 계획과 수행일지·급여증빙의 일치가 후속 검증 대상이다.",
+      "paragraph_start": 3993,
+      "paragraph_end": 4048,
+      "table_ids": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 3993,
+          "text": "[서식 8-2]"
+        },
+        {
+          "paragraph": 4037,
+          "text": "[첨부 1] 도입기업 인건비 해당인력의 4대보험가입 증빙서류, 원천징수영수증 각 1부."
+        },
+        {
+          "paragraph": 4039,
+          "text": "기업부담금 현물을 위와 같이 출자할 것을 확약합니다. 또한, 추후 현물 미출자 또는 허위제출의 경우 스마트공장보급·확산사업 관리지침·세부관리지침, 국가재정환수법 등에 따라 사업비 환수 및 참여제한, 제제부가금 부가 등의 제재조치를 받을 수 있음을 확인합니다."
+        },
+        {
+          "paragraph": 4042,
+          "text": "제출일자 : 202 .   .   ."
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축지원 사업 현물출자 확약서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          72,
+          73,
+          74,
+          75
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "8-3",
+      "title": "기업부담금 지급확약서",
+      "note": "",
+      "printed_page": "42",
+      "locator": "Contents/section0.xml#T2/R13",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "미지급 기업부담금 잔금 지급 확약",
+      "input_groups_interpretation": "과제/기업/사업기간/총사업비, 미지급 잔금, 예정일, 대표자·직인",
+      "handling_note": "약정 문구/조건은 고정 본문, 금액과 예정일은 사실 입력이다.",
+      "paragraph_start": 4049,
+      "paragraph_end": 4081,
+      "table_ids": [
+        76,
+        77
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 4049,
+          "text": "[서식 8-3]"
+        },
+        {
+          "paragraph": 4070,
+          "text": "* 납부유예기간은 최대 2개월 이내 설정. 단, 중간보고서 제출일이 유예기간 내에 있을 경우 중간보고서 제출일 이전으로 납부일 설정"
+        },
+        {
+          "paragraph": 4072,
+          "text": "본인은 상기와 같이 협약내용에 의거 도입기업 미지급 금액을 2xxx년   월   일 까지 지급할 것을 확약합니다. 또한 기업부담금 납부유예와 관련한 본 지급확약서를 작성함에 있어, 스마트공장 보급확산 사업 세부관리기준 제23조(사업착수 및 정부지원금 지급)에 따라 위 기재 납부일까지 기업부담금을 납부하지 않은 경우 해당 협약이 해지될 수 있으며, 협약해지에 따라 전담기관 또는 운영기관으로부터 정부지원금 환수 및 제재조치(참여제한 및 제재부가금 부과)를 받을 수 있음을 확인합니다."
+        },
+        {
+          "paragraph": 4074,
+          "text": "2xxx 년     월    일"
+        },
+        {
+          "paragraph": 4076,
+          "text": "기  업  명 :"
+        },
+        {
+          "paragraph": 4078,
+          "text": "대 　표  　자 :           　           (인)"
+        },
+        {
+          "paragraph": 4081,
+          "text": "00테크노파크원장 귀하"
+        }
+      ],
+      "first_table_text": "기업부담금 지급확약서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          76,
+          77
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "9",
+      "title": "이행약정서",
+      "note": "",
+      "printed_page": "43",
+      "locator": "Contents/section0.xml#T2/R14",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "장비 대금 미지급분 등의 지급 이행약정",
+      "input_groups_interpretation": "과제/도입·장비공급기업/기간/장비명/총액, 선금·중도금·잔금별 금액/예정일, 쌍방 날인",
+      "handling_note": "자동 생성으로 지급 이행 사실이나 서명을 만들어서는 안 되는 확인 문서이다.",
+      "paragraph_start": 4082,
+      "paragraph_end": 4141,
+      "table_ids": [
+        78,
+        79,
+        80
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 4082,
+          "text": "[서식 9]"
+        },
+        {
+          "paragraph": 4121,
+          "text": "본인은 상기와 같이 협약내용에 의거 미지급 금액을 2xxx년   월   일 까지 지급을 이행할 것을 약정합니다. 상기 과제의 장비 도입과 관련하여, 도입기업은 구입(도입)하는 장비비의 각 선금, 중도금, 잔금의 납부예정일에 정해진 금원을 성실히 지급할 것을, 공급기업은 사업기간 내 과제진행에 차질이 없도록 장비도입절차를 진행할 것을 각 약정하며, 각 당사자의 약정사항 불이행으로 인하여 과제의 중도포기 또는 실패판정을 받는 등결과가 발생할 경우, 스마트공장 보급·확산사업 관리지침 및 세부관리기준에 따라 사업비 환수 및 제재(사업참여 제한 및 제재부가금 부과)등의 조치가 이루어 질 수 있음을 확인합니다."
+        },
+        {
+          "paragraph": 4123,
+          "text": "2xxx 년     월    일"
+        }
+      ],
+      "first_table_text": "이행약정서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          78,
+          79,
+          80
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "10",
+      "title": "사업비 사용실적 보고서",
+      "note": "",
+      "printed_page": "44",
+      "locator": "Contents/section0.xml#T2/R15",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "RCMS에서 자동 산출되는 사업비 사용실적 보고서의 예시 이미지",
+      "input_groups_interpretation": "사업·과제·기관·책임자·기간, 연차/재원별 개발비, 계획·실적·잔액·사용률·이월, 이자·반납, 거래별 비용명세",
+      "handling_note": "XML 표가 없고 7장의 JPG로 필드가 제공된다. RCMS 원본 산출물을 수집·대조하는 입력 경로가 필요하다.",
+      "paragraph_start": 4142,
+      "paragraph_end": 4154,
+      "table_ids": [],
+      "images": [
+        {
+          "form": "10",
+          "paragraph": 4143,
+          "binaryItemIDRef": "image8",
+          "package_entry": "BinData/image8.jpg",
+          "sha256": "0278806cc4fc1861e9b1403aaed6886a85d41d27071c181188b30eba11f0cfda"
+        },
+        {
+          "form": "10",
+          "paragraph": 4144,
+          "binaryItemIDRef": "image9",
+          "package_entry": "BinData/image9.jpg",
+          "sha256": "d72e4fcb899bf279c2cc07620da00ed547e0f085dedc293f9d803a1d6ae58f51"
+        },
+        {
+          "form": "10",
+          "paragraph": 4146,
+          "binaryItemIDRef": "image10",
+          "package_entry": "BinData/image10.jpg",
+          "sha256": "4b884172193b9698175b09606c84dd34c86374ca871969a51cfbb10a8efd399d"
+        },
+        {
+          "form": "10",
+          "paragraph": 4148,
+          "binaryItemIDRef": "image11",
+          "package_entry": "BinData/image11.jpg",
+          "sha256": "6fecf2ca516aa24394fdc9c4424adaf71820240ece87fd55cf199475ab71887f"
+        },
+        {
+          "form": "10",
+          "paragraph": 4150,
+          "binaryItemIDRef": "image12",
+          "package_entry": "BinData/image12.jpg",
+          "sha256": "4adad8e882136f9cf1a4373406890daac6db8be87fd5c69f6c698c5be698b4ae"
+        },
+        {
+          "form": "10",
+          "paragraph": 4152,
+          "binaryItemIDRef": "image13",
+          "package_entry": "BinData/image13.jpg",
+          "sha256": "7eab707ce6ac4d727fe40ef06dd9efd088afc074faa0310ec79c447f542ad3cd"
+        },
+        {
+          "form": "10",
+          "paragraph": 4154,
+          "binaryItemIDRef": "image14",
+          "package_entry": "BinData/image14.jpg",
+          "sha256": "8de2704cbf54ebe3e9e1105d504f737ff9bcc4c5c9848797a460d1ad3443665f"
+        }
+      ],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 4142,
+          "text": "[서식 10] * RCMS시스템에서 내역 자동 산출되어 다운로드 가능"
+        }
+      ],
+      "first_table_text": null,
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": []
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "10-1",
+      "title": "납품 검수 확인서",
+      "note": "",
+      "printed_page": "51",
+      "locator": "Contents/section0.xml#T2/R16",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "납품 장비의 검수내역 및 설치/SN 사진 증빙",
+      "input_groups_interpretation": "도입/공급기업·과제, 장비 구분/명/모델/사양/원단가/수량/원금액/위치/비고, 설치사진, S/N 사진",
+      "handling_note": "금액 단위는 원. 장비 상세와 사진을 식별키로 연결해야 하며 형식만으로 실제 검수 확인을 대신하지 않는다.",
+      "paragraph_start": 4155,
+      "paragraph_end": 4308,
+      "table_ids": [
+        81,
+        82,
+        83,
+        84
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 4155,
+          "text": "[서식 10-1]"
+        },
+        {
+          "paragraph": 4282,
+          "text": "붙임. 장비사진 등"
+        },
+        {
+          "paragraph": 4283,
+          "text": "붙임. 장비 사진 등"
+        }
+      ],
+      "first_table_text": "납품 검수 확인서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          81,
+          82,
+          83,
+          84
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "11",
+      "title": "중간보고서(점검표)",
+      "note": "’25년 개정 양식",
+      "printed_page": "53",
+      "locator": "Contents/section0.xml#T2/R17",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "중간 시점의 사업계획 대비 진행상황 및 점검위원 확인",
+      "input_groups_interpretation": "승인 기준 목표·공정·KPI·설비·기능, 보고/점검 진척·집행·교육, 산출물, 안전·보안 이행, 종합점검/보완/건의, 기업·위원 날인",
+      "handling_note": "보고자와 점검위원 열을 분리한다. 현장 사진 필수/표 변경 불가/페이지당 최대2개, FP/KPI 기능 누락 금지 등 명시 지침이 있다.",
+      "paragraph_start": 4309,
+      "paragraph_end": 7828,
+      "table_ids": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113
+      ],
+      "images": [
+        {
+          "form": "11",
+          "paragraph": 4343,
+          "binaryItemIDRef": "image15",
+          "package_entry": "BinData/image15.bmp",
+          "sha256": "5a6d698124fee9d89f4d0c8085f6476451f237313d0abc39c76ac36f9f6caf5a"
+        },
+        {
+          "form": "11",
+          "paragraph": 4346,
+          "binaryItemIDRef": "image15",
+          "package_entry": "BinData/image15.bmp",
+          "sha256": "5a6d698124fee9d89f4d0c8085f6476451f237313d0abc39c76ac36f9f6caf5a"
+        },
+        {
+          "form": "11",
+          "paragraph": 4763,
+          "binaryItemIDRef": "image16",
+          "package_entry": "BinData/image16.bmp",
+          "sha256": "21f046f1f41f2dc5bb2e1c56f5f7da6052fe61794078980293cb673270432e63"
+        },
+        {
+          "form": "11",
+          "paragraph": 4965,
+          "binaryItemIDRef": "image17",
+          "package_entry": "BinData/image17.bmp",
+          "sha256": "53926d4deb8ca687d6965b99916b91dd9c3aacb3cffd1b19a6441e19a3f80065"
+        },
+        {
+          "form": "11",
+          "paragraph": 4969,
+          "binaryItemIDRef": "image18",
+          "package_entry": "BinData/image18.bmp",
+          "sha256": "ebc61921b6c60de500edea0dfd956db5d883f323abdb39b6f2d048efde5321df"
+        },
+        {
+          "form": "11",
+          "paragraph": 4974,
+          "binaryItemIDRef": "image19",
+          "package_entry": "BinData/image19.bmp",
+          "sha256": "2aa73a359a4116540636c8bbfdf454fffdb9009fd861c35dd9f1651a0f34d032"
+        }
+      ],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 4309,
+          "text": "[서식 11]"
+        },
+        {
+          "paragraph": 4321,
+          "text": "※ 수행기업은 승인된 사업계획서를 토대로 아래 양식에 맞게 진행현황을 작성하여 사업관리시스템에 등록"
+        },
+        {
+          "paragraph": 4322,
+          "text": "※ “점검위원 작성 부분”은 작성 불요(중간점검 시 점검위원이 작성)"
+        },
+        {
+          "paragraph": 4324,
+          "text": "1. 스마트공장 구축 개요"
+        },
+        {
+          "paragraph": 4326,
+          "text": "1.1 스마트공장 구축 목표"
+        },
+        {
+          "paragraph": 4328,
+          "text": "□ 스마트공장 구축 주요 내용 및 목표수준"
+        },
+        {
+          "paragraph": 4337,
+          "text": "* 스마트공장 구축 수준 : ICT미적용 → 기초 → 중간1 → 중간2 → 고도"
+        },
+        {
+          "paragraph": 4340,
+          "text": "1.2 가치사슬 구조 및 공정 흐름"
+        },
+        {
+          "paragraph": 4342,
+          "text": "□ 기존 모습(사업계획서 기준)"
+        },
+        {
+          "paragraph": 4345,
+          "text": "□ 스마트공장 구축 후 모습"
+        },
+        {
+          "paragraph": 4348,
+          "text": "1.3 주요 공정별 스마트化 추진 목표 진행상황"
+        },
+        {
+          "paragraph": 4455,
+          "text": "예) 성형공정의 S/W는 컴포넌트 구현단계이고, H/W는 구매완료하였을 경우"
+        },
+        {
+          "paragraph": 4456,
+          "text": "성형공정 진도율 : 50% × 0.6(S/W) + 60% × 0.4(H/W) = 54%"
+        },
+        {
+          "paragraph": 4458,
+          "text": "1.4 핵심성과지표 개선(사업계획서 기준)"
+        },
+        {
+          "paragraph": 4460,
+          "text": "□ 핵심성과지표"
+        },
+        {
+          "paragraph": 4515,
+          "text": "* 핵심성과지표는 참여기업 목적 및 중요도에 따라 ‘세부지표(붙임1)’를 참고하여 1개 이상 세부지표를 선정하여 필수 작성(가중치는 각 지표별 합이 1이 되어야 함)"
+        },
+        {
+          "paragraph": 4517,
+          "text": "□ 핵심성과지표 측정방법"
+        },
+        {
+          "paragraph": 4532,
+          "text": "* 핵심성과지표 산출방법은 기업별 공정특성에 맞게 스마트화 성과를 정량적으로 측정할 수 있는 방법을 기재"
+        },
+        {
+          "paragraph": 4534,
+          "text": "1.5 주요설비(SW, HW) 구축현황 및 스마트化 연계표"
+        },
+        {
+          "paragraph": 4535,
+          "text": "□ 주요설비(SW, HW) 구축현황 및 스마트化 계획(사업계획서 기준)"
+        },
+        {
+          "paragraph": 4759,
+          "text": "2. 시스템 구성(사업계획서 기준)"
+        },
+        {
+          "paragraph": 4761,
+          "text": "2.1 H/W구성도(사업계획서 기준)"
+        },
+        {
+          "paragraph": 4765,
+          "text": "2.2 장비 도입계획 세부 명세(사업계획서 기준)"
+        },
+        {
+          "paragraph": 4964,
+          "text": "2.3 주요 장비 설치 위치도 (사업계획서 기준)"
+        },
+        {
+          "paragraph": 4966,
+          "text": "* 구성도 외 장비 구성 및 운영 내용 추가 기술"
+        },
+        {
+          "paragraph": 4968,
+          "text": "2.4 SW 구성도 (사업계획서 기준)"
+        },
+        {
+          "paragraph": 4970,
+          "text": "* 구성도외 S/W 구성 관련 내용 추가 기술"
+        },
+        {
+          "paragraph": 4972,
+          "text": "2.5 데이터집계 포인트 (사업계획서 기준)"
+        },
+        {
+          "paragraph": 4975,
+          "text": "* 구성도 외 데이터 수집분석 등 관련 내용 추가 기술"
+        },
+        {
+          "paragraph": 4977,
+          "text": "2.6 Application 시스템 세부내용"
+        },
+        {
+          "paragraph": 4979,
+          "text": "□ AS-IS 대비 TO-BE 비교표"
+        },
+        {
+          "paragraph": 5003,
+          "text": "※ 현장모습이 사진(필수)으로 확인가능하도록 작성 표 양식 변경 불가,"
+        },
+        {
+          "paragraph": 5004,
+          "text": "1페이지에 최대 2개 작성"
+        },
+        {
+          "paragraph": 5034,
+          "text": "※ 현장모습이 사진(필수)으로 확인가능하도록 작성 표 양식 변경 불가,"
+        },
+        {
+          "paragraph": 5035,
+          "text": "1페이지에 최대 2개 작성"
+        },
+        {
+          "paragraph": 5049,
+          "text": "※ 현장모습이 사진(필수)으로 확인가능하도록 작성 표 양식 변경 불가,"
+        },
+        {
+          "paragraph": 5050,
+          "text": "1페이지에 최대 2개 작성"
+        },
+        {
+          "paragraph": 5051,
+          "text": "□ 솔루션 기능 구성도 (사업계획서 기준)"
+        },
+        {
+          "paragraph": 5865,
+          "text": "□ Application 시스템 기능 작동상태"
+        },
+        {
+          "paragraph": 5866,
+          "text": "※ FP에 반영된 기능은 누락없이 반드시 작성"
+        },
+        {
+          "paragraph": 5867,
+          "text": "※ KPI 관리 기능 필수 반영 (시스템내 데시보드 형식으로 구현되어야 함)"
+        },
+        {
+          "paragraph": 6233,
+          "text": "* 미사용 기능 : 도입기업 요구사항(필요기능)에 포함되지 않았지만 제공하는 솔루션 내 기 구축되어있는 기능"
+        },
+        {
+          "paragraph": 6234,
+          "text": "3. 프로젝트 추진 일정계획"
+        },
+        {
+          "paragraph": 6236,
+          "text": "3.1 사업 진척도"
+        },
+        {
+          "paragraph": 6237,
+          "text": "작성일자 : 0000년 00월 00일. 실적 : 100.00%"
+        },
+        {
+          "paragraph": 6739,
+          "text": "※괄호안의 숫자는 가중치를 의미"
+        },
+        {
+          "paragraph": 6740,
+          "text": "3.2 산출물 목록"
+        },
+        {
+          "paragraph": 6871,
+          "text": "※ 산출물은 중간점검시 구축현황을 고려하여 작성 후 확인할 수 있도록 제출"
+        },
+        {
+          "paragraph": 6873,
+          "text": "4. 사업비 사용 (사업계획서 기준 계획대비 집행현황 기재, 단위 : 천원 / VAT 별도)"
+        },
+        {
+          "paragraph": 6875,
+          "text": "4.1 총괄"
+        },
+        {
+          "paragraph": 6876,
+          "text": "(단위 : 천원)"
+        },
+        {
+          "paragraph": 6959,
+          "text": "※ 별지1 사업비 사용내역 장부 제출"
+        },
+        {
+          "paragraph": 6961,
+          "text": "사용내역별 증빙서류(RCMS시스템에도 사업비 집행시점에 증빙서류 건별 등록)는 중간점검 시 확인할 수 있도록 준비"
+        },
+        {
+          "paragraph": 6972,
+          "text": "4.2 S/W 구입·개발비(B, A)"
+        },
+        {
+          "paragraph": 7050,
+          "text": "4.3 H/W 구입비(C)"
+        },
+        {
+          "paragraph": 7416,
+          "text": "4.4 N/W 구축비(D)"
+        },
+        {
+          "paragraph": 7482,
+          "text": "4.5 기타(할인) 비용(E)"
+        },
+        {
+          "paragraph": 7543,
+          "text": "4.6 도입기업 인력 인건비(F)"
+        },
+        {
+          "paragraph": 7604,
+          "text": "4.7 클라우드 서비스 이용료(G)"
+        },
+        {
+          "paragraph": 7666,
+          "text": "4.8 교육 수료"
+        },
+        {
+          "paragraph": 7737,
+          "text": "5. 산업안전 및 보안대책"
+        },
+        {
+          "paragraph": 7739,
+          "text": "5.1 안전조치 이행계획"
+        },
+        {
+          "paragraph": 7741,
+          "text": "5.1.1 안전조치 이행 현황"
+        },
+        {
+          "paragraph": 7743,
+          "text": "5.2 보안조치 이행계획"
+        },
+        {
+          "paragraph": 7745,
+          "text": "5.2.1 보안조치 이행 현황"
+        },
+        {
+          "paragraph": 7747,
+          "text": "5.3 그 밖의 조치사항 이행계획(필요시)"
+        },
+        {
+          "paragraph": 7749,
+          "text": "5.3.1 그 밖의 조치사항 이행 현황(필요시)"
+        },
+        {
+          "paragraph": 7750,
+          "text": "6. 점검결과"
+        },
+        {
+          "paragraph": 7752,
+          "text": "6.1 총평"
+        },
+        {
+          "paragraph": 7763,
+          "text": "6.2 보완 필요사항"
+        },
+        {
+          "paragraph": 7779,
+          "text": "6.3 기타, 애로 및 건의사항 등"
+        },
+        {
+          "paragraph": 7789,
+          "text": "※ 도입기업과 공급기업은 스마트공장 구축 수행내역과 일치하게 중간보고서를 작성하여 제출합니다."
+        },
+        {
+          "paragraph": 7791,
+          "text": "보고일자 : 202 .   ."
+        },
+        {
+          "paragraph": 7811,
+          "text": "점검일자 : 202 .   ."
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축사업 중간보고서(점검표)",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T88/R1C2/P4424",
+          "text": "진도율 산정기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T96/R5C2/P5110",
+          "text": "기준정보관리"
+        },
+        {
+          "locator": "Contents/section1.xml#T96/R9C12/P5180",
+          "text": "계측기점검기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T96/R15C4/P5262",
+          "text": "출하검사기준 등록"
+        },
+        {
+          "locator": "Contents/section1.xml#T96/R17C8/P5296",
+          "text": "자주검사기준 등록"
+        },
+        {
+          "locator": "Contents/section1.xml#T96/R41C2/P5655",
+          "text": "설비점검 기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T97/R4C1/P5882",
+          "text": "기준정보관리"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R3C4/P6257",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R4C3/P6270",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R5C3/P6283",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R6C4/P6298",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R7C3/P6311",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R8C3/P6325",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R10C3/P6350",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R15C3/P6408",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R17C4/P6435",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R22C4/P6494",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R24C3/P6518",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R25C3/P6531",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R27C3/P6555",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R28C3/P6568",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R30C3/P6597",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R34C4/P6645",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R35C3/P6658",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T98/R37C3/P6684",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R2C4/P6754",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R3C3/P6760",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R3C4/P6761",
+          "text": "착수계, 사업계획서에 제시된 사업범위를 기준으로 인터뷰 및 회의 결과 등을 반영한 요구사항 세부요건, 제약사항 등을 명확히 정의한다(기능/비기능 분리)"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R4C3/P6766",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R4C4/P6767",
+          "text": "솔루션 고유 기능들을 기준으로 기존(재활용), 추가, 변경, 삭제로 구분하고 추가, 변경, 삭제 기능은 관련 내용 및 근거를 제시한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R5C4/P6773",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R6C3/P6779",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R6C4/P6780",
+          "text": "시스템 구축 계획을 제시하는 것으로 본 사업에서 도입되는 장비들을 반영한 H/W, S/W, N/W 구성도와 도입 장비별로 세부 규격, 설치 계획 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R7C3/P6785",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R7C4/P6786",
+          "text": "화면표준, 메뉴구조도, 각 화면(보고서)별 구성 항목에 대한 세부 내용을 제시하며, 변경 화면(기능)에 대해서 는 변경 전/후 화면과 변경 내용을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R8C3/P6791",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R9C3/P6797",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R10C4/P6804",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R10C5/P6805",
+          "text": "기능 단위로 테스트 시나리오, 테스트 데이터, 예상결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다  "
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R11C4/P6811",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R11C5/P6812",
+          "text": "개발자 관점에서 “2. 주요 공정별 스마트化 추진 목표 달성 상황”의 각 공정에 대한 스마트화 적용결과를 확인하기 위한 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R12C3/P6817",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R12C4/P6818",
+          "text": "H/W, S/W, N/W의 설치 및 전환 결과와 초기데이터 구축 결과 등을 작성한다(증적 자료 제시)"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R13C3/P6823",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R14C3/P6829",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R14C4/P6830",
+          "text": "도입기업 담당자가 운영환경에서 “주요 공정별 스마트化 추진 목표 달성 상황”에 제시되어 있는 각 공정에 대해 스마트화 적용결과를 확인할 수 있는 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R16C3/P6842",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R17C4/P6849",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R18C3/P6855",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R20C3/P6867",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T99/R20C4/P6868",
+          "text": "기능요구사항은 요구사항ID를 기준으로 각 요구사항들이 화면설계서, 프로그램설계서, 단위테스트결과서, 통합테스트결과서, 사용자테스트결과서 등에 반영되어 있는지를 추적할 수 있도록 관련된 ID를 작성하며, 비기능요구사항은 관련된 결과물 및 추진 현황을 작성한다"
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "완료보고서(점검표)",
+      "note": "‘(수정, 최종)완료보고서’ 동일 양식 적용",
+      "printed_page": "74",
+      "locator": "Contents/section0.xml#T2/R18",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "구축 완료 결과·성과근거·지출·교육의 최종 보고",
+      "input_groups_interpretation": "계획/실제 공정·수준·KPI·장비/기능, 측정근거, 표준 증빙, 산출물, 비용 집행, 수료, 교육실시결과, 안전·보안 이행, 당사자 날인",
+      "handling_note": "수정·최종완료보고서도 같은 양식. 승인 없는 계획변경 불인정. 결과·사진·교육서명 등의 실증자료가 필요하다.",
+      "paragraph_start": 7829,
+      "paragraph_end": 11544,
+      "table_ids": [
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "images": [
+        {
+          "form": "12",
+          "paragraph": 7866,
+          "binaryItemIDRef": "image15",
+          "package_entry": "BinData/image15.bmp",
+          "sha256": "5a6d698124fee9d89f4d0c8085f6476451f237313d0abc39c76ac36f9f6caf5a"
+        },
+        {
+          "form": "12",
+          "paragraph": 7870,
+          "binaryItemIDRef": "image15",
+          "package_entry": "BinData/image15.bmp",
+          "sha256": "5a6d698124fee9d89f4d0c8085f6476451f237313d0abc39c76ac36f9f6caf5a"
+        },
+        {
+          "form": "12",
+          "paragraph": 8646,
+          "binaryItemIDRef": "image16",
+          "package_entry": "BinData/image16.bmp",
+          "sha256": "21f046f1f41f2dc5bb2e1c56f5f7da6052fe61794078980293cb673270432e63"
+        },
+        {
+          "form": "12",
+          "paragraph": 8848,
+          "binaryItemIDRef": "image17",
+          "package_entry": "BinData/image17.bmp",
+          "sha256": "53926d4deb8ca687d6965b99916b91dd9c3aacb3cffd1b19a6441e19a3f80065"
+        },
+        {
+          "form": "12",
+          "paragraph": 8852,
+          "binaryItemIDRef": "image18",
+          "package_entry": "BinData/image18.bmp",
+          "sha256": "ebc61921b6c60de500edea0dfd956db5d883f323abdb39b6f2d048efde5321df"
+        },
+        {
+          "form": "12",
+          "paragraph": 8856,
+          "binaryItemIDRef": "image19",
+          "package_entry": "BinData/image19.bmp",
+          "sha256": "2aa73a359a4116540636c8bbfdf454fffdb9009fd861c35dd9f1651a0f34d032"
+        }
+      ],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 7829,
+          "text": "[서식 12]"
+        },
+        {
+          "paragraph": 7842,
+          "text": "※ 수행기업은 승인된 사업계획서를 토대로 아래 양식에 맞게 진행현황을 작성하여 사업관리시스템에 등록"
+        },
+        {
+          "paragraph": 7843,
+          "text": "※협약변경승인 받지 않은 사업계획 수정은 불인정"
+        },
+        {
+          "paragraph": 7845,
+          "text": "1. 스마트공장 구축 개요"
+        },
+        {
+          "paragraph": 7847,
+          "text": "1.1 스마트공장 구축 결과"
+        },
+        {
+          "paragraph": 7849,
+          "text": "□ 스마트공장 구축 주요 내용 및 목표수준"
+        },
+        {
+          "paragraph": 7860,
+          "text": "* 스마트공장 구축 수준 : ICT미적용 → 기초 → 중간1 → 중간2 → 고도"
+        },
+        {
+          "paragraph": 7863,
+          "text": "1.2 가치사슬 구조 및 공정 흐름"
+        },
+        {
+          "paragraph": 7865,
+          "text": "□ 기존 모습"
+        },
+        {
+          "paragraph": 7869,
+          "text": "□ 스마트공장 구축 후 모습"
+        },
+        {
+          "paragraph": 7871,
+          "text": "1.3 주요 공정별 스마트化 추진 목표 진행상황"
+        },
+        {
+          "paragraph": 7960,
+          "text": "예) 성형공정의 S/W는 컴포넌트 구현단계이고, H/W는 구매완료하였을 경우"
+        },
+        {
+          "paragraph": 7961,
+          "text": "성형공정 진도율 : 50% × 0.6(S/W) + 60% × 0.4(H/W) = 54%"
+        },
+        {
+          "paragraph": 7962,
+          "text": "1.4 핵심성과지표 개선"
+        },
+        {
+          "paragraph": 7964,
+          "text": "□ 핵심성과지표"
+        },
+        {
+          "paragraph": 8019,
+          "text": "* 핵심성과지표는 참여기업 목적 및 중요도에 따라 ‘세부지표(붙임1)’를 참고하여 1개 이상 세부지표를 선정하여 필수 작성(가중치는 각 지표별 합이 1이 되어야 함)"
+        },
+        {
+          "paragraph": 8021,
+          "text": "□ 핵심성과지표 측정방법"
+        },
+        {
+          "paragraph": 8036,
+          "text": "* 핵심성과지표 산출방법은 기업별 공정특성에 맞게 스마트화 성과를 정량적으로 측정 할 수 있는 방법을 기재"
+        },
+        {
+          "paragraph": 8038,
+          "text": "□ 핵심성과지표 측정결과"
+        },
+        {
+          "paragraph": 8094,
+          "text": "□ 핵심성과지표 측정근거"
+        },
+        {
+          "paragraph": 8135,
+          "text": "1.5 주요설비(SW, HW) 구축현황 및 스마트化 연계표"
+        },
+        {
+          "paragraph": 8137,
+          "text": "□ 주요설비(SW, HW) 구축현황 및 스마트化 계획(사업계획서 기준)"
+        },
+        {
+          "paragraph": 8329,
+          "text": "□ 주요설비(SW, HW) 보유현황 및 스마트化 결과"
+        },
+        {
+          "paragraph": 8633,
+          "text": "□ 표준 적용여부    * 표준가점을 받은 경우에만 작성"
+        },
+        {
+          "paragraph": 8635,
+          "text": "◦ 증빙자료"
+        },
+        {
+          "paragraph": 8637,
+          "text": "- OPC-Ua 적용 설계 자료 제시"
+        },
+        {
+          "paragraph": 8638,
+          "text": ": 표준 매뉴얼, 기준서 등"
+        },
+        {
+          "paragraph": 8640,
+          "text": "- 표준 적용 설계 자료 제시"
+        },
+        {
+          "paragraph": 8642,
+          "text": "2. 시스템 구성"
+        },
+        {
+          "paragraph": 8644,
+          "text": "2.1 H/W구성도"
+        },
+        {
+          "paragraph": 8649,
+          "text": "2.2 장비 도입계획 세부 명세"
+        },
+        {
+          "paragraph": 8847,
+          "text": "2.3 주요 장비 설치 위치도"
+        },
+        {
+          "paragraph": 8849,
+          "text": "* 구성도 외 장비 구성 및 운영 내용 추가 기술"
+        },
+        {
+          "paragraph": 8851,
+          "text": "2.4 SW 구성도"
+        },
+        {
+          "paragraph": 8853,
+          "text": "* 구성도외 S/W 구성 관련 내용 추가 기술"
+        },
+        {
+          "paragraph": 8854,
+          "text": "2.5 데이터집계 포인트"
+        },
+        {
+          "paragraph": 8857,
+          "text": "* 구성도 외 데이터 수집분석 등 관련 내용 추가 기술"
+        },
+        {
+          "paragraph": 8860,
+          "text": "2.6 Application 시스템 세부내용"
+        },
+        {
+          "paragraph": 8862,
+          "text": "□ AS-IS 대비 TO-BE 비교표"
+        },
+        {
+          "paragraph": 8886,
+          "text": "※ 현장모습이 사진(필수)으로 확인가능하도록 작성 표 양식 변경 불가,"
+        },
+        {
+          "paragraph": 8887,
+          "text": "1페이지에 최대 2개 작성"
+        },
+        {
+          "paragraph": 8917,
+          "text": "※ 현장모습이 사진(필수)으로 확인가능하도록 작성 표 양식 변경 불가,"
+        },
+        {
+          "paragraph": 8918,
+          "text": "1페이지에 최대 2개 작성"
+        },
+        {
+          "paragraph": 8932,
+          "text": "※ 현장모습이 사진(필수)으로 확인가능하도록 작성 표 양식 변경 불가,"
+        },
+        {
+          "paragraph": 8933,
+          "text": "1페이지에 최대 2개 작성"
+        },
+        {
+          "paragraph": 8936,
+          "text": "□ 솔루션 기능 구성도"
+        },
+        {
+          "paragraph": 9750,
+          "text": "□ Application 시스템 기능 작동상태"
+        },
+        {
+          "paragraph": 9751,
+          "text": "※ FP에 반영된 기능은 누락없이 반드시 작성"
+        },
+        {
+          "paragraph": 9752,
+          "text": "※ KPI 관리 기능 필수 반영 (시스템내 데시보드 형식으로 구현되어야 함)"
+        },
+        {
+          "paragraph": 10118,
+          "text": "* 미사용 기능 : 도입기업 요구사항(필요기능)에 포함되지 않았지만 제공하는 솔루션 내 기 구축되어있는 기능"
+        },
+        {
+          "paragraph": 10119,
+          "text": "3. 프로젝트 추진 일정계획"
+        },
+        {
+          "paragraph": 10121,
+          "text": "3.1 사업 진척도"
+        },
+        {
+          "paragraph": 10130,
+          "text": "작성일자 : 0000년 00월 00일. 실적 : 100.00%"
+        },
+        {
+          "paragraph": 10632,
+          "text": "※괄호안의 숫자는 가중치를 의미합니다"
+        },
+        {
+          "paragraph": 10633,
+          "text": "3.2 산출물 목록"
+        },
+        {
+          "paragraph": 10765,
+          "text": "※ 산출물은 최종점검(감리)시 확인할 수 있도록 준비"
+        },
+        {
+          "paragraph": 10766,
+          "text": "4. 사업비 사용 (단위 : 천원 / VAT 별도)"
+        },
+        {
+          "paragraph": 10768,
+          "text": "4.1 총괄"
+        },
+        {
+          "paragraph": 10769,
+          "text": "(단위 : 천원)"
+        },
+        {
+          "paragraph": 10828,
+          "text": "4.2 S/W 구입·개발비(A, B)"
+        },
+        {
+          "paragraph": 10888,
+          "text": "4.3 H/W 구입비(C)"
+        },
+        {
+          "paragraph": 11142,
+          "text": "4.4 N/W 구축비(D)"
+        },
+        {
+          "paragraph": 11211,
+          "text": "4.5 기타(할인) 비용(E)"
+        },
+        {
+          "paragraph": 11279,
+          "text": "4.6 도입기업 인력 인건비(F)"
+        },
+        {
+          "paragraph": 11355,
+          "text": "4.7 클라우드 서비스 이용료(G)"
+        },
+        {
+          "paragraph": 11426,
+          "text": "4.8 교육 수료"
+        },
+        {
+          "paragraph": 11473,
+          "text": "5. 기타, 애로 및 건의사항 등"
+        },
+        {
+          "paragraph": 11482,
+          "text": "6. 교육실시결과서"
+        },
+        {
+          "paragraph": 11498,
+          "text": "※ 작성 방법"
+        },
+        {
+          "paragraph": 11499,
+          "text": "- 본 사업에서 구축한 시스템을 원활히 활용할 수 있도록 업무별로 도입기업 담당자 및 관리자(운영자)에 대한 교육을 실시하고 관련된 결과를 작성한다"
+        },
+        {
+          "paragraph": 11501,
+          "text": "- 목차는 교육 내용, 일정, 실시 결과, 설문조사 등을 포함해 세부적으로 작성한다"
+        },
+        {
+          "paragraph": 11502,
+          "text": "- 교육 내용은 사용자와 관리자(운영자)로 구분해 교육 내용 및 교제(매뉴얼) 등을 기술함"
+        },
+        {
+          "paragraph": 11503,
+          "text": "교육 일정은 사용자, 관리자(운영자)별 교육 횟수, 대상, 일정 등을 기술함"
+        },
+        {
+          "paragraph": 11504,
+          "text": "교육 실시 결과는 교육 차수별로 참석자들의 서명을 제시함"
+        },
+        {
+          "paragraph": 11505,
+          "text": "- 설문조사 결과는 교육 차수별 참석자들에 대해 시스템 구축 결과에 대한 만족도, 교육 결과의 만족도 등 설문 조사 결과 및 개선 사항과 추가 요청사항 등을 기술함"
+        },
+        {
+          "paragraph": 11508,
+          "text": "7. 산업안전 및 보안대책"
+        },
+        {
+          "paragraph": 11510,
+          "text": "7.1 안전조치 이행계획"
+        },
+        {
+          "paragraph": 11512,
+          "text": "7.1.1 안전조치 이행 현황"
+        },
+        {
+          "paragraph": 11514,
+          "text": "7.2 보안조치 이행계획"
+        },
+        {
+          "paragraph": 11516,
+          "text": "7.2.1 보안조치 이행 현황"
+        },
+        {
+          "paragraph": 11518,
+          "text": "7.3 그 밖의 조치사항 이행계획(필요시)"
+        },
+        {
+          "paragraph": 11520,
+          "text": "7.3.1 그 밖의 조치사항 이행 현황(필요시)"
+        },
+        {
+          "paragraph": 11521,
+          "text": "※ 도입기업과 공급기업은 스마트공장 구축 수행내역과 일치하게 완료보고서를 작성하여 제출합니다."
+        },
+        {
+          "paragraph": 11524,
+          "text": "완료보고서 제출일자     : 202 .   .   ."
+        },
+        {
+          "paragraph": 11525,
+          "text": "(수정)완료보고서 제출일자     : 202 .   .   ."
+        },
+        {
+          "paragraph": 11526,
+          "text": "(최종수정)완료보고서 제출일자     : 202 .   .   ."
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축사업 완료보고서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T117/R1C2/P7929",
+          "text": "진도율 산정기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T128/R5C2/P8995",
+          "text": "기준정보관리"
+        },
+        {
+          "locator": "Contents/section1.xml#T128/R9C12/P9065",
+          "text": "계측기점검기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T128/R15C4/P9147",
+          "text": "출하검사기준 등록"
+        },
+        {
+          "locator": "Contents/section1.xml#T128/R17C8/P9181",
+          "text": "자주검사기준 등록"
+        },
+        {
+          "locator": "Contents/section1.xml#T128/R41C2/P9540",
+          "text": "설비점검 기준"
+        },
+        {
+          "locator": "Contents/section1.xml#T129/R4C1/P9767",
+          "text": "기준정보관리"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R3C4/P10150",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R4C3/P10163",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R5C3/P10176",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R6C4/P10191",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R7C3/P10204",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R8C3/P10218",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R10C3/P10243",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R15C3/P10301",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R17C4/P10328",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R22C4/P10387",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R24C3/P10411",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R25C3/P10424",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R27C3/P10448",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R28C3/P10461",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R30C3/P10490",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R34C4/P10538",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R35C3/P10551",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T130/R37C3/P10577",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R2C4/P10647",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R3C3/P10653",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R3C4/P10654",
+          "text": "착수계, 사업계획서에 제시된 사업범위를 기준으로 인터뷰 및 회의 결과 등을 반영한 요구사항 세부요건, 제약사항 등을 명확히 정의한다(기능/비기능 분리)"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R4C3/P10659",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R4C4/P10660",
+          "text": "솔루션 고유 기능들을 기준으로 기존(재활용), 추가, 변경, 삭제로 구분하고 추가, 변경, 삭제 기능은 관련 내용 및 근거를 제시한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R5C4/P10666",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R6C3/P10672",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R6C4/P10673",
+          "text": "시스템 구축 계획을 제시하는 것으로 본 사업에서 도입되는 장비들을 반영한 H/W, S/W, N/W 구성도와 도입 장비별로 세부 규격, 설치 계획 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R7C3/P10678",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R7C4/P10679",
+          "text": "화면표준, 메뉴구조도, 각 화면(보고서)별 구성 항목에 대한 세부 내용을 제시하며, 변경 화면(기능)에 대해서 는 변경 전/후 화면과 변경 내용을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R8C3/P10684",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R9C3/P10690",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R10C4/P10697",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R10C5/P10698",
+          "text": "기능 단위로 테스트 시나리오, 테스트 데이터, 예상결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다  "
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R11C4/P10704",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R11C5/P10705",
+          "text": "개발자 관점에서 “2. 주요 공정별 스마트化 추진 목표 달성 상황”의 각 공정에 대한 스마트화 적용결과를 확인하기 위한 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R12C3/P10710",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R12C4/P10711",
+          "text": "H/W, S/W, N/W의 설치 및 전환 결과와 초기데이터 구축 결과 등을 작성한다(증적 자료 제시)"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R13C3/P10716",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R14C3/P10722",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R14C4/P10723",
+          "text": "도입기업 담당자가 운영환경에서 “주요 공정별 스마트化 추진 목표 달성 상황”에 제시되어 있는 각 공정에 대해 스마트화 적용결과를 확인할 수 있는 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R16C3/P10735",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R17C4/P10742",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R18C3/P10748",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R20C3/P10760",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T131/R20C4/P10761",
+          "text": "기능요구사항은 요구사항ID를 기준으로 각 요구사항들이 화면설계서, 프로그램설계서, 단위테스트결과서, 통합테스트결과서, 사용자테스트결과서 등에 반영되어 있는지를 추적할 수 있도록 관련된 ID를 작성하며, 비기능요구사항은 관련된 결과물 및 추진 현황을 작성한다"
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "최종점검보고서(감리보고서)",
+      "note": "’25년 개정 양식",
+      "printed_page": "101",
+      "locator": "Contents/section0.xml#T2/R19",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "감리기관의 현장 확인을 통한 최종점검 보고",
+      "input_groups_interpretation": "감리기관/감리원, 수준·공정 달성·설비·기능, 표준/산출물/교육, KPI 검토, 장비 가동, 기술임치·보험, 보완/종합판정",
+      "handling_note": "도입/공급기업의 자체 보고와 감리기관 판단을 분리해야 한다.",
+      "paragraph_start": 11545,
+      "paragraph_end": 13092,
+      "table_ids": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 11545,
+          "text": "[서식 13]"
+        },
+        {
+          "paragraph": 11558,
+          "text": "※ 감리기관은 수행기업이 사업관리시스템에 등록한 완료보고서 및 승인된 사업계획서를 토대로 시스템 작동상태 등을 현장확인하여 최종점검보고서(감리보고서) 작성"
+        },
+        {
+          "paragraph": 11560,
+          "text": "1. 스마트화 수준"
+        },
+        {
+          "paragraph": 11566,
+          "text": "붙임 : 수준확인 측정표"
+        },
+        {
+          "paragraph": 11568,
+          "text": "2. 주요 공정별 스마트化 추진 목표 달성 상황"
+        },
+        {
+          "paragraph": 11651,
+          "text": "3. 주요설비(SW, HW) 보유현황 및 스마트化 결과"
+        },
+        {
+          "paragraph": 11890,
+          "text": "4. Application 시스템 기능 작동상태"
+        },
+        {
+          "paragraph": 11891,
+          "text": "※ FP에 반영된 기능은 누락없이 반드시 구축되어 작동, 활용되고 있어야 함"
+        },
+        {
+          "paragraph": 11892,
+          "text": "※ KPI 관리 기능 은 시스템내 데시보드 형식으로 구현 필수"
+        },
+        {
+          "paragraph": 12220,
+          "text": "○ (구분) ‘기존’, ‘추가’, ‘수정’으로 판단"
+        },
+        {
+          "paragraph": 12221,
+          "text": "1. 기존 : 기 구축솔루션, 구매한 솔루션에 있는 기능(FP에서 0원인 경우)일 경우"
+        },
+        {
+          "paragraph": 12222,
+          "text": "2. 추가 : 기존에 없는 기능으로 스마트공장 구축사업으로 추가 도입한 기능일 경우"
+        },
+        {
+          "paragraph": 12223,
+          "text": "3. 수정 : 기존 기능 개선일 경우"
+        },
+        {
+          "paragraph": 12225,
+          "text": "○ (작동상태) ‘적정’, ‘보완’, ‘부적정’, ‘N/A’로 판단"
+        },
+        {
+          "paragraph": 12226,
+          "text": "1. 적정 : 정상 작동인 경우"
+        },
+        {
+          "paragraph": 12227,
+          "text": "2. 보완 : 기능에서 오류가 발생하여 30일이내에 수정 가능할 경우"
+        },
+        {
+          "paragraph": 12228,
+          "text": "3. 부적정 : 기능에서 오류가 발생하여 30일이내 수정이 불가능할 경우"
+        },
+        {
+          "paragraph": 12229,
+          "text": "4. N/A : FP가 0원인 기능의 경우"
+        },
+        {
+          "paragraph": 12231,
+          "text": "○ (활용상태) ‘사용’, ‘미사용’으로 판단"
+        },
+        {
+          "paragraph": 12232,
+          "text": "1. 사용 : 기업이 활용하고 있는 경우"
+        },
+        {
+          "paragraph": 12233,
+          "text": "2. 미사용 : 기업이 활용하고 있지 않는 경우"
+        },
+        {
+          "paragraph": 12234,
+          "text": "* FP에 비용이 측정되어 있는 경우 반드시 사용 상태여야 하며 그렇지 않을 경우 보완 필요"
+        },
+        {
+          "paragraph": 12236,
+          "text": "4-1. 표준연계 구축 내용 및 결과"
+        },
+        {
+          "paragraph": 12247,
+          "text": "* 증빙자료 : OPC-UA 규격서, 매뉴얼 등 객관적 증빙 자료가 무엇인지에 대해서 작성"
+        },
+        {
+          "paragraph": 12249,
+          "text": "5. 산출물 도출결과"
+        },
+        {
+          "paragraph": 12380,
+          "text": "※ 운영단계 부분은 시스템 활용현황을 확인한 결과를 기재"
+        },
+        {
+          "paragraph": 12381,
+          "text": "6. 사용자 교육·훈련 결과"
+        },
+        {
+          "paragraph": 12439,
+          "text": "6-1. 외부교육기관 교육수료 여부 점검"
+        },
+        {
+          "paragraph": 12461,
+          "text": "※ 모두 수료하여야 함"
+        },
+        {
+          "paragraph": 12462,
+          "text": "7. 핵심성과지표 개선결과"
+        },
+        {
+          "paragraph": 12577,
+          "text": "* 달성여부 : 달성, 미달성으로 작성"
+        },
+        {
+          "paragraph": 12579,
+          "text": "7-1 핵심성과지표 측정근거의 적절성"
+        },
+        {
+          "paragraph": 12625,
+          "text": "8. 주요설비(HW, SW 등) 도입 설치 내역"
+        },
+        {
+          "paragraph": 12627,
+          "text": "<S/W 구입·개발 내역>"
+        },
+        {
+          "paragraph": 12673,
+          "text": "<H/W 구입 내역>"
+        },
+        {
+          "paragraph": 12896,
+          "text": "<N/W 구축 내역>"
+        },
+        {
+          "paragraph": 12941,
+          "text": "<기타 구축 내역>"
+        },
+        {
+          "paragraph": 12987,
+          "text": "<클라우드 서비스 도입내역>"
+        },
+        {
+          "paragraph": 13021,
+          "text": "9. 기술임치여부"
+        },
+        {
+          "paragraph": 13028,
+          "text": "10. 하자보증보험 여부"
+        },
+        {
+          "paragraph": 13039,
+          "text": "※ 보증률이 총사업비의 10%미만일 경우 재발행 필요"
+        },
+        {
+          "paragraph": 13042,
+          "text": "11. 보완 필요사항"
+        },
+        {
+          "paragraph": 13056,
+          "text": "최종점검결과(감리) 총평"
+        },
+        {
+          "paragraph": 13080,
+          "text": "※ 감리기관명은 「스마트공장 보급확산사업 관리지침 및 세부관리지침」등에 의거하여 스마트공장 구축 및 고도화과제 최종점검(최종감리)를 실시하고 본 최종점검보고서(감리보고서)를 제출합니다."
+        },
+        {
+          "paragraph": 13082,
+          "text": "최종점검(감리) 수행일자      : 202 .   .   ."
+        },
+        {
+          "paragraph": 13083,
+          "text": "~  202 .   .   ."
+        },
+        {
+          "paragraph": 13088,
+          "text": "202 . ○○.○○."
+        },
+        {
+          "paragraph": 13090,
+          "text": "감리기관명"
+        },
+        {
+          "paragraph": 13091,
+          "text": "대    표   이   사  : ○   ○  ○(인)"
+        },
+        {
+          "paragraph": 13092,
+          "text": "참여감리원  :  ○○○(서울 제○○○호)(인)"
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축사업 최종점검보고서(감리보고서)",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T146/R1C1/P11641,11642,11643,11644,11645,11646,11647,11648,11649,11650",
+          "text": "1. 데이터 수집 자동/반자동/수동 기준\n - 자동 : 인적요소가 개입되지 않고 실시간 자동수입되어 KPI에 반영되는 상태\n - 반자동 : 인적요소가 개입되거나 실시간으로 데이터가 수집되지 않아 KPI에 실시간 반영되지 않는 상태\n - 수동 : 엑셀시트 등 수작업으로 KPI에 반영시키는 상태      \n\n2. 계획대비 달성상태 측정 기준\n - 적정 : 계획된 목표 달성\n - 보완 : 목표 달성 미흡 및 오류에 대한 조치가 30일이내 보완하여 달성이 가능할 경우\n - 부적정 : 목표 달성 미흡 및 오류에 대한 조치가 30일이내 보완하여 달성이 불가능할 경우 \n   * 운영기관 승인 없는 사업계획 변경은 불인정태"
+        },
+        {
+          "locator": "Contents/section1.xml#T148/R2C1/P11902",
+          "text": "기준정보관리"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R2C4/P12262",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R3C3/P12268",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R3C4/P12269",
+          "text": "착수계, 사업계획서에 제시된 사업범위를 기준으로 인터뷰 및 회의 결과 등을 반영한 요구사항 세부요건, 제약사항 등을 명확히 정의한다(기능/비기능 분리)"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R4C3/P12274",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R4C4/P12275",
+          "text": "솔루션 고유 기능들을 기준으로 기존(재활용), 추가, 변경, 삭제로 구분하고 추가, 변경, 삭제 기능은 관련 내용 및 근거를 제시한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R5C4/P12281",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R6C3/P12287",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R6C4/P12288",
+          "text": "시스템 구축 계획을 제시하는 것으로 본 사업에서 도입되는 장비들을 반영한 H/W, S/W, N/W 구성도와 도입 장비별로 세부 규격, 설치 계획 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R7C3/P12293",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R7C4/P12294",
+          "text": "화면표준, 메뉴구조도, 각 화면(보고서)별 구성 항목에 대한 세부 내용을 제시하며, 변경 화면(기능)에 대해서 는 변경 전/후 화면과 변경 내용을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R8C3/P12299",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R9C3/P12305",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R10C4/P12312",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R10C5/P12313",
+          "text": "기능 단위로 테스트 시나리오, 테스트 데이터, 예상결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다  "
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R11C4/P12319",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R11C5/P12320",
+          "text": "개발자 관점에서 “2. 주요 공정별 스마트化 추진 목표 달성 상황”의 각 공정에 대한 스마트화 적용결과를 확인하기 위한 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R12C3/P12325",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R12C4/P12326",
+          "text": "H/W, S/W, N/W의 설치 및 전환 결과와 초기데이터 구축 결과 등을 작성한다(증적 자료 제시)"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R13C3/P12331",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R14C3/P12337",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R14C4/P12338",
+          "text": "도입기업 담당자가 운영환경에서 “주요 공정별 스마트化 추진 목표 달성 상황”에 제시되어 있는 각 공정에 대해 스마트화 적용결과를 확인할 수 있는 테스트 시나리오, 테스트 데이터, 예상 결과 제시와 테스트 수행 결과, 결함관리 내역, 조치결과 등을 작성한다"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R16C3/P12350",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R17C4/P12357",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R18C3/P12363",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R20C3/P12375",
+          "text": "필수"
+        },
+        {
+          "locator": "Contents/section1.xml#T150/R20C4/P12376",
+          "text": "기능요구사항은 요구사항ID를 기준으로 각 요구사항들이 화면설계서, 프로그램설계서, 단위테스트결과서, 통합테스트결과서, 사용자테스트결과서 등에 반영되어 있는지를 추적할 수 있도록 관련된 ID를 작성하며, 비기능요구사항은 관련된 결과물 및 추진 현황을 작성한다"
+        }
+      ]
+    },
+    {
+      "number": "13-1",
+      "title": "최종점검(감리) 시정조치계획서",
+      "note": "’25년 신규 양식",
+      "printed_page": "116",
+      "locator": "Contents/section0.xml#T2/R20",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "최종점검 보완요청에 대한 시정조치 계획",
+      "input_groups_interpretation": "도입/공급기업·과제·감리원·기관·제출일, 요청사항별 계획, 대표 서명",
+      "handling_note": "보완요청 항목과 일대일 연결하고 계획을 결과로 서술하지 않는다.",
+      "paragraph_start": 13093,
+      "paragraph_end": 13136,
+      "table_ids": [
+        165,
+        166,
+        167
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13093,
+          "text": "[서식 13-1]"
+        }
+      ],
+      "first_table_text": "최종점검(감리) 시정조치계획서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          165,
+          166,
+          167
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "13-2",
+      "title": "최종점검(감리) 시정조치결과서",
+      "note": "",
+      "printed_page": "117",
+      "locator": "Contents/section0.xml#T2/R21",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "시정조치가 끝난 뒤 이행 결과 제출",
+      "input_groups_interpretation": "기업·과제·감리원·기관·제출일, 요청사항별 결과, 대표 서명",
+      "handling_note": "계획서와 동일한 요청 항목 키를 재사용하되 결과 증빙을 별도로 확보한다.",
+      "paragraph_start": 13137,
+      "paragraph_end": 13180,
+      "table_ids": [
+        168,
+        169,
+        170
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13137,
+          "text": "[서식 13-2]"
+        }
+      ],
+      "first_table_text": "최종점검(감리) 시정조치결과서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          168,
+          169,
+          170
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "13-3",
+      "title": "최종점검(감리) 시정조치결과확인서",
+      "note": "",
+      "printed_page": "118",
+      "locator": "Contents/section0.xml#T2/R22",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "감리기관의 시정조치 결과 검토·확인",
+      "input_groups_interpretation": "기업·과제·감리원·기관·확인일, 요청사항·결과·검토결과",
+      "handling_note": "검토결과는 확인자의 판단이며 기업 자체 결과와 동일 필드로 합치지 않는다.",
+      "paragraph_start": 13181,
+      "paragraph_end": 13222,
+      "table_ids": [
+        171,
+        172
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13181,
+          "text": "[서식 13-3]"
+        },
+        {
+          "paragraph": 13216,
+          "text": "※ 감리기관명은 「스마트공장 보급확산사업 관리지침 및 세부관리지침」등에 의거하여 스마트공장 구축 및 고도화과제 최종점검(최종감리) 보완요청사항에 대한 시정조치결과를 확인하고 본 시정조치결과확인서를 제출합니다."
+        },
+        {
+          "paragraph": 13218,
+          "text": "202 . ○○.○○."
+        },
+        {
+          "paragraph": 13220,
+          "text": "감리기관명"
+        },
+        {
+          "paragraph": 13221,
+          "text": "대    표   이   사  : ○   ○  ○(인)"
+        },
+        {
+          "paragraph": 13222,
+          "text": "참여감리원  :  ○○○(서울 제○○○호)(인)"
+        }
+      ],
+      "first_table_text": "최종점검(감리) 시정조치결과확인서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          171,
+          172
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "14",
+      "title": "운영현황보고서",
+      "note": "‘집중AS운영현황보고서’ 동일 양식 적용",
+      "printed_page": "119",
+      "locator": "Contents/section0.xml#T2/R23",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "시스템 기능의 활용·로그연동·추가교육 등 운영현황 보고",
+      "input_groups_interpretation": "기간/기업/과제, 로그 연동 여부 Y/N, 모듈·기능별 활용 Y/N/비고, 교육일시/시간/내용/참석자, 공급기업 날인",
+      "handling_note": "집중AS기간 운영현황보고서로 사용할 때 해당 기간을 집중AS기간으로 변경하도록 셀 안에 지시됨.",
+      "paragraph_start": 13223,
+      "paragraph_end": 13627,
+      "table_ids": [
+        173,
+        174,
+        175,
+        176,
+        177
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13223,
+          "text": "[서식 14]"
+        },
+        {
+          "paragraph": 13237,
+          "text": "1. 활용 내역 (승인된 사업계획서에 기재된 모든 모듈에 대해 작성)"
+        },
+        {
+          "paragraph": 13489,
+          "text": "2. 사용자 교육·훈련 결과"
+        },
+        {
+          "paragraph": 13603,
+          "text": "* 교육훈련 세부내용 별첨"
+        },
+        {
+          "paragraph": 13605,
+          "text": "※ 아래 당사자는 ‘집중AS기간 운영현황보고서’양식으로 활용시 해당 기간을 “집중AS기간”으로 변경하여 사용사업기간 동안 수행한 내역 및 구축시스템 활용현황과 일치하게 활용현황보고서를 작성하여 제출합니다"
+        },
+        {
+          "paragraph": 13609,
+          "text": "제출일자      202 .   .   ."
+        }
+      ],
+      "first_table_text": "운영현황보고서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          173,
+          174,
+          175,
+          176,
+          177
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T175/R3C1/P13253",
+          "text": "기준정보관리"
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "title": "집중AS기간 완료확인서",
+      "note": "",
+      "printed_page": "122",
+      "locator": "Contents/section0.xml#T2/R24",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "집중AS기간 종료 및 조치 완료에 대한 당사자 확인",
+      "input_groups_interpretation": "기업·과제·AS기간, 관련 첨부·완료 확인 문구, 일자·쌍방 날인",
+      "handling_note": "서식14 운영현황과 서식15-1 개선조치 확인을 확인 자료로 연결한다.",
+      "paragraph_start": 13628,
+      "paragraph_end": 13671,
+      "table_ids": [
+        178,
+        179
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13628,
+          "text": "[서식 15]"
+        },
+        {
+          "paragraph": 13644,
+          "text": "당사 ((주)○○○)는 공급기업( ㈜○○○○, ㈜○○○○, ㈜○○)이 스마트공장 구축 이후 사업계획서 및 협약서에 따라 본사가 요구하는 사항에 대해 집중AS를 성실히 수행하였음을 확인합니다. 또한 공급기업이 작성한 운영현황보고서가 실제 현황과 일치함을 확인하였습니다."
+        },
+        {
+          "paragraph": 13649,
+          "text": "(붙임) 시스템(결과물) 인수인계서"
+        },
+        {
+          "paragraph": 13650,
+          "text": "<붙임>"
+        },
+        {
+          "paragraph": 13651,
+          "text": "시스템(결과물) 인수인계서"
+        },
+        {
+          "paragraph": 13655,
+          "text": "공급기업(㈜○○○○, ㈜○○○○, ㈜○○)은 스마트공장 구축 결과물(솔루션 소스코드 포함) 일체를 협약서, 사업완료보고서, 세부관리기준에 따라 도입기업 ((주)○○○)에게 인수인계하였음을 확인합니다."
+        },
+        {
+          "paragraph": 13658,
+          "text": "202     년     월     일"
+        }
+      ],
+      "first_table_text": "집중AS기간 완료확인서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          178,
+          179
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "15-1",
+      "title": "집중AS기간 개선조치확인서",
+      "note": "",
+      "printed_page": "124",
+      "locator": "Contents/section0.xml#T2/R25",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "집중AS의 보완요청별 개선조치 결과 확인",
+      "input_groups_interpretation": "기업·과제·보완통보일·확인일, 요청사항/개선결과, 공급·도입기업 날인",
+      "handling_note": "요청사항과 완료 증빙의 대응을 유지하고 확인일은 실제 확인 기록에서 가져온다.",
+      "paragraph_start": 13672,
+      "paragraph_end": 13714,
+      "table_ids": [
+        180,
+        181,
+        182,
+        183
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13672,
+          "text": "[서식 15-1]"
+        },
+        {
+          "paragraph": 13699,
+          "text": "※ 공급기업명은 「스마트공장 보급확산사업 관리지침 및 세부관리지침」등에 의거하여 스마트공장 구축 및 고도화과제 집중AS 보완요청사항에 대한 개선조치결과를 확인하고 본 개선조치확인서를 제출합니다."
+        },
+        {
+          "paragraph": 13702,
+          "text": "202  년    월    일"
+        }
+      ],
+      "first_table_text": "집중AS기간 개선조치 확인서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          180,
+          181,
+          182,
+          183
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "16",
+      "title": "최종평가서",
+      "note": "25년 개정 양식",
+      "printed_page": "125",
+      "locator": "Contents/section0.xml#T2/R26",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "최종평가위원의 성공·보완·실패 판정",
+      "input_groups_interpretation": "기업·과제·검토일, 수행/비용·작동/활용·성과·보안·필수의무 평가, 종합판정·평가의견·서명",
+      "handling_note": "평가 결과 열은 적정/보완/부적정이고 종합은 성공/보완/실패이다.",
+      "paragraph_start": 13715,
+      "paragraph_end": 13803,
+      "table_ids": [
+        184,
+        185,
+        186
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13715,
+          "text": "[서식 16]"
+        },
+        {
+          "paragraph": 13773,
+          "text": "* 사업계획서, 완료보고서, 최종점검(감리)보고서, 사업비집행내역 서류를 바탕으로 평가"
+        },
+        {
+          "paragraph": 13775,
+          "text": "** 필수 의무 사항이 집중AS기간 동안 이행 가능할 경우 ‘보완’으로 평가"
+        },
+        {
+          "paragraph": 13793,
+          "text": "1. 성공* : 사업수행(사업비 포함)이 적정하고, 시스템이 정상작동 중이며 도입기업의 활용에 문제가 없으며, 무상AS로 보완이 가능한 정도의 경미한 개선만 필요한 경우"
+        },
+        {
+          "paragraph": 13795,
+          "text": "* 평가결과 모두 ‘적정’일 때 종합 판정 ‘성공’"
+        },
+        {
+          "paragraph": 13797,
+          "text": "2. 보완* : 시스템 작동 및 도입기업 활용 등에 일부 문제가 있어 집중AS기간 동안 보완하여 재평가가 필요한 경우 등"
+        },
+        {
+          "paragraph": 13799,
+          "text": "* 평가결과 ‘부적정’이 없고 ‘보완’이 최소 1개 이상일 때 종합 판정 ‘보완’"
+        },
+        {
+          "paragraph": 13801,
+          "text": "3. 실패* : 사업수행 또는 사업비 사용이 부적정하거나, 시스템에 중대한 하자가 있어 도입기업의 정상 활용이 불가능한 경우 및 목표 수준을 달성하지 못한 경우 등"
+        },
+        {
+          "paragraph": 13803,
+          "text": "* 평가결과 ‘부적정’이 1개 이상일 때 종합 판정 ‘실패’"
+        }
+      ],
+      "first_table_text": "스마트공장 구축지원 사업 최종평가서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          184,
+          185,
+          186
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T185/R11C1/P13768",
+          "text": "필수 의무 사항 이행 여부**"
+        },
+        {
+          "locator": "Contents/section1.xml#T185/R11C2/P13769",
+          "text": "∘필수 의무 사항(스마트공장 교육 등)을 이행하였는가?"
+        }
+      ]
+    },
+    {
+      "number": "16-1",
+      "title": "최종재평가서",
+      "note": "25년 신규 양식",
+      "printed_page": "126",
+      "locator": "Contents/section0.xml#T2/R27",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "보완 이후 최종재평가위원의 성공·실패 판정",
+      "input_groups_interpretation": "기업·과제·검토일, 수행/비용·작동/활용·성과·보안·필수의무, 종합판정·의견·서명",
+      "handling_note": "재평가는 평가결과 적정/부적정, 종합 성공/실패 두 갈래로 바뀐다.",
+      "paragraph_start": 13804,
+      "paragraph_end": 13875,
+      "table_ids": [
+        187,
+        188,
+        189
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13804,
+          "text": "[서식 16-1]"
+        },
+        {
+          "paragraph": 13852,
+          "text": "* 사업계획서, 완료보고서, 최종점검(감리)보고서, 사업비집행내역 서류를 바탕으로 평가"
+        },
+        {
+          "paragraph": 13869,
+          "text": "1. 성공* : 사업수행(사업비 포함)이 적정하고, 시스템이 정상작동 중이며 도입기업의 활용에 문제가 없으며, 무상AS로 보완이 가능한 정도의 경미한 개선만 필요한 경우"
+        },
+        {
+          "paragraph": 13871,
+          "text": "* 평가결과 모두 ‘적정’일 때 종합 판정 ‘성공’"
+        },
+        {
+          "paragraph": 13873,
+          "text": "2. 실패* : 사업수행 또는 사업비 사용이 부적정하거나, 최종평가 보완사항이 시정되지 않은 경우, 시스템에 중대한 하자가 있어 도입기업의 정상 활용이 불가능한 경우 및 목표 수준을 달성하지 못한 경우 등"
+        },
+        {
+          "paragraph": 13875,
+          "text": "* 평가결과 ‘부적정’이 1개 이상일 때 종합 판정 ‘실패’"
+        }
+      ],
+      "first_table_text": "스마트공장 구축지원 사업 최종재평가서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          187,
+          188,
+          189
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T188/R11C1/P13848",
+          "text": "필수 의무 사항 이행 여부"
+        },
+        {
+          "locator": "Contents/section1.xml#T188/R11C2/P13849",
+          "text": "∘필수 의무 사항(스마트공장 교육 등)을 이행하였는가?"
+        }
+      ]
+    },
+    {
+      "number": "17",
+      "title": "수시·특별점검표",
+      "note": "",
+      "printed_page": "127",
+      "locator": "Contents/section0.xml#T2/R28",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "수시·특별점검의 조사내역 및 종합의견",
+      "input_groups_interpretation": "사업·도입/공급기업·기간·사업비, 대담자/조사자/일시/장소, 점검내용, 점검결과/의견",
+      "handling_note": "현장 조사 사실과 조사자 의견을 분리한다. 원문 연도 자리표시자에 2020 등이 남아 있다.",
+      "paragraph_start": 13876,
+      "paragraph_end": 13963,
+      "table_ids": [
+        190,
+        191,
+        192,
+        193
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13876,
+          "text": "[서식 17]"
+        },
+        {
+          "paragraph": 13878,
+          "text": "수시·특별점검표"
+        },
+        {
+          "paragraph": 13880,
+          "text": "1. 일반현황"
+        },
+        {
+          "paragraph": 13911,
+          "text": "2. 조사현황"
+        },
+        {
+          "paragraph": 13946,
+          "text": "3. 특별점검 사유"
+        },
+        {
+          "paragraph": 13954,
+          "text": "4. 종합 검토의견"
+        }
+      ],
+      "first_table_text": "사 업 명",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          190,
+          191,
+          192,
+          193
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "18",
+      "title": "제재조치위원회 심의평가서",
+      "note": "",
+      "printed_page": "129",
+      "locator": "Contents/section0.xml#T2/R29",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "제재조치위원회 심의평가 및 결정 근거 기록",
+      "input_groups_interpretation": "기업·사업·기간·심의일·주문, 참여제한 대상/기간, 환수금, 사실관계·법적근거·최대범위·경감사유, 위원 서명",
+      "handling_note": "제재 판단은 위원회 고유 기록이다. 원문 지침은 사실/근거/범위/경감사유를 구체화하도록 요구한다.",
+      "paragraph_start": 13964,
+      "paragraph_end": 14018,
+      "table_ids": [
+        194
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 13964,
+          "text": "[서식 18]"
+        }
+      ],
+      "first_table_text": "선도형 스마트공장 구축지원 사업 제재조치위원회 심의평가서(종합)",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          194
+        ]
+      },
+      "table_guidance_candidates": [
+        {
+          "locator": "Contents/section1.xml#T194/R9C1/P13985",
+          "text": "특별점검 결과 확인된 문제점에 대하여 제재여부, 제재범위 결정 및 추가 후속조치 필요여부 판단 등 주문사항을 기재"
+        },
+        {
+          "locator": "Contents/section1.xml#T194/R15C2/P14005,14006,14007,14008,14009,14010,14011,14012,14013,14014",
+          "text": "\n\n\n\n\n\n1. 제재조치위원회에서 확인된 사실관계 적시\n2. ‘제재대상 아님’, ‘경고’, ‘제재대상’, ‘기타’로 판단한 사유 기재\n3. ‘경고’, ‘제재대상’인 경우 해당 제재규정을 기재\n4. ‘제재대상’인 경우 제재규정에 따른 최대 제재범위(참여제한, 환수)에도 불구하고 제재범위를 조정한 참작사유와 이를 반영한 최종 제재내용을 기재"
+        }
+      ]
+    },
+    {
+      "number": "18-1",
+      "title": "제재조치 심의결과 안내 통보서",
+      "note": "",
+      "printed_page": "130",
+      "locator": "Contents/section0.xml#T2/R30",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "제재조치 심의결과의 당사자 통보",
+      "input_groups_interpretation": "사업/기업/대표/사업자번호/주소, 근거규정·심의결과·환수·참여제한, 이의신청 안내·유의사항",
+      "handling_note": "통보서의 기간·절차 문구는 이 원본의 문구 기록이며 현행 법률·절차 확인을 대체하지 않는다.",
+      "paragraph_start": 14019,
+      "paragraph_end": 14073,
+      "table_ids": [
+        195
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 14019,
+          "text": "[서식 18-1]"
+        },
+        {
+          "paragraph": 14020,
+          "text": "제재조치 심의결과 안내 통보서"
+        }
+      ],
+      "first_table_text": "사 업 명",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          195
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "19",
+      "title": "이의신청서",
+      "note": "",
+      "printed_page": "131",
+      "locator": "Contents/section0.xml#T2/R31",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "평가·정산·제재 등 통보결과에 대한 이의신청",
+      "input_groups_interpretation": "과제·기업·기간·비용, 신청자/연락처, 이의유형, 통보일/결과요약, 이의 상세, 신청일·대표 날인",
+      "handling_note": "이의유형과 해당 통보결과를 선택하고 주장과 근거자료를 연결한다.",
+      "paragraph_start": 14074,
+      "paragraph_end": 14128,
+      "table_ids": [
+        196,
+        197
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 14074,
+          "text": "[서식 19]"
+        },
+        {
+          "paragraph": 14075,
+          "text": "이의신청서"
+        },
+        {
+          "paragraph": 14076,
+          "text": "1. 과제현황"
+        },
+        {
+          "paragraph": 14102,
+          "text": "2. 이의신청 현황"
+        },
+        {
+          "paragraph": 14124,
+          "text": "상기와 같이 이의를 신청하오니, 조치하여 주시기 바랍니다."
+        },
+        {
+          "paragraph": 14125,
+          "text": "년        월        일"
+        },
+        {
+          "paragraph": 14126,
+          "text": "신청자 :                   (서명)"
+        },
+        {
+          "paragraph": 14127,
+          "text": "신청기관 :                   (직인)"
+        },
+        {
+          "paragraph": 14128,
+          "text": "별 첨 : 1. 신청기관 공문\n2. 기타 소명자료"
+        }
+      ],
+      "first_table_text": "과제번호",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          196,
+          197
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "20",
+      "title": "DX멘토단 수행일지",
+      "note": "",
+      "printed_page": "132",
+      "locator": "Contents/section0.xml#T2/R32",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "DX멘토단 수행 업무와 산출물의 회차별 기록",
+      "input_groups_interpretation": "기업·멘토/서명·과제·차수·회차·수행일, 수행내용·산출물·특기사항, 부속 빈 표",
+      "handling_note": "빈 T200도 원본 구성요소이며 임의의 누락/추가 근거로 해석하지 않는다.",
+      "paragraph_start": 14129,
+      "paragraph_end": 14154,
+      "table_ids": [
+        198,
+        199,
+        200
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 14129,
+          "text": "[서식 20]"
+        },
+        {
+          "paragraph": 14150,
+          "text": "[첨부] 기업방문지도 증빙자료(교육자료, 사진, 보고서 등) 필첨"
+        },
+        {
+          "paragraph": 14151,
+          "text": "[첨부] 기업 방문 현장 사진"
+        }
+      ],
+      "first_table_text": "DX멘토단 수행일지",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          198,
+          199,
+          200
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "21",
+      "title": "도입기업 참여인력 수행일지",
+      "note": "",
+      "printed_page": "134",
+      "locator": "Contents/section0.xml#T2/R33",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "도입기업 참여인력의 주간 수행실적 기록",
+      "input_groups_interpretation": "기업·과제·주간 수행기간·참여인력/서명, 금주 수행내용·차기 수행내용·특기사항",
+      "handling_note": "인건비 현물과 연결 가능한 실근무 증빙이며 미래 계획을 실적 칸에 쓰지 않는다.",
+      "paragraph_start": 14155,
+      "paragraph_end": 14177,
+      "table_ids": [
+        201,
+        202
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 14155,
+          "text": "[서식 21]"
+        },
+        {
+          "paragraph": 14177,
+          "text": "* 도입기업 사업관리인력 인건비에 해당되는 참여인력 개인별로 작성"
+        }
+      ],
+      "first_table_text": "도입기업 참여인력 수행일지",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          201,
+          202
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "22",
+      "title": "집중AS요청서",
+      "note": "’25년 신규 양식",
+      "printed_page": "135",
+      "locator": "Contents/section0.xml#T2/R34",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "집중AS 필요에 대한 도입기업 요청",
+      "input_groups_interpretation": "기업·공급기업, 요청 문구·사유, 일자·대표 날인",
+      "handling_note": "고정 요청본문과 사실 입력 및 대표 확인을 구분한다.",
+      "paragraph_start": 14178,
+      "paragraph_end": 14200,
+      "table_ids": [
+        203,
+        204
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 14178,
+          "text": "[서식 22]"
+        },
+        {
+          "paragraph": 14189,
+          "text": "당사 ((주)○○○)는 선도형 스마트공장(정부일반형) 구축지원 사업을 수행함에 있어서 ‘~~~~~~~~~~~~~’한 사유로 집중AS기간이 필요하여 요청하였음을 확인합니다."
+        },
+        {
+          "paragraph": 14192,
+          "text": "202  년    월    일"
+        }
+      ],
+      "first_table_text": "집중AS요청서",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          203,
+          204
+        ]
+      },
+      "table_guidance_candidates": []
+    },
+    {
+      "number": "23",
+      "title": "협약서",
+      "note": "",
+      "printed_page": "136",
+      "locator": "Contents/section0.xml#T2/R35",
+      "business_year": {
+        "value": 2025,
+        "basis": "파일명, Contents/section0.xml#P24 (2025.)",
+        "currency_verified": false
+      },
+      "role_interpretation": "추진·운영·도입·공급 당사자의 표준협약",
+      "input_groups_interpretation": "과제번호·기업·과제명·정부/기업 현금·현물·기간, 사업비표, 협약조항, 당사자·주소·대표·날인",
+      "handling_note": "계약 본문은 고정 원문 보존이 기본. 법률/지침 인용의 현행성은 미확인이고 사업 사실과 분리하여 검토한다.",
+      "paragraph_start": 14201,
+      "paragraph_end": 14409,
+      "table_ids": [
+        205,
+        206
+      ],
+      "images": [],
+      "headings_and_fixed_body": [
+        {
+          "paragraph": 14201,
+          "text": "[서식 23]"
+        },
+        {
+          "paragraph": 14206,
+          "text": "□ 사 업 명 : 정부일반형 스마트공장(정부형) 구축지원 (□ 고도화1, □ 고도화1(동일수준))"
+        },
+        {
+          "paragraph": 14208,
+          "text": "□ 과제번호 :"
+        },
+        {
+          "paragraph": 14210,
+          "text": "□ 과 제 명 :"
+        },
+        {
+          "paragraph": 14212,
+          "text": "□ 협약당사자"
+        },
+        {
+          "paragraph": 14214,
+          "text": "◦ (추진기관) 스마트제조혁신추진단  \t대표자 (이하 “추진기관”)"
+        },
+        {
+          "paragraph": 14215,
+          "text": "◦ (운영기관) ㅇㅇ테크노파크   \t대표자 (이하 “운영기관”)"
+        },
+        {
+          "paragraph": 14216,
+          "text": "◦ (도입기업) 도입기업명             대표자 (이하 “도입기업”)"
+        },
+        {
+          "paragraph": 14217,
+          "text": "◦ (공급기업) 공급기업명             대표자 (이하 “공급기업”)"
+        },
+        {
+          "paragraph": 14219,
+          "text": "위 협약당사자는 “정부일반형 스마트공장(정부형) 구축지원 사업(이하 “사업”)” 추진과 관련하여 다음과 같이 협약을 체결하고 상호 간 신의성실 원칙에 따라 사업을 추진한다."
+        },
+        {
+          "paragraph": 14221,
+          "text": "제1조(협약목적) 본 협약은 제조데이터 생산을 기반으로 한 스마트 제조혁신을 위해 추진된 스마트공장 구축 및 유지와 관련한 협약 당사자의 권리와 의무 등 사업추진 제반 사항을 정함을 목적으로 한다."
+        },
+        {
+          "paragraph": 14223,
+          "text": "제2조(협약기간) 협약기간은 20   년   월   일 ~ 20   년    월    일로 한다. 단, 협약기간의 연장이 필요한 경우 협약변경의 절차에 따라 기간을 연장할 수 있다."
+        },
+        {
+          "paragraph": 14225,
+          "text": "제3조(총 사업비) 총 사업비는 다음과 같다."
+        },
+        {
+          "paragraph": 14226,
+          "text": "(단위: 원, 부가세 제외)"
+        },
+        {
+          "paragraph": 14284,
+          "text": "제4조(신의성실의무) ①도입기업과 공급기업은 이 협약에서 확정된 사업계획서 및 스마트공장 보급·확산 사업 세부관리지침(이하 “관리지침”), 스마트공장 보급·확산 사업 세부관리기준(이하 “세부관리기준”), 기타 추진기관 및 운영기관이 별도로 정하여 통보하는 사항 등 관련 규정을 준수하여 사업을 성실히 수행하여야 한다. \n②도입기업과 공급기업은 사업계획서에 기재한 내역에 따라 사업비를 사용하여야 하며, 부정한 목적이나 용도로 사용하지 않고 청렴하고 투명하게 집행하여야 한다. 도입기업이 부담할 기업부담금(부가가치세 포함)을 결제취소·세금계산서 상호발행 기타의 방법으로 전가하는 행위는 금지된다."
+        },
+        {
+          "paragraph": 14285,
+          "text": "③도입기업은 협약기간 종료 후에도 이 협약에 따라 구축된 스마트공장 설비 및 시스템 등을 제14조에서 정한 유지기간 동안 유지, 활용하여야 하고 공급기업은 무상하자보수 기간 동안 하자보수의무를 성실히 이행하여야 한다."
+        },
+        {
+          "paragraph": 14286,
+          "text": "④도입기업과 공급기업은 사업수행이 어렵거나 회생 및 파산 신청, 부도․폐업, 인수합병 등이 발생 할 경우 관련 자료를 첨부하여 즉시 운영기관에 해당사실을 알려야 한다. 사업완료(정상구축 확정)이후의 도입기업의 유지의무기간과 공급기업의 무상하자보수의무기간 동안에도 동일하다."
+        },
+        {
+          "paragraph": 14288,
+          "text": "제5조(사업착수 및 정부지원금 지급) ①추진기관 및 운영기관은 협약체결 후 14일 이내에 정부지원금을 지급할 수 있다. 다만, 정부지원금 지급시까지 기업부담금 납부가 이루어지지 않은 경우 추진기관 및 운영기관은 도입기업이 기업부담금 납부 또는 지급확약서 제출시까지 사업비 사용을 중지 시켜야 한다."
+        },
+        {
+          "paragraph": 14289,
+          "text": "②도입기업은 협약체결 후 14일 이내에 다음 각 호의 서류를 사업관리시스템에 등록하여야 한다. 단, 추진기관 또는 운영기관은 신속한 사업진행을 위해 서류제출을 일정기간(최대 1개월 이내) 유예할 수 있다."
+        },
+        {
+          "paragraph": 14290,
+          "text": "1. 착수계"
+        },
+        {
+          "paragraph": 14291,
+          "text": "2. 현물출자 확약서"
+        },
+        {
+          "paragraph": 14292,
+          "text": "3. RCMS에서 발급한 가상계좌로 기업부담금을 입금한 입금확인증 또는 지급확약서"
+        },
+        {
+          "paragraph": 14293,
+          "text": "4. 정부지원금에 대한 이행(지급)보증보험증권(도입기업은 추진기관을 피보험자로 하여 발행, 보증기간은 협약기간에 3개월을 가산하여 설정하며 단, 협약기간 연장 및 집중AS 진행 시 해당 기간만큼 보증기간을 연장하여 재발급 받아 다시 제출 및 등록하여야 한다)"
+        },
+        {
+          "paragraph": 14294,
+          "text": "5. 사업비 내역 중 기업부담금으로 차지하는 SW개발비에 대한 이행(선급금)보증보험증권(공급기업은 도입기업을 피보험자로 하여 발행, 보증기간은 협약기간에 3개월을 가산하여 설정하며 단, 협약기간 연장 및 집중AS 진행 시 해당 기간만큼 보증기간을 연장하여 재발급 받아 다시 제출 및 등록하여야 한다)"
+        },
+        {
+          "paragraph": 14295,
+          "text": "6. 기타 추진기관·운영기관이 요청하는 서류"
+        },
+        {
+          "paragraph": 14296,
+          "text": "② 도입기업이 정당한 이유없이 제1항에서 정해진 기한 내에 각 호의 서류를 제출하지 않는 경우 추진기관 또는 운영기관은 사업포기로 간주하여 협약을 해약할 수 있다."
+        },
+        {
+          "paragraph": 14298,
+          "text": "제6조(기업부담금 납부 및 사업비 지출) ①도입기업은 협약체결 후 14일 이내에 기업부담금을 전액 납부하여야 하며, 경영상의 이유 등으로 분할납부가 필요한 경우 최소 50% 이상을 납부하여야 하며, 나머지 잔금은 중간보고서 제출시까지 납부하여야 한다. 사업비 지출은 기업부담금의 최초 납부(전액 또는 50%이상) 이후부터 가능하며, 도입기업이 중간보고서 제출시까지 기업부담금 전액을 납부하지 않은 경우 추진기관, 운영기관 등은 추가 납부기간(최대 14일이내)을 통보한 후 미납시 협약을 해지할 수 있다."
+        },
+        {
+          "paragraph": 14299,
+          "text": "②도입기업은 협약체결 후 14일 이내에 기업부담금 납부가 어려운 기업은 공증기관으로부터 공증받은 납부일(유예기간내)이 명시된 지급확약서를 제출하여 납부유예기간(최대 2개월이내)을 설정할 수 있다. 지급확약서 제출 기업의 경우 제5조에 따라 정부지원금 지급 시부터 사업비 지출은 가능하며, 도입기업이 납부일까지 기업부담금을 납부하지 않은 경우 추진기관, 운영기관 등은 추가 납부기간(최대 14일이내)을 통보한 후 미납시 협약을 해지할 수 있다."
+        },
+        {
+          "paragraph": 14300,
+          "text": "③사업비의 지출은 도입기업이 기업부담금을 최초납부한 이후 개시하는 것을 원칙으로 한다. 다만, 운영기관은 도입기업이 2항에 따라 지급확약서를 제출한 경우는 기업부담금 납부 전이라도 사업비 지출을 하도록 할 수 있다."
+        },
+        {
+          "paragraph": 14301,
+          "text": "④도입기업은 협약기간 동안 전담인력 인건비를 기업부담금 현물로 계상 할 수 있다."
+        },
+        {
+          "paragraph": 14302,
+          "text": "⑤클라우드 기반 스마트공장 구축·활용에 필요한 서비스 이용료 최대 3년(중소기업 대상 최대 5년)를 기업부담금으로 계상할 수 있다. 단, 사업완료보고 시 해당 금액의 양자계약서 및 이행(계약)보증보험 증권을 제출하여야 한다."
+        },
+        {
+          "paragraph": 14304,
+          "text": "제7조(협약의 변경) 추진기관, 운영기관, 도입기업, 공급기업은 협의하여 본 협약의 내용과 사업계획서의 내용을 변경할 수 있으며, 협약변경의 절차, 구체적 범위 등은 세부관리기준에 따른다."
+        },
+        {
+          "paragraph": 14306,
+          "text": "제8조(협약의 해약) ①추진기관, 운영기관 등은 사업 수행과 관련하여 다음 각 호에 해당하는 사유가 발생한 경우에는 협약을 해약할 수 있다."
+        },
+        {
+          "paragraph": 14307,
+          "text": "1. 협약 당사자가 정당한 사유 없이 사업수행을 포기한 경우"
+        },
+        {
+          "paragraph": 14308,
+          "text": "2. 지원과제 신청요건이 충족되지 아니하였음이 협약체결 이후 확인된 경우"
+        },
+        {
+          "paragraph": 14309,
+          "text": "3. 협약 당사자가 과제 수행과 관련하여 협약, 세부관리지침, 관리기준 등에서 정한 책임과 의무를 준수하지 아니하는 등 중대한 협약위반으로 사업의 계속 수행이 곤란하다고 판단되는 경우"
+        },
+        {
+          "paragraph": 14310,
+          "text": "4. 협약 당사자의 귀책사유, 또는 사업계획 임의변경, 사업추진 거부 등으로 사업 목표달성이 어렵다고 판단되는 경우"
+        },
+        {
+          "paragraph": 14311,
+          "text": "5. 협약 당사자가 정해진 기한 내에 서류를 제출하지 않거나, 제출서류 등에 허위, 거짓, 담합 등 불법행위가 확인된 경우"
+        },
+        {
+          "paragraph": 14312,
+          "text": "6. 협약 당사자가 사업의 일부 또는 전부를 불법으로 제3자에게 하도급 한 경우"
+        },
+        {
+          "paragraph": 14313,
+          "text": "7. 협약 당사자가 사업추진 중 불성실 수행 등으로 시정권고를 받고도 이를 이행하지 않는 경우"
+        },
+        {
+          "paragraph": 14314,
+          "text": "8. 사업수행 중 중간점검, 수시점검, 최종평가 결과 “중단” 또는 “실패”인 과제"
+        },
+        {
+          "paragraph": 14315,
+          "text": "9. 중간점검, 최종점검, 수시점검 등 과제의 점검(평가)에 응하지 않는 경우"
+        },
+        {
+          "paragraph": 14316,
+          "text": "10. 천재지변, 폐업, 파산, 회생 등 중대한 사유가 발생하여 더 이상 사업의 계속 수행이 불가능하거나 계속 수행할 필요가 없다고 인정되는 경우"
+        },
+        {
+          "paragraph": 14317,
+          "text": "11. 기타 정책상 사업의 수행이 불필요하다고 추진기관 또는 운영기관의 장이 판단하는 경우 등"
+        },
+        {
+          "paragraph": 14318,
+          "text": "12. 최종 판정결과가 “실패”인 과제"
+        },
+        {
+          "paragraph": 14319,
+          "text": "②도입기업 또는 공급기업이 제1항 각 호의 사유 중 어느 하나에 해당되었을 경우 추진기관 또는 운영기관의 장은 사업비의 집행중지, 특별점검 등 적절한 조치를 취할 수 있다."
+        },
+        {
+          "paragraph": 14320,
+          "text": "③추진기관 또는 운영기관의 장은 협약 해약 전 현장조사, 자료요구, 당사자 소명기회 부여 등을 할 수 있으며, 해약을 결정·통지함에 있어 필요하다고 인정할 경우 제재조치위원회 또는 평가위원회의 심의·의결을 거칠 수 있다. 협약의 해약이 결정된 경우 귀책대상 및 사유에 대한 의견을 포함하여 해약의 의사표시와 함께 과제 협약 당사자에게 통보한다."
+        },
+        {
+          "paragraph": 14321,
+          "text": "④협약 해약시 정부지원금의 사업비 환수는 스마트공장 지원의 수혜자인 도입기업으로부터 전액으로 함을 원칙으로 한다. 단, 공급기업이 협약에 따른 사업수행을 사업계획서등에 제시한 공급기업 컨소시엄이 아닌 제3자에게 하도급한 경우 등 명백히 공급기업의 귀책사유만이 존재하는 경우에는 공급기업으로부터 환수한다."
+        },
+        {
+          "paragraph": 14322,
+          "text": "⑤협약 해약시 도입기업과 공급기업 간의 손해의 분담은 사업계획서의 후속조치 방안에 따라 이루어질 수 있으며, 도입기업은 공급기업이 반환하여야 하는 기업부담금을 자진 반납하지 않는 경우 이행보증보험증권을 통해 반환받을 수 있다.\n⑥협약 해약의 사유가 『중소기업 스마트제조혁신 촉진에 관한 법률 시행령』[별표3] 에 따른 제재사유에 해당될 경우 도입기업 또는 공급기업(각 대표자를 포함한다)은 추진기관 또는 운영기관으로부터 사업참여 제한 등의 제재조치를 받을 수 있다."
+        },
+        {
+          "paragraph": 14324,
+          "text": "제9조(사업비 관리) ①사업비는 RCMS를 통해 집행, 관리함을 원칙으로 한다."
+        },
+        {
+          "paragraph": 14325,
+          "text": "②도입기업은 사업비를 사업진도에 따라 RCMS를 통해 건별로 지출하여야 하며, 도입기업은 RCMS를 통한 지출 전에 반드시 공급기업이 납품한 용역, 물품, 증빙자료 등을 확인(검수)한 후 이상이 없을 경우에만 지급하여야 한다."
+        },
+        {
+          "paragraph": 14326,
+          "text": "③사업비는 협약기간 내 사용을 원칙(집중AS 사업비 편성없음)으로 하며, 협약일 이전에 사용한 금액을 사업비로 편성 할 수 없다. 다만, 회계정산비용, 기술임치비용 등 협약기간 이후 사용이 불가피하다고 추진기관이 인정하는 항목은 사용 할 수 있다."
+        },
+        {
+          "paragraph": 14327,
+          "text": "④사업비는 스마트공장 구축과 직접적인 관련이 있는 것으로 사용되어야 하며, 협약시 사업계획서에 명기되어 있더라도 스마트공장 구축과 직접적인 관련성이 없거나 과다책정 등 부적절하게 사용하여서는 아니된다."
+        },
+        {
+          "paragraph": 14328,
+          "text": "⑤RCMS를 통한 사업비 지출 및 관리는 전적으로 도입기업의 책임으로 RCMS 운용과정에서 발생한 사고 등에 대하여는 일차적으로 도입기업이 책임을 진다."
+        },
+        {
+          "paragraph": 14329,
+          "text": "⑥도입기업은 직원 중 1명을 RCMS 담당자로 지정하고 담당자 외에는 RCMS를 접근할 수 없도록 필요한 보안조치(별도 PC 지정, 비밀번호 관리 등)를 취하여야 한다."
+        },
+        {
+          "paragraph": 14330,
+          "text": "⑦사업비 지급 거래 건에 대해서 전자세금계산서, 지출결의서, 검수조서 및 실물사진 등의 관련 증빙자료를 의무적으로 사업비관리시스템에 등록하여야 하며, RCMS를 통해 지출된 건은 도입기업이 검수(용역, 물품 등의 실물, 기능 등의 확인) 및 지출증빙(세금계산서 등) 확인 등을 마친 것으로 본다."
+        },
+        {
+          "paragraph": 14331,
+          "text": "⑧사업비 사용 내역 중 관세, 부가가치세 등 사후 환급이나 공제 받을 수 있는 금액은 집행금액에서 제외함을 원칙으로 한다.(실제 환급받지 아니한 경우도 해당)"
+        },
+        {
+          "paragraph": 14332,
+          "text": "⑨도입기업과 공급기업 등은 사업비 관련 자료 및 증빙서류 등에 대하여 사업완료 후 5년간 보관하여야 하며, 추진기관·운영기관 등의 요구시 제출하여야 한다."
+        },
+        {
+          "paragraph": 14334,
+          "text": "제10조(교육) ①도입기업과 공급기업은 사업 공고 시 명시된 사업과 관련된 교육과정을 필수로 이수하고 중간보고 및 완료보고 시 해당 교육과정의 수료증을 증빙으로 제출하여야 한다."
+        },
+        {
+          "paragraph": 14335,
+          "text": "②중간 및 완료보고서 상 수료증이 미비하여 추진기관·운영기관의 보완요청을 받은 도입기업, 공급기업은 보완요청에 응해야 한다."
+        },
+        {
+          "paragraph": 14337,
+          "text": "제11조(구축상황 보고 및 점검·평가) ①도입기업은 다음 각 호와 같이 스마트공장 구축 진행상황을 추진기관, 운영기관에 보고해야 한다."
+        },
+        {
+          "paragraph": 14338,
+          "text": "1. 중간보고 : 중간점검 실시 전까지(협약체결일로부터 3개월 이내, 연장 시 연장기간까지)“중간보고서(사업비사용실적보고서 첨부)”를 사업관리시스템에 등록"
+        },
+        {
+          "paragraph": 14339,
+          "text": "2. 최종점검 : 구축협약기간 종료일(구축완료기간과 동일)로부터 14일 이내에  “완료보고서(사업비사용실적보고서 등 첨부)”를 사업관리시스템에 등록"
+        },
+        {
+          "paragraph": 14340,
+          "text": "3. 집중AS기간 완료보고 : 최종평가 결과 “보완”시 진행하는 AS기간 종료일(협약종료일)로부터 14일(또는 승인받은 연장기간) 이내에 “집중AS기간 완료확인서”를 사업관리시스템에 등록"
+        },
+        {
+          "paragraph": 14341,
+          "text": "②추진기관, 운영기관은 구축상황 점검 등을 위해 중간점검, 최종점검, 최종평가, 수시점검, 특별점검 등을 실시하고 필요한 경우 도입기업, 공급기업에 보완 또는 시정을 요청 할 수 있다."
+        },
+        {
+          "paragraph": 14342,
+          "text": "③도입기업은 추진기관, 운영기관이 요구하는 바에 따라 보완 또는 시정하고 그 결과(수정 중간·완료보고서 등)를 통보일로부터 30일 이내에 사업관리시스템에 등록해야 한다."
+        },
+        {
+          "paragraph": 14344,
+          "text": "제12조(집중AS) ①최종평가결과 “보완” 판정인 수행기업은 구축완료일로부터 6개월 간 최종점검 및 최종평가의 결과에 따른 시정조치를 진행하고 다음 각 호의 서류를 사업관리시스템에 등록하여야 한다."
+        },
+        {
+          "paragraph": 14345,
+          "text": "1. 집중AS기간 운영현황보고서"
+        },
+        {
+          "paragraph": 14346,
+          "text": "2. 집중AS기간 개선조치결과 확인서"
+        },
+        {
+          "paragraph": 14347,
+          "text": "3. 기타 추진(운영)기관 등에서 요청하는 서류"
+        },
+        {
+          "paragraph": 14348,
+          "text": "4. 협약기간 변경에 따라 재발급한 하자보증보험증권(보증기간은 협약완료일로부터 1년 이상, 총 사업비의 10%)"
+        },
+        {
+          "paragraph": 14349,
+          "text": "②수행기업은 제1항에 따른 서류를 협약종료일로부터 14일 이내에 제출하여야 한다.(단, 불가피한 사유가 있는 경우 수행기업은 제출지연사유서를 추진기관, 운영기관 등에 송부하여 제1항에 해당하는 서류의 제출을 협약완료일로부터 30일까지로 연장할 수 있다.)"
+        },
+        {
+          "paragraph": 14351,
+          "text": "제13조(하자보수) ①공급기업은 이 협약에 따라 도입기업에게 설치 또는 개발한 S/W, H/W, N/W, 기타 설비 등에 대하여 협약종료 후 1년 이상 무상으로 하자보수를 지원할 의무를 진다."
+        },
+        {
+          "paragraph": 14352,
+          "text": "②도입기업은 무상하자보수 기간에 발생하는 하자에 대하여 즉시 공급기업에게 통보하여야 하며, 공급기업은 도입기업의 통보에 따른 하자보수를 이행하여 도입기업의 정상적인 운영에 지장이 없도록 하여야 한다. 단, 도입기업의 고의 또는 중대한 과실로 인한 장애지원은 하자보수 지원에 포함되지 않는다."
+        },
+        {
+          "paragraph": 14353,
+          "text": "③공급기업은 도입기업의 요청 등에 따른 하자보수의 이력을 관리하여야 한다."
+        },
+        {
+          "paragraph": 14355,
+          "text": "제14조(유지 및 활용의무) ①도입기업은 이 협약을 통하여 구축한 장비, 솔루션 등 사업 결과물에 대하여 사업종료일(성공 판정을 통보받은 날)로부터 다음 각 호의 기간 동안 본래의 용도 및 기능에 맞도록 존속기한을 준수하여 유지·활용할 의무가 있다. 만약 이를 위반하여 임의로 철거, 이전, 훼손, 대여 등을 할 경우 총괄기관은 사업비 환수, 사업참여 배제, 형사고발 등 제재조치를 취할 수 있다."
+        },
+        {
+          "paragraph": 14356,
+          "text": "1. 건축물에 준하는 시설물 : 10년"
+        },
+        {
+          "paragraph": 14357,
+          "text": "2. 각종 기계·설비, 서버 등 컴퓨터, ERP 등 솔루션 등 : 5년"
+        },
+        {
+          "paragraph": 14358,
+          "text": "3. 센서 등 : 3년"
+        },
+        {
+          "paragraph": 14359,
+          "text": "4. 그 밖의 시설물은 추진기관에서 따로 정하여 시행한다."
+        },
+        {
+          "paragraph": 14360,
+          "text": "②존속기한은 시설, 장비, 솔루션 등의 설치완료일부터 기산하여 본래의 목적, 용도로 존속하는 기간을 말한다. 시설, 장비, 솔루션 등은 존속하고 있으나 고장, 미활용 등으로 정상적으로 활용되지 않는 경우는 존속기한을 위반한 것으로 본다. 철거‧훼손 등의 시점은 철거‧훼손이 시작된 날 또는 사실상 본래의 기능을 상실한 시점으로 한다."
+        },
+        {
+          "paragraph": 14361,
+          "text": "③제1항의 규정에 불구하고 다음 각 호의 어느 하나에 해당하는 경우에는 추진기관 또는 운영기관의 승인을 받아 이전, 철거 등이 가능하나, 사업비는 전액 환수함을 원칙으로 한다. 다만, 추진기관, 운영기관 등은 잔존가액을 평가하여 소요 비용의 환수범위(일부 또는 전부)를 결정할 수 있다.\n 1. 천재지변, 화재 등으로 훼손되어 사용이 불가능한 경우"
+        },
+        {
+          "paragraph": 14362,
+          "text": "2. 인수·합병으로 인한 양도(유지기간동안의 유지 및 활용 의무는 인수기업이 진다.)"
+        },
+        {
+          "paragraph": 14363,
+          "text": "3. 잦은 고장, 비정상 작동 등으로 사용자의 안전을 위협하여 철거가 필요한 경우"
+        },
+        {
+          "paragraph": 14364,
+          "text": "4. 그 밖에 불가피한 사유로 운영기관의 사전 승인을 받은 경우"
+        },
+        {
+          "paragraph": 14365,
+          "text": "④공급기업, 도입기업 등은 사업완료일로부터 3년간 의무적으로 시스템 활용과 관련한 로그기록을 스마트공장 사업관리시스템에 API 방식으로 연동하여 제출하여야 한다. 이를 위반하거나 미제출 시 추진기관, 운영기관 등은 특별점검, 활용실태점검을 통해 사용실태 및 문제점 등을 확인하고, 필요 시 제재조치위원회에 회부할 수 있다."
+        },
+        {
+          "paragraph": 14367,
+          "text": "제15조(기술임치의무) ①공급기업은 도입기업이 사업 결과물의 유지보수 및 안정적 사용, 영업비밀 등 지식재산권 보호가 가능할 수 있도록 사업수행 결과물(매뉴얼, 시스템 개발소스, 관련 데이터, 기타 도입기업이 요구하는 시스템 구축과정에서 생성된 자료 일체) 등 관련자료 일체를 도입기업에게 제출할 의무가 있으며, 이를 위반하여 중요자료를 누락하거나 제출을 거부할 경우 총괄기관은 최고 수준의 제재조치(사업비 환수, 사업참여 제한 등)를 취할 수 있다. 단, 도입기업 자체구축인 경우 기술임치 의무대상에서 제외한다."
+        },
+        {
+          "paragraph": 14368,
+          "text": "②공급기업은 클라우드시스템을 공급한 경우, 도입기업이 시스템 운용과정에서 생성된 자료에 대하여 도입기업이 요구할 경우 즉시 제출하여야 한다. 이를 위반하여 중요자료를 누락하거나 제출을 거부할 경우 총괄기관은 최고 수준의 제재조치(사업비 환수, 사업참여 제한 등)를 취할 수 있다."
+        },
+        {
+          "paragraph": 14369,
+          "text": "③도입기업은 공급기업으로부터 제출받은 사업결과물을 유지관리 및 보호할 의무를 갖게 되며, 결과물 일체는 대중소기업상생협력촉진에 관한 법률 제24조의 2, 저작권법 제101조의 7 등 법령에 정한 임치기관에 2년 이상 임치하여야 한다. 이 때 임치수수료는 사업비에 반영하여 일괄 선집행 할 수 있다."
+        },
+        {
+          "paragraph": 14370,
+          "text": "④제1, 2항에 따른 사업비 환수 제재조치의 경우 제8조제4항 본문에도 불구하고 공급기업으로부터 환수한다."
+        },
+        {
+          "paragraph": 14372,
+          "text": "제16조(데이터의 수집·활용) ①도입기업 및 공급기업은 추진기관, 운영기관 등이 관련자료, 현장확인, 서류열람 등을 요청할 시 성실히 응하여야 한다."
+        },
+        {
+          "paragraph": 14373,
+          "text": "②도입기업 및 공급기업은 추진기관과 운영기관이 본 사업과 관련하여 시스템 구축 후 5년간 시행하는 성과분석 관련 자료요청에 성실히 응하여야 한다."
+        },
+        {
+          "paragraph": 14374,
+          "text": "③추진기관, 운영기관 등은 사업의 효율적 추진 및 성과 제고를 위해 필요한 경우 도입기업 제조현장에서 발생한 데이터를 별도로 수집‧분석, 활용할 수 있다."
+        },
+        {
+          "paragraph": 14376,
+          "text": "제17조(제재 등) ①도입기업 및 공급기업이 사업을 수행함에 있어 이 협약, 관리지침 또는 세부관리기준에 규정된 의무를 불이행하는 등 『중소기업 스마트제조혁신 촉진에 관한 법률 시행령』[별표3]의 제재사유에 해당할 경우 협약의 해약 여부 또는 협약 기간의 종료 여부에 불문하고 시행령[별표3]의 기준에 따라 추진기관 또는 운영기관으로부터 사업비 환수, 사업참여 제한의 제재를 받을 수 있다."
+        },
+        {
+          "paragraph": 14378,
+          "text": "제18조(비밀보장) ①도입기업과 공급기업은 이 협약 이행과정에서 상대방이 제공하는 모든 정보 및 자료를 쌍방의 사전 협의 없이 어느 누구에게도 판매, 복사, 발표, 정보제공 및 기타 이와 유사한 행위를 할 수 없다."
+        },
+        {
+          "paragraph": 14379,
+          "text": "②도입기업은 공급기업이 제공한 시스템 개발소스에 대하여 유지보수 및 연계 등을 위한 소스코드 변경 등의 이용 권리를 가진다. 단, 제3자에게 변경된 프로그램을 제공하여서는 안되며 기업 내부적으로 사용하는 권리만을 가진다."
+        },
+        {
+          "paragraph": 14380,
+          "text": "③도입기업과 공급기업 중 어느 일방이 제1항 및 제2항을 준수하지 않아 상대방이 손해를 입은 경우에는 이에 대하여 배상을 하여야 한다."
+        },
+        {
+          "paragraph": 14382,
+          "text": "제19조(관계법령의 준수) ①도입기업과 공급기업은 본 사업을 수행함에 있어 개인정보보호법, 부정경쟁방지 및 영업비밀보호에 관한 법률, 소프트웨어산업진흥법 등 관계법령을 준수하여야 한다."
+        },
+        {
+          "paragraph": 14383,
+          "text": "②협약 기간 중 관리지침, 세부관리기준이 변경되어 추진기관 또는 운영기관이 통지하거나 사업관리시스템을 통하여 공지된 경우 변경된 관리지침, 세부관리기준을 이 협약에 적용한다."
+        },
+        {
+          "paragraph": 14385,
+          "text": "제21조(기타사항) 본 협약서에 명시되어 있지 않은 내용은 ‘스마트공장 보급확산사업 세부관리지침’ 및 ‘스마트공장 보급확산사업 세부관리기준’을 따른다."
+        },
+        {
+          "paragraph": 14387,
+          "text": "제20조(효력 발생일 등) ①본 협약서는 4부를 작성하여 협약 당사자가 각각 날인 후 1부씩 보관한다."
+        },
+        {
+          "paragraph": 14388,
+          "text": "②이 협약서는 협약당사자가 모두 날인한 날부터 효력이 발생한다."
+        },
+        {
+          "paragraph": 14391,
+          "text": "202 .    .    ."
+        },
+        {
+          "paragraph": 14393,
+          "text": "중소기업기술정보진흥원 부설기관"
+        },
+        {
+          "paragraph": 14394,
+          "text": "스마트제조혁신추진단"
+        },
+        {
+          "paragraph": 14395,
+          "text": "단     장  :                    (인)"
+        },
+        {
+          "paragraph": 14396,
+          "text": "주　     소 　:"
+        },
+        {
+          "paragraph": 14398,
+          "text": "ㅇㅇ테크노파크"
+        },
+        {
+          "paragraph": 14399,
+          "text": "원     장  :                    (인)"
+        },
+        {
+          "paragraph": 14400,
+          "text": "주　     소 　:"
+        },
+        {
+          "paragraph": 14402,
+          "text": "도입기업명 :"
+        },
+        {
+          "paragraph": 14403,
+          "text": "대  표  자 :                    (인)"
+        },
+        {
+          "paragraph": 14404,
+          "text": "주　     소 　:"
+        },
+        {
+          "paragraph": 14406,
+          "text": "공급기업명 :"
+        },
+        {
+          "paragraph": 14407,
+          "text": "대  표  자 :                    (인)"
+        },
+        {
+          "paragraph": 14408,
+          "text": "주　     소 　:"
+        }
+      ],
+      "first_table_text": "정부일반형 스마트공장(정부형) 구축지원사업 표준 협약서\n* 부득이한 사유로 협약내용 변경 시, 사업취지 및 관계법령, 지침 등에 위배됨이 없어야 함",
+      "table_detail_reference": {
+        "file": "forms-structure.json",
+        "section": "Contents/section1.xml",
+        "table_ids": [
+          205,
+          206
+        ]
+      },
+      "table_guidance_candidates": []
+    }
+  ],
+  "image_only_form10_review": {
+    "method": "7개 원본 JPG 직접 시각 확인",
+    "ocr_used": false,
+    "structured_detail": "forms-catalog.md의 서식 10 이미지 필드 상세",
+    "original_images_modified": false
+  },
+  "source_id": "template-forms-2025"
+}

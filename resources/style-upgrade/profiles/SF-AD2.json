@@ -1,0 +1,501 @@
+{
+  "schema_version": "reference-editorial-profile-1",
+  "profile_id": "reference-quality/SF-AD2/v8",
+  "version": 8,
+  "role": "SF-AD2",
+  "status": "candidate_unvalidated",
+  "source_template": {
+    "sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+    "source_id": "template-sf-ad2"
+  },
+  "reference_relationship": "same_role",
+  "reference_sources": [
+    {
+      "sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+      "relationship": "same_role",
+      "source_id": "reference-sf-ad2"
+    }
+  ],
+  "targets": {
+    "body_font_face": "함초롬바탕",
+    "body_height_hwp": 1000,
+    "body_line_spacing_percent": 130,
+    "heading_font_face": "함초롬바탕",
+    "heading_height_hwp": 1200,
+    "heading_line_spacing_percent": 150,
+    "heading_bold": true,
+    "table_header_font_face": "함초롬바탕",
+    "table_header_height_hwp": 1000,
+    "table_header_line_spacing_percent": 130,
+    "table_header_bold": true,
+    "caption_font_face": "함초롬바탕",
+    "caption_height_hwp": 950,
+    "caption_line_spacing_percent": 130,
+    "landscape_body": false,
+    "paper_margin_hwp": {
+      "left": 5102,
+      "right": 5102,
+      "top": 4252,
+      "bottom": 4252,
+      "header": 2268,
+      "footer": 2268,
+      "gutter": 0
+    },
+    "table_width_hwp": 48500,
+    "cell_margin_hwp": {
+      "left": 283,
+      "right": 283,
+      "top": 141,
+      "bottom": 141
+    },
+    "identifier_wrap": "natural_no_mutation",
+    "character_spacing_percent": 0,
+    "character_ratio_percent": 100,
+    "cover_roles": {
+      "customer": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2400,
+        "bold": true
+      },
+      "program": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2200,
+        "bold": false
+      },
+      "title": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2600,
+        "bold": true
+      },
+      "date": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2000,
+        "bold": true
+      },
+      "supplier": {
+        "font_face": "함초롬바탕",
+        "height_hwp": 2800,
+        "bold": false
+      }
+    },
+    "sync_header_footer_frames": true,
+    "toc_roles": {
+      "title": {
+        "font_face": "함초롬바탕"
+      },
+      "entries": {
+        "font_face": "함초롬바탕"
+      }
+    },
+    "cover_program_paragraph": {
+      "break_non_latin": "BREAK_WORD"
+    }
+  },
+  "target_units": {
+    "*_height_hwp": "charPr height: point size multiplied by100, not page HWPUNIT",
+    "paper_margin_hwp/table_width_hwp/table_column_widths_hwp/cell_margin_hwp": "HWPUNIT:1inch=7200;1mm=7200/25.4",
+    "*_line_spacing_percent": "percent; must remain PERCENT type"
+  },
+  "selectors": {
+    "cover": "Only5named cover paragraph font/height/bold targets are editable; existing geometry, table/object/control, paragraph spacing and supplied fact text remain preserved.",
+    "body": "role-aware first actual body table/card or body section after cover/TOC; never arbitrary first nonempty paragraph",
+    "headings": "Explicit renderer semantic heading identities or genuine numbered top-level section titles only; context keys [Tn]/[Cn]/[Fn] do not establish heading status.",
+    "table_header": "header cells in selected body tables; continue page field/ID context",
+    "captions": "Only renderer-registered actual caption owner paragraphs; source captions require a separately verified exact owner declaration. Text prefixes such as 그림/표/화면/출처 never imply caption role. Unselected body instructions and source notes keep body typography.",
+    "notes": "source/uncertainty appendices; no shrink of required data to make page fit",
+    "toc": "Only renderer-registered title and merged-entry owner paragraphs, guarded by immutable source SHA/XML/exact XPath/own text; typography changes only font face in each own run."
+  },
+  "allowed_changes": [
+    "derived_character_font_face_and_size_on_declared_body_targets",
+    "derived_character_spacing_ratio_on_declared_body_targets",
+    "derived_paragraph_line_spacing_on_declared_targets",
+    "body_section_orientation_and_margins_only_where_profile_declares",
+    "body_table_whole_width_cell_width_margin_coherent_change",
+    "semantic_caption_style_and_keep_with_figure",
+    "declared_body_header_bold_and_spacing",
+    "derived_font_height_bold_on_five_exact_semantic_cover_owner_paragraphs_geometry_and_controls_preserved",
+    "declared_body_section_header_footer_frame_extents_only_text_ids_and_styles_preserved",
+    "derived_font_face_only_on_two_exact_source_guarded_toc_owner_paragraphs_other_character_and_paragraph_properties_preserved",
+    "derived_breakNonLatinWord_only_on_exact_source_and_registry_owned_cover_program_paragraph_with_already_matching_owner_byte_noop"
+  ],
+  "preservation_contract": {
+    "content_boundary": "input_field/type/ID/relation/status/source_refs to rendered meaning/position mapping; intentional prose and table transformations logged",
+    "editorial_boundary": "exact text, field meaning and object references retained outside explicit semantic relocations; definitions derived, cover and controls protected",
+    "native_boundary": "strict current styled-byte before/after preservation; fallback loss remains failure until exact repair and new actual final-byte QA"
+  },
+  "mandatory_template_instructions": [
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[4]",
+      "legacy_source_xpath": "/hs:sec/p[4]",
+      "text_verbatim": "- 착수계, 사업계획서, (SW개발비)사업비 산출내역서 등에 제시된 사업범위를 기준으로 인터뷰 및 회의 결과 등을 반영한 요구사항 세부요건, 제약사항 등을 명확히 정의한다(기능/비기능 분리)",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[5]",
+      "legacy_source_xpath": "/hs:sec/p[5]",
+      "text_verbatim": "- 기능요구사항은 본 사업에서 도입된 솔루션의 고유 기능에서 추가와 변경되는 기능만 작성할 수 있으며, 비기능요구사항은 본 사업에서 도입되는 H/W, S/W, N/W 장비 등을 종류별로 세부 내역을 명확히 정의한다",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[7]",
+      "legacy_source_xpath": "/hs:sec/p[7]",
+      "text_verbatim": "- 목차는 전체 요구사항명과 해당 페이지를 기술함",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[8]",
+      "legacy_source_xpath": "/hs:sec/p[8]",
+      "text_verbatim": "- 시스템명 항목은 시스템을 구분하며, 영무영역명은 현행업무분서서의 업무영역명을 기술함",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[9]",
+      "legacy_source_xpath": "/hs:sec/p[9]",
+      "text_verbatim": "- 요구사항ID 항목은 시스템명 뒤에 AD2와 일련번호를 부여함(예시 : MES-AD2-001)",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[10]",
+      "legacy_source_xpath": "/hs:sec/p[10]",
+      "text_verbatim": "- 요구사항명 항목은 요구사항 내용을 대표하는 명칭을 사용하며, 중복된 명칭은 사용하지 않음",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[11]",
+      "legacy_source_xpath": "/hs:sec/p[11]",
+      "text_verbatim": "- 요구사항 설명 항목은 요구사항에 대한 내용을 요약해 간단히 기술함",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[12]",
+      "legacy_source_xpath": "/hs:sec/p[12]",
+      "text_verbatim": "- 세부 내용 및 요건 항목은 착수계, 사업계획서, (SW개발비)사업비 산출내역서 등에 제시된 사업범위를 기준으로 도입기업 업무 담당자들과 면담 및 설문조사 등을 통해 요구사항에 대한 정확한 의미, 업무 프로세스 등을 파악한 세부적인 내용과 기능 구현에 필요한 요건들을 기술함",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[13]",
+      "legacy_source_xpath": "/hs:sec/p[13]",
+      "text_verbatim": "  특히 변경 기능에 대해서는 솔루션에서 제공하는 고유 기능과 고유 기능에서 변경되는 내용을 기술함",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[14]",
+      "legacy_source_xpath": "/hs:sec/p[14]",
+      "text_verbatim": "- 제약사항 및 전제조건 항목은 시스템 개발시 제약조건, 한계, 선행조건 등을 기술함",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[15]",
+      "legacy_source_xpath": "/hs:sec/p[15]",
+      "text_verbatim": "- 유형 항목은 기능과 비기능으로 구분한다(예시 : 세부 내용이나 요건에 대해 관련된 화면이나 인터페이스, 프로그램이 존재하는 경우 기능으로 구분하고 관련된 프로그램 없이 결과만 존재하는 경우 비기능으로 구분한다)",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[16]",
+      "legacy_source_xpath": "/hs:sec/p[16]",
+      "text_verbatim": "- 업무 담당자 항목은 요구사항에 대한 제시/협의/확인한 도입기업 담당자를 기술함",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[17]",
+      "legacy_source_xpath": "/hs:sec/p[17]",
+      "text_verbatim": "- 출처 항목은 사업계획서, 착수계, 회의록 등 근거를 명확히 제시함 ",
+      "current_regulatory_requirement_verified": false
+    },
+    {
+      "category": "template_instruction",
+      "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+      "xml": "Contents/section1.xml",
+      "xpath": "/hs:sec/hp:p[18]",
+      "legacy_source_xpath": "/hs:sec/p[18]",
+      "text_verbatim": "- 기타사항 항목은 요구사항을 이해하거나 해결하기 위한 자료 등을 기술함",
+      "current_regulatory_requirement_verified": false
+    }
+  ],
+  "template_field_observations": [],
+  "local_catalog_document_requirement": {
+    "required": true,
+    "evidence": {
+      "stage": "Contents/section0.xml#T1/R2C1/P9",
+      "work": "Contents/section0.xml#T1/R3C1/P15",
+      "name": "Contents/section0.xml#T1/R3C2/P16",
+      "requirement": "Contents/section0.xml#T1/R3C3/P17",
+      "description": "Contents/section0.xml#T1/R3C4/P18",
+      "code": "Contents/section0.xml#T1/R3C5/P19"
+    },
+    "scope": "Only the selected localv2catalog document-presence rule; not every field mandatory or current universal submission law"
+  },
+  "observed_convention_evidence": {
+    "path": "resources/style-upgrade/profiles/SF-AD2.evidence.json",
+    "sha256": "facfc78b3e380613a0150e72c0d5f625e57bf734f1cfb750d255590891112fb6",
+    "used_format_scope": "all actual nonempty owner run usage, resolved fonts and paragraph definitions; source values retained separately from targets"
+  },
+  "implementation_choices": [
+    {
+      "category": "implementation_choice",
+      "choice": "role-specific10/11pt body and130/140/150/160% line spacing with12pt headings",
+      "rationale": "table roles need compact stable field comparison; narrative roles need paragraph rhythm. Candidate values are within observed families but not copied as universal rules.",
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "TD3/TD5/PM4 landscape body; cover remains portrait",
+      "rationale": "support long IDs and wide multi-column specifications while retaining original fields and declared layout transition; declared75000HWP wide table allows outer margin/offset within75684HWP body",
+      "applies": false,
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "safe15/18mm side margins,1mm horizontal cell padding and0.5mm vertical padding",
+      "rationale": "exclude extreme exemplar margins and preserve legibility; final native wrapping decides suitability",
+      "native_status": "pending"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Adopt exact reference-used cover font/size/bold by customer/program/title/date/supplier role; OS1 uses explicitly adjacent OS2 cover and PM1 retains partial cadence mapping.",
+      "rationale": "Whole-document editorial review includes the cover; original BatangChe cover preservation alone did not match adopted reference typography. Geometry remains fixed, and long supplied program/date labels still need current native review.",
+      "native_status": "pending_new_v3_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Synchronize only body-section header/footer frame extents to declared page geometry; preserve cover-section frames and all text/IDs/character/paragraph definitions.",
+      "rationale": "Historical Hancom12.30.0build6544 TD5 SaveAs changed stale portrait header49324×4252 to landscape75684×2268. The generator must create coherent frames before strict native comparison.",
+      "native_status": "pending_new_v4_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Adopt observed seven-script HCR font face for source-guarded TOC title/entries; preserve original owner sizes/bold and all paragraph geometry/controls.",
+      "rationale": "Selected reference TOC uses HCR in14roles; entry sizes/bold vary by role and hierarchy. Font-only choice does not copy reference business text or establish mandatory typography. OS1 remains an explicit adjacent OS2 design basis.",
+      "native_status": "pending_new_v5_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Apply caption typography only to renderer-registered actual captions; body instructions and source notes retain body typography.",
+      "rationale": "A generic 화면/그림/표 prefix can describe business content or an image-location instruction. Caption identity must come from the actual attachment owner registry; a source-specific caption would need separate exact source evidence.",
+      "native_status": "pending_new_v5_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Preserve body value typography/keeps when a paragraph merely carries a T/C/F context key; genuine key headings require explicit renderer registration.",
+      "rationale": "Previous prefix inference made PM4 context values bold and keepWithNext despite the renderer declaring them body text. Removing that inference preserves the intended role.",
+      "native_status": "pending_new_v7_bytes"
+    },
+    {
+      "category": "implementation_choice",
+      "choice": "Declare BREAK_WORD on the exact source-owned cover program paragraph across all19 roles; skip derivation for already matching original definitions.",
+      "rationale": "Bounded Mac12.30.0 controlled probe recovers whole-word wrapping without changing supplied text/font/geometry; enum spelling alone is not a universal semantic rule.",
+      "native_status": "pending_new_current_role_bytes"
+    }
+  ],
+  "excluded_or_unresolved": [
+    "Do not copy extreme source right margins, crowded line spacing, missing continuation headers, incomplete sentences or reference facts/signatures.",
+    "Do not use source paragraph/character numeric IDs as runtime style selectors.",
+    "Do not turn null/unknown into performed/not_applicable/optional/nonfunctional or create absent captures/approvals."
+  ],
+  "iteration_refinement": {
+    "previous_profile_version": 6,
+    "previous_bytes_preserved": "analysis/style-upgrade/profiles/history/v6",
+    "basis": "Exact TD3 chapter/first-card section boundary, registered finite intro and heading-owner selection; measured PM4 nonfunctional prefix+ID width. Earlier refinements retained.",
+    "native_status": "pending_new_v7_bytes"
+  },
+  "project_fact_policy": "This profile contains no project execution/approval/signature/measurement facts. Supplied fact values/status/source_refs remain separate.",
+  "baseline_output": {
+    "availability": "private_evidence_not_distributed",
+    "quality_verified": false,
+    "submission_ready": false
+  },
+  "assessment": {
+    "rubric_id": "reference-quality-observed-rubric/v1",
+    "score_percent": null,
+    "status": "not_assessed",
+    "evidence_required": [
+      "current_native_hwpx_pdf_png_hashes",
+      "actual_native_actions_and_app_version",
+      "font_and_spacing_observations",
+      "all_original_page_editorial_observations",
+      "same_content_reproduction",
+      "heldout_input_evaluation"
+    ]
+  },
+  "cover_selectors": {
+    "customer": {
+      "template": {
+        "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[7]",
+        "text_before_generation_verbatim": "도입기업명 "
+      },
+      "reference": {
+        "source_sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[15]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[9]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "program": {
+      "template": {
+        "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[7]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+        "text_before_generation_verbatim": "스마트공장 보급·확산사업"
+      },
+      "reference": {
+        "source_sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[16]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[3]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "title": {
+      "template": {
+        "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[7]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+        "text_before_generation_verbatim": "요구사항정의서"
+      },
+      "reference": {
+        "source_sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[16]/hp:run/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[2]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[21]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "date": {
+      "template": {
+        "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[16]",
+        "text_before_generation_verbatim": "202 .  ."
+      },
+      "reference": {
+        "source_sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[23]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[14]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    },
+    "supplier": {
+      "template": {
+        "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[21]",
+        "text_before_generation_verbatim": "공급기업명"
+      },
+      "reference": {
+        "source_sha256": "ad5b53c39b218cb1bf6fc27ab6985feb9cda95dad7d02df7551c8a6b90439936",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[26]",
+        "char_definition_xpath": "/hh:head/hh:refList/hh:charProperties/hh:charPr[10]"
+      },
+      "selector_policy": "Select exact template owner paragraph before/after supplied text substitution; preserve nontext objects/controls and geometry. Numeric IDs and actual exemplar business strings are not runtime replacement values."
+    }
+  },
+  "cover_observed_evidence": {
+    "path": "resources/style-upgrade/profiles/SF-AD2.cover-evidence.json",
+    "sha256": "39d957c76846047624daff37b040ceecc2e47ef81e29889cdec3a082866090fa"
+  },
+  "native_layout_evidence": {
+    "path": "resources/style-upgrade/profiles/native-layout-refinement-evidence.json",
+    "sha256": "0fe6a849fe5264b047613a81df28d7c12b6e6652a3dd64a6a3050d78cc4bac20"
+  },
+  "toc_scope": {
+    "present_in_selected_template_and_reference": true,
+    "relationship": "same_role",
+    "reference_is_adjacent": false
+  },
+  "toc_observed_evidence": {
+    "path": "resources/style-upgrade/profiles/SF-AD2.toc-evidence.json",
+    "sha256": "f8eefd5a8cb80afc218e6fff2a1a91b526b1449f53c9d34a6fb68f1daa1d11de"
+  },
+  "toc_selectors": {
+    "title": {
+      "template": {
+        "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[26]",
+        "text_before_generation_verbatim": "목 차"
+      }
+    },
+    "entries": {
+      "template": {
+        "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+        "xml": "Contents/section0.xml",
+        "xpath": "/hs:sec/hp:p[29]",
+        "text_before_generation_verbatim": "1. 기능 요구사항(SW)"
+      }
+    }
+  },
+  "section_boundary_spacer_selectors": [],
+  "section_boundary_evidence": {
+    "path": "resources/style-upgrade/profiles/pm4-boundary-refinement-evidence.json",
+    "sha256": "5f85c2f4338a83f7056f23df46386b925748c9f1d21fc642ccdb11c494134c77"
+  },
+  "section_heading_owner_evidence": {
+    "path": "resources/style-upgrade/profiles/td3-section-and-heading-refinement-evidence.json",
+    "sha256": "28f44f1abd885f40877d9e25db08a79c37e09a429d5d8802c5e532054645ec62"
+  },
+  "cover_program_paragraph_source": {
+    "source_sha256": "73afa2b10eecb77a3dc901fb8a1fc2311e7d794dd161027063d7e00d899e6f53",
+    "xml": "Contents/section0.xml",
+    "xpath": "/hs:sec/hp:p[7]/hp:run[2]/hp:tbl/hp:tr/hp:tc/hp:subList/hp:p[1]",
+    "paragraph_c14n_sha256": "f9141594beac31259e2b81c844d49e3b090b72dc9d40bec4252e063eba592653",
+    "paragraph_definition_c14n_sha256": "5906a3fcedb69ad0e1fb41b8648e2c27f44adb9b67d5eb7c53bbd7322523d27e",
+    "break_non_latin": "BREAK_WORD"
+  },
+  "cover_program_wordbreak_evidence": {
+    "path": "resources/style-upgrade/profiles/cover-program-wordbreak-evidence.json",
+    "sha256": "32e0b6ace2c8023a13d50f9fcfe8dcf3da24b961f4eef4cb80b8f4a16446d01f"
+  },
+  "cover_program_wordbreak_refinement": {
+    "previous_profile_version": 7,
+    "source_property": "BREAK_WORD",
+    "target_property": "BREAK_WORD",
+    "exact_source_guard": "exclusive XML C14N owner and paragraph definition; five cover owner registry guard retained",
+    "new_role_native_status": "pending",
+    "previous_R19_verdicts": "preserved; not rewritten"
+  },
+  "public_evidence_scope": "Formatting targets, exact template guards and reference hashes/locators only; private reference literals/business facts are not distributed. No prior quality acceptance is transferred."
+}

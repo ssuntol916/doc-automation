@@ -33,7 +33,7 @@ uv run doc-automation generate examples/demo-suite.project.json outputs/demo-sui
 - [계획·지원 범위](docs/PLAN.md), [생성 계약](docs/GENERATION.md), [HWPX 편집 API](docs/HWPX_COMPOSE.md)
 - [사실 입력 모델](docs/DATA_MODEL.md), [독립 합성 예제](docs/DATA_EXAMPLES.md), [의미 검증](docs/BUSINESS_VALIDATION.md)
 - [참고 그림 인용](docs/REFERENCE_QUOTATIONS.md), [출력 품질 계약](docs/OUTPUT_QUALITY.md), [편집 개선 경계](docs/REFERENCE_QUALITY_UPGRADE.md)
-- [HWPX 스킬](.agents/skills/hwpx-authoring/SKILL.md), [스마트공장 작성 스킬](.agents/skills/gov-grants-smart-factory/SKILL.md)
+- [사업 자료 분석 스킬](.agents/skills/grant-project-analysis/SKILL.md), [HWPX 스킬](.agents/skills/hwpx-authoring/SKILL.md), [스마트공장 작성 스킬](.agents/skills/gov-grants-smart-factory/SKILL.md), [다이어그램 품질 스킬](.agents/skills/document-diagram-quality/SKILL.md)
 
 기본 검사는 비공개 자료 없이 실행합니다. `corpus`/`native` 검사는 별도 원본·실제 출력 근거가 필요합니다. 새 출력은 실제 한컴 열기·저장·닫기·재열기·PDF 출력과 원페이지 검토를 수행해야 하며 과거 판정을 승계하지 않습니다. 이미지나 해시 일치는 실제 사업 사실·승인의 증거가 아닙니다.
 

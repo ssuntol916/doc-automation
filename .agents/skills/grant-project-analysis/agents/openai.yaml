@@ -1,0 +1,4 @@
+interface:
+  display_name: "정부지원사업 자료 분석"
+  short_description: "사업계획과 개발·비용 자료를 대조하여 보고서 작성 근거와 미확인 항목 정리"
+  default_prompt: "$grant-project-analysis 스킬로 제공한 사업 자료를 확인하고, 출처가 있는 분석계획과 중간보고서 근거표를 작성해 주세요."

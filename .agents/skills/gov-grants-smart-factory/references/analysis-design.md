@@ -62,7 +62,7 @@
 
 **관행:** 표준→권한표→화면 상세 카드→검토표. 상세는 설명/추가 컬럼/절차/필수 입력/버튼/체크로 나눈다.
 
-**입력/작성:** `screens`의 ID/name/path/menu_levels/fields/buttons/steps/checks/permissions, 요구/기능/프로그램 연결, 실제 전후 그림·review_ids. 캡처가 없으면 설계 초안/확인 필요로 표시하고 실제 구현/승인 그림을 만들지 않는다.
+**입력/작성:** `screens`의 ID/name/path/menu_levels/fields/buttons/steps/checks/permissions, 요구/기능/프로그램 연결, 실제 전후 그림·review_ids. 캡처가 없으면 그림·시안 확인 상태만 표시하고, 근거가 있는 화면 구성·입력·버튼·검증·권한 설계는 충실히 작성한다. 실제 구현/승인 그림은 만들지 않는다. 실작성과 실제 수행 확인의 구분은 [facts-and-writing.md](facts-and-writing.md)를 따른다.
 
 **피할 오류/QA:** 목차 번호·검토ID·상세ID·명칭의 불일치나 미완성 절차를 모방하지 않는다. 카드·메뉴·검토의 ID와 필수값/버튼/체크 대응, 그림 가독성/분할을 확인한다. 가상 시안은 실제 화면/승인이 아니다.
 

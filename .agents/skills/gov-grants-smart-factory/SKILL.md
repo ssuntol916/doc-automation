@@ -41,6 +41,6 @@ description: Draft and review Korean government-grant smart-factory deliverables
 
 요약→구체 요건→업무 절차→제약/전제→출처의 구성을 활용하되 실제 정보에 맞춘다. 기능·화면·프로그램·테이블·시험·추적의 ID가 존재한다는 사실과 내용 충족·실제 수행을 구분한다. 기간·기업 역할·합계·단위·산식·원문 불일치를 검증한다.
 
-참고자료 수준의 편집을 요청하면 [references/editorial-quality.md](references/editorial-quality.md)를 읽는다. `reference-v1`은 역할별 서식과 업무 표현을 선택하는 생성 옵션이며, 프로필 선택이나 정상 생성만으로 편집 품질이 검증되는 것은 아니다. 현재 검증 상태와 실제 출력 증거는 해당 실행 기록에서 확인한다.
+참고자료 수준의 편집이나 긴 업무 설명의 줄바꿈·가독성 개선을 요청하면 [references/editorial-quality.md](references/editorial-quality.md)를 읽는다. `reference-v1`은 역할별 서식과 업무 표현을 선택하는 생성 옵션이며, 프로필 선택이나 정상 생성만으로 편집 품질이 검증되는 것은 아니다. 현재 검증 상태와 실제 출력 증거는 해당 실행 기록에서 확인한다.
 
 완료 전 [references/quality-review.md](references/quality-review.md)를 적용한다. 합성 고지는 문서 안에 표시하고 `submission_ready=false`를 유지한다. 계약·동의·은행계좌·심사/위원회 결과는 작성 주체와 근거를 확인하며, 서식 분석이나 형식이 있는 필드 계약이 자동 승인·날인 권한을 주지는 않는다.

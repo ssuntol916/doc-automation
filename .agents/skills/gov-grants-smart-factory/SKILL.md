@@ -25,6 +25,8 @@ description: Draft and review Korean government-grant smart-factory deliverables
 
 요청한 역할의 절만 읽는다. 19종 모두 분석되었다는 것과 현재 생성기로 지원·실증한 범위는 다르므로 CLI·manifest에서 실제 지원 결과를 확인한다.
 
+사업계획 기능표의 작성 단위 선택과 AD2·TD4·TD5의 번호 대응을 요청받으면 [analysis-design.md](references/analysis-design.md)의 `사업계획 기능표에서 작성 단위 확정`과 `요구사항별 설계 대응`을 읽는다. 사용자 확정 단위를 우선하고 기능명 묶음 수·단위프로세스 행 수·공용 프로그램/테이블 수를 구별한다.
+
 | 요청 역할 | 작성 참조 |
 |---|---|
 | SF-AD1 현행업무분석, AD2 요구사항, AD3 기능대비 | [references/analysis-design.md](references/analysis-design.md) |
